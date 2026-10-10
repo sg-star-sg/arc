@@ -49,8 +49,9 @@ a{color:inherit}
 .wrap{max-width:1080px;margin:0 auto}
 header.top{display:flex;align-items:center;justify-content:space-between;padding-block:22px 8px}
 .mark{font-family:var(--display);font-weight:400;font-size:26px;letter-spacing:.18em;line-height:1}
-.brand{display:flex;align-items:center;gap:10px}
-.arcmark{width:40px;height:28px;flex:none;overflow:visible}
+.brand{display:flex;flex-direction:column;align-items:center;gap:1px;padding-top:4px}
+.brand .mark{padding-left:.18em}
+.arcmark{width:84px;height:20px;flex:none;overflow:visible}
 @media (prefers-reduced-motion:no-preference){
   .arcpath{stroke-dasharray:1;animation:draw 1.2s cubic-bezier(.4,0,.2,1) both}
   .arcdot{animation:pop .5s .9s cubic-bezier(.3,1.5,.6,1) both;transform-box:fill-box;transform-origin:center}
@@ -324,7 +325,7 @@ nav.dock button:not([aria-current="page"]):hover{color:var(--text)}
 
 <div class="wrap">
   <header class="top">
-    <div class="brand"><svg class="arcmark" viewBox="0 0 40 28" aria-hidden="true"><defs><filter id="mk" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter></defs><path d="M5 22 A15 15 0 0 1 33 12" fill="none" stroke="#7fb0ff" stroke-width="3.2" stroke-linecap="round" filter="url(#mk)" opacity=".9"/><path class="arcpath" d="M5 22 A15 15 0 0 1 33 12" fill="none" stroke="#eef1f6" stroke-width="2" stroke-linecap="round" pathLength="1"/><circle class="arcdot" cx="33" cy="12" r="3.2" fill="#fff"/><circle cx="33" cy="12" r="6" fill="#fff" opacity=".18"/></svg><span class="mark">ARC</span></div>
+    <div class="brand"><svg class="arcmark" viewBox="0 0 84 20" aria-hidden="true"><defs><filter id="mk" x="-20%" y="-80%" width="140%" height="260%"><feGaussianBlur stdDeviation="1.6"/></filter></defs><path d="M3 18 A40 16 0 0 1 77 9" fill="none" stroke="#7fb0ff" stroke-width="3" stroke-linecap="round" filter="url(#mk)" opacity=".9"/><path class="arcpath" d="M3 18 A40 16 0 0 1 77 9" fill="none" stroke="#eef1f6" stroke-width="1.6" stroke-linecap="round" pathLength="1"/><circle cx="77" cy="9" r="5.5" fill="#fff" opacity=".18"/><circle class="arcdot" cx="77" cy="9" r="2.8" fill="#fff"/></svg><span class="mark">ARC</span></div>
     <div style="display:flex;align-items:center;gap:12px"><span class="date" id="today"></span><button class="pill" data-nav="feedback" id="fb-btn">Feedback</button></div>
   </header>
   <main id="app"></main>
