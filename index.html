@@ -1,0 +1,1848 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#05070c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ARC">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head><body>
+<title>ARC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Manrope:wght@200;300;400;500;600&display=swap">
+<style>
+/* Layout: a dark instrument panel — glowing glass cards on a faint grid, a thin rail for lesson layers, floating pill nav */
+:root{
+  color-scheme:dark;
+  --ink:#05070c;
+  --panel:#0b0f18;
+  --panel2:#111726;
+  --text:#eef1f6;
+  --muted:#8b93a7;
+  --line:rgba(226,232,245,.09);
+  --low:#5fd3b5;
+  --med:#7fb0ff;
+  --high:#ffb36b;
+  --vhigh:#ff7a8a;
+  --display:"EB Garamond",Garamond,"Times New Roman",serif;   /* headlines, section titles, statements */
+  --body:"DM Sans","Helvetica Neue",Arial,sans-serif;          /* paragraphs, nav, buttons */
+  --stat:"Manrope","Helvetica Neue",Arial,sans-serif;          /* stats, callouts, highlights */
+  --mono:var(--stat);
+}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{
+  background:var(--ink);
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:44px 44px;background-position:-1px -1px;
+  color:var(--text);font-family:var(--body);font-size:16px;line-height:1.6;
+  padding-inline:16px;padding-block:0 130px;
+}
+button,select{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer;padding:0}
+button:focus-visible,a:focus-visible,select:focus-visible{outline:2px solid #fff;outline-offset:3px;border-radius:12px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto}
+header.top{display:flex;align-items:center;justify-content:space-between;padding-block:22px 8px}
+.mark{font-family:var(--display);font-weight:400;font-size:26px}
+.date{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.06em}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+h1{font-size:clamp(40px,6.6vw,66px);line-height:1.02;letter-spacing:-.015em}
+h2{font-size:32px;line-height:1.1}
+h3{font-size:23px;line-height:1.2}
+.eyebrow{font-family:var(--stat);font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.lede{color:var(--muted);max-width:62ch;margin:10px 0 0}
+section{margin-top:52px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px;margin-bottom:18px}
+.small{font-size:13px;color:var(--muted)}
+.note{font-size:12.5px;color:var(--muted);margin-top:14px;max-width:80ch}
+.note a{color:var(--muted)}
+
+.glass{
+  --c1:#2f6bff;--c2:#9cc1ff;
+  position:relative;border-radius:34px;overflow:hidden;
+  background:
+    radial-gradient(120% 80% at 15% 0%,color-mix(in srgb,var(--c1) 55%,transparent),transparent 60%),
+    radial-gradient(90% 70% at 100% 110%,color-mix(in srgb,var(--c2) 40%,transparent),transparent 65%),
+    var(--panel);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.1),inset 0 -50px 90px -50px var(--c2),0 30px 70px -40px var(--c1);
+}
+.m-wealth{--c1:#2f6bff;--c2:#7fb0ff}
+.m-business{--c1:#ff7a1a;--c2:#ffcf94}
+.m-economy{--c1:#13a99a;--c2:#8ef0df}
+.m-world{--c1:#e8402f;--c2:#ffa58f}
+.m-future{--c1:#7c4dff;--c2:#e7a2ff}
+.m-legacy{--c1:#c98a3c;--c2:#fff0d4}
+.m-create{--c1:#22b866;--c2:#b4f2c7}
+.plain{border-radius:28px;background:var(--panel);box-shadow:inset 0 0 0 1px var(--line)}
+
+.now-hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;padding:28px}
+.chart{min-width:0}
+.chart svg{width:100%;height:auto;display:block}
+.bignum{font-family:var(--stat);font-weight:200;font-size:clamp(64px,10vw,104px);line-height:.95;letter-spacing:-.02em}
+.bignum sup{font-size:.3em;font-weight:300;vertical-align:top;margin-left:4px}
+.now-hero p{margin:10px 0 0;color:rgba(238,241,246,.8);max-width:46ch}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:7px 14px;font-size:13px;background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);color:var(--text);white-space:nowrap}
+.pill.solid{background:#fff;color:#0b0f18;box-shadow:none;font-weight:500}
+.pill:hover{background:rgba(255,255,255,.13)}
+.pill.solid:hover{background:#dfe6f3}
+.pill.on{background:#fff;color:#0b0f18}
+.src{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:14px;display:block}
+.src a{color:var(--muted)}
+
+.capsules{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px;margin-top:16px}
+.capsule{border-radius:999px;padding:20px 26px;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;width:100%}
+.capsule .t{font-family:var(--display);font-size:22px;font-weight:400;line-height:1.15}
+.capsule .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(238,241,246,.7);display:block;margin-bottom:4px}
+.arrow{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
+.arrow svg{width:16px;height:16px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:16px}
+.mcard{min-height:240px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;text-align:left;width:100%;transition:transform .25s ease}
+.mcard:hover{transform:translateY(-3px)}
+.frac{font-family:var(--stat);font-weight:200;font-size:58px;line-height:1;letter-spacing:-.02em}
+.frac em{font-style:normal;color:rgba(238,241,246,.45)}
+.mcard .name{font-family:var(--display);font-size:25px;line-height:1.1;font-weight:400}
+.mcard .sub{display:block;color:rgba(238,241,246,.62);font-size:14px;margin-top:4px}
+
+.back{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:14px;margin-top:8px}
+.back:hover{color:var(--text)}
+.m-hero{padding:32px;margin-top:16px}
+.m-hero p{color:rgba(238,241,246,.82);max-width:60ch;margin:12px 0 0}
+.modules{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px;margin-top:20px}
+.module{padding:22px}
+.module h3{margin-bottom:8px}
+.litem{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--line);width:100%;text-align:left;font-size:15px}
+.litem:hover .lt{text-decoration:underline;text-underline-offset:4px}
+.litem .lt{min-width:0}
+.tag{flex:none;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.tag.read{color:#9ff0c0}
+.dotmark{flex:none;width:9px;height:9px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.14),0 0 12px rgba(255,255,255,.6)}
+
+.lesson-head{padding:32px;margin-top:16px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px}
+.lesson-head h1{max-width:20ch}
+.save[aria-pressed="true"]{background:#fff;color:#0b0f18}
+.rail{position:relative;margin:36px 0 0;padding-left:44px;max-width:720px}
+.rail::before{content:"";position:absolute;left:11px;top:10px;bottom:10px;width:1px;background:linear-gradient(rgba(255,255,255,.55),rgba(255,255,255,.08))}
+.layer{position:relative;padding-bottom:30px}
+.layer::before{content:"";position:absolute;left:-41px;top:4px;width:18px;height:18px;border-radius:50%;background:#0b0f18;box-shadow:inset 0 0 0 1px rgba(255,255,255,.45)}
+.layer.key p{font-family:var(--stat);font-weight:500;font-size:17px;line-height:1.5;color:var(--text)}
+.layer.key::before{background:#fff;box-shadow:0 0 0 6px rgba(255,255,255,.14),0 0 22px rgba(255,255,255,.75)}
+.layer .eyebrow{display:block;margin-bottom:6px}
+.layer p{margin:0;max-width:62ch;color:rgba(238,241,246,.9)}
+.layer ul{margin:6px 0 0;padding-left:18px;color:rgba(238,241,246,.9)}
+.layer li{margin:4px 0}
+.next{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px}
+.ask{padding:26px;max-width:760px;display:flex;flex-direction:column;gap:14px}
+.thread{display:flex;flex-direction:column;gap:14px}
+.thread:empty{display:none}
+.q{align-self:flex-end;max-width:85%;background:#fff;color:#0b0f18;border-radius:20px 20px 6px 20px;padding:10px 16px;font-size:15px}
+.a{max-width:62ch;color:rgba(238,241,246,.92);font-size:15.5px}
+.a p{margin:0 0 10px}.a ul{margin:0 0 10px;padding-left:18px}.a li{margin:4px 0}
+.a.thinking{font-family:var(--stat);font-size:13px;letter-spacing:.06em;color:rgba(238,241,246,.7)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips .pill{white-space:normal;text-align:left}
+.askform{display:flex;gap:8px;align-items:flex-end;background:rgba(5,7,12,.55);border-radius:24px;padding:8px 8px 8px 16px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.16)}
+.askform textarea{flex:1;min-width:0;background:none;border:0;color:var(--text);font:inherit;font-size:15px;resize:none;padding:8px 0;outline:none;field-sizing:content;max-height:160px}
+.askform textarea::placeholder{color:rgba(238,241,246,.5)}
+.askform:focus-within{box-shadow:inset 0 0 0 1px rgba(255,255,255,.5)}
+.askform input{flex:1;min-width:0;background:none;border:0;color:var(--text);font:inherit;font-size:17px;padding:10px 0;outline:none}
+.askform input::placeholder{color:rgba(238,241,246,.5)}
+.askform.big{padding:8px 8px 8px 20px;align-items:center}
+nav.dock .srch{display:grid;place-items:center;padding:10px 13px}
+.a-wrap{width:100%}
+.fbtext{width:100%;background:rgba(5,7,12,.5);border:0;border-radius:20px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.16);color:var(--text);font:inherit;font-size:15px;padding:14px 16px;resize:vertical;outline:none}
+.fbtext:focus{box-shadow:inset 0 0 0 1px rgba(255,255,255,.5)}
+.fbtext::placeholder{color:rgba(238,241,246,.5)}
+.fbrow{padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.fbrow p{margin:0;white-space:pre-wrap}
+.fbmeta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.fbmeta b{font-weight:500}
+header.top .pill{padding:6px 12px;font-size:12.5px}
+.ana{display:grid;gap:14px}
+.ana-wait{padding:22px;display:flex;align-items:center;gap:14px;font-family:var(--stat);font-size:14px;color:rgba(238,241,246,.8)}
+.ana-hero{padding:28px;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:24px;align-items:start}
+.riskbox{background:rgba(5,7,12,.45);border-radius:24px;padding:18px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);display:flex;flex-direction:column;gap:8px}
+.riskbox b{font-family:var(--stat);font-weight:500;font-size:20px}
+.riskbox p{margin:0;font-size:14px;color:rgba(238,241,246,.8)}
+.riskbar{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}
+.riskbar i{height:10px;border-radius:999px;background:rgba(255,255,255,.12)}
+.riskbar i.on{background:color-mix(in srgb,var(--low),var(--vhigh) calc((var(--k) - 1) * 25%));box-shadow:0 0 12px color-mix(in srgb,var(--low),var(--vhigh) calc((var(--k) - 1) * 25%))}
+.ana-card{padding:22px;display:flex;flex-direction:column;gap:10px}
+.ana-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px}
+.score{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:10px}
+.sc{display:grid;grid-template-columns:10px 1fr auto;gap:4px 10px;align-items:center;padding:12px 14px;border-radius:18px;background:rgba(255,255,255,.04)}
+.sc .dot{width:9px;height:9px;border-radius:50%}
+.sc b{font-weight:500;font-size:14.5px}
+.sc .rt{font-family:var(--stat);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.sc p{grid-column:2/4;margin:0;font-size:13.5px;color:rgba(238,241,246,.75)}
+.pc{margin:0;padding-left:18px;display:grid;gap:6px;font-size:14.5px}
+.scen{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:10px}
+.sn{padding:14px 16px;border-radius:18px;background:color-mix(in srgb,var(--c) 10%,transparent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--c) 40%,transparent)}
+.sn b{font-family:var(--stat);font-weight:500;color:var(--c)}
+.sn p{margin:6px 0 0;font-size:14px}
+@media (max-width:760px){.ana-hero{grid-template-columns:1fr;padding:22px}}
+@media (prefers-reduced-motion:no-preference){.ana>*{animation:cardin .5s cubic-bezier(.2,.9,.3,1.2) both}.ana>:nth-child(2){animation-delay:80ms}.ana>:nth-child(3){animation-delay:160ms}.ana>:nth-child(4){animation-delay:240ms}.ana>:nth-child(n+5){animation-delay:320ms}.ana-wait .c-typing i{animation:pulse 1s ease-in-out infinite}}
+.cards{display:grid;gap:14px}
+.c-head{margin:0;font-family:var(--display);font-size:clamp(25px,4vw,33px);line-height:1.15;color:var(--text);text-wrap:balance}
+.c-analogy{margin:0;font-family:var(--display);font-style:italic;font-size:20px;line-height:1.35;color:rgba(238,241,246,.85);border-left:1px solid rgba(255,255,255,.55);padding-left:14px}
+.c-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:10px}
+.c-step{background:rgba(255,255,255,.06);border-radius:20px;padding:14px 16px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+.c-step .n{display:block;font-family:var(--stat);font-weight:200;font-size:30px;line-height:1;margin-bottom:8px}
+.c-step p{margin:0;font-size:14.5px;line-height:1.45}
+.c-stat{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}
+.c-stat .big{font-family:var(--stat);font-weight:200;font-size:clamp(44px,8vw,64px);line-height:1;letter-spacing:-.02em}
+.c-stat span:last-child{font-family:var(--stat);font-weight:500;font-size:14px;color:rgba(238,241,246,.8);max-width:34ch}
+.c-why{background:rgba(255,255,255,.93);color:#0b0f18;border-radius:22px;padding:16px 20px}
+.c-why p,.c-ex p{margin:4px 0 0;font-size:15.5px;line-height:1.5}
+.c-why p{font-family:var(--stat);font-weight:500}
+.c-why .lbl{color:#4a5165}
+.lbl{font-family:var(--stat);font-weight:500;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(238,241,246,.65)}
+.c-ex{background:rgba(5,7,12,.5);border-radius:22px;padding:16px 20px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
+.c-watch{margin:0;display:flex;gap:10px;font-size:14px;color:#ffd7a8}
+.c-text{margin:0}
+.c-typing{display:flex;gap:6px;padding:6px 2px}
+.c-typing i{width:6px;height:6px;border-radius:50%;background:rgba(238,241,246,.7)}
+@media (prefers-reduced-motion:no-preference){
+  .enter{animation:cardin .5s cubic-bezier(.2,.9,.3,1.2) both}
+  @keyframes cardin{from{opacity:0;transform:translateY(10px) scale(.98)}}
+  .c-typing i{animation:pulse 1s ease-in-out infinite}
+  .c-typing i:nth-child(2){animation-delay:.15s}.c-typing i:nth-child(3){animation-delay:.3s}
+}
+.ask-note{margin:0;font-size:12px;color:rgba(238,241,246,.6)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (prefers-reduced-motion:no-preference){.a.thinking{animation:pulse 1.6s ease-in-out infinite}}
+
+/* invest */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.ladder{display:grid;gap:22px}
+.tier-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.tier-dot{width:10px;height:10px;border-radius:50%;box-shadow:0 0 12px currentColor;background:currentColor}
+.t-low{color:var(--low)}.t-med{color:var(--med)}.t-high{color:var(--high)}.t-vhigh{color:var(--vhigh)}
+.assets{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px}
+.asset{padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+.asset h3{font-size:18px}
+.asset p{margin:0;font-size:14px;color:rgba(238,241,246,.82)}
+.stats{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.stats b{color:var(--text);font-weight:400}
+.builder{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:28px;padding:28px}
+.field{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.field label{font-size:14px;color:rgba(238,241,246,.85)}
+.choices{display:flex;flex-wrap:wrap;gap:8px}
+.bar{display:flex;height:22px;border-radius:999px;overflow:hidden;margin:6px 0 16px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
+.bar span{display:block;height:100%}
+.legend{display:grid;gap:8px}
+.lg{display:grid;grid-template-columns:12px 1fr auto;gap:10px;align-items:baseline;font-size:14px}
+.lg i{width:10px;height:10px;border-radius:3px;display:block;transform:translateY(1px)}
+.lg .pct{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.lg small{grid-column:2/4;color:var(--muted);font-size:12.5px;margin-top:-4px}
+.steps{display:grid;gap:10px;counter-reset:s;padding:0;margin:0;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;padding:14px 16px}
+.steps li::before{content:counter(s);font-family:var(--stat);font-weight:200;font-size:28px;line-height:1}
+.steps b{font-weight:500}
+.steps p{margin:2px 0 0;font-size:14px;color:rgba(238,241,246,.8)}
+.sector{padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.sector p{margin:0;font-size:14px;color:rgba(238,241,246,.82)}
+.chip{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:999px;box-shadow:inset 0 0 0 1px currentColor}
+.theme{padding:22px;display:flex;flex-direction:column;gap:10px}
+.theme p{margin:0;font-size:14px;color:rgba(238,241,246,.85)}
+.cos{display:flex;flex-wrap:wrap;gap:6px}
+.cos span{font-size:12.5px;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.08)}
+.tablewrap{overflow-x:auto;border-radius:24px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:400}
+td:first-child{font-weight:500;white-space:nowrap}
+
+/* world */
+.country{padding:24px;display:flex;flex-direction:column;gap:12px}
+.country.anchor{background:radial-gradient(120% 90% at 0% 0%,rgba(47,107,255,.35),transparent 60%),var(--panel);box-shadow:inset 0 0 0 1px rgba(127,176,255,.35)}
+.country h3{font-size:28px}
+.country p{margin:0;font-size:14.5px;color:rgba(238,241,246,.82)}
+.timeline{position:relative;padding-left:28px;display:grid;gap:18px;max-width:760px}
+.timeline::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:linear-gradient(rgba(255,255,255,.08),rgba(255,255,255,.55))}
+.ev{position:relative}
+.ev::before{content:"";position:absolute;left:-27px;top:7px;width:11px;height:11px;border-radius:50%;background:#0b0f18;box-shadow:inset 0 0 0 1px rgba(255,255,255,.5)}
+.ev.future::before{background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.14),0 0 18px rgba(255,255,255,.7)}
+.ev .yr{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.ev p{margin:2px 0 0;max-width:64ch}
+
+.empty{padding:36px}
+.empty p{color:rgba(238,241,246,.82);max-width:52ch}
+.savelist{display:grid;gap:12px}
+
+nav.dock{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:5;display:flex;gap:2px;padding:6px;border-radius:999px;background:rgba(16,20,31,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12),0 20px 50px -20px #000;max-width:calc(100% - 24px)}
+nav.dock button{padding:10px 15px;border-radius:999px;font-size:14px;color:var(--muted)}
+nav.dock button[aria-current="page"]{background:#fff;color:#0b0f18;font-weight:500}
+nav.dock button:not([aria-current="page"]):hover{color:var(--text)}
+
+@media (max-width:760px){
+  .now-hero,.builder{grid-template-columns:1fr;padding:22px}
+  .m-hero,.lesson-head{padding:24px}
+  .rail{padding-left:36px}
+  .layer::before{left:-33px}
+  nav.dock button{padding:9px 10px;font-size:12.5px}
+}
+.scrub{cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.scrub.grab{cursor:grabbing}
+.scrub:focus-visible{outline:2px solid #fff;outline-offset:4px;border-radius:12px}
+.rdot{transform-box:fill-box;transform-origin:center;transition:transform .25s ease}
+.rdot:hover{transform:scale(1.35)}
+@media (prefers-reduced-motion:no-preference){
+  .pulse{animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{50%{opacity:.55}}
+  main{animation:rise .35s ease both}
+  @keyframes rise{from{transform:translateY(8px);opacity:.4}}
+  .draw{stroke-dasharray:1;animation:draw 1.4s cubic-bezier(.4,0,.2,1) both}
+  @keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+  .fadein{animation:fade 1.6s ease both}
+  @keyframes fade{from{opacity:0}}
+  .rdot{animation:pop .6s cubic-bezier(.3,1.5,.6,1) both}
+  @keyframes pop{from{transform:scale(0)}}
+  .grid>*,.assets>*,.capsules>*,.modules>*,.timeline>*,.legend>*{animation:rise .5s ease both}
+  :is(.grid,.assets,.capsules,.modules,.timeline,.legend)>:nth-child(2){animation-delay:50ms}
+  :is(.grid,.assets,.capsules,.modules,.timeline,.legend)>:nth-child(3){animation-delay:100ms}
+  :is(.grid,.assets,.capsules,.modules,.timeline,.legend)>:nth-child(4){animation-delay:150ms}
+  :is(.grid,.assets,.capsules,.modules,.timeline,.legend)>:nth-child(5){animation-delay:200ms}
+  :is(.grid,.assets,.capsules,.modules,.timeline,.legend)>:nth-child(n+6){animation-delay:250ms}
+  .bar span{animation:grow .7s cubic-bezier(.4,0,.2,1) both;transform-origin:left}
+  @keyframes grow{from{transform:scaleX(0)}}
+  #pw-dot{transition:none}
+}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="mark" style="letter-spacing:.18em">ARC</div>
+    <div style="display:flex;align-items:center;gap:12px"><span class="date" id="today"></span><button class="pill" data-nav="feedback" id="fb-btn">Feedback</button></div>
+  </header>
+  <main id="app"></main>
+</div>
+<nav class="dock" aria-label="Main">
+  <button data-nav="home">Today</button>
+  <button data-nav="invest">Invest</button>
+  <button data-nav="learn">Learn</button>
+  <button data-nav="world">World</button>
+  <button data-nav="saved">Saved</button>
+  <button data-nav="search" class="srch" aria-label="Search and ask"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M13 13l4 4"/></svg></button>
+</nav>
+
+<script>
+/* ---------- missions ---------- */
+const MISSIONS = [
+  {id:'wealth',cls:'m-wealth',name:'Invest and grow wealth',short:'Invest',sub:'Stocks, bonds, funds, real assets and how to build a portfolio'},
+  {id:'business',cls:'m-business',name:'Build a business',short:'Business',sub:'From the first idea to funding, scale and exit'},
+  {id:'economy',cls:'m-economy',name:'Banking and the economy',short:'Economy',sub:'How money, banks, rates, credit and cycles really work'},
+  {id:'world',cls:'m-world',name:'Read the world',short:'World',sub:'Geopolitics, oil, gold, currencies and trade'},
+  {id:'future',cls:'m-future',name:"See what's coming",short:'Future',sub:'AI, robotics, energy, health and the next industries'},
+  {id:'legacy',cls:'m-legacy',name:'Generational wealth',short:'Legacy',sub:'Protect, structure and pass on what you build'},
+  {id:'create',cls:'m-create',name:'Strategy and creativity',short:'Strategy',sub:'Brand, innovation, storytelling and decisions'}
+];
+
+const LESSONS = {};
+function add(id,m,mod,title,what,how,why,lesson,qs){LESSONS[id]={m,mod,title,layers:[what,how,why,lesson,qs]}}
+
+/* ===== Invest and grow wealth ===== */
+add('compounding','wealth','Foundations','How compounding builds wealth',
+`Compounding is earning returns on your past returns, so growth builds on itself.`,
+`$10,000 growing 8% a year becomes about $21,600 after 10 years, $46,600 after 20 and $100,600 after 30. The third decade adds more than the first two combined. The rule of 72 gives a shortcut: divide 72 by the yearly return to get the years needed to double (72 ÷ 8 = 9 years).`,
+`Growth is multiplied, not added. Time is the input you control most, and every interruption resets part of the curve.`,
+`Start early, stay invested, and keep costs low. Fees and taxes compound against you just as returns compound for you.`,
+[`How many years until I need this money?`,`What am I paying in fees each year, all in?`,`What could force me to sell early?`]);
+
+add('riskreturn','wealth','Foundations','Risk and return',
+`Risk is the chance that results land far from what you expect, including losing money right when you need it.`,
+`From 1928 to 2025, US stocks compounded about 10% a year, but their worst year (1931) lost 43.8%. Three-month Treasury bills compounded about 3.4% and never had a losing year. The extra return from stocks is the payment for living through those drops.`,
+`Investors demand a higher expected return, called a risk premium, before they will hold something that can fall hard.`,
+`Risk isn't bad. Mismatched risk is. Money you need in two years shouldn't be in assets that can fall 40%.`,
+[`If this fell 30% next year, would I need to sell?`,`What is the worst year this asset has had?`,`Am I being paid enough for the risk I'm taking?`]);
+
+add('inflation','wealth','Foundations','Real returns and inflation',
+`Inflation is the general rise in prices. Your real return is what you earn after inflation.`,
+`At 3% inflation, prices double in about 24 years. Cash earning 2% while prices rise 3% loses about 1% of buying power a year. A 7% return with 3% inflation is roughly a 4% real gain.`,
+`Governments and central banks generally aim for low, steady inflation, so holding only cash slowly shrinks wealth.`,
+`Measure wealth by what it can buy, not by its dollar amount.`,
+[`What is my return after inflation?`,`Which of my assets tend to keep up with inflation (stocks, real estate, TIPS)?`]);
+
+add('diversify','wealth','Foundations','Diversification that actually works',
+`Diversification means owning investments that respond to different forces, so one bad event doesn't sink everything.`,
+`In 2008, US stocks fell about 37% while 10-year Treasury bonds rose. In 2022 both fell together, because sharply rising interest rates hurt both: 10-year Treasuries lost 17.8%, their worst year since 1928.`,
+`Assets react to different drivers: economic growth, interest rates, inflation, currencies and fear. Real diversification spreads you across those drivers.`,
+`Owning 30 tech funds isn't diversified. Owning things that win in different economic conditions is.`,
+[`What economic event would hurt all my holdings at once?`,`Do I own anything that does well when inflation rises?`,`How much of my money is in one country, sector or company?`]);
+
+add('accounts','wealth','Foundations','Tax-advantaged accounts and the order to fill them',
+`Accounts like a 401(k), IRA and HSA are tax wrappers. You can hold the same investments inside them but keep more of the return.`,
+`For 2026, you can put up to $24,500 into a 401(k) (plus $8,000 if you're 50 or older), $7,500 into an IRA, and $4,400 into an HSA for individual coverage or $8,750 for family coverage. A common order: 401(k) up to the employer match, then HSA (if you have a high-deductible health plan), then a Roth IRA (income limits apply), then the rest of the 401(k), then a regular taxable brokerage account.`,
+`The tax code rewards long-term saving. An employer match is an instant return, and an HSA can be tax-free going in, while growing and when spent on medical costs.`,
+`Where you hold an investment can matter almost as much as what you hold.`,
+[`Am I getting my full employer match?`,`Would a Roth (pay tax now) or traditional (pay tax later) account suit me better?`,`Do I qualify for an HSA?`]);
+
+add('stocks101','wealth','Stocks','What a stock really is',
+`A share is a slice of ownership in a company and a claim on its future profits.`,
+`A stock's price is what buyers will pay today for the cash the business is expected to produce. Over long periods, stock returns roughly equal earnings growth plus dividends plus any change in how much investors pay per dollar of earnings. Day to day, prices move on news, interest rates and mood.`,
+`Owners are paid last, after employees, suppliers, lenders and the tax office, so they carry the most risk and keep all the upside.`,
+`In the short run a stock follows sentiment. In the long run it follows the business.`,
+[`How does this company make money?`,`Are its profits growing?`,`What am I paying for each dollar of those profits?`]);
+
+add('readco','wealth','Stocks','Reading a company like an analyst',
+`A public company reports its results every quarter, with a full annual report (the 10-K) filed with the SEC.`,
+`Look at five years of: revenue growth (is demand rising?), gross margin (pricing power), operating margin (efficiency), free cash flow (real cash after investment), return on invested capital (how well it reinvests) and debt. The Invest tab has a full checklist with rough benchmarks.`,
+`Accounting profits can be shaped by choices; cash flow and multi-year trends are harder to disguise.`,
+`The best businesses grow, keep high margins, turn profit into cash, and reinvest that cash at high returns.`,
+[`Is revenue growing faster than costs?`,`Does net income turn into free cash flow?`,`Could the company survive a bad year with its current debt?`]);
+
+add('valuation','wealth','Stocks','Valuation: what a fair price looks like',
+`Valuation is estimating what a business is worth and comparing that with its price.`,
+`The price-to-earnings ratio (P/E) shows what you pay for $1 of annual profit: at a P/E of 30, you pay $30. The PEG ratio divides P/E by the growth rate to adjust for growth. Professionals also use EV/EBITDA, which includes debt, and discounted cash flow (DCF) models, which estimate future cash and convert it into today's dollars.`,
+`Your future return depends on the price you pay as much as on the company's quality. High expectations already in the price leave little room for disappointment.`,
+`A great company can be a poor investment at the wrong price, and an average company can be a good one at a low price.`,
+[`What growth is this price assuming?`,`How does the valuation compare with the company's own history and its peers?`,`What happens to the stock if growth slows by half?`]);
+
+add('styles','wealth','Stocks','Growth, value, dividends and company size',
+`Stocks are often grouped by style (growth, value, dividend, quality) and by size (large-, mid- and small-cap).`,
+`Growth companies reinvest heavily and trade at high valuations. Value stocks are cheap relative to earnings or assets. Dividend payers return cash regularly. Small companies have historically offered higher returns over long periods, with bigger swings and long stretches of lagging.`,
+`Styles take turns leading. US large-cap growth dominated the 2010s and early 2020s; value led for much of the 2000s.`,
+`Know which style you actually own. Most broad US index funds now lean heavily toward large growth companies.`,
+[`Which style dominates my portfolio?`,`Would I stay invested if my style lagged for five years?`]);
+
+add('sp500',"wealth",'Stocks',"Why the S&P 500 isn't the whole plan",
+`The S&P 500 holds about 500 large US companies, weighted by their size. Today more than a third of the index sits in its ten largest companies.`,
+`Market-cap weighting means a company that doubles in value roughly doubles its share of your fund. A diversified index fund slowly becomes a concentrated bet on a few tech giants, with no small companies, no international markets and no private businesses.`,
+`Indexing won because it is cheap and beats most stock pickers after fees. It was designed to capture the market, not to match your goals.`,
+`Cheap and simple is a strength, as long as you know what you own. Diversification means different sources of return, not a larger number of tickers.`,
+[`What share of my money depends on the same ten companies?`,`Do I hold anything outside large US stocks?`,`If I add something, which risk am I adding with it?`]);
+
+add('bonds101','wealth','Bonds','How bonds work',
+`A bond is a loan you make to a government or company in exchange for interest.`,
+`Buy a $1,000 bond paying 4.5% a year and you receive $45 a year, then your $1,000 back when it matures. Treasuries are issued by the US government; corporate and municipal bonds by companies and local governments. Bond funds hold many bonds and never mature.`,
+`Lenders are paid before owners, so bonds are steadier than stocks and earn less over time.`,
+`Bonds are for income, stability and money you'll need on a known date.`,
+[`Who is borrowing my money?`,`When do I get it back?`,`Am I buying a single bond or a fund?`]);
+
+add('ratesprices','wealth','Bonds','Why bond prices fall when rates rise',
+`Existing bond prices move in the opposite direction from interest rates.`,
+`If you hold a bond paying 3% and new bonds pay 5%, nobody pays full price for yours, so its price drops until its yield matches. Longer bonds fall more. Duration measures this: a duration of 8 means roughly an 8% price drop for each one-point rise in rates.`,
+`In 2022, the Fed raised rates quickly from near zero, and 10-year Treasuries lost 17.8%, their worst year since at least 1928.`,
+`Match bond maturity to when you need the money. Short bonds are steadier; long bonds move more.`,
+[`What is the duration of my bond fund?`,`Do I need this money before rates could reverse?`]);
+
+add('credit','wealth','Bonds','Credit risk and yield',
+`The riskier the borrower, the more interest it must pay.`,
+`US Treasuries are treated as the safest. Investment-grade corporate bonds are rated BBB- or higher; anything below is high yield, also called junk. The extra yield over Treasuries is the credit spread, and it widens sharply in recessions as investors fear defaults.`,
+`Lenders need compensation for the chance they won't be paid back in full.`,
+`High yield behaves more like stocks than safe bonds when the economy turns.`,
+[`What is the credit rating?`,`How much extra yield am I getting over a Treasury?`,`What happened to this kind of bond in 2008 or 2020?`]);
+
+add('funds','wealth','Funds','Index funds, ETFs, mutual funds and fees',
+`Funds pool money from many investors to buy a basket of investments.`,
+`Index funds track a market index at low cost; active funds pay managers to try to beat it. Over long periods, the large majority of active US stock funds trail their benchmark after fees. Fees matter: $100,000 earning 7% for 30 years grows to about $750,000 with a 0.05% fee, but about $574,000 with a 1% fee.`,
+`Fees come out every year whether the fund does well or not, and they compound.`,
+`Low cost is one of the few edges every investor can control.`,
+[`What is the expense ratio?`,`Is this fund active or passive?`,`Does it hold anything my other funds don't?`]);
+
+add('allocation','wealth','Portfolio','Asset allocation',
+`Asset allocation is how you divide money between stocks, bonds, cash and other assets. It drives most of a portfolio's ups and downs.`,
+`Start with time and temperament: money needed within three years belongs mostly in cash and short bonds; money for 15+ years can hold mostly stocks. Then spread stocks across US and international, and add real assets for inflation. The Invest tab has a builder that shows model mixes.`,
+`Picking individual investments matters far less than the overall mix of risk you choose.`,
+`Decide the mix first, then choose the funds to fill it.`,
+[`What portion of this money do I need in the next three years?`,`How did I behave the last time markets fell?`]);
+
+add('rebalance','wealth','Portfolio','Rebalancing',
+`Rebalancing means returning your portfolio to its target mix after markets move.`,
+`A 60/40 stock-bond mix can drift to 70/30 after a strong year for stocks. You sell some of what rose and buy what lagged, once a year or whenever a weight drifts five points from target. New contributions can do the job without selling.`,
+`Without it, your risk quietly grows as winners take over the portfolio.`,
+`Rebalancing keeps risk where you chose it and builds in buying low and selling high.`,
+[`What is my target mix?`,`How far has it drifted?`,`Can I rebalance inside tax-advantaged accounts to avoid taxes?`]);
+
+add('coresat','wealth','Portfolio','Core and satellite',
+`A core-satellite portfolio puts most money in broad, low-cost funds and a small slice in higher-conviction bets.`,
+`Typically 80–95% sits in the core (broad stock and bond index funds) and 5–20% in satellites: sectors, themes, single stocks, private deals. If a satellite fails, the plan survives.`,
+`It lets you act on research and conviction without staking your future on being right.`,
+`Take big swings only with money you can afford to lose.`,
+[`What is my satellite limit?`,`What would make me sell a satellite position?`]);
+
+add('realestate','wealth','Real assets','Real estate math',
+`Real estate returns come from rent, price growth and leverage, minus a long list of costs.`,
+`US home prices rose about 4.2% a year from 1928 to 2025, before rent. A rental's cap rate is net operating income divided by price: $24,000 of rent after expenses on a $400,000 property is 6%. A mortgage magnifies both gains and losses. A common rule of thumb is that expenses (vacancy, repairs, taxes, insurance, management) eat around half of rent. REITs let you own real estate through the stock market.`,
+`Property is tangible, produces income, and is easy to borrow against, which is why so much private wealth is built in it.`,
+`Run the numbers after every cost and at a realistic interest rate, not on the listing's promise.`,
+[`What is the cap rate after all expenses?`,`Can I cover the mortgage if it sits empty for three months?`,`Would a REIT give me the exposure with less work?`]);
+
+add('private',"wealth",'Real assets','Private markets: PE, VC and private credit',
+`Most companies are private. Private equity buys established companies, venture capital funds young ones, and private credit lends to companies outside the banking system.`,
+`Investors commit money to a fund for seven to ten years or more. Managers usually charge a yearly fee plus a share of profits, the classic "2 and 20". Returns come from growth, operational changes and borrowed money, and your money is locked up.`,
+`Companies now stay private longer, so more of their growth happens before they list on a stock exchange.`,
+`Higher potential returns come with illiquidity, high fees and a wide gap between the best and worst managers.`,
+[`What are the total fees, all in?`,`When and how can I take my money out?`,`How did this manager do through a downturn?`]);
+
+add('alts','wealth','Real assets','Gold, commodities and crypto',
+`Alternatives are assets outside stocks and bonds, often used as hedges or speculative bets.`,
+`Gold compounded about 5.6% a year from 1928 to 2025, with huge swings: +126.6% in 1979, −32.6% in 1981. Commodities track supply and demand cycles. Bitcoin has fallen more than 70% from its peak several times and recovered each time so far, which no one can promise for the future.`,
+`These assets produce no cash flow, so their price depends entirely on what the next buyer will pay.`,
+`Keep them as small, deliberate slices with a clear job: hedge, diversifier or speculation.`,
+[`What job does this do in my portfolio?`,`Could I hold through a 70% fall?`,`How do I hold it, and what does that cost?`]);
+
+add('behavior','wealth','Portfolio','The behavior gap',
+`The biggest threat to most portfolios is the investor's own reactions.`,
+`Fear makes people sell after crashes and greed makes them buy after rallies. Investors in a fund often earn less than the fund itself because they move money in and out at the wrong times. Common traps: loss aversion, herd behavior, overconfidence, and anchoring to the price you paid.`,
+`Our instincts evolved for physical danger, not volatile markets.`,
+`Write your plan down while calm, automate contributions, and look less often.`,
+[`What will I do if markets drop 30%?`,`Am I buying this because everyone else is?`]);
+
+/* ===== Build a business ===== */
+add('problem','business','Opportunity','Finding a problem worth paying for',
+`Every lasting business solves a problem people will pay to have solved.`,
+`Test a problem on four points: who has it, how often, how painful it is, and what they do about it now. The jobs-to-be-done lens asks what job a customer hires a product for. Clayton Christensen's classic example: many morning milkshake buyers were hiring it for a long, boring commute.`,
+`Most startups fail because they build something people don't need, not because they build it badly.`,
+`Fall in love with the problem, not your first solution.`,
+[`Have I watched ten people struggle with this?`,`What are they paying for today instead?`,`Would they pay me before I build it?`]);
+
+add('sizing','business','Opportunity','Sizing a market',
+`Market sizing estimates how much revenue a business could realistically reach.`,
+`TAM is the total market, SAM the part you can serve, SOM the part you can win soon. Build it bottom-up: number of reachable customers × price × purchase frequency. For example, 20,000 target customers paying $3,000 a year is a $60 million serviceable market.`,
+`Investors and founders need to know whether success could ever be big enough to justify the effort.`,
+`Trust bottom-up math over a big top-down number from a research report.`,
+[`How many customers can I actually reach?`,`What will they pay, and how often?`,`Is the market growing or shrinking?`]);
+
+add('fiveforces','business','Opportunity','Five forces: is this industry profitable?',
+`Michael Porter's five forces explain why some industries earn high profits and others don't.`,
+`The forces: rivalry between competitors, threat of new entrants, power of buyers, power of suppliers, and threat of substitutes. Airlines face all five and have struggled to earn their cost of capital over long periods. Leading software companies often face weak forces and earn high margins.`,
+`Profit leaks to whoever holds power in the value chain.`,
+`Choose industries, or positions within them, where the forces are weak.`,
+[`Who has the power to squeeze my margins?`,`How easy is it for a competitor to copy me?`,`What substitutes could make me irrelevant?`]);
+
+add('blueocean','business','Opportunity','Blue ocean vs red ocean',
+`Red oceans are existing markets where competitors fight over the same customers until prices fall. Blue oceans are new market space where competition stops mattering.`,
+`INSEAD professors W. Chan Kim and Renée Mauborgne's classic example is Cirque du Soleil, which dropped animal acts and star performers, added theater and story, and charged theater prices to adults. The working tool is a four-action grid: eliminate, reduce, raise, create.`,
+`Competing on the same factors pushes costs up and prices down. Changing what an industry competes on can lower costs and raise value at once.`,
+`Question what an industry takes for granted.`,
+[`Who are the non-customers in this market, and why?`,`What would I eliminate, reduce, raise and create?`]);
+
+add('models','business','Business model','How companies make money',
+`A business model is how a company creates value, delivers it and captures part of it as profit.`,
+`Main models: product sales, subscription, marketplace (a cut of each transaction), advertising, licensing and services. They produce very different economics: software often keeps 70–80% or more of revenue as gross profit; grocery retailers keep far less, often under 30%.`,
+`The same product can be a great or a terrible business depending on how it is sold.`,
+`Choose the model as carefully as the product.`,
+[`Who pays, how often, and why do they keep paying?`,`What is my gross margin per sale?`]);
+
+add('b2b','business','Business model','B2B, B2C and D2C',
+`B2B sells to businesses, B2C to consumers, and D2C means a brand selling straight to consumers without retailers.`,
+`B2B deals are larger and slower, decided by several people, and often sticky once won. B2C relies on brand and marketing at scale with smaller purchases. D2C keeps the retailer's margin and the customer data but pays heavily for advertising.`,
+`Each path needs different skills, cash cycles and sales teams.`,
+`Know who signs the check and how long it takes them to decide.`,
+[`Who is the buyer and who is the user?`,`How long is my sales cycle?`,`What does it cost me to reach one customer?`]);
+
+add('unitecon','business','Business model','Unit economics',
+`Unit economics measure whether each customer makes or loses money.`,
+`Customer acquisition cost (CAC) is marketing and sales spend divided by new customers. Lifetime value (LTV) is monthly revenue per customer × gross margin × months they stay. Common benchmarks: LTV at least three times CAC, and CAC paid back within about 12 months.`,
+`Growth multiplies whatever the unit economics are. Good ones compound profit; bad ones compound losses.`,
+`Fix the economics of one customer before spending to get thousands.`,
+[`What does one customer cost me?`,`How long until they pay that back?`,`Why do customers leave?`]);
+
+add('pricing','business','Business model','Pricing',
+`Pricing is the most powerful profit lever most companies underuse.`,
+`Approaches: cost-plus, competitor-based and value-based (pricing on what the outcome is worth to the customer). Tiers, anchoring and bundles shape choices. A classic McKinsey analysis found that a 1% price increase raised operating profit by about 11% for the average large company, more than any cost cut of the same size.`,
+`A price rise with no lost customers drops straight to profit.`,
+`Price on value delivered, not on hours or costs.`,
+[`What is my product worth to the customer?`,`What would happen if I raised prices 10%?`]);
+
+add('entity','business','Setup','Choosing a legal structure',
+`The legal form of a business decides liability, taxes and how you can raise money.`,
+`A sole proprietorship is simplest but offers no liability protection. An LLC protects personal assets and passes profit through to your tax return. An S-corp election can reduce self-employment tax once profits are meaningful. A Delaware C-corp is the standard for raising venture capital and issuing stock options.`,
+`Structure determines who is on the hook if things go wrong and how much tax you pay.`,
+`Start simple, and convert when the business or its funding requires it.`,
+[`Will I raise outside investment?`,`What personal assets need protecting?`,`Have I checked this with an accountant in my state?`]);
+
+add('statements','business','Money','The three financial statements',
+`The income statement, balance sheet and cash flow statement together describe a company's financial health.`,
+`The income statement shows revenue, costs and profit over a period. The balance sheet shows what the company owns and owes at a point in time. The cash flow statement shows cash in and out from operations, investing and financing. Profit flows into the balance sheet through retained earnings.`,
+`Each statement hides something the others reveal: a profitable company can still run out of cash.`,
+`Read all three together, and over several years.`,
+[`Is profit turning into cash?`,`Is debt growing faster than revenue?`]);
+
+add('cashflow','business','Money','Cash flow and runway',
+`Cash flow is the timing of money in and out. Runway is how many months you can operate before cash runs out.`,
+`Runway = cash in the bank ÷ monthly net burn. A business can be profitable on paper and still fail if customers pay in 90 days while suppliers want payment in 30. Inventory and unpaid invoices tie up cash.`,
+`Companies rarely die from lack of profit first; they die from lack of cash.`,
+`Track cash weekly, collect fast, and pay on agreed terms.`,
+[`How many months of runway do I have?`,`How fast do customers pay me?`]);
+
+add('funding','business','Money','Funding paths',
+`Funding options run from your own savings to venture capital, each with a different cost and different strings.`,
+`Bootstrapping (customer revenue), friends and family, bank and SBA loans, revenue-based financing, grants, angel investors, then venture capital rounds (pre-seed, seed, Series A and beyond). Venture capital follows a power law: a few huge winners pay for most losses, so VCs need companies that could become very large.`,
+`Every dollar of outside money comes with ownership, debt or expectations attached.`,
+`Match the money to the business. Not every great business is a venture business.`,
+[`Can customers fund my growth?`,`Does my business need to become huge to satisfy this investor?`]);
+
+add('equity',"business",'Money','Equity, dilution and cap tables',
+`Equity is ownership. A cap table lists who owns what share of a company.`,
+`Say you own all 1,000,000 shares. An investor puts in $500,000 at a $2M pre-money valuation, so the company is worth $2.5M after the money arrives. The investor gets 250,000 new shares, 20%, and you keep 80%. Every later round and every employee option pool dilutes you again.`,
+`Founders trade ownership for capital to grow faster. A smaller slice of a much bigger company can be worth far more than all of a small one.`,
+`Terms matter as much as valuation. Liquidation preferences decide who gets paid first when the company is sold.`,
+[`What will I own after this round and the next two?`,`What preferences come attached to this money?`]);
+
+add('startupval','business','Money','How investors value a young company',
+`Early-stage valuation is a negotiation shaped by comparables, traction and how much a fund needs to own.`,
+`Investors look at recent rounds for similar companies, revenue multiples, growth and the team. The VC method works backward from a possible exit value and the return the fund needs. Early deals often use SAFEs or convertible notes, which turn into equity at a later round.`,
+`With little history, valuation reflects expected future outcomes and the investor's portfolio math.`,
+`A higher valuation isn't always better: it raises the bar for the next round.`,
+[`What would have to be true for this valuation to make sense in two years?`,`What is the cap and discount on this SAFE?`]);
+
+add('gtm','business','Growth','Go-to-market',
+`Go-to-market is the plan for reaching, converting and keeping customers.`,
+`Define the ideal customer profile, pick channels (content, paid ads, partnerships, sales teams, retail), and manage the funnel: awareness, consideration, purchase, retention, referral. Product-led companies let users try first; sales-led companies use people to close larger deals.`,
+`A good product without distribution loses to a decent product with great distribution.`,
+`Find one channel that works and master it before adding others.`,
+[`Where do my best customers already spend their attention?`,`Which step of the funnel loses the most people?`]);
+
+add('moats','business','Growth','Moats: what keeps competitors out',
+`A moat is a durable advantage that protects profits from competition.`,
+`Main types: network effects (each user makes the product more valuable), switching costs, economies of scale, brand, and legal protections such as patents and licenses. Hamilton Helmer's framework adds counter-positioning (a model incumbents can't copy without hurting themselves) and cornered resources.`,
+`Without a moat, competition drives returns down to average.`,
+`Ask what would stop a well-funded competitor from copying you next year.`,
+[`Which moat am I building?`,`Does it get stronger as I grow?`]);
+
+add('ops','business','Growth','Operations and supply chains',
+`Operations turn inputs into products and services on time, at quality and at cost.`,
+`Key measures: lead time, inventory turnover, capacity use and defect rates. After 2020, many companies moved from just-in-time (minimal inventory) toward just-in-case (more buffers and more suppliers) and spread production beyond China to places like Vietnam, India and Mexico.`,
+`Toyota's production system showed that operations can be a strategic advantage, not just a cost.`,
+`Design for resilience: a cheap supply chain that breaks is the most expensive kind.`,
+[`What single supplier could stop my business?`,`How much cash is tied up in inventory?`]);
+
+add('exits','business','Scale and exit','Exits, mergers and acquisitions',
+`An exit is how founders and investors turn ownership into cash: a sale, a merger or a public listing (IPO).`,
+`Most venture-backed exits happen through acquisition, not IPO. Buyers pay for revenue, technology, talent, customers or to block a rival. They pay more when they expect synergies: costs they can cut or revenue they can add.`,
+`Investors need liquidity to return money to their own backers, so exits shape decisions from the first round.`,
+`Build something valuable to a buyer even if you never plan to sell.`,
+[`Who would logically buy this company, and why?`,`What would make it worth more to them than to anyone else?`]);
+
+add('peplay','business','Scale and exit','The private equity playbook',
+`Private equity firms buy companies, improve them and sell them, usually within four to seven years.`,
+`A leveraged buyout funds a large part of the price with debt placed on the company itself. Returns come from paying down debt, growing earnings, improving operations and selling at a higher multiple. Firms also roll up fragmented industries, combining many small companies into one.`,
+`Debt magnifies returns on the equity invested, and that is also why some buyouts fail.`,
+`Learn to see a business the way a buyer does: cash flow, debt capacity and improvement levers.`,
+[`How much debt could this business safely carry?`,`What would an owner change in the first 100 days?`]);
+
+/* ===== Banking and the economy ===== */
+add('moneycreation','economy','Money and banks','Where money comes from',
+`Most money in a modern economy is created by commercial banks when they make loans.`,
+`When a bank lends you $300,000 for a house, it credits your account with new deposits; the money didn't exist before. The Bank of England explained this plainly in a 2014 paper. Central banks influence how much is created through interest rates and rules.`,
+`Credit creation powers growth, and too much of it fuels bubbles.`,
+`Watch credit growth: it often tells you more about the economy than headlines do.`,
+[`Is borrowing in the economy speeding up or slowing down?`,`Who is doing the borrowing: households, companies or government?`]);
+
+add('bankprofit','economy','Money and banks','How banks make money and why they fail',
+`Banks earn the spread between what they pay on deposits and what they earn on loans and securities, plus fees.`,
+`This is maturity transformation: borrowing short (deposits you can withdraw any day) and lending long (mortgages, bonds). In March 2023, Silicon Valley Bank held long-term bonds that had lost value as rates rose. Depositors pulled about $42 billion in a single day and the bank failed.`,
+`Banks run on confidence. A rumor can become a run when deposits can leave instantly.`,
+`Know how your bank is funded and whether your deposits are insured (FDIC covers $250,000 per depositor, per bank, per ownership category).`,
+[`Are my deposits within FDIC limits?`,`What would happen to this bank if rates rose sharply?`]);
+
+add('fedrate',"economy",'Money and banks',"How the Fed's rate reaches your mortgage",
+`The Federal Reserve sets a target for the federal funds rate, the rate banks charge each other for overnight loans.`,
+`Credit cards and adjustable-rate loans follow short-term rates and move quickly. A 30-year fixed mortgage follows the 10-year Treasury yield much more closely, and that yield reflects what markets expect for inflation and growth over many years.`,
+`Lenders price long loans on the future they expect. Mortgage rates can rise even when the Fed cuts, if investors expect inflation to return.`,
+`Short rates follow the Fed. Long rates follow the market's expectations.`,
+[`When buying or refinancing, watch the 10-year Treasury yield, not only Fed headlines.`,`Is my debt fixed or variable?`]);
+
+add('inflationcause','economy','Money and banks','What causes inflation',
+`Inflation happens when spending grows faster than the economy's ability to produce.`,
+`Causes include too much demand (stimulus, easy credit), supply shocks (energy, shipping, harvests), and expectations that become self-fulfilling through wages and prices. US inflation peaked at 9.1% in June 2022 after pandemic stimulus met broken supply chains and an energy shock.`,
+`Once people expect prices to keep rising, they demand higher wages and raise prices, which keeps inflation going.`,
+`Inflation redistributes wealth: from savers to borrowers, and from people holding cash to people holding real assets.`,
+[`Is this inflation from demand or supply?`,`Which of my assets would hold value if inflation stayed high?`]);
+
+add('creditscore','economy','Credit','Credit scores',
+`A credit score predicts how likely you are to repay debt. FICO scores range from 300 to 850.`,
+`The FICO weights: payment history 35%, amounts owed 30%, length of credit history 15%, new credit 10%, credit mix 10%. Keeping balances well below your card limits and never missing a payment does most of the work.`,
+`A higher score lowers the interest rate on every future loan, which can mean tens of thousands of dollars over a mortgage.`,
+`Treat your score as an asset that lowers the cost of capital for everything you build.`,
+[`Do I pay every bill on time, automatically?`,`What share of my card limits am I using?`]);
+
+add('mortgages','economy','Credit','How mortgages really work',
+`A mortgage is a loan secured by a property, repaid in fixed or adjustable monthly payments.`,
+`A $400,000, 30-year fixed mortgage at 6.5% costs about $2,528 a month. Over 30 years you pay about $510,000 in interest on top of the $400,000 borrowed. Early payments are mostly interest; by the final years they are mostly principal. Extra principal payments early save the most interest.`,
+`Amortization front-loads interest, so the lender is paid first.`,
+`Compare the total cost of a loan, not just the monthly payment.`,
+[`What is the total interest over the loan's life?`,`Fixed or adjustable, and why?`,`What happens if I pay $200 extra a month?`]);
+
+add('gooddebt','economy','Credit','Good debt and bad debt',
+`Debt is a tool. Good debt buys assets that grow or produce income at a cost below their expected return; bad debt pays for consumption at high interest.`,
+`Credit card APRs commonly run above 20%, which beats almost any investment return in reverse. A reasonable mortgage on a home you'll keep, or a loan that funds a profitable business, can build wealth.`,
+`Leverage magnifies whatever it touches, up or down.`,
+`Kill high-interest debt before investing; use low-cost debt only for assets.`,
+[`What rate am I paying, and what will this purchase earn?`,`Could I make payments if my income dropped?`]);
+
+add('cycle','economy','Cycles and crises','The economic cycle',
+`Economies move through expansion, peak, contraction (recession) and trough.`,
+`Since World War II, US expansions have lasted on average about five years and recessions under a year, according to the National Bureau of Economic Research. Different sectors lead at different stages: financials and consumer stocks often recover early, energy and materials late.`,
+`Credit, confidence and interest rates push and pull spending, creating cycles.`,
+`Cycles are normal. Prepare for downturns in good times: emergency savings, low debt, a plan.`,
+[`Where do we seem to be in the cycle?`,`What would a recession do to my income and my holdings?`]);
+
+add('indicators','economy','Cycles and crises','Reading economic signals',
+`Indicators help gauge where the economy is heading.`,
+`Leading indicators move first: the yield curve, jobless claims, manufacturing surveys (PMI), building permits. Lagging indicators confirm what already happened: unemployment, corporate profits. An inverted yield curve (short rates above long rates) preceded every US recession since the late 1960s, though the long inversion of 2022–2024 was not followed by one through 2025.`,
+`Markets look ahead, so they often move before the data turns.`,
+`Use several signals together, and never trade on a single one.`,
+[`What are the yield curve and jobless claims doing?`,`Is the signal confirmed by other data?`]);
+
+add('crash',"economy",'Cycles and crises','Why markets crash',
+`A crash is a fast, deep fall in prices. The big ones: 1929, 1987, the 2000 dot-com bust, 2008 and the 2020 pandemic drop.`,
+`The usual sequence: cheap money and optimism push prices far above earnings, borrowing amplifies the bets, then a trigger such as a rate rise or a failing firm forces selling. Falling prices set off margin calls, which force more selling.`,
+`Leverage and herd behavior. In 2008, banks held mortgage securities bought with borrowed money. When home prices fell, losses spread through the whole system.`,
+`Crashes start with prices too high and too much borrowed money. The trigger is only the spark.`,
+[`How do valuations compare with history?`,`How much debt is behind this boom?`,`Would I be forced to sell in a drop?`]);
+
+add('bubbles','economy','Cycles and crises','Bubbles through history',
+`A bubble is a period when prices rise far beyond value because people expect to sell to someone else at a higher price.`,
+`Tulip mania (1637), the South Sea Bubble (1720), the 1920s stock boom, Japan's late-1980s property bubble, dot-com stocks (2000) and US housing (2006) follow similar stages: a real innovation, easy credit, euphoria, then panic. Economist Hyman Minsky argued long stability itself encourages the risk-taking that creates instability.`,
+`New technologies are real; the prices people pay for them often aren't.`,
+`When everyone says this time is different, check the leverage and the valuations.`,
+[`Are people buying because of cash flows or because prices are rising?`,`How much borrowed money is involved?`]);
+
+add('ibanking','economy','Wall Street','What investment banks do',
+`Investment banks help companies and governments raise money and do deals.`,
+`They underwrite stock and bond sales (including IPOs), advise on mergers and acquisitions, trade securities and research markets. Commercial banks take deposits and make loans. The 1933 Glass-Steagall Act separated the two; its repeal in 1999 allowed giant combined banks.`,
+`Banks sit between people who have capital and people who need it, and charge for the connection.`,
+`Following where investment banks earn fees shows you where capital is flowing.`,
+[`Who is underwriting this IPO, and what do they earn?`,`Whose interests does the adviser represent?`]);
+
+add('wallst','economy','Wall Street','Who is who on Wall Street',
+`Wall Street is an ecosystem of firms that manage, move and trade money.`,
+`Asset managers (BlackRock, Vanguard) run funds for a small fee on huge sums. Hedge funds take more varied bets and charge higher fees. Private equity buys companies. Market makers provide constant buy and sell prices. Exchanges host trading. Each earns from fees, spreads or a share of profits.`,
+`Knowing how each player gets paid tells you what each player wants from you.`,
+`Every financial product has someone earning from it; find out who and how much.`,
+[`Who earns money if I buy this product?`,`Is that fee visible or hidden?`]);
+
+add('privcredit','economy','Wall Street','Private credit and shadow banking',
+`Shadow banking is lending that happens outside regulated banks: private credit funds, finance companies and other non-bank lenders.`,
+`After 2008, stricter bank rules pushed lending to private funds, which now lend directly to mid-sized companies. Private credit has grown into a market measured in trillions of dollars, and it is increasingly sold to individual investors.`,
+`Borrowers get faster, flexible loans; lenders get higher yields. Risks are harder to see because loans aren't traded or priced daily.`,
+`Higher yield usually means risk that hasn't shown up yet.`,
+[`How are these loans valued?`,`What happens to this fund if many borrowers default together?`]);
+
+/* ===== Read the world ===== */
+add('oil','world','Commodities','Oil and OPEC+',
+`Oil is still the world's most important commodity, powering transport and feeding plastics and chemicals.`,
+`OPEC+, which includes Saudi Arabia and Russia, coordinates output to influence prices. The US has been the world's largest crude producer since 2018, thanks to shale, which can raise output within months. Prices are set at the margin: a small shortage can move prices a lot.`,
+`Demand changes slowly, so small supply shifts cause big price swings.`,
+`Watch spare capacity, inventories and conflict near supply routes.`,
+[`How much spare capacity exists?`,`Which countries or chokepoints could disrupt supply?`]);
+
+add('gold',"world",'Commodities','Why gold rises when the world is scared',
+`Gold pays no interest or dividends, yet investors and central banks buy it when they are afraid.`,
+`Its price moves with real interest rates, the dollar, fear and central-bank buying. Since 2022, central banks have bought gold at a historically fast pace, partly to rely less on the dollar after Russia's reserves were frozen. Gold rose 66% in 2025.`,
+`Gold can't be printed, can't default, and can't be frozen if a country holds it at home.`,
+`Gold is insurance, not a growth engine. It shines in crises and can lag for years in calm.`,
+[`What role would it play for me: hedge, small slice, or bet?`,`How do physical gold, gold funds and miners differ in cost and risk?`]);
+
+add('minerals','world','Commodities','Critical minerals',
+`Critical minerals such as lithium, copper, nickel, cobalt and rare earths are the raw materials of batteries, grids, chips and defense.`,
+`Supply is concentrated: the Democratic Republic of Congo mines most of the world's cobalt, and China dominates processing of many minerals, especially rare earths. Copper demand rises with electric grids, EVs and data centers, and new mines take a decade or more to open.`,
+`Whoever controls processing controls the supply chain, whatever the location of the mine.`,
+`Energy and tech transitions are, underneath, a contest over materials.`,
+[`Which minerals does this industry depend on?`,`Who controls their processing?`]);
+
+add('dollar','world','Money and power','Why the dollar dominates',
+`The US dollar is the world's main reserve currency, used in trade, debt and central-bank reserves.`,
+`Close to 60% of global foreign-exchange reserves are held in dollars. Commodities are mostly priced in dollars, and much foreign debt is borrowed in them. When the dollar strengthens, imports get cheaper for Americans but debts get heavier for other countries.`,
+`Deep, open US capital markets and the rule of law make the dollar the default safe asset, which lowers US borrowing costs.`,
+`The dollar's strength ripples through every other market, especially emerging economies.`,
+[`Is the dollar rising or falling, and why?`,`How does that affect my international investments?`]);
+
+add('tariffs','world','Money and power','Tariffs: who really pays',
+`A tariff is a tax on imports, paid at the border by the importing company.`,
+`Studies of the 2018–2019 US tariffs found nearly all of the cost was passed on to US buyers rather than absorbed by foreign exporters. Over time, supply chains reroute, often through third countries.`,
+`Tariffs protect some domestic industries while raising costs for others that use imported inputs.`,
+`Follow the supply chain to see who wins and who pays.`,
+[`Which companies import key inputs?`,`Who can shift production fastest?`]);
+
+add('chain',"world",'Money and power','The chain reaction: war to your wallet',
+`A conflict in an energy-producing region can show up in your grocery bill months later.`,
+`Supply fears lift oil and gas prices. Transport, fertilizer, plastics and heating cost more, inflation rises, and central banks raise rates. Borrowing costs climb, stocks often fall, and savings earn more. The 1973 Arab oil embargo roughly quadrupled oil prices; Russia's 2022 invasion of Ukraine sent European gas prices to records.`,
+`Energy is an input to almost everything, and supply can't be replaced quickly.`,
+`Follow the inputs, not the headlines.`,
+[`Which commodity does this event touch?`,`Which companies gain and which lose?`]);
+
+add('sanctions','world','Money and power','How sanctions work',
+`Sanctions restrict trade and finance with a country, company or person.`,
+`Tools include asset freezes, export bans and cutting banks off from the SWIFT messaging system. In 2022, about $300 billion of Russia's central-bank reserves were frozen. Russian oil kept flowing, rerouted to buyers like India and China at discounts.`,
+`Sanctions raise costs and reroute trade more often than they stop it.`,
+`Watch who becomes the middleman; they often profit.`,
+[`Who is buying what the sanctioned country sells?`,`Which companies are exposed to secondary sanctions?`]);
+
+add('uschina','world','Money and power','US–China: the economic rivalry',
+`The US and China compete over technology, supply chains and influence while remaining deeply connected through trade.`,
+`Since 2022 the US has restricted exports of advanced chips and chipmaking tools to China. China controls most of the world's rare-earth processing and has used export limits in response. Companies are shifting some production to India, Vietnam and Mexico ("China plus one").`,
+`Both countries see leadership in chips, AI and energy technology as a matter of national security.`,
+`Policy can rewrite an industry's economics overnight; geopolitics is now an input to valuation.`,
+[`How dependent is this company on China for sales or supply?`,`Who benefits from production moving elsewhere?`]);
+
+add('swf','world','Money and power','Sovereign wealth funds',
+`Sovereign wealth funds invest a country's surplus wealth, often from oil or trade.`,
+`Norway's fund, the world's largest, owns small stakes in thousands of companies worldwide. Saudi Arabia's Public Investment Fund is driving the Vision 2030 plan to diversify beyond oil. Gulf funds have become major investors in technology, sports and private markets.`,
+`Resource wealth runs out; investing it turns a temporary windfall into permanent income.`,
+`Sovereign funds are long-term capital that can move whole industries.`,
+[`Which sectors are sovereign funds pouring money into?`,`What does their buying signal?`]);
+
+/* ===== See what's coming ===== */
+add('techwaves','future','How change happens','How technology waves remake industries',
+`Major technologies arrive in waves: steam, railways, electricity, cars, computers, the internet, AI.`,
+`Economist Carlota Perez describes a pattern: an installation phase with a speculative bubble and crash, followed by a deployment phase when the technology spreads through the whole economy. Railways in the 1840s and the internet in 2000 both crashed, then reshaped the world.`,
+`Investors fund the infrastructure early and overpay; the broad payoff arrives later.`,
+`The crash doesn't mean the technology failed, and the boom doesn't mean every company wins.`,
+[`Which phase is this technology in?`,`Who benefits once it becomes ordinary?`]);
+
+add('hype','future','How change happens','The hype cycle',
+`New technologies often follow a curve: excitement, inflated expectations, disillusionment, then steady adoption.`,
+`Amazon's stock fell more than 90% after the 2000 crash before becoming one of the world's most valuable companies. Many other dot-com leaders never recovered.`,
+`Expectations move faster than adoption.`,
+`Separate the technology's real progress from the stock price's story.`,
+[`Is real usage growing, or only attention?`,`Who is paying for this today?`]);
+
+add('aistack',"future",'Technology','Who makes money in AI',
+`The AI economy is a stack: chips, data centers and power, cloud platforms, models, then applications.`,
+`So far the most proven profits sit low in the stack, with chipmakers and the companies building data centers. Big tech is spending hundreds of billions on infrastructure, betting applications will pay it back. Gartner forecasts data-center electricity use will grow 26% in 2026.`,
+`Every AI product needs computing power, so suppliers get paid first, whichever app wins.`,
+`In a technology wave, revenue shows up in infrastructure years before it shows up in applications.`,
+[`Which layer of the stack is this company in?`,`Does it own something scarce: chips, data, distribution or power?`]);
+
+add('picks',"future",'Technology','Picks and shovels',
+`Investing in the suppliers of a boom instead of its headline players.`,
+`During the California Gold Rush, merchants selling tools and work clothes, Levi Strauss among them, did better more reliably than most miners. Today's versions: chip-equipment makers, power-grid suppliers and data-center cooling.`,
+`Suppliers sell to every competitor, so they don't have to pick the winner.`,
+`Ask what every player in a trend must buy.`,
+[`Is demand spread across many customers or a few?`,`What happens to this supplier when spending slows?`]);
+
+add('robotics','future','Technology','Robotics and automation',
+`Robots are moving from caged factory arms toward machines that see, move and work alongside people.`,
+`China now installs more than half of the world's new industrial robots each year. Warehouses, surgery and logistics are adopting automation fast. Humanoid robots attract heavy investment but remain early.`,
+`Aging workforces and rising labor costs make automation an economic necessity, not just a technology story.`,
+`Look for where labor is scarce and tasks repeat; that's where automation pays first.`,
+[`Which industries face the worst labor shortages?`,`Who supplies the sensors, motors and software?`]);
+
+add('energy','future','Technology','The new energy economy',
+`Energy is being rebuilt around electricity: solar, wind, batteries, nuclear and a much bigger grid.`,
+`Solar is now among the cheapest sources of new electricity in many countries. Battery costs have fallen sharply over the past decade. Tech companies are signing deals to restart or build nuclear plants to power AI. The bottleneck is the grid: transformers, transmission lines and years-long waits to connect new projects.`,
+`Electricity demand is rising again for the first time in decades, driven by data centers, EVs and factories.`,
+`When demand is clear, the constraint becomes the opportunity.`,
+[`What is the bottleneck: generation, transmission or equipment?`,`Who sells into every energy project?`]);
+
+add('longevity','future','Technology','Health, longevity and aging',
+`Medicine and demographics are reshaping huge parts of the economy.`,
+`GLP-1 drugs for diabetes and obesity have made their makers among the most valuable healthcare companies in the world. The WHO projects that by 2030, one in six people worldwide will be 60 or older, raising demand for healthcare, senior housing and retirement income.`,
+`Aging is one of the most predictable long-term forces in economics.`,
+`Demographics are slow, certain and underrated by markets that think in quarters.`,
+[`Which businesses grow as populations age?`,`What happens to food, fitness or insurance if obesity drugs spread?`]);
+
+add('signals','future','How change happens','Reading early signals',
+`Big shifts show up in data long before they show up in headlines.`,
+`Watch where companies spend capital, where venture money goes, hiring trends, patents, government policy and cost curves. Wright's law observes that costs fall by a steady percentage each time cumulative production doubles, which has held for solar panels and batteries.`,
+`Money and talent move before mainstream attention does.`,
+`Follow capital spending and cost curves, not opinions.`,
+[`Where is capital spending rising fastest?`,`Is this technology's cost falling with each doubling of production?`]);
+
+add('superai','future','Technology','What transformative AI could mean for wealth',
+`Very capable AI could change how work is done, who earns income and which assets are valuable.`,
+`Possible effects include large productivity gains, falling costs for knowledge work, and pressure on some jobs and business models. Assets that may gain include scarce inputs (computing power, energy, chips, proprietary data) and companies with distribution. Outcomes are highly uncertain, and timelines are debated.`,
+`When the cost of intelligence falls, value shifts to whatever remains scarce.`,
+`Own a stake in productive assets, not just your labor, and keep learning.`,
+[`What remains scarce if AI makes knowledge work cheap?`,`How exposed is my income to automation?`]);
+
+/* ===== Generational wealth ===== */
+add('wills','legacy','Protect','Wills and beneficiaries',
+`A will says who receives your assets and who cares for your children. Beneficiary designations pass some accounts directly.`,
+`Retirement accounts and life insurance go to the named beneficiary, regardless of what your will says. Without a will, state law decides. A power of attorney and a healthcare directive name who acts for you if you can't.`,
+`Courts and default rules rarely match what people would have chosen.`,
+`The basic documents are cheap compared with the cost of not having them.`,
+[`Are my beneficiaries current?`,`Who would care for my children?`,`Who can act for me if I can't?`]);
+
+add('insurance','legacy','Protect','Insurance as protection',
+`Insurance transfers risks you can't afford to carry.`,
+`Term life insurance replaces income for dependents; a common rule of thumb is coverage of 10–12 times annual income. Disability insurance protects your earning power. Umbrella liability coverage protects assets from lawsuits.`,
+`Wealth built over decades can be wiped out by one uninsured event.`,
+`Insure against catastrophes, not inconveniences.`,
+[`Who depends on my income?`,`What single event could wipe out my savings?`]);
+
+add('trusts',"legacy",'Structure','Trusts: what they protect',
+`A trust is a legal arrangement in which a trustee holds assets for beneficiaries, under rules you write.`,
+`A revocable living trust lets you keep control and change it; assets pass without probate. An irrevocable trust moves assets out of your estate, which can lower estate taxes and protect assets, but you give up control.`,
+`Wealthy families use trusts to decide how and when heirs receive money, keep their affairs private and reduce taxes.`,
+`Wealth that isn't structured can be lost to delays, taxes, disputes or heirs' poor decisions.`,
+[`Do I need a will, a revocable trust, or both?`,`Who should be trustee?`]);
+
+add('estatetax','legacy','Structure','Estate and gift taxes',
+`The federal government taxes very large estates and gifts above set limits.`,
+`Under the 2025 tax law, the federal estate and gift tax exemption is $15 million per person from 2026, indexed for inflation. Separately, you can give up to $19,000 per recipient per year in 2026 without using any of that exemption. Some states have their own estate or inheritance taxes at much lower thresholds.`,
+`Tax laws change with politics, so estate plans need regular review.`,
+`Annual gifting and early planning move wealth across generations efficiently.`,
+[`Does my state have an estate tax?`,`Am I using the annual gift exclusion?`]);
+
+add('kidsmoney','legacy','Teach','Raising financially capable children',
+`Generational wealth lasts only if the next generation knows how to manage it.`,
+`Practical tools: an allowance tied to saving, giving and spending; a 529 plan for education; a custodial account or, if a child has earned income, a custodial Roth IRA. Involve children in real decisions as they grow.`,
+`A common saying holds that wealth often disappears by the third generation; preparation, not just money, breaks that pattern.`,
+`Pass on habits and knowledge along with assets.`,
+[`What do my children know about money today?`,`Which accounts suit their ages?`]);
+
+add('couples','legacy','Teach','Money in relationships',
+`How couples share, own and protect money shapes long-term wealth, especially for women.`,
+`Options include joint, separate or hybrid accounts. Prenuptial and postnuptial agreements set what happens to assets if a marriage ends. Women statistically live longer than men, so they are more likely to manage family wealth alone at some point.`,
+`Knowing where everything is, and having your own credit and accounts, protects you in any outcome.`,
+`Stay informed and involved in every financial decision, whatever the arrangement.`,
+[`Do I know every account, debt and policy we have?`,`Do I have credit and savings in my own name?`]);
+
+add('familyoffice',"legacy",'Structure','How wealthy families run like companies',
+`A family office is a private company that manages a wealthy family's investments, taxes, legal affairs and giving.`,
+`A single-family office serves one family; a multi-family office shares the cost across several. They invest directly in companies, real estate and private funds, and plan across generations. Many families write a family constitution and hold regular meetings.`,
+`Running wealth like a business brings governance and continuity.`,
+`Generational wealth rests on governance and education as much as returns.`,
+[`Do I have a written family money plan?`,`Is there one clear record of accounts and documents?`]);
+
+add('crossborder','legacy','Structure','Wealth across countries',
+`Families with assets in more than one country face extra rules on tax, reporting and inheritance.`,
+`US citizens and residents are taxed on worldwide income and must report foreign accounts above $10,000 in total. Tax treaties, such as the US–India treaty, help avoid double taxation. Inheritance rules differ by country, and a will in one country may not cover assets in another.`,
+`Each country wants its share, and reporting mistakes carry heavy penalties.`,
+`Map every asset by country and get advice that covers both systems.`,
+[`Am I reporting all foreign accounts?`,`Do my wills cover assets in each country?`]);
+
+/* ===== Strategy and creativity ===== */
+add('choices','create','Strategy','Strategy is a set of choices',
+`Strategy is deciding where to play and how to win, and what not to do.`,
+`Roger Martin and A.G. Lafley frame it as linked choices: winning aspiration, where to play, how to win, capabilities and management systems. Southwest Airlines chose one aircraft type, no assigned seats and point-to-point routes; each choice supported the others.`,
+`Choices that fit together are much harder to copy than any single feature.`,
+`If a strategy doesn't rule anything out, it isn't a strategy.`,
+[`What am I choosing not to do?`,`Do my choices reinforce each other?`]);
+
+add('jtbd','create','Innovation','Disruption and jobs to be done',
+`Disruptive innovation starts with simpler, cheaper products for overlooked customers, then moves upmarket.`,
+`Clayton Christensen showed how incumbents ignore low-end entrants because their best customers don't want them, until the entrant improves enough to take the main market. Digital cameras and Netflix's streaming are classic cases.`,
+`Incumbents are rationally focused on their most profitable customers, which leaves the bottom open.`,
+`Watch for products that look worse but are cheaper and easier.`,
+[`Which customers is the market leader ignoring?`,`What is "good enough" for them?`]);
+
+add('design',"create",'Innovation','Design thinking as a business tool',
+`A problem-solving method built around people: understand users, define the real problem, generate ideas, prototype cheaply, test.`,
+`Airbnb's early growth was flat until the founders visited New York hosts and saw their listing photos were poor. They took professional photos themselves, and bookings rose. IDEO and Stanford's d.school popularized the method.`,
+`Most failed products solve problems customers don't have. Cheap tests reveal that before real money is spent.`,
+`Observation beats assumption. Small experiments beat big launches.`,
+[`Whom did I actually watch use this?`,`What is the cheapest test of whether people will pay?`]);
+
+add('brand','create','Brand','Brand as a financial asset',
+`A strong brand lets a company charge more, spend less to win customers and survive mistakes.`,
+`Luxury houses like Hermès control supply, protect scarcity and rarely discount, which supports exceptional margins. Brand value shows up in pricing power: the ability to raise prices without losing customers.`,
+`People pay for meaning, trust and identity, not just function.`,
+`Brand is built by consistent choices over years, and destroyed by short-term discounting.`,
+[`Could this company raise prices without losing customers?`,`What does the brand stand for in one sentence?`]);
+
+add('kbeauty',"create",'Brand','How K-beauty built global demand',
+`Korean beauty grew from a domestic industry into a global exporter whose products sit on shelves and bestseller lists worldwide.`,
+`Contract manufacturers such as Cosmax and Kolmar Korea formulate and produce for hundreds of brands, so a new brand can launch in months without a factory. Small batches let brands test trends fast. K-dramas and K-pop carried the image abroad, and online marketplaces cut the cost of reaching customers.`,
+`A demanding home market forces constant innovation, and shared manufacturing lowers the cost of trying.`,
+`Separate the brand from the manufacturing, and let culture do the marketing.`,
+[`When an industry booms abroad, who supplies it?`,`Could this model work in another category?`]);
+
+add('story','create','Brand','The pitch: telling a business story',
+`Investors, partners and customers decide with stories backed by numbers.`,
+`A strong pitch covers: the problem, the insight others missed, the solution, why now, the market size, traction so far, the business model, the team, and the ask. Each part answers a doubt the listener already has.`,
+`People remember stories far better than lists of facts.`,
+`Lead with the insight and prove it with evidence.`,
+[`What do I know that others don't?`,`Why is now the right time?`]);
+
+add('data','create','Decisions','Deciding with data',
+`Good decisions combine evidence, base rates and clear thinking about uncertainty.`,
+`Start from base rates (how often things like this usually succeed), test with experiments (A/B tests) where possible, and track customer groups over time (cohorts). Separate correlation from causation, and write down predictions so you can check them later.`,
+`Our judgment is biased by recent and vivid events.`,
+`Measure what matters, test cheaply, and update your view when evidence changes.`,
+[`What is the base rate for this kind of bet?`,`What evidence would change my mind?`]);
+
+/* ---------- invest data ---------- */
+const ASSETS = [
+  {tier:'low',n:'Cash, money market and T-bills',ret:3.37,worst:'+0.03% (2014)',hold:'Any',liq:'Same day',
+   p:'For emergency funds and money needed within about three years. Safe in dollars, but can lose to inflation.'},
+  {tier:'low',n:'US Treasury bonds',ret:4.54,worst:'−17.8% (2022)',hold:'3–10 yrs',liq:'Daily',
+   p:'Loans to the US government. Steady income and often rise when stocks crash, but long bonds fall when rates jump. TIPS and I bonds add inflation protection.'},
+  {tier:'med',n:'Investment-grade corporate bonds',ret:6.63,worst:'−15.7% (1931)',hold:'3–10 yrs',liq:'Daily',
+   p:'Loans to strong companies, paying more than Treasuries for some default risk. Figures shown are for Baa-rated bonds.'},
+  {tier:'med',n:'Real estate',ret:4.20,worst:'−12.0% (2008)',hold:'7+ yrs',liq:'Months (REITs: daily)',
+   p:'Home prices alone, before rent. Owned property adds rental income and leverage; REITs offer property exposure through the stock market.'},
+  {tier:'high',n:'US stock index (S&P 500)',ret:10.02,worst:'−43.8% (1931)',hold:'10+ yrs',liq:'Daily',
+   p:'Ownership in 500 large US companies, dividends included. The long-run growth engine of most portfolios.'},
+  {tier:'high',n:'International stocks',hold:'10+ yrs',liq:'Daily',
+   p:'Developed (Europe, Japan) and emerging markets (India, China, Brazil). Add different economies and currencies; emerging markets swing more.'},
+  {tier:'high',n:'Gold',ret:5.61,worst:'−32.6% (1981)',hold:'Hedge',liq:'Daily (funds)',
+   p:'A crisis and inflation hedge with no income. Long quiet stretches, then sharp moves: +126.6% in 1979, +66% in 2025.'},
+  {tier:'vhigh',n:'Small caps, sectors and single stocks',hold:'10+ yrs',liq:'Daily',
+   p:'Concentrated bets on part of the market. Higher potential returns, bigger drawdowns, and a real chance of permanent loss on single companies.'},
+  {tier:'vhigh',n:'Private equity and venture capital',hold:'7–12 yrs',liq:'Locked up',
+   p:'Ownership in private companies through funds or deals. High fees, long lockups and a huge spread between the best and worst managers.'},
+  {tier:'vhigh',n:'Crypto and speculative assets',hold:'Speculative',liq:'Daily',
+   p:'Bitcoin has fallen more than 70% from its peak several times. Treat as a small speculative slice you could lose entirely.'}
+];
+const TIER = {low:['Lower risk','t-low'],med:['Moderate risk','t-med'],high:['Higher risk','t-high'],vhigh:['Highest risk','t-vhigh']};
+
+const SLEEVES = [
+  {k:'cash',n:'Cash and T-bills',c:'#5fd3b5',d:'Emergency fund, near-term needs'},
+  {k:'bonds',n:'Bonds',c:'#8ef0df',d:'Treasuries and investment-grade bonds'},
+  {k:'us',n:'US stocks',c:'#7fb0ff',d:'Broad US index fund'},
+  {k:'intl',n:'International stocks',c:'#b59cff',d:'Developed and emerging markets'},
+  {k:'real',n:'Real assets',c:'#ffcf94',d:'REITs, gold or commodities'},
+  {k:'sat',n:'Satellite bets',c:'#ff7a8a',d:'Sectors, themes, single stocks, private deals'}
+];
+const MODELS = {
+  preserve:{n:'Preserve',why:'Money needed soon. Protect what you have; growth comes second.',mix:{cash:40,bonds:55,us:5,intl:0,real:0,sat:0}},
+  conservative:{n:'Conservative',why:'Steady growth with modest swings. Bonds cushion stock declines.',mix:{cash:10,bonds:50,us:25,intl:10,real:5,sat:0}},
+  balanced:{n:'Balanced',why:'A middle path: real growth, with enough bonds to steady the ride.',mix:{cash:5,bonds:35,us:35,intl:15,real:5,sat:5}},
+  growth:{n:'Growth',why:'Long horizon, mostly stocks. Expect years with 25–35% declines.',mix:{cash:5,bonds:15,us:45,intl:20,real:5,sat:10}},
+  aggressive:{n:'Aggressive growth',why:'Decades to invest and the nerve to hold through crashes of 40% or more.',mix:{cash:0,bonds:5,us:50,intl:25,real:5,sat:15}}
+};
+const ORDER = ['preserve','conservative','balanced','growth','aggressive'];
+
+const SECTORS = [
+  {n:'Technology',t:'Growth',r:'high',d:'Software, chips, hardware. Drivers: AI, cloud, digitization.',w:'High valuations, chip cycles, export controls.'},
+  {n:'Communication services',t:'Growth',r:'high',d:'Search, social media, streaming, telecom. Drivers: digital ads, AI products.',w:'Regulation, ad cycles, content costs.'},
+  {n:'Health care',t:'Defensive growth',r:'med',d:'Pharma, biotech, devices, insurers. Drivers: aging, obesity drugs, new therapies.',w:'Drug pricing policy, patent cliffs, trial failures.'},
+  {n:'Financials',t:'Cyclical',r:'med',d:'Banks, insurers, asset managers, payments. Drivers: lending, rates, wealth growth.',w:'Credit losses in recessions, bank runs.'},
+  {n:'Industrials',t:'Cyclical',r:'med',d:'Aerospace, defense, machinery, electrical equipment. Drivers: grid build-out, reshoring, defense spending.',w:'Economic slowdowns, supply chains.'},
+  {n:'Consumer discretionary',t:'Cyclical',r:'high',d:'Retail, autos, travel, luxury. Drivers: incomes and confidence.',w:'Recessions, tariffs, shifting tastes.'},
+  {n:'Consumer staples',t:'Defensive',r:'low',d:'Food, drinks, household goods. Steady demand in any economy.',w:'Slow growth, private labels, obesity drugs.'},
+  {n:'Energy',t:'Cyclical',r:'high',d:'Oil, gas, refining. Drivers: global demand, OPEC+, conflict.',w:'Price crashes, energy transition.'},
+  {n:'Utilities',t:'Defensive',r:'low',d:'Electricity, gas, water. Driver now: rising power demand from data centers.',w:'Interest-rate sensitive, regulated returns.'},
+  {n:'Materials',t:'Cyclical',r:'high',d:'Mining, chemicals, metals. Drivers: construction, copper and lithium demand.',w:'Commodity cycles, China demand.'},
+  {n:'Real estate',t:'Income',r:'med',d:'REITs: data centers, warehouses, apartments, offices.',w:'Rates, office vacancies.'}
+];
+const RISKC = {low:'var(--low)',med:'var(--med)',high:'var(--high)'};
+
+const THEMES = [
+  {n:'AI chips and semiconductors',d:'Every AI model runs on specialized chips, built with machines very few companies can make.',co:['Nvidia','TSMC','ASML','Broadcom','AMD'],r:'Cyclical demand, export controls, very high expectations already in prices.'},
+  {n:'Power and the grid',d:'Data centers, EVs and factories are pushing electricity demand up after decades of flat growth.',co:['GE Vernova','Eaton','Schneider Electric','Constellation Energy','Vistra'],r:'Rate sensitivity, regulation, demand forecasts that may prove too high.'},
+  {n:'Obesity drugs and longevity',d:'GLP-1 medicines and an aging world are reshaping healthcare spending.',co:['Eli Lilly','Novo Nordisk','Intuitive Surgical'],r:'Price pressure, new competitors, trial results.'},
+  {n:'Robotics and automation',d:'Labor shortages and aging workforces make automation an economic necessity.',co:['Fanuc','ABB','Siemens','Keyence'],r:'Industrial cycles, humanoid robots still early.'},
+  {n:'Cybersecurity',d:'More connected systems and AI-powered attacks keep security budgets rising.',co:['CrowdStrike','Palo Alto Networks','Zscaler'],r:'Competition, high valuations.'},
+  {n:'Defense and space',d:'Rising global tensions are lifting defense budgets in the US, Europe and Asia.',co:['Lockheed Martin','Rheinmetall','BAE Systems','Rocket Lab'],r:'Budget politics, contract delays.'},
+  {n:'India growth',d:'A young population, digital infrastructure and manufacturing shifting from China.',co:['Reliance Industries','HDFC Bank','Infosys'],r:'High valuations, currency swings. Most US investors use India-focused ETFs.'},
+  {n:'Critical minerals',d:'Copper, lithium and rare earths feed grids, batteries, chips and defense.',co:['Freeport-McMoRan','BHP','Albemarle','MP Materials'],r:'Deep commodity cycles, China policy.'}
+];
+
+const METRICS = [
+  ['Revenue growth','Is demand for the product rising?','Faster than the industry, and steady'],
+  ['Gross margin','Pricing power: what is left after direct costs','Software often 70%+, retail often under 40%'],
+  ['Operating margin','How efficiently the whole company runs','Rising over time is a good sign'],
+  ['Free cash flow','Cash left after running and investing in the business','Positive and growing with profits'],
+  ['Return on invested capital (ROIC)','How well management reinvests money','Above about 15% suggests a strong business'],
+  ['Net debt ÷ EBITDA','How heavy the debt load is','Under about 2–3 is usually manageable'],
+  ['P/E ratio','Price paid per $1 of yearly profit','Compare with history, peers and growth'],
+  ['PEG ratio','P/E adjusted for growth','Around 1 or below is often seen as reasonable'],
+  ['Share count','Is your ownership being diluted?','Flat or falling (buybacks) is better']
+];
+
+const STEPS = [
+  ['Build an emergency fund','Three to six months of expenses in a high-yield savings or money market account.'],
+  ['Pay off high-interest debt','Credit card debt at 20%+ costs more than investing is likely to earn.'],
+  ['Capture the 401(k) match','Contribute at least enough to get your full employer match.'],
+  ['Fill an HSA and a Roth IRA','HSA up to $4,400 (individual) in 2026; IRA up to $7,500. Income limits apply to Roth IRAs.'],
+  ['Raise 401(k) contributions','Up to $24,500 in 2026, plus $8,000 if you are 50 or older.'],
+  ['Invest in a taxable account','For goals beyond retirement: a home, a business, wealth to pass on.']
+];
+
+const HISTORY = [
+  ['c. 1750 BCE','The Code of Hammurabi in Babylon sets rules for loans, interest and debts.'],
+  ['c. 600 BCE','Lydia, in today\'s Turkey, mints some of the first standardized coins.'],
+  ['1000s','China\'s Song dynasty issues some of the first paper money.'],
+  ['1397','The Medici Bank opens in Florence; double-entry bookkeeping spreads across Europe.'],
+  ['1602','The Dutch East India Company sells shares to the public, creating the first modern stock market in Amsterdam.'],
+  ['1637','Tulip prices in the Netherlands collapse, an early example of a speculative bubble.'],
+  ['1694','The Bank of England is founded to lend to the government.'],
+  ['1720','The South Sea Bubble bursts in London.'],
+  ['1792','Traders sign the Buttonwood Agreement, the origin of the New York Stock Exchange.'],
+  ['1913','The US Federal Reserve is created.'],
+  ['1929','The stock market crash opens the Great Depression.'],
+  ['1944','Bretton Woods puts the US dollar, tied to gold, at the center of world finance.'],
+  ['1971','The US ends the dollar\'s convertibility into gold; currencies begin to float.'],
+  ['1976','Vanguard launches the first index fund for individual investors.'],
+  ['1987','Black Monday: the Dow falls 22.6% in a single day.'],
+  ['2000','The dot-com bubble bursts.'],
+  ['2008','The global financial crisis brings down Lehman Brothers.'],
+  ['2009','Bitcoin launches.'],
+  ['2016','India launches UPI, which grows into one of the world\'s largest real-time payment systems.'],
+  ['2020','The pandemic causes one of the fastest market crashes and recoveries on record.'],
+  ['2022','Inflation reaches 9.1% in the US; the Fed raises rates at its fastest pace in decades.'],
+  ['2023–now','Generative AI sets off a historic wave of investment in chips, data centers and power.']
+];
+
+const COUNTRIES = [
+  {n:'United States',anchor:true,best:'Capital markets, venture capital and tech platforms',study:'How Silicon Valley funds ideas, and why US stocks dominate global portfolios'},
+  {n:'China',best:'Manufacturing scale, supply-chain clusters and speed',study:"Shenzhen's ecosystems; state-directed industries such as EVs, solar and batteries",lesson:'uschina'},
+  {n:'India',best:'Digital public infrastructure and a young, growing market',study:'UPI and Aadhaar; the rise of retail investing; services exports'},
+  {n:'South Korea',best:'Exporting culture and consumer brands',study:'K-beauty and K-pop as industries; chaebols; fast manufacturing partners',lesson:'kbeauty'},
+  {n:'Japan',best:'Long-lived companies and precision manufacturing',study:'Centuries-old firms, corporate reform, robotics, businesses for an aging society',lesson:'robotics'},
+  {n:'Saudi Arabia and the Gulf',best:'Sovereign wealth and fast diversification',study:'Vision 2030; how oil money becomes global investment',lesson:'swf'},
+  {n:'Russia',best:'Commodity power under sanctions',study:'How energy and sanctions reroute world trade',lesson:'sanctions'},
+  {n:'Canada',best:'Natural resources and pension funds',study:'How Canadian pension funds became world-class investors'},
+  {n:'Europe',best:'Luxury, industrial engineering and regulation',study:'Why luxury houses hold pricing power; how EU rules shape global tech',lesson:'brand'}
+];
+
+const NOW = [
+  {id:'power',kind:'Signal',m:'future',title:'AI is driving a surge in data-center power use',lessons:['aistack','picks']},
+  {id:'mortgage',kind:'Explainer',m:'economy',title:"A Fed cut doesn't always mean a cheaper mortgage",lessons:['fedrate']},
+  {id:'goldbuy',kind:'Explainer',m:'world',title:'Why gold rose 66% in 2025',lessons:['gold']}
+];
+
+/* ---------- state ---------- */
+const store = {
+  get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},
+  set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+};
+let saved = store.get('saved',[]);
+let readSet = new Set(store.get('read',[]));
+let horizon = store.get('horizon','long'), nerve = store.get('nerve','hold');
+let investTab = 'ladder';
+const isSaved = id => saved.includes(id);
+function toggleSave(id){saved = isSaved(id)?saved.filter(x=>x!==id):[id,...saved];store.set('saved',saved)}
+function markRead(id){readSet.add(id);store.set('read',[...readSet])}
+
+const mission = id => MISSIONS.find(m=>m.id===id);
+const lessonsOf = mid => Object.keys(LESSONS).filter(k=>LESSONS[k].m===mid);
+function modulesOf(mid){const out=[];lessonsOf(mid).forEach(id=>{const mod=LESSONS[id].mod;let g=out.find(x=>x.n===mod);if(!g){g={n:mod,ids:[]};out.push(g)}g.ids.push(id)});return out}
+const arrowSvg = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg>';
+const fmt$ = n => '$'+Math.round(n).toLocaleString('en-US');
+
+let state = {view:'home',param:null};
+const app = document.getElementById('app');
+function go(view,param){state={view,param};render();window.scrollTo({top:0})}
+
+function render(){
+  const parent = {mission:'learn',lesson:'learn'}[state.view]||state.view;
+  document.querySelectorAll('nav.dock [data-nav]').forEach(b=>{
+    b.removeAttribute('aria-current'); if(b.dataset.nav===parent) b.setAttribute('aria-current','page');
+  });
+  if(state.view!=='feedback'&&state.view!=='search') lastPlace=state.view==='lesson'?'Lesson: '+LESSONS[state.param]?.title:state.view;
+  const v = {home,invest,learn,mission:missionView,lesson:lessonView,world,saved:savedView,search:searchView,feedback:feedbackView}[state.view];
+  app.innerHTML = v(state.param);
+  initScrub();
+  if(state.view==='search'){const i=document.getElementById('search-input');if(i&&!srch.q)i.focus()}
+}
+
+function initScrub(){
+  const svg=document.getElementById('pw-svg'); if(!svg||!window.PW) return;
+  const {pts,X,Y,L,W,R}=window.PW, base=pts[0].v;
+  const dot=document.getElementById('pw-dot'),halo=document.getElementById('pw-halo'),guide=document.getElementById('pw-guide');
+  const big=document.getElementById('pw-big'),cap=document.getElementById('pw-cap');
+  const label={2025:'2025 estimate',2026:'2026 forecast',2027:'2027 forecast',2030:'2030 estimate'};
+  function valAt(yr){for(let i=1;i<pts.length;i++){const a=pts[i-1],b=pts[i];if(yr<=b.y){const t=(yr-a.y)/(b.y-a.y);return a.v+t*(b.v-a.v)}}return pts.at(-1).v}
+  function place(yr){
+    const x=X(yr),y=Y(valAt(yr));
+    for(const c of [dot,halo]){c.setAttribute('cx',x);c.setAttribute('cy',y)}
+    guide.setAttribute('x1',x);guide.setAttribute('x2',x);guide.setAttribute('y1',y);
+    const near=pts.reduce((m,p)=>Math.abs(p.y-yr)<Math.abs(m.y-yr)?p:m);
+    const pct=Math.round((near.v/base-1)*100);
+    big.innerHTML=near.y===2025?`${near.v}<sup>TWh</sup>`:`+${pct}<sup>%</sup>`;
+    cap.textContent=near.y===2025?'2025 estimate · the starting point':`${label[near.y]} · ${near.v.toLocaleString('en-US')} TWh · vs 2025`;
+    svg.setAttribute('aria-valuenow',near.y);
+    return near;
+  }
+  const toYear=e=>{const r=svg.getBoundingClientRect();const x=(e.clientX-r.left)/r.width*W;return Math.max(2025,Math.min(2030,2025+(x-L)/(W-L-R)*5))};
+  let drag=false;
+  svg.addEventListener('pointerdown',e=>{drag=true;svg.setPointerCapture(e.pointerId);svg.classList.add('grab');place(toYear(e))});
+  svg.addEventListener('pointermove',e=>{if(drag)place(toYear(e))});
+  const end=e=>{if(!drag)return;drag=false;svg.classList.remove('grab');const n=place(toYear(e));place(n.y)};
+  svg.addEventListener('pointerup',end);svg.addEventListener('pointercancel',end);
+  svg.addEventListener('keydown',e=>{
+    const cur=+svg.getAttribute('aria-valuenow'),i=pts.findIndex(p=>p.y===cur);
+    const j=e.key==='ArrowRight'?Math.min(pts.length-1,i+1):e.key==='ArrowLeft'?Math.max(0,i-1):i;
+    if(j!==i){e.preventDefault();place(pts[j].y)}
+  });
+}
+
+/* ---------- charts ---------- */
+function powerChart(){
+  const pts=[{y:2025,v:447},{y:2026,v:565},{y:2027,v:702},{y:2030,v:1200}];
+  const W=420,H=230,L=36,R=16,T=20,B=34;
+  const X=y=>L+(y-2025)/(2030-2025)*(W-L-R), Y=v=>T+(1-v/1300)*(H-T-B);
+  const d=pts.map((p,i)=>(i?'L':'M')+X(p.y).toFixed(1)+' '+Y(p.v).toFixed(1)).join(' ');
+  const area=d+` L${X(2030)} ${Y(0)} L${X(2025)} ${Y(0)} Z`;
+  const grid=[0,400,800,1200].map(v=>`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="rgba(255,255,255,.08)"/><text x="${L-8}" y="${Y(v)+4}" text-anchor="end" font-size="10" fill="#8b93a7" font-family="Manrope,sans-serif">${v}</text>`).join('');
+  const ticks=pts.map(p=>`<text x="${X(p.y)}" y="${H-12}" text-anchor="middle" font-size="10" fill="#8b93a7" font-family="Manrope,sans-serif">${p.y}</text>`).join('');
+  const k=pts[1];
+  window.PW={pts,X,Y,L,W,R};
+  return `<svg id="pw-svg" class="scrub" tabindex="0" viewBox="0 0 ${W} ${H}" role="slider" aria-label="Drag along the line to move through the years" aria-valuemin="2025" aria-valuemax="2030" aria-valuenow="2026">
+    <defs><linearGradient id="fa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fb0ff" stop-opacity=".35"/><stop offset="1" stop-color="#7fb0ff" stop-opacity="0"/></linearGradient>
+    <filter id="gl" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4"/></filter></defs>
+    ${grid}<path class="fadein" d="${area}" fill="url(#fa)"/>
+    <path class="draw" pathLength="1" d="${d}" fill="none" stroke="#9cc1ff" stroke-width="5" opacity=".5" filter="url(#gl)"/>
+    <path class="draw" pathLength="1" d="${d}" fill="none" stroke="#cfe0ff" stroke-width="1.6"/>
+    ${pts.map(p=>`<circle cx="${X(p.y)}" cy="${Y(p.v)}" r="2.5" fill="#cfe0ff"/>`).join('')}
+    <line id="pw-guide" x1="${X(k.y)}" x2="${X(k.y)}" y1="${Y(k.v)}" y2="${H-B}" stroke="rgba(255,255,255,.35)" stroke-dasharray="2 3"/>
+    <circle id="pw-halo" class="pulse" cx="${X(k.y)}" cy="${Y(k.v)}" r="14" fill="#fff" opacity=".25"/>
+    <circle id="pw-dot" cx="${X(k.y)}" cy="${Y(k.v)}" r="7" fill="#fff"/>
+    ${ticks}<text x="${L}" y="${T-6}" font-size="10" fill="#8b93a7" font-family="Manrope,sans-serif">TWh per year</text>
+    <rect x="${L}" y="0" width="${W-L-R}" height="${H}" fill="transparent"/>
+  </svg>`;
+}
+
+function riskChart(){
+  /* Damodaran 1928–2025: compound annual return vs worst single year */
+  const pts=[
+    {n:'Stocks',r:10.02,w:-43.84,c:'#ffb36b',ax:'end',dx:-12,dy:4},
+    {n:'Gold',r:5.61,w:-32.60,c:'#ffb36b',ax:'start',dx:12,dy:4},
+    {n:'Corporate bonds',r:6.63,w:-15.68,c:'#7fb0ff',ax:'start',dx:12,dy:-6},
+    {n:'Treasury bonds',r:4.54,w:-17.83,c:'#5fd3b5',ax:'end',dx:-12,dy:14},
+    {n:'Real estate',r:4.20,w:-12.00,c:'#7fb0ff',ax:'start',dx:12,dy:14},
+    {n:'T-bills',r:3.37,w:0.03,c:'#5fd3b5',ax:'end',dx:-12,dy:4}
+  ];
+  const W=640,H=320,L=56,R=24,T=24,B=48;
+  const X=w=>L+(w+50)/50*(W-L-R), Y=r=>T+(1-r/12)*(H-T-B);
+  const gx=[-50,-40,-30,-20,-10,0].map(v=>`<line x1="${X(v)}" x2="${X(v)}" y1="${T}" y2="${H-B}" stroke="rgba(255,255,255,.07)"/><text x="${X(v)}" y="${H-B+18}" text-anchor="middle" font-size="11" fill="#8b93a7" font-family="Manrope,sans-serif">${v}%</text>`).join('');
+  const gy=[0,3,6,9,12].map(v=>`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="rgba(255,255,255,.07)"/><text x="${L-10}" y="${Y(v)+4}" text-anchor="end" font-size="11" fill="#8b93a7" font-family="Manrope,sans-serif">${v}%</text>`).join('');
+  const dots=pts.map((p,i)=>`<g class="rdot" style="animation-delay:${i*90}ms"><circle cx="${X(p.w)}" cy="${Y(p.r)}" r="13" fill="${p.c}" opacity=".18"/><circle cx="${X(p.w)}" cy="${Y(p.r)}" r="6" fill="${p.c}"/></g><text x="${X(p.w)+p.dx}" y="${Y(p.r)+p.dy}" text-anchor="${p.ax}" font-size="12.5" fill="#eef1f6" font-family="DM Sans,sans-serif">${p.n} · ${p.r.toFixed(1)}%</text>`).join('');
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Higher long-run returns came with deeper worst years, 1928 to 2025">
+    ${gx}${gy}
+    <text x="${W-R}" y="${H-8}" text-anchor="end" font-size="11" fill="#8b93a7" font-family="Manrope,sans-serif">Worst single year →  milder</text>
+    <text x="${L}" y="${T-8}" font-size="11" fill="#8b93a7" font-family="Manrope,sans-serif">Compound annual return</text>
+    ${dots}
+  </svg>`;
+}
+
+/* ---------- views ---------- */
+function home(){
+  const h=new Date().getHours(), greet=h<12?'Good morning':h<18?'Good afternoon':'Good evening';
+  const minor=NOW.slice(1).map(n=>{const m=mission(n.m);return `
+    <button class="glass ${m.cls} capsule" data-lesson="${n.lessons[0]}">
+      <span><span class="k">${n.kind} · ${m.short}</span><span class="t">${n.title}</span></span>
+      <span class="arrow">${arrowSvg}</span></button>`}).join('');
+  const g=(r)=>100*Math.pow(1+r/100,98);
+  return `
+  <section style="margin-top:20px"><h1>${greet}.<br>Here's what's moving.</h1></section>
+  <section style="margin-top:28px">
+    <article class="glass m-wealth now-hero">
+      <div>
+        <span class="eyebrow">Signal · Future</span>
+        <div class="bignum" style="margin-top:14px" id="pw-big">+26<sup>%</sup></div>
+        <span class="eyebrow" id="pw-cap" style="color:rgba(238,241,246,.8)">2026 forecast · 565 TWh · vs 2025</span>
+        <h3 style="margin-top:8px">AI is driving a surge in data-center power use</h3>
+        <p>Data centers worldwide are forecast to use 565 TWh of electricity in 2026, up from 447 TWh in 2025. Servers built for AI make up 31% of that power, and total use is estimated to pass 1,200 TWh by 2030. Power is becoming one of the scarce inputs of the AI economy.</p>
+        <div class="meta-row">
+          <button class="pill solid" data-lesson="aistack">Who makes money in AI</button>
+          <button class="pill" data-lesson="picks">Picks and shovels</button>
+          <button class="pill" data-invest="themes">Power and grid companies</button>
+          <button class="pill save" data-save="now:power" aria-pressed="${isSaved('now:power')}">${isSaved('now:power')?'Saved':'Save'}</button>
+        </div>
+        <span class="src">Source: <a href="https://www.gartner.com/en/newsroom/press-releases/2026-06-10-gartner-says-data-center-electricity-demand-to-grow-26-percent-in-2026" target="_blank" rel="noopener">Gartner, June 10, 2026</a></span>
+      </div>
+      <div class="chart">${powerChart()}</div>
+    </article>
+    <div class="capsules">${minor}</div>
+  </section>
+  <section>
+    <div class="glass m-economy now-hero">
+      <div>
+        <span class="eyebrow">$100 invested in 1928</span>
+        <div class="bignum" style="margin-top:14px">$${(g(10.02)/1e6).toFixed(2)}<sup>M</sup></div>
+        <h3 style="margin-top:8px">in US stocks by the end of 2025</h3>
+        <p>The same $100 in Treasury bills grew to about ${fmt$(g(3.37))}, and in 10-year Treasury bonds to about ${fmt$(g(4.54))}. That gap is the reward for holding through every crash in between.</p>
+        <div class="meta-row"><button class="pill solid" data-nav="invest">See every asset by risk</button><button class="pill" data-lesson="compounding">How compounding works</button></div>
+        <span class="src">Annual returns 1928–2025: <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html" target="_blank" rel="noopener">Aswath Damodaran, NYU Stern</a>. Before inflation and taxes.</span>
+      </div>
+      <div class="chart" style="align-self:center">${riskChart()}</div>
+    </div>
+  </section>
+  <section>
+    <div class="sec-head"><h2>Learn</h2><span class="eyebrow">lessons read</span></div>
+    ${missionGrid()}
+  </section>`;
+}
+
+function missionGrid(){
+  return `<div class="grid">${MISSIONS.map(m=>{
+    const w=lessonsOf(m.id), r=w.filter(id=>readSet.has(id)).length;
+    return `<button class="glass ${m.cls} mcard" data-mission="${m.id}">
+      <span class="frac">${r}<em>/${w.length}</em></span>
+      <span><span class="name">${m.name}</span><span class="sub">${m.sub}</span></span>
+    </button>`}).join('')}</div>`;
+}
+
+function learn(){
+  return `<section style="margin-top:20px"><h1>Learn</h1></section>
+  <section style="margin-top:28px">${missionGrid()}</section>`;
+}
+
+function missionView(id){
+  const m=mission(id);
+  const mods=modulesOf(id).map(g=>`
+    <div class="plain module">
+      <h3>${g.n}</h3>
+      ${g.ids.map(x=>`<button class="litem" data-lesson="${x}"><span class="lt">${LESSONS[x].title}</span>${readSet.has(x)?'<span class="tag read">Read</span>':'<span class="dotmark" aria-hidden="true"></span>'}</button>`).join('')}
+    </div>`).join('');
+  const extra = id==='wealth'?`<div class="meta-row"><button class="pill solid" data-nav="invest">Open the investing tools</button></div>`:'';
+  return `<button class="back" data-nav="learn">← Learn</button>
+  <div class="glass ${m.cls} m-hero">
+    <h1>${m.name}</h1><p>${m.sub}</p>${extra}
+  </div>
+  <div class="modules">${mods}</div>`;
+}
+
+const LAYER_NAMES = ['What','How','Why','The lesson','What it means for you'];
+function lessonView(id){
+  const L=LESSONS[id], m=mission(L.m); markRead(id);
+  const layers=L.layers.map((t,i)=>`
+    <div class="layer ${i===3?'key':''}">
+      <span class="eyebrow">${LAYER_NAMES[i]}</span>
+      ${Array.isArray(t)?`<ul>${t.map(q=>`<li>${q}</li>`).join('')}</ul>`:`<p>${t}</p>`}
+    </div>`).join('');
+  const all=lessonsOf(L.m), i=all.indexOf(id), nxt=all[i+1];
+  return `<button class="back" data-mission="${m.id}">← ${m.name}</button>
+  <div class="glass ${m.cls} lesson-head">
+    <div><span class="eyebrow" style="color:rgba(238,241,246,.75)">${m.short} · ${L.mod}</span><h1 style="margin-top:10px">${L.title}</h1></div>
+    <button class="pill save" data-save="lesson:${id}" aria-pressed="${isSaved('lesson:'+id)}">${isSaved('lesson:'+id)?'Saved':'Save'}</button>
+  </div>
+  <div class="rail">${layers}</div>
+  ${askPanel(id)}
+  ${nxt?`<div class="next"><button class="glass ${m.cls} capsule" style="max-width:560px" data-lesson="${nxt}"><span><span class="k">Next · ${LESSONS[nxt].mod}</span><span class="t">${LESSONS[nxt].title}</span></span><span class="arrow">${arrowSvg}</span></button></div>`:''}`;
+}
+
+/* ---------- ask Claude ---------- */
+let sampleFn = null, askOff = false, askCtl = null, askBusy = false;
+const chats = {};
+try{ window.claude?.use?.('sample').then(s=>{sampleFn=s; if(s&&['lesson','invest','search'].includes(state.view)) render()}).catch(()=>{}) }catch(e){}
+
+const esc = s => s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function fmtAnswer(t){
+  const blocks=esc(t).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').split(/\n{2,}/);
+  return blocks.map(b=>{
+    const lines=b.split('\n');
+    if(lines.every(l=>/^\s*[-•]\s+/.test(l))) return `<ul>${lines.map(l=>`<li>${l.replace(/^\s*[-•]\s+/,'')}</li>`).join('')}</ul>`;
+    return `<p>${lines.join('<br>')}</p>`;
+  }).join('');
+}
+
+/* Answers arrive as tagged lines and render as visual cards while they stream */
+const CARD_FORMAT = `Reply ONLY in tagged lines, one item per line, no other text, no markdown:
+HEAD: the core answer or definition in one plain sentence (max 25 words)
+ANALOGY: an everyday comparison that makes it click (max 25 words, optional)
+STEP: one step of how it works (2 to 4 STEP lines, max 20 words each)
+STAT: a striking real number | what it shows (max 12 words; only if you are confident it is accurate, otherwise omit)
+WHY: why it matters for building wealth (max 30 words)
+EXAMPLE: a concrete real-world example with a real company, country, year or numbers (max 45 words)
+WATCH: one common mistake or risk (max 20 words, optional)
+RELATED: 3 to 5 related terms, comma separated`;
+const TAGS = /^(HEAD|ANALOGY|STEP|STAT|WHY|EXAMPLE|WATCH|RELATED)\s*:\s*(.*)$/i;
+const rich = s => esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+function cardsHTML(text,{done=false,seen=Infinity}={}){
+  const lines=text.split('\n'); const partial=done?'':lines.pop();
+  const items=lines.map(l=>l.trim()).filter(Boolean).map(l=>{const m=l.match(TAGS);return m?[m[1].toUpperCase(),m[2].trim()]:['TEXT',l]});
+  if(done&&items.length&&items.every(t=>t[0]==='TEXT')) return {html:`<div class="a">${fmtAnswer(text)}</div>`,count:Infinity};
+  let i=0, out='', steps='', stepN=0;
+  const en=()=>(i++>=seen?' enter':'');
+  const flushSteps=()=>{if(steps){out+=`<div class="c-steps">${steps}</div>`;steps=''}};
+  for(const [tag,val] of items){
+    if(!val) continue;
+    if(tag==='STEP'){steps+=`<div class="c-step${en()}"><span class="n">${++stepN}</span><p>${rich(val)}</p></div>`;continue}
+    flushSteps();
+    if(tag==='HEAD') out+=`<p class="c-head${en()}">${rich(val)}</p>`;
+    else if(tag==='ANALOGY') out+=`<p class="c-analogy${en()}">${rich(val)}</p>`;
+    else if(tag==='STAT'){const [n,l]=val.split('|');out+=`<div class="c-stat${en()}"><span class="big">${esc(n.trim())}</span><span>${rich((l||'').trim())}</span></div>`}
+    else if(tag==='WHY') out+=`<div class="c-why${en()}"><span class="lbl">Why it matters</span><p>${rich(val)}</p></div>`;
+    else if(tag==='EXAMPLE') out+=`<div class="c-ex${en()}"><span class="lbl">Real example</span><p>${rich(val)}</p></div>`;
+    else if(tag==='WATCH') out+=`<p class="c-watch${en()}"><span aria-hidden="true">◆</span>${rich(val)}</p>`;
+    else if(tag==='RELATED') out+=`<div class="chips${en()}">${val.split(',').map(s=>s.trim()).filter(Boolean).map(s=>`<button class="pill" data-srchex="${esc(s)}">${esc(s)}</button>`).join('')}</div>`;
+    else out+=`<p class="c-text${en()}">${rich(val)}</p>`;
+  }
+  flushSteps();
+  if(!done) out+=`<div class="c-typing" aria-hidden="true"><i></i><i></i><i></i></div>`;
+  return {html:`<div class="cards">${out}</div>`,count:i};
+}
+function streamInto(getEl){let seen=0;return ({text})=>{const el=getEl();if(!el)return;el.classList.remove('thinking');const r=cardsHTML(text,{seen});el.innerHTML=r.html;seen=r.count}}
+
+function askPanel(id){
+  if(!sampleFn||askOff) return '';
+  const L=LESSONS[id], msgs=chats[id]||[];
+  const chips=[...L.layers[4].slice(0,2),'Go one layer deeper','Show me a real-world example'];
+  return `<section class="glass ${mission(L.m).cls} ask" id="ask" style="margin-top:12px">
+    <span class="eyebrow" style="color:rgba(238,241,246,.75)">Ask about this lesson</span>
+    <div class="thread" id="ask-thread">${msgs.map(m=>m.role==='user'
+      ?`<div class="q">${esc(m.content)}</div>`
+      :`<div class="a-wrap">${cardsHTML(m.content,{done:true}).html}</div>`).join('')}</div>
+    ${msgs.length?'':`<div class="chips">${chips.map(c=>`<button class="pill" data-askchip="${esc(c)}">${esc(c)}</button>`).join('')}</div>`}
+    <form class="askform" id="ask-form">
+      <label for="ask-input" class="sr">Your question</label>
+      <textarea id="ask-input" rows="1" placeholder="Ask anything, like: what are the grid constraints?"></textarea>
+      <button type="submit" class="pill solid" id="ask-send">Ask</button>
+    </form>
+    <p class="ask-note" id="ask-note">Answers come from Claude using the viewer's own Claude account. Educational, not financial advice.</p>
+  </section>`;
+}
+
+async function askQuestion(id,q){
+  if(!sampleFn||askBusy||!q.trim()) return;
+  const L=LESSONS[id], m=mission(L.m);
+  const msgs=(chats[id]=chats[id]||[]);
+  msgs.push({role:'user',content:q.trim()});
+  render(); scrollAsk();
+  const thread=document.getElementById('ask-thread'), note=document.getElementById('ask-note');
+  const out=document.createElement('div'); out.className='a-wrap a thinking'; out.textContent='Thinking…'; thread.append(out);
+  const send=document.getElementById('ask-send'); send.textContent='Stop'; send.classList.remove('solid'); askBusy=true;
+  askCtl=new AbortController();
+  const lessonText=L.layers.slice(0,4).map((t,i)=>`${LAYER_NAMES[i]}: ${t}`).join('\n')+'\nQuestions to ask: '+L.layers[4].join(' | ');
+  const rules=`You are the teaching voice of a finance and business learning app for women who want MBA-level depth without a business background. The reader is on this lesson:
+
+Area: ${m.name} · ${L.mod}
+Title: ${L.title}
+${lessonText}
+
+Answer the reader's questions about this lesson and anything it leads to. Go deeper than the lesson: the how and the why, with real companies, numbers and history where you are confident they are accurate. Teach how to evaluate; never tell the reader to buy or sell a specific investment. If something may have changed recently, say so in WATCH.
+
+${CARD_FORMAT}`;
+  try{
+    const turns=[{role:'user',content:rules},...msgs.slice(-10)];
+    const {text,truncated}=await sampleFn(turns,{signal:askCtl.signal,cache:false,onText:streamInto(()=>out)});
+    msgs.push({role:'assistant',content:text+(truncated?'\n\n(Cut short. Ask for the rest.)':'')});
+  }catch(e){
+    if(e?.text) msgs.push({role:'assistant',content:e.text});
+    if(['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'].includes(e?.code)){askOff=true}
+    else if(e?.code==='cancelled'){}
+    else if(e?.code==='rate_limited'){msgs.push({role:'assistant',content:'Too many questions at once, or your Claude usage limit was reached. Try again in a little while.'})}
+    else if(e?.code==='refused'){msgs.push({role:'assistant',content:'Claude declined that question. Try asking it a different way.'})}
+    else {msgs.push({role:'assistant',content:'The answer was interrupted. Ask again.'})}
+  }finally{
+    askBusy=false; askCtl=null;
+    if(state.view==='lesson'&&state.param===id){render(); scrollAsk()}
+  }
+}
+function scrollAsk(){const t=document.getElementById('ask-form');t&&t.scrollIntoView({block:'nearest',behavior:'smooth'})}
+
+document.addEventListener('submit',e=>{
+  if(e.target.id!=='ask-form') return; e.preventDefault();
+  if(askBusy){askCtl?.abort();return}
+  const inp=document.getElementById('ask-input'); askQuestion(state.param,inp.value);
+});
+document.addEventListener('keydown',e=>{
+  if(e.target.id==='ask-input'&&e.key==='Enter'&&!e.shiftKey){e.preventDefault();document.getElementById('ask-form').requestSubmit()}
+});
+
+/* ---------- feedback ---------- */
+let dbNS=null, userNS=null, amOwner=false, myId=null, lastPlace='home';
+const fb={mood:'',sent:false,busy:false,err:'',canSave:true,inbox:null,names:{}};
+try{
+  Promise.all([window.claude?.use?.('db'),window.claude?.use?.('user')]).then(async([d,u])=>{
+    dbNS=d||null; userNS=u||null;
+    if(userNS){amOwner=await userNS.isOwner(); myId=await userNS.id()}
+    if(!dbNS||!myId) fb.canSave=false;
+    if(state.view==='feedback'){render(); if(amOwner) loadInbox()}
+  }).catch(()=>{fb.canSave=false});
+}catch(e){fb.canSave=false}
+
+const MOODS=[['loved','Loved something'],['confused','Got confused'],['bored','Got bored'],['idea','Have an idea']];
+function feedbackView(){
+  if(amOwner) return inboxView();
+  if(fb.sent) return `<section style="margin-top:20px"><div class="glass m-create empty"><h1>Thank you.</h1><p>Your feedback was sent. It helps shape what ARC becomes.</p><button class="pill solid" data-fbagain="1">Send more</button></div></section>`;
+  return `<section style="margin-top:20px"><h1>Feedback</h1><p class="lede">What worked, what didn't, what you wish ARC could do.</p></section>
+  <section style="margin-top:22px;max-width:680px">
+    <div class="glass m-create ask" style="max-width:none">
+      <span class="lbl">How was it?</span>
+      <div class="chips">${MOODS.map(([k,n])=>`<button class="pill ${fb.mood===k?'on':''}" data-mood="${k}" aria-pressed="${fb.mood===k}">${n}</button>`).join('')}</div>
+      <form id="fb-form" style="display:flex;flex-direction:column;gap:12px">
+        <label for="fb-text" class="lbl">Tell us more</label>
+        <textarea id="fb-text" rows="5" class="fbtext" placeholder="Which lesson, screen or feature? What would make it better?"></textarea>
+        ${fb.err?`<p class="small" style="margin:0;color:var(--vhigh)">${esc(fb.err)}</p>`:''}
+        ${fb.canSave
+          ?`<button class="pill solid" type="submit" style="align-self:flex-start">${fb.busy?'Sending…':'Send feedback'}</button>`
+          :`<button class="pill solid" type="button" data-fbcopy="1" style="align-self:flex-start">Copy feedback</button>
+            <p class="small" style="margin:0">Feedback can't be sent from this view. Copy it and message it to whoever shared ARC with you.</p>`}
+      </form>
+    </div>
+  </section>`;
+}
+async function sendFeedback(){
+  const text=document.getElementById('fb-text').value.trim();
+  if(!text&&!fb.mood){fb.err='Pick a feeling or write a few words first.';render();return}
+  fb.busy=true; fb.err=''; render();
+  try{
+    const ref=dbNS.doc('feedback/'+myId), snap=await ref.get();
+    const entries=(snap.exists&&Array.isArray(snap.data().entries))?[...snap.data().entries]:[];
+    entries.push({at:new Date().toISOString(),mood:fb.mood,text:text.slice(0,4000),place:String(lastPlace).slice(0,120)});
+    await ref.set({uid:myId,updated:new Date().toISOString(),entries:entries.slice(-100)});
+    fb.sent=true; fb.mood='';
+  }catch(e){
+    if(e?.code==='invalid_argument'||e?.code==='not_granted'){fb.canSave=false; fb.err=''}
+    else fb.err='Your feedback didn\'t send. Try again in a moment.';
+    fb._draft=text;
+  }finally{fb.busy=false; render(); const t=document.getElementById('fb-text'); if(t&&fb._draft){t.value=fb._draft;fb._draft=''}}
+}
+async function loadInbox(){
+  if(!dbNS) return;
+  try{
+    const snap=await dbNS.collection('feedback').get();
+    const rows=[]; snap.docs.forEach(d=>{const v=d.data()||{};(v.entries||[]).forEach(e=>rows.push({...e,uid:v.uid||d.id}))});
+    rows.sort((a,b)=>String(b.at).localeCompare(String(a.at)));
+    fb.inbox=rows;
+    if(userNS&&rows.length){const ps=await userNS.profiles([...new Set(rows.map(r=>r.uid))]);fb.names=Object.fromEntries(Object.entries(ps).map(([k,p])=>[k,p.name]))}
+  }catch(e){fb.inbox=[]; fb.err='The inbox could not load. Try Refresh.'}
+  if(state.view==='feedback') render();
+}
+function inboxView(){
+  const moodName=Object.fromEntries(MOODS);
+  const rows=fb.inbox;
+  return `<section style="margin-top:20px"><div class="sec-head"><h1>Feedback inbox</h1><button class="pill" data-fbrefresh="1">Refresh</button></div>
+    <p class="lede">Only you see this. Friends see a feedback form instead.</p></section>
+  <section style="margin-top:22px;max-width:760px"><div class="savelist">
+    ${rows==null?`<div class="plain ana-wait"><div class="c-typing"><i></i><i></i><i></i></div><span>Loading feedback…</span></div>`
+      :rows.length?rows.map(r=>`<article class="plain fbrow">
+        <div class="fbmeta"><b>${esc(fb.names[r.uid]||'Someone')}</b>${r.mood?`<span class="chip" style="color:var(--med)">${esc(moodName[r.mood]||r.mood)}</span>`:''}<span class="small">${esc(new Date(r.at).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}))}</span></div>
+        ${r.text?`<p>${esc(r.text)}</p>`:''}${r.place?`<span class="small">From: ${esc(r.place)}</span>`:''}
+      </article>`).join('')
+      :`<div class="glass m-create empty"><h2>No feedback yet.</h2><p>When friends send feedback from the Feedback button, it appears here.</p></div>`}
+  </div></section>`;
+}
+document.addEventListener('submit',e=>{if(e.target.id!=='fb-form')return;e.preventDefault();if(!fb.busy)sendFeedback()});
+
+/* ---------- search and explain ---------- */
+const srch = {q:'',answer:'',busy:false,ctl:null,err:''};
+const norm = s => s.toLowerCase().replace(/[^a-z0-9&%$ ]+/g,' ');
+function findLessons(q){
+  const words=norm(q).split(/\s+/).filter(w=>w.length>1).map(w=>w.replace(/(ies|es|s)$/,''));
+  if(!words.length) return [];
+  return Object.entries(LESSONS).map(([id,L])=>{
+    const title=norm(L.title), body=norm(L.layers.slice(0,4).join(' '));
+    let s=0; for(const w of words){ if(title.includes(w)) s+=3; if(body.includes(w)) s+=1 }
+    if(title.includes(norm(q).trim())) s+=4;
+    return [id,s];
+  }).filter(x=>x[1]>=words.length).sort((a,b)=>b[1]-a[1]).slice(0,6).map(x=>x[0]);
+}
+function lessonResults(q){
+  const ids=findLessons(q);
+  if(!q.trim()) return '';
+  if(!ids.length) return `<p class="small">No lesson covers this yet.</p>`;
+  return `<span class="eyebrow">In the lessons</span><div class="savelist" style="margin-top:10px">${ids.map(id=>{const L=LESSONS[id],m=mission(L.m);return `<button class="glass ${m.cls} capsule" data-lesson="${id}"><span><span class="k">${m.short} · ${L.mod}</span><span class="t">${L.title}</span></span><span class="arrow">${arrowSvg}</span></button>`}).join('')}</div>`;
+}
+function searchView(){
+  const ex=['Treasury bonds','P/E ratio','Yield curve','Private credit','ETF vs mutual fund','Liquidation preference'];
+  return `<section style="margin-top:20px"><h1>Search and ask</h1></section>
+  <section style="margin-top:22px;max-width:760px">
+    <form class="askform big" id="search-form" role="search">
+      <label for="search-input" class="sr">A word or question</label>
+      <input id="search-input" type="search" autocomplete="off" value="${esc(srch.q)}" placeholder="A term you read somewhere, or any question">
+      <button type="submit" class="pill solid" id="search-go">${srch.busy?'Stop':sampleFn?'Explain':'Search'}</button>
+    </form>
+    ${srch.q?'':`<div class="chips" style="margin-top:14px">${ex.map(x=>`<button class="pill" data-srchex="${x}">${x}</button>`).join('')}</div>`}
+    <div id="explain" style="margin-top:22px">${explainBlock()}</div>
+    <div id="search-lessons" style="margin-top:22px">${lessonResults(srch.q)}</div>
+  </section>`;
+}
+function explainBlock(){
+  if(srch.busy&&!srch.answer) return `<div class="glass m-wealth ask"><div class="a thinking">Thinking…</div></div>`;
+  if(srch.answer) return `<div class="glass m-wealth ask"><span class="eyebrow" style="color:rgba(238,241,246,.75)">${esc(srch.q)}</span><div class="a-wrap" id="explain-text">${cardsHTML(srch.answer,{done:!srch.busy}).html}</div>
+    ${srch.busy?'':`<div class="chips"><button class="pill" data-srchex="Go one layer deeper on ${esc(srch.q)}">Go deeper</button><button class="pill" data-srchex="Give a real-world example of ${esc(srch.q)}">Real example</button><button class="pill" data-srchex="How does ${esc(srch.q)} affect my money?">What it means for me</button></div>`}</div>`;
+  if(srch.err) return `<p class="small">${srch.err}</p>`;
+  return '';
+}
+async function runSearch(q){
+  q=q.trim(); if(!q) return;
+  srch.q=q; srch.answer=''; srch.err='';
+  if(!sampleFn){render();return}
+  srch.busy=true; srch.ctl=new AbortController(); render();
+  const prompt=`You explain finance, investing, banking, business and economics terms for a learning app. The reader may have no business background but wants real depth. They searched for: "${q}"
+
+Whether it's a term or a question, explain it with depth. Teach how to evaluate; never tell the reader to buy or sell a specific investment. If facts may have changed recently, say so in WATCH.
+
+${CARD_FORMAT}`;
+  const paint=streamInto(()=>document.getElementById('explain-text'));
+  try{
+    const {text}=await sampleFn(prompt,{signal:srch.ctl.signal,modelTier:'default',onText:u=>{
+      srch.answer=u.text; if(!document.getElementById('explain-text')){const box=document.getElementById('explain'); if(box) box.innerHTML=explainBlock()}
+      paint(u);
+    }});
+    srch.answer=text;
+  }catch(e){
+    srch.answer=e?.text||'';
+    if(['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'].includes(e?.code)){sampleFn=null;srch.err='Explanations from Claude are off for this view. Matching lessons are below.'}
+    else if(e?.code==='rate_limited') srch.err='Too many questions at once, or your Claude usage limit was reached. Try again shortly.';
+    else if(e?.code==='refused') {srch.answer='';srch.err='Claude declined that one. Try wording it differently.'}
+    else if(e?.code!=='cancelled') srch.err='The explanation was interrupted. Try again.';
+  }finally{srch.busy=false;srch.ctl=null;if(state.view==='search')render()}
+}
+document.addEventListener('submit',e=>{
+  if(e.target.id!=='search-form') return; e.preventDefault();
+  if(srch.busy){srch.ctl?.abort();return}
+  runSearch(document.getElementById('search-input').value);
+});
+document.addEventListener('input',e=>{
+  if(e.target.id!=='search-input') return;
+  const box=document.getElementById('search-lessons'); if(box) box.innerHTML=lessonResults(e.target.value);
+});
+
+function modelFor(){
+  const hz={short:0,mid:1,long:3,vlong:4}[horizon];
+  const adj={sell:-2,hold:0,buy:1}[nerve];
+  return ORDER[Math.max(0,Math.min(4,hz+adj))];
+}
+
+function invest(){
+  const tabs=[['ladder','Risk ladder'],['mix','Build a mix'],['sectors','Sectors'],['themes','Future themes'],['analyze','Analyze a stock'],['order','Where to start']];
+  const body={ladder:investLadder,mix:investMix,sectors:investSectors,themes:investThemes,analyze:investAnalyze,order:investOrder}[investTab]();
+  return `<section style="margin-top:20px"><h1>Invest</h1>
+    <div class="tabs" role="tablist">${tabs.map(([k,n])=>`<button class="pill ${investTab===k?'on':''}" role="tab" aria-selected="${investTab===k}" data-itab="${k}">${n}</button>`).join('')}</div>
+  </section>
+  ${body}
+  <p class="note">Educational only, not personal financial advice. Past returns don't guarantee future results.</p>`;
+}
+
+function investLadder(){
+  const groups=['low','med','high','vhigh'].map(t=>{
+    const [label,cls]=TIER[t];
+    return `<div><div class="tier-head ${cls}"><span class="tier-dot"></span><h2 style="font-size:22px;color:var(--text)">${label}</h2></div>
+    <div class="assets">${ASSETS.filter(a=>a.tier===t).map(a=>`
+      <article class="plain asset">
+        <h3>${a.n}</h3>
+        <div class="stats">${a.ret?`<span>Return/yr <b>${a.ret.toFixed(1)}%</b></span><span>Worst year <b>${a.worst}</b></span>`:''}<span>Hold <b>${a.hold}</b></span><span>Access <b>${a.liq}</b></span></div>
+        <p>${a.p}</p>
+      </article>`).join('')}</div></div>`}).join('');
+  return `<section style="margin-top:28px">
+    <div class="plain" style="padding:24px">
+      <div class="sec-head" style="margin-bottom:6px"><h2>Return comes with a worst year</h2><span class="eyebrow">US, 1928–2025</span></div>
+      <div class="chart" style="overflow-x:auto"><div style="min-width:520px">${riskChart()}</div></div>
+      <span class="src">Compound annual returns before inflation and taxes. Data: <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html" target="_blank" rel="noopener">Damodaran, NYU Stern</a>.</span>
+    </div>
+  </section>
+  <section style="margin-top:36px"><div class="ladder">${groups}</div></section>`;
+}
+
+function investMix(){
+  const key=modelFor(), M=MODELS[key];
+  const opt=(name,cur,vals)=>vals.map(([v,l])=>`<button class="pill ${cur===v?'on':''}" data-${name}="${v}" aria-pressed="${cur===v}">${l}</button>`).join('');
+  return `<section style="margin-top:28px">
+    <div class="glass m-wealth builder">
+      <div>
+        <div class="field"><label>When will you need most of this money?</label>
+          <div class="choices">${opt('hz',horizon,[['short','Under 3 years'],['mid','3–7 years'],['long','7–15 years'],['vlong','15+ years']])}</div></div>
+        <div class="field"><label>If it fell 30% in a year, you would…</label>
+          <div class="choices">${opt('nv',nerve,[['sell','Sell to stop the loss'],['hold','Hold and wait'],['buy','Buy more']])}</div></div>
+        <div class="field"><label>Or compare every model</label>
+          <div class="choices">${ORDER.map(k=>`<span class="pill ${k===key?'on':''}" style="cursor:default">${MODELS[k].n}</span>`).join('')}</div></div>
+      </div>
+      <div>
+        <span class="eyebrow">Model portfolio</span>
+        <h2 style="margin-top:6px">${M.n}</h2>
+        <p style="margin:6px 0 0;color:rgba(238,241,246,.82)">${M.why}</p>
+        <div class="bar" aria-hidden="true">${SLEEVES.filter(s=>M.mix[s.k]).map(s=>`<span style="width:${M.mix[s.k]}%;background:${s.c}"></span>`).join('')}</div>
+        <div class="legend">${SLEEVES.map(s=>`<div class="lg"><i style="background:${s.c}"></i><span>${s.n}</span><span class="pct">${M.mix[s.k]}%</span><small>${s.d}</small></div>`).join('')}</div>
+      </div>
+    </div>
+  </section>
+  <section style="margin-top:28px">
+    <div class="sec-head"><h2>Rules that hold for every mix</h2></div>
+    <div class="assets">
+      <div class="plain asset"><h3>Core and satellite</h3><p>Keep 80–95% in broad, low-cost funds. Satellite bets stay at 5–20%, sized so a total loss doesn't change your life.</p><div><button class="pill" data-lesson="coresat">Read the lesson</button></div></div>
+      <div class="plain asset"><h3>Rebalance once a year</h3><p>Or when any part drifts five points from target. It keeps risk where you chose it.</p><div><button class="pill" data-lesson="rebalance">Read the lesson</button></div></div>
+      <div class="plain asset"><h3>Separate money by goal</h3><p>A house in four years and retirement in thirty need different mixes, even if they sit in the same account.</p><div><button class="pill" data-lesson="allocation">Read the lesson</button></div></div>
+    </div>
+  </section>`;
+}
+
+function investSectors(){
+  return `<section style="margin-top:28px">
+    <div class="sec-head"><h2>The 11 sectors of the stock market</h2><span class="eyebrow">GICS standard</span></div>
+    <div class="assets">${SECTORS.map(s=>`
+      <article class="plain sector">
+        <div style="display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap"><h3 style="font-size:18px">${s.n}</h3><span class="chip" style="color:${RISKC[s.r]}">${s.t}</span></div>
+        <p>${s.d}</p><p class="small">Watch: ${s.w}</p>
+      </article>`).join('')}</div>
+    <p class="note">Growth sectors lead in expansions and fall hardest in sell-offs. Defensive sectors hold up in recessions. Cyclical sectors follow the economy.</p>
+  </section>`;
+}
+
+function investThemes(){
+  return `<section style="margin-top:28px">
+    <div class="sec-head"><h2>Where future growth may come from</h2></div>
+    <div class="assets">${THEMES.map((t,i)=>`
+      <article class="glass ${['m-wealth','m-future','m-create','m-business','m-economy','m-world','m-legacy','m-business'][i]} theme">
+        <h3>${t.n}</h3><p>${t.d}</p>
+        <div><span class="eyebrow" style="color:rgba(238,241,246,.7)">Companies in this space</span><div class="cos" style="margin-top:6px">${t.co.map(c=>`<span>${c}</span>`).join('')}</div></div>
+        <p class="small" style="color:rgba(238,241,246,.7)">Risks: ${t.r}</p>
+      </article>`).join('')}</div>
+    <p class="note">Companies are listed to show who operates in each space, not as recommendations. A strong theme can still be a poor investment if the price already assumes too much. Run any company through the checklist in Analyze a stock.</p>
+  </section>`;
+}
+
+/* ---------- company analyzer ---------- */
+const ana = {q:'',data:null,busy:false,err:'',ctl:null,step:0,timer:null};
+const ANA_STEPS=['Reading the business','Checking growth and margins','Weighing debt and valuation','Mapping risks and scenarios'];
+const RATEC={strong:'var(--low)',mixed:'var(--med)',weak:'var(--vhigh)',unknown:'var(--muted)'};
+const arr=(x,n)=>Array.isArray(x)?x.slice(0,n):[];
+const str=x=>typeof x==='string'?x:(x==null?'':String(x));
+function analyzerHTML(){
+  if(!sampleFn) return '';
+  return `<div class="glass m-future ask" style="max-width:none">
+    <span class="eyebrow" style="color:rgba(238,241,246,.75)">Analyze any public company</span>
+    <form class="askform big" id="ana-form">
+      <label for="ana-input" class="sr">Company name or ticker</label>
+      <input id="ana-input" autocomplete="off" value="${esc(ana.q)}" placeholder="Company name or ticker, like Micron or MU">
+      <button class="pill solid" type="submit">${ana.busy?'Stop':'Analyze'}</button>
+    </form>
+    ${ana.data||ana.busy?'':`<div class="chips">${['Micron','Costco','Eli Lilly','Reliance Industries'].map(c=>`<button class="pill" data-anaex="${c}">${c}</button>`).join('')}</div>`}
+  </div>
+  <div id="ana-out" style="margin-top:16px">${anaBody()}</div>`;
+}
+function anaBody(){
+  if(ana.busy) return `<div class="plain ana-wait"><div class="c-typing"><i></i><i></i><i></i></div><span>${ANA_STEPS[ana.step%ANA_STEPS.length]}…</span></div>`;
+  if(ana.err) return `<p class="small">${esc(ana.err)}</p>`;
+  const d=ana.data; if(!d) return '';
+  if(d.found===false) return `<p class="small">${esc(str(d.message)||'That doesn\'t look like a publicly traded company. Try the full name or ticker.')}</p>`;
+  const lvl=Math.max(1,Math.min(5,Number(d.risk?.level)||3));
+  const segs=arr(d.segments,5).filter(s=>s&&s.name);
+  const segColors=['#7fb0ff','#b59cff','#5fd3b5','#ffcf94','#ff7a8a'];
+  return `<div class="ana">
+    <div class="glass m-wealth ana-hero">
+      <div style="min-width:0">
+        <span class="eyebrow" style="color:rgba(238,241,246,.75)">${esc(str(d.ticker))}${d.exchange?' · '+esc(str(d.exchange)):''}${d.country?' · '+esc(str(d.country)):''}</span>
+        <h2 style="margin-top:6px;font-size:clamp(32px,5vw,44px)">${esc(str(d.name))}</h2>
+        <p style="margin:8px 0 0;color:rgba(238,241,246,.85);max-width:56ch">${esc(str(d.what_it_does))}</p>
+        <div class="cos" style="margin-top:12px">${d.sector?`<span>${esc(str(d.sector))}</span>`:''}${d.industry?`<span>${esc(str(d.industry))}</span>`:''}</div>
+      </div>
+      <div class="riskbox">
+        <span class="lbl">Risk</span>
+        <div class="riskbar" role="img" aria-label="Risk ${lvl} of 5">${[1,2,3,4,5].map(n=>`<i class="${n<=lvl?'on':''}" style="--k:${n}"></i>`).join('')}</div>
+        <b>${esc(str(d.risk?.label))}</b>
+        <p>${esc(str(d.risk?.why))}</p>
+      </div>
+    </div>
+    ${segs.length?`<div class="plain ana-card"><span class="lbl">How it makes money</span>
+      ${segs.some(s=>typeof s.share_pct==='number')?`<div class="bar">${segs.filter(s=>typeof s.share_pct==='number').map((s,i)=>`<span style="width:${Math.max(0,Math.min(100,s.share_pct))}%;background:${segColors[i]}"></span>`).join('')}</div>`:''}
+      <div class="legend">${segs.map((s,i)=>`<div class="lg"><i style="background:${segColors[i]}"></i><span>${esc(str(s.name))}</span><span class="pct">${typeof s.share_pct==='number'?'~'+Math.round(s.share_pct)+'%':''}</span>${s.note?`<small>${esc(str(s.note))}</small>`:''}</div>`).join('')}</div></div>`:''}
+    <div class="plain ana-card"><span class="lbl">Scorecard</span>
+      <div class="score">${arr(d.scorecard,8).map(s=>{const r=(str(s.rating).toLowerCase());return `<div class="sc"><span class="dot" style="background:${RATEC[r]||RATEC.unknown}"></span><b>${esc(str(s.measure))}</b><span class="rt" style="color:${RATEC[r]||RATEC.unknown}">${esc(r)}</span><p>${esc(str(s.note))}</p></div>`}).join('')}</div>
+    </div>
+    <div class="ana-two">
+      <div class="plain ana-card"><span class="lbl" style="color:var(--low)">Strengths</span><ul class="pc">${arr(d.pros,5).map(x=>`<li>${esc(str(x))}</li>`).join('')}</ul></div>
+      <div class="plain ana-card"><span class="lbl" style="color:var(--vhigh)">Weaknesses and risks</span><ul class="pc">${arr(d.cons,5).map(x=>`<li>${esc(str(x))}</li>`).join('')}</ul></div>
+    </div>
+    <div class="plain ana-card"><span class="lbl">Return scenarios</span>
+      <div class="scen">${[['bull','Bull case','var(--low)'],['base','Base case','var(--med)'],['bear','Bear case','var(--vhigh)']].map(([k,n,c])=>`<div class="sn" style="--c:${c}"><b>${n}</b><p>${esc(str(d.scenarios?.[k]))}</p></div>`).join('')}</div>
+      <p class="small" style="margin:12px 0 0">No one can predict a stock's return. Scenarios show what would have to happen for each outcome.</p>
+    </div>
+    <div class="ana-two">
+      <div class="plain ana-card"><span class="lbl">What moves this stock</span><ul class="pc">${arr(d.drivers,4).map(x=>`<li>${esc(str(x))}</li>`).join('')}</ul>${d.history?`<p style="margin:10px 0 0;font-size:14px;color:rgba(238,241,246,.8)">${esc(str(d.history))}</p>`:''}</div>
+      <div class="plain ana-card"><span class="lbl">Research next</span><ul class="pc">${arr(d.research_next,4).map(x=>`<li>${esc(str(x))}</li>`).join('')}</ul></div>
+    </div>
+    <p class="note">From Claude's general knowledge${d.knowledge_as_of?', current to about '+esc(str(d.knowledge_as_of)):''}. It does not see live prices or the latest results, so check the company's newest 10-K and earnings before deciding anything. Educational, not a recommendation.</p>
+  </div>`;
+}
+async function runAnalysis(q){
+  q=q.trim(); if(!q||!sampleFn) return;
+  ana.q=q; ana.data=null; ana.err=''; ana.busy=true; ana.step=0; ana.ctl=new AbortController();
+  clearInterval(ana.timer); ana.timer=setInterval(()=>{ana.step++;const o=document.getElementById('ana-out');if(o&&ana.busy)o.innerHTML=anaBody()},2600);
+  render();
+  const prompt=`You are an equity analyst teaching a smart beginner. Analyze the publicly traded company: "${q}".
+Use only what you know with reasonable confidence; prefer leaving a field out or saying "unknown" over guessing. Never recommend buying or selling, and give no price targets.
+Reply with only one JSON object, this shape:
+{"found":true,"name":"","ticker":"","exchange":"","country":"","sector":"GICS sector","industry":"",
+"what_it_does":"max 30 words","knowledge_as_of":"month and year your information is current to",
+"risk":{"level":1-5,"label":"Low|Moderate|Elevated|High|Very high","why":"max 30 words"},
+"segments":[{"name":"","share_pct":number or null if unsure,"note":"max 12 words"}],
+"scorecard":[{"measure":"Revenue growth","rating":"strong|mixed|weak|unknown","note":"max 18 words"}, then the same for "Margins","Cash flow","Debt","Valuation","Competitive moat"],
+"pros":["3-4 items, max 20 words each"],"cons":["3-4 items, max 20 words each"],
+"drivers":["2-3 forces that move this stock, max 15 words each"],
+"scenarios":{"bull":"what would drive strong returns, max 30 words","base":"max 30 words","bear":"what would drive losses, max 30 words"},
+"history":"long-term track record, cycles and past big drawdowns you are confident about, max 35 words",
+"research_next":["3 questions to check in the latest 10-K or earnings call"]}
+If it is not a publicly traded company you recognise, reply {"found":false,"message":"one short sentence"}.`;
+  try{ ana.data=await sampleFn.json(prompt,{signal:ana.ctl.signal,cache:{gcTime:3600000}}) }
+  catch(e){
+    if(['not_granted','sampling_disabled','not_declared','capability_disabled','capability_removed'].includes(e?.code)){sampleFn=null}
+    else if(e?.code==='rate_limited') ana.err='Too many requests, or your Claude usage limit was reached. Try again shortly.';
+    else if(e?.code==='invalid_json') ana.err='The analysis came back incomplete. Try again.';
+    else if(e?.code==='refused') ana.err='Claude declined that one. Try the company\'s full name.';
+    else if(e?.code!=='cancelled') ana.err='The analysis was interrupted. Try again.';
+  }finally{ana.busy=false;ana.ctl=null;clearInterval(ana.timer);if(state.view==='invest')render()}
+}
+document.addEventListener('submit',e=>{
+  if(e.target.id!=='ana-form') return; e.preventDefault();
+  if(ana.busy){ana.ctl?.abort();return}
+  runAnalysis(document.getElementById('ana-input').value);
+});
+
+function investAnalyze(){
+  return `<section style="margin-top:28px">${analyzerHTML()}</section>
+  <section style="margin-top:36px">
+    <div class="sec-head"><h2>A stock checklist</h2><span class="eyebrow">from the annual report (10-K)</span></div>
+    <div class="plain tablewrap"><table>
+      <thead><tr><th>Measure</th><th>What it tells you</th><th>Rough guide</th></tr></thead>
+      <tbody>${METRICS.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody>
+    </table></div>
+    <div class="meta-row"><button class="pill" data-lesson="readco">Reading a company</button><button class="pill" data-lesson="valuation">Valuation</button><button class="pill" data-lesson="styles">Growth vs value</button></div>
+  </section>`;
+}
+
+function investOrder(){
+  return `<section style="margin-top:28px">
+    <div class="sec-head"><h2>Where each dollar goes first</h2><span class="eyebrow">US · 2026 limits</span></div>
+    <ol class="steps">${STEPS.map(s=>`<li class="plain"><div><b>${s[0]}</b><p>${s[1]}</p></div></li>`).join('')}</ol>
+    <div class="meta-row"><button class="pill" data-lesson="accounts">Tax-advantaged accounts</button><button class="pill" data-lesson="gooddebt">Good debt and bad debt</button></div>
+    <span class="src">2026 limits: <a href="https://www.alpa.org/articles/2026/01/2026-irs-contribution-and-benefit-limits" target="_blank" rel="noopener">ALPA summary of IRS limits</a>, <a href="https://www.fox10phoenix.com/news/irs-401k-ira-contribution-limits-2026" target="_blank" rel="noopener">FOX 10</a>.</span>
+  </section>`;
+}
+
+function world(){
+  return `<section style="margin-top:20px"><h1>World</h1></section>
+  <section style="margin-top:28px"><div class="sec-head"><h2>Country playbooks</h2></div>
+  <div class="grid">${COUNTRIES.map(c=>`
+    <article class="plain country ${c.anchor?'anchor':''}">
+      <h3>${c.n}</h3>
+      <p style="font-family:var(--stat);font-weight:500;font-size:15.5px;color:var(--text)">${c.best}</p>
+      <p>${c.study}</p>
+      ${c.lesson?`<div><button class="pill" data-lesson="${c.lesson}">${LESSONS[c.lesson].title}</button></div>`:''}
+    </article>`).join('')}</div></section>
+  <section><div class="sec-head"><h2>Money through history</h2></div>
+    <div class="timeline">${HISTORY.map(([y,t])=>`<div class="ev"><span class="yr">${y}</span><p>${t}</p></div>`).join('')}
+      <div class="ev future"><span class="yr">Next</span><p>AI, energy and a shifting world order. <button class="pill" style="margin-left:6px" data-mission="future">See what's coming</button></p></div>
+    </div>
+  </section>`;
+}
+
+function savedView(){
+  if(!saved.length) return `<section style="margin-top:20px"><div class="glass m-legacy empty">
+    <h1>Nothing saved yet.</h1>
+    <p>Tap Save on any lesson or signal and it stays here, on this device.</p>
+    <button class="pill solid" data-nav="learn" style="margin-top:8px">Browse lessons</button></div></section>`;
+  const rows=saved.map(s=>{
+    const [kind,id]=s.split(':');
+    if(kind==='lesson'&&LESSONS[id]){const L=LESSONS[id],m=mission(L.m);return `<button class="glass ${m.cls} capsule" data-lesson="${id}"><span><span class="k">${m.short} · ${L.mod}</span><span class="t">${L.title}</span></span><span class="arrow">${arrowSvg}</span></button>`}
+    const n=NOW.find(x=>x.id===id); if(n){const m=mission(n.m);return `<button class="glass ${m.cls} capsule" data-nav="home"><span><span class="k">${n.kind}</span><span class="t">${n.title}</span></span><span class="arrow">${arrowSvg}</span></button>`}
+    return '';
+  }).join('');
+  return `<section style="margin-top:20px"><h1>Saved</h1></section>
+  <section style="margin-top:24px"><div class="savelist">${rows}</div></section>`;
+}
+
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-nav],[data-mission],[data-lesson],[data-save],[data-itab],[data-hz],[data-nv],[data-invest],[data-askchip],[data-srchex],[data-anaex],[data-mood],[data-fbagain],[data-fbrefresh],[data-fbcopy]'); if(!t) return;
+  if(t.dataset.askchip){askQuestion(state.param,t.dataset.askchip);return}
+  if(t.dataset.mood){const d=document.getElementById('fb-text')?.value||'';fb.mood=fb.mood===t.dataset.mood?'':t.dataset.mood;render();const x=document.getElementById('fb-text');if(x)x.value=d;return}
+  if(t.dataset.fbagain){fb.sent=false;render();return}
+  if(t.dataset.fbrefresh){fb.inbox=null;render();loadInbox();return}
+  if(t.dataset.fbcopy){const txt=(fb.mood?'['+fb.mood+'] ':'')+(document.getElementById('fb-text')?.value||'');
+    (navigator.clipboard?.writeText(txt)||Promise.reject()).then(()=>{t.textContent='Copied'}).catch(()=>{const x=document.getElementById('fb-text');x?.focus();x?.select()});return}
+  if(t.dataset.nav==='feedback'&&amOwner){go('feedback');loadInbox();return}
+  if(t.dataset.anaex){if(!ana.busy)runAnalysis(t.dataset.anaex);return}
+  if(t.dataset.srchex){if(srch.busy)return; if(state.view!=='search'){state={view:'search',param:null};window.scrollTo({top:0})} runSearch(t.dataset.srchex);return}
+  if(t.dataset.save){toggleSave(t.dataset.save);render();return}
+  if(t.dataset.itab){investTab=t.dataset.itab;render();return}
+  if(t.dataset.hz){horizon=t.dataset.hz;store.set('horizon',horizon);render();return}
+  if(t.dataset.nv){nerve=t.dataset.nv;store.set('nerve',nerve);render();return}
+  if(t.dataset.invest){investTab=t.dataset.invest;return go('invest')}
+  if(t.dataset.lesson) return go('lesson',t.dataset.lesson);
+  if(t.dataset.mission) return go('mission',t.dataset.mission);
+  if(t.dataset.nav) return go(t.dataset.nav);
+});
+
+document.getElementById('today').textContent=new Date().toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
+render();
+</script>
+
+</body></html>
