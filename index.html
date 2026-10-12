@@ -165,6 +165,23 @@ section{margin-top:52px}
 .askform.big{padding:8px 8px 8px 20px;align-items:center}
 nav.dock .srch{display:grid;place-items:center;padding:10px 13px}
 .a-wrap{width:100%}
+.note-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note-bar input{flex:1;min-width:160px;background:rgba(255,255,255,.06);border:0;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);color:var(--text);font:inherit;font-size:14px;padding:9px 16px;outline:none}
+.noterow{display:flex;flex-direction:column;gap:4px;text-align:left;width:100%;padding:16px 20px}
+.noterow .k{font-family:var(--stat);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.noterow .t{font-family:var(--display);font-size:22px;line-height:1.2}
+.noterow .pv{font-size:14px;color:rgba(238,241,246,.7);overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.noterow.inner{padding:12px 0;border-top:1px solid var(--line);border-radius:0}
+.noterow:hover .t{text-decoration:underline;text-underline-offset:4px}
+.noteed{margin-top:16px;padding:26px;display:flex;flex-direction:column;gap:12px;max-width:820px}
+.note-meta{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
+.note-title{background:none;border:0;outline:none;color:var(--text);font-family:var(--display);font-size:clamp(28px,5vw,40px);padding:4px 0}
+.note-title::placeholder,.note-text::placeholder{color:rgba(238,241,246,.4)}
+.note-text{min-height:46vh;background:rgba(5,7,12,.45);border:0;border-radius:22px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);color:var(--text);font:inherit;font-size:16px;line-height:1.7;padding:18px 20px;resize:vertical;outline:none}
+.note-text:focus{box-shadow:inset 0 0 0 1px rgba(255,255,255,.45)}
+.note-actions{display:flex;gap:10px;align-items:center;justify-content:flex-end;flex-wrap:wrap}
+.note-actions #note-status{margin-right:auto}
+.lesson-notes{margin-top:16px;padding:22px;max-width:760px}
 .fbtext{width:100%;background:rgba(5,7,12,.5);border:0;border-radius:20px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.16);color:var(--text);font:inherit;font-size:15px;padding:14px 16px;resize:vertical;outline:none}
 .fbtext:focus{box-shadow:inset 0 0 0 1px rgba(255,255,255,.5)}
 .fbtext::placeholder{color:rgba(238,241,246,.5)}
@@ -337,7 +354,7 @@ nav.dock button:not([aria-current="page"]):hover{color:var(--text)}
   <button data-nav="invest">Invest</button>
   <button data-nav="learn">Learn</button>
   <button data-nav="world">World</button>
-  <button data-nav="saved">Saved</button>
+  <button data-nav="saved">Library</button>
   <button data-nav="search" class="srch" aria-label="Search and ask"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="M13 13l4 4"/></svg></button>
 </nav>
 
@@ -1142,12 +1159,12 @@ const app = document.getElementById('app');
 function go(view,param){state={view,param};render();window.scrollTo({top:0})}
 
 function render(){
-  const parent = {mission:'learn',lesson:'learn',signal:'home'}[state.view]||state.view;
+  const parent = {mission:'learn',lesson:'learn',signal:'home',note:'saved'}[state.view]||state.view;
   document.querySelectorAll('nav.dock [data-nav]').forEach(b=>{
     b.removeAttribute('aria-current'); if(b.dataset.nav===parent) b.setAttribute('aria-current','page');
   });
   if(state.view!=='feedback'&&state.view!=='search') lastPlace=state.view==='lesson'?'Lesson: '+LESSONS[state.param]?.title:state.view;
-  const v = {home,invest,learn,mission:missionView,lesson:lessonView,world,saved:savedView,search:searchView,feedback:feedbackView,signal:signalView}[state.view];
+  const v = {home,invest,learn,mission:missionView,lesson:lessonView,world,saved:savedView,search:searchView,feedback:feedbackView,signal:signalView,note:noteView}[state.view];
   app.innerHTML = v(state.param);
   initScrub();
   if(state.view==='search'){const i=document.getElementById('search-input');if(i&&!srch.q)i.focus()}
@@ -1247,7 +1264,7 @@ function signalCard(x,full){
       ${full&&x.why?`<div class="c-why" style="margin-top:14px"><span class="lbl">What it means for you</span><p>${esc(x.why)}</p></div>`:''}
       <div class="meta-row">
         ${les.map((id,i)=>`<button class="pill ${i?'':'solid'}" data-lesson="${id}">${esc(LESSONS[id].title)}</button>`).join('')}
-        ${full?'':`<button class="pill" data-signal="${esc(x.id)}">Read more</button>`}
+        ${full?`<button class="pill" data-newnote="sig:${esc(x.id)}">Add a note</button>`:`<button class="pill" data-signal="${esc(x.id)}">Read more</button>`}
         <button class="pill save" data-save="sig:${esc(x.id)}" aria-pressed="${isSaved('sig:'+x.id)}">${isSaved('sig:'+x.id)?'Saved':'Save'}</button>
       </div>
       ${(x.sources||[]).length?`<span class="src">Source: ${(x.sources||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(', ')}</span>`:''}
@@ -1353,10 +1370,11 @@ function lessonView(id){
   return `<button class="back" data-mission="${m.id}">← ${m.name}</button>
   <div class="glass ${m.cls} lesson-head">
     <div><span class="eyebrow" style="color:rgba(238,241,246,.75)">${m.short} · ${L.mod}</span><h1 style="margin-top:10px">${L.title}</h1></div>
-    <button class="pill save" data-save="lesson:${id}" aria-pressed="${isSaved('lesson:'+id)}">${isSaved('lesson:'+id)?'Saved':'Save'}</button>
+    <div class="meta-row" style="margin-top:0"><button class="pill" data-newnote="lesson:${id}">Add a note</button><button class="pill save" data-save="lesson:${id}" aria-pressed="${isSaved('lesson:'+id)}">${isSaved('lesson:'+id)?'Saved':'Save'}</button></div>
   </div>
   <div class="rail">${layers}${(L.sources||[]).length?`<span class="src" style="margin-top:-12px">Sources: ${L.sources.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>`).join(', ')}</span>`:''}</div>
   ${askPanel(id)}
+  ${notesFor('lesson:'+id)}
   ${nxt?`<div class="next"><button class="glass ${m.cls} capsule" style="max-width:560px" data-lesson="${nxt}"><span><span class="k">Next · ${LESSONS[nxt].mod}</span><span class="t">${LESSONS[nxt].title}</span></span><span class="arrow">${arrowSvg}</span></button></div>`:''}`;
 }
 
@@ -1858,8 +1876,11 @@ function world(){
   </section>`;
 }
 
+let libTab='saved';
 function savedView(){
-  if(!saved.length) return `<section style="margin-top:20px"><div class="glass m-legacy empty">
+  const tabs=`<div class="tabs" role="tablist">${[['saved','Saved'],['notes','Notes'+(notes.length?' · '+notes.length:'')]].map(([k,n])=>`<button class="pill ${libTab===k?'on':''}" role="tab" aria-selected="${libTab===k}" data-libtab="${k}">${n}</button>`).join('')}</div>`;
+  if(libTab==='notes') return `<section style="margin-top:20px"><h1>Library</h1>${tabs}</section>${notesList()}`;
+  if(!saved.length) return `<section style="margin-top:20px"><h1>Library</h1>${tabs}</section><section style="margin-top:24px"><div class="glass m-legacy empty">
     <h1>Nothing saved yet.</h1>
     <p>Tap Save on any lesson or signal and it stays here, on this device.</p>
     <button class="pill solid" data-nav="learn" style="margin-top:8px">Browse lessons</button></div></section>`;
@@ -1870,12 +1891,90 @@ function savedView(){
     const n=NOW.find(x=>x.id===id); if(n){const m=mission(n.m);return `<button class="glass ${m.cls} capsule" data-nav="home"><span><span class="k">${n.kind}</span><span class="t">${n.title}</span></span><span class="arrow">${arrowSvg}</span></button>`}
     return '';
   }).join('');
-  return `<section style="margin-top:20px"><h1>Saved</h1></section>
+  return `<section style="margin-top:20px"><h1>Library</h1>${tabs}</section>
   <section style="margin-top:24px"><div class="savelist">${rows}</div></section>`;
 }
 
+/* ---------- notes (kept on this device) ---------- */
+let notes = store.get('notes',[]);
+let noteQuery='', noteTimer=null, noteConfirm=null;
+const saveNotes=()=>store.set('notes',notes);
+const refLabel=r=>{if(!r)return '';const[k,id]=r.split(':');if(k==='lesson'&&LESSONS[id])return LESSONS[id].title;if(k==='sig'){const x=SIGNALS.find(y=>y.id===id);if(x)return x.title}return ''};
+const noteTitle=n=>(n.title||'').trim()||(n.text||'').trim().split('\n')[0].slice(0,70)||'Untitled note';
+const fmtDate=d=>new Date(d).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+function newNote(ref){
+  const n={id:'n'+Date.now().toString(36)+Math.random().toString(36).slice(2,6),title:'',text:'',ref:ref||'',created:new Date().toISOString(),updated:new Date().toISOString()};
+  notes.unshift(n); saveNotes(); go('note',n.id);
+}
+function notesList(){
+  const q=noteQuery.trim().toLowerCase();
+  const list=notes.filter(n=>!q||(noteTitle(n)+' '+n.text+' '+refLabel(n.ref)).toLowerCase().includes(q)).sort((a,b)=>String(b.updated).localeCompare(String(a.updated)));
+  return `<section style="margin-top:22px;max-width:760px">
+    <div class="note-bar">
+      <button class="pill solid" data-newnote="">New note</button>
+      ${notes.length?`<input id="note-search" type="search" placeholder="Search your notes" value="${esc(noteQuery)}" aria-label="Search your notes">`:''}
+      ${notes.length?`<button class="pill" data-copynotes="1">Copy all</button>`:''}
+    </div>
+    <div class="savelist" id="note-list" style="margin-top:14px">${notesRows(list)}</div>
+    <p class="note">Notes are kept on this device, in this browser. Use Copy all to keep a backup somewhere else.</p>
+  </section>`;
+}
+function notesRows(list){
+  if(!notes.length) return `<div class="glass m-create empty"><h2>Your thinking goes here.</h2><p>Write down ideas, questions and connections as you learn. You can also add a note straight from any lesson or signal.</p></div>`;
+  if(!list.length) return `<p class="small">No notes match.</p>`;
+  return list.map(n=>`<button class="plain noterow" data-opennote="${n.id}">
+    <span class="k">${fmtDate(n.updated)}${n.ref&&refLabel(n.ref)?' · '+esc(refLabel(n.ref)):''}</span>
+    <span class="t">${esc(noteTitle(n))}</span>
+    ${n.text&&n.title?`<span class="pv">${esc(n.text.slice(0,140))}</span>`:''}
+  </button>`).join('');
+}
+function noteView(id){
+  const n=notes.find(x=>x.id===id);
+  if(!n) return `<button class="back" data-nav="saved">← Notes</button><p class="small" style="margin-top:20px">This note was deleted.</p>`;
+  const r=n.ref&&refLabel(n.ref); const [k,rid]=(n.ref||':').split(':');
+  return `<button class="back" data-notesback="1">← Notes</button>
+  <section class="glass m-create noteed">
+    <div class="note-meta"><span class="eyebrow" style="color:rgba(238,241,246,.75)">Edited <span id="note-when">${fmtDate(n.updated)}</span></span>
+      ${r?`<button class="pill" ${k==='lesson'?`data-lesson="${rid}"`:`data-signal="${esc(rid)}"`}>On: ${esc(r)}</button>`:''}</div>
+    <label for="note-title" class="sr">Title</label>
+    <input id="note-title" class="note-title" placeholder="Title" value="${esc(n.title)}">
+    <label for="note-text" class="sr">Note</label>
+    <textarea id="note-text" class="note-text" placeholder="What are you thinking? Questions, ideas, connections, what you'd do differently…">${esc(n.text)}</textarea>
+    <div class="note-actions">
+      <span class="small" id="note-status">Saved</span>
+      ${noteConfirm===n.id
+        ?`<span class="small">Delete this note?</span><button class="pill" data-delnote="${n.id}">Delete</button><button class="pill" data-canceldel="1">Keep</button>`
+        :`<button class="pill" data-askdel="${n.id}">Delete</button>`}
+    </div>
+  </section>`;
+}
+function notesFor(ref){
+  const list=notes.filter(n=>n.ref===ref);
+  return `<section class="plain lesson-notes">
+    <div class="sec-head" style="margin-bottom:8px"><h3>Your notes</h3><button class="pill solid" data-newnote="${esc(ref)}">Add a note</button></div>
+    ${list.length?`<div class="savelist">${list.map(n=>`<button class="noterow inner" data-opennote="${n.id}"><span class="k">${fmtDate(n.updated)}</span><span class="t">${esc(noteTitle(n))}</span></button>`).join('')}</div>`:`<p class="small" style="margin:0">Jot down what clicked, what you'd ask next, or how it connects to something else.</p>`}
+  </section>`;
+}
+document.addEventListener('input',e=>{
+  if(e.target.id==='note-search'){noteQuery=e.target.value;const l=document.getElementById('note-list');if(l){const q=noteQuery.trim().toLowerCase();l.innerHTML=notesRows(notes.filter(n=>!q||(noteTitle(n)+' '+n.text+' '+refLabel(n.ref)).toLowerCase().includes(q)).sort((a,b)=>String(b.updated).localeCompare(String(a.updated))))}return}
+  if(e.target.id!=='note-title'&&e.target.id!=='note-text') return;
+  const n=notes.find(x=>x.id===state.param); if(!n) return;
+  if(e.target.id==='note-title') n.title=e.target.value.slice(0,200); else n.text=e.target.value.slice(0,50000);
+  const st=document.getElementById('note-status'); if(st) st.textContent='Saving…';
+  clearTimeout(noteTimer); noteTimer=setTimeout(()=>{n.updated=new Date().toISOString();saveNotes();if(st)st.textContent='Saved';const w=document.getElementById('note-when');if(w)w.textContent=fmtDate(n.updated)},400);
+});
+
 document.addEventListener('click',e=>{
-  const t=e.target.closest('[data-nav],[data-mission],[data-lesson],[data-save],[data-itab],[data-hz],[data-nv],[data-invest],[data-askchip],[data-srchex],[data-anaex],[data-mood],[data-fbagain],[data-fbrefresh],[data-fbcopy],[data-signal]'); if(!t) return;
+  const t=e.target.closest('[data-nav],[data-mission],[data-lesson],[data-save],[data-itab],[data-hz],[data-nv],[data-invest],[data-askchip],[data-srchex],[data-anaex],[data-mood],[data-fbagain],[data-fbrefresh],[data-fbcopy],[data-signal],[data-libtab],[data-newnote],[data-opennote],[data-askdel],[data-delnote],[data-canceldel],[data-notesback],[data-copynotes]'); if(!t) return;
+  if(t.dataset.libtab){libTab=t.dataset.libtab;render();return}
+  if(t.dataset.newnote!==undefined){newNote(t.dataset.newnote);setTimeout(()=>document.getElementById('note-text')?.focus(),50);return}
+  if(t.dataset.opennote) return go('note',t.dataset.opennote);
+  if(t.dataset.notesback){libTab='notes';return go('saved')}
+  if(t.dataset.askdel){noteConfirm=t.dataset.askdel;render();return}
+  if(t.dataset.canceldel){noteConfirm=null;render();return}
+  if(t.dataset.delnote){notes=notes.filter(n=>n.id!==t.dataset.delnote);saveNotes();noteConfirm=null;libTab='notes';return go('saved')}
+  if(t.dataset.copynotes){const txt=notes.map(n=>`${noteTitle(n)}\n${fmtDate(n.updated)}${refLabel(n.ref)?' · '+refLabel(n.ref):''}\n\n${n.text}`).join('\n\n———\n\n');
+    (navigator.clipboard?.writeText(txt)||Promise.reject()).then(()=>{t.textContent='Copied'}).catch(()=>{t.textContent='Copy not allowed here'});return}
   if(t.dataset.signal) return go('signal',t.dataset.signal);
   if(t.dataset.askchip){askQuestion(state.param,t.dataset.askchip);return}
   if(t.dataset.mood){const d=document.getElementById('fb-text')?.value||'';fb.mood=fb.mood===t.dataset.mood?'':t.dataset.mood;render();const x=document.getElementById('fb-text');if(x)x.value=d;return}
