@@ -10,8 +10,44 @@
       "A long-term yield is roughly the average short-term rate investors expect over the next ten years, plus a term premium: extra pay for locking money up through unknown inflation, government deficits and a flood of new bonds. When inflation expectations rise or the government borrows heavily, buyers demand more, bond prices fall and yields climb.",
       "Lending for ten years is a bet on a decade of inflation and policy. When that future looks less certain, lenders want to be paid for the risk.",
       "The Fed steers the short end of the curve; markets set the long end. Mortgages, corporate loans and stock valuations follow the long end.",
-      ["What are inflation expectations doing right now?", "Is government borrowing rising?", "Do I need fixed-rate debt now, or can I wait?"]
+      [
+        "What are inflation expectations doing right now?",
+        "Is government borrowing rising?",
+        "Do I need fixed-rate debt now, or can I wait?"
+      ]
     ],
     "sources": []
+  },
+  {
+    "id": "crackspread",
+    "m": "world",
+    "mod": "Commodities",
+    "title": "Crack spreads: why diesel can soar faster than oil",
+    "added": "2026-10-12",
+    "layers": [
+      "Nobody puts crude oil in a truck. Crude has to be refined into products like gasoline, diesel and jet fuel, and each product has its own price set by its own supply and demand. The gap between what a refinery pays for crude and what it earns selling the products is called the crack spread, because refining 'cracks' heavy oil molecules into lighter fuels. When that gap blows out, fuel prices can climb much faster than oil.",
+      "The US Energy Information Administration uses a simple model called the 3:2:1 crack spread: three barrels of crude yield roughly two barrels of gasoline and one barrel of diesel. Add the wholesale price of the two barrels of gasoline and the one of diesel (fuel is quoted per gallon, so multiply by 42 gallons per barrel), subtract the cost of three barrels of crude, and divide by three. The result is a rough profit per barrel before the refinery's other costs. Analysts also track single-product spreads. Example with made-up round numbers: if crude costs $90 a barrel and diesel sells wholesale for $4.50 a gallon, a barrel of diesel is worth $189, so the diesel crack is $99. In August 2026 the real US diesel crack passed $100 a barrel for the first time. The spread widens when refining capacity, not oil, is the bottleneck: refineries knocked out by attacks or hurricanes, plants already running flat out (US refineries hit 98% utilization in late August 2026), low inventories, or a seasonal jump in demand. Diesel demand rises in autumn with harvest and trucking (US distillate use rises about 4% from September to October on average) and then winter heating oil, while gasoline enters its slow season. That is why diesel can set records while gasoline barely moves.",
+      "Refineries are huge, slow to build and few in number, so a fuel shortage cannot be fixed by pumping more crude. In 2022, when Russia's invasion of Ukraine disrupted one of the world's biggest diesel exporters, US diesel hit a weekly high of $5.81 a gallon. In 2026 the same thing is happening for a different mix of reasons: attacks on Russian refineries cut its diesel output about 30%, and the Iran war choked flows through the Strait of Hormuz. Diesel matters more to the economy than gasoline because it moves freight, food and machinery, so a diesel squeeze spreads into prices of almost everything that gets shipped. Wide crack spreads move money too: they are a windfall for refiners and a cost for airlines, truckers, farmers and retailers.",
+      "Oil is the raw material, but the price you and your suppliers pay is set at the refinery. When product prices rise faster than crude, the problem is refining capacity, and it usually takes longer to fix than a crude shortage.",
+      [
+        "Is the price jump in crude itself, or in refined products like diesel?",
+        "Who in my supply chain pays for fuel, and how quickly do they pass it on to me?",
+        "What would ease the bottleneck: new refining capacity, restored exports, or the end of a seasonal peak?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "US EIA, 3:2:1 crack spread explainer",
+        "url": "https://www.eia.gov/todayinenergy/includes/crackspread_explain.php"
+      },
+      {
+        "name": "Forbes (Robert Rapier), Sep 9, 2026",
+        "url": "https://www.forbes.com/sites/rrapier/2026/09/09/why-diesel-is-on-track-to-set-a-2026-price-record/"
+      },
+      {
+        "name": "AP via News4JAX, Oct 9, 2026",
+        "url": "https://www.news4jax.com/business/2026/10/09/trump-says-us-to-get-diesel-from-russia-relaxing-pressure-on-moscow-to-ease-prices-before-midterms/"
+      }
+    ]
   }
 ]

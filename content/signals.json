@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-12-diesel-squeeze",
+    "date": "2026-10-12",
+    "kind": "Signal",
+    "m": "world",
+    "title": "Oil tops $106 again, and diesel is the real squeeze",
+    "stat": "$6.28",
+    "statLabel": "US average diesel price per gallon, AAA · Oct 9, 2026",
+    "body": "Brent crude rose to about $106 a barrel on Monday after Houthi strikes on Riyadh's international airport killed 12 people and two tankers were attacked near Oman and in the Strait of Hormuz, a route that carried about a fifth of global oil and LNG trade before the Iran war. Diesel is under even more pressure than crude: the US average is $6.28 a gallon, near the record $6.52 set on September 22, and the US diesel crack spread (diesel price minus crude price) passed $100 a barrel for the first time in August. Russian diesel output is down about 30% after Ukrainian strikes on its refineries, and US refineries ran at 98% of capacity in late August, the most since 2018. On October 9 the White House announced a deal for Russian diesel, starting with more than 300,000 tons, but analysts quoted by AP expect little effect on prices.",
+    "why": "Diesel moves trucks, tractors, ships and generators, so its price shows up later in groceries, delivery fees and anything that has to be shipped. If your business moves goods, check whether your carriers add fuel surcharges and how fast they pass them on. Wednesday's September inflation report will show how much of this is already reaching consumer prices.",
+    "lessons": [
+      "crackspread",
+      "oil",
+      "chain"
+    ],
+    "sources": [
+      {
+        "name": "TheStreet, Oct 12, 2026",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-oct-12-2026-dow-futures-climb-as-wall-street-gears-up-for-busy-week"
+      },
+      {
+        "name": "AP via News4JAX, Oct 9, 2026",
+        "url": "https://www.news4jax.com/business/2026/10/09/trump-says-us-to-get-diesel-from-russia-relaxing-pressure-on-moscow-to-ease-prices-before-midterms/"
+      },
+      {
+        "name": "Forbes (Robert Rapier), Sep 9, 2026",
+        "url": "https://www.forbes.com/sites/rrapier/2026/09/09/why-diesel-is-on-track-to-set-a-2026-price-record/"
+      }
+    ]
+  },
+  {
     "id": "2026-10-11-ten-year-above-5",
     "date": "2026-10-11",
     "kind": "Signal",
@@ -9,11 +39,24 @@
     "statLabel": "10-year Treasury yield · Oct 8, 2026",
     "body": "The Fed's target rate is 3.75–4.00% after a hike in September, with the effective rate at 3.88%. But the 10-year Treasury yield, which long-term loans follow, has climbed to 5.22%, and 30-year fixed mortgages average about 7.5%. Households now expect 3.9% inflation over the next year, the highest since May 2023, so lenders want more yield to lock money up for a decade.",
     "why": "Borrowing for a home or a business costs more, for longer. Cash and short-term Treasuries pay well right now, while long bonds swing with every inflation report. Watch the September inflation report on October 14 and the Fed decision on October 28.",
-    "lessons": ["termpremium", "fedrate", "ratesprices"],
+    "lessons": [
+      "termpremium",
+      "fedrate",
+      "ratesprices"
+    ],
     "sources": [
-      {"name": "Federal Reserve H.15, Oct 9, 2026", "url": "https://www.federalreserve.gov/releases/h15/"},
-      {"name": "Yahoo Finance, Oct 9, 2026", "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-081118848.html"},
-      {"name": "Admiral Markets Fed preview", "url": "https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026"}
+      {
+        "name": "Federal Reserve H.15, Oct 9, 2026",
+        "url": "https://www.federalreserve.gov/releases/h15/"
+      },
+      {
+        "name": "Yahoo Finance, Oct 9, 2026",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-081118848.html"
+      },
+      {
+        "name": "Admiral Markets Fed preview",
+        "url": "https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026"
+      }
     ]
   }
 ]
