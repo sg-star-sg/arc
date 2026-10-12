@@ -1,0 +1,17 @@
+[
+  {
+    "id": "termpremium",
+    "m": "economy",
+    "mod": "Money and banks",
+    "title": "Why long-term rates can rise while the Fed stands still",
+    "added": "2026-10-11",
+    "layers": [
+      "The 10-year Treasury yield is set by investors buying and selling bonds every day, not by the Fed. It can rise even while the Fed holds its own rate steady.",
+      "A long-term yield is roughly the average short-term rate investors expect over the next ten years, plus a term premium: extra pay for locking money up through unknown inflation, government deficits and a flood of new bonds. When inflation expectations rise or the government borrows heavily, buyers demand more, bond prices fall and yields climb.",
+      "Lending for ten years is a bet on a decade of inflation and policy. When that future looks less certain, lenders want to be paid for the risk.",
+      "The Fed steers the short end of the curve; markets set the long end. Mortgages, corporate loans and stock valuations follow the long end.",
+      ["What are inflation expectations doing right now?", "Is government borrowing rising?", "Do I need fixed-rate debt now, or can I wait?"]
+    ],
+    "sources": []
+  }
+]

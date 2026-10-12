@@ -1,0 +1,19 @@
+[
+  {
+    "id": "2026-10-11-ten-year-above-5",
+    "date": "2026-10-11",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "Long-term rates are above 5%, and mortgages followed",
+    "stat": "5.22%",
+    "statLabel": "10-year Treasury yield · Oct 8, 2026",
+    "body": "The Fed's target rate is 3.75–4.00% after a hike in September, with the effective rate at 3.88%. But the 10-year Treasury yield, which long-term loans follow, has climbed to 5.22%, and 30-year fixed mortgages average about 7.5%. Households now expect 3.9% inflation over the next year, the highest since May 2023, so lenders want more yield to lock money up for a decade.",
+    "why": "Borrowing for a home or a business costs more, for longer. Cash and short-term Treasuries pay well right now, while long bonds swing with every inflation report. Watch the September inflation report on October 14 and the Fed decision on October 28.",
+    "lessons": ["termpremium", "fedrate", "ratesprices"],
+    "sources": [
+      {"name": "Federal Reserve H.15, Oct 9, 2026", "url": "https://www.federalreserve.gov/releases/h15/"},
+      {"name": "Yahoo Finance, Oct 9, 2026", "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-081118848.html"},
+      {"name": "Admiral Markets Fed preview", "url": "https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026"}
+    ]
+  }
+]

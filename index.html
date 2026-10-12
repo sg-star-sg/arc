@@ -1104,6 +1104,20 @@ const NOW = [
   {id:'goldbuy',kind:'Explainer',m:'world',title:'Why gold rose 66% in 2025',lessons:['gold']}
 ];
 
+/* ---------- live content (content/*.json, added daily) ---------- */
+let SIGNALS = [];
+const NEWDAYS = 7;
+const daysAgo = d => (Date.now()-Date.parse(d))/864e5;
+async function loadContent(){
+  try{
+    const [sig,les]=await Promise.all(['content/signals.json','content/lessons.json'].map(u=>fetch(u,{cache:'no-cache'}).then(r=>r.ok?r.json():[]).catch(()=>[])));
+    if(Array.isArray(les)) les.forEach(L=>{ if(L&&L.id&&!LESSONS[L.id]&&MISSIONS.some(m=>m.id===L.m)&&Array.isArray(L.layers)&&L.layers.length===5){ add(L.id,L.m,L.mod||'New',L.title,...L.layers); LESSONS[L.id].added=L.added; LESSONS[L.id].sources=L.sources } });
+    if(Array.isArray(sig)) SIGNALS=sig.filter(x=>x&&x.id&&x.title).sort((a,b)=>String(b.date).localeCompare(String(a.date)));
+    render();
+  }catch(e){}
+}
+const isNew = id => LESSONS[id]?.added && daysAgo(LESSONS[id].added) <= NEWDAYS;
+
 /* ---------- state ---------- */
 const store = {
   get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},
@@ -1128,12 +1142,12 @@ const app = document.getElementById('app');
 function go(view,param){state={view,param};render();window.scrollTo({top:0})}
 
 function render(){
-  const parent = {mission:'learn',lesson:'learn'}[state.view]||state.view;
+  const parent = {mission:'learn',lesson:'learn',signal:'home'}[state.view]||state.view;
   document.querySelectorAll('nav.dock [data-nav]').forEach(b=>{
     b.removeAttribute('aria-current'); if(b.dataset.nav===parent) b.setAttribute('aria-current','page');
   });
   if(state.view!=='feedback'&&state.view!=='search') lastPlace=state.view==='lesson'?'Lesson: '+LESSONS[state.param]?.title:state.view;
-  const v = {home,invest,learn,mission:missionView,lesson:lessonView,world,saved:savedView,search:searchView,feedback:feedbackView}[state.view];
+  const v = {home,invest,learn,mission:missionView,lesson:lessonView,world,saved:savedView,search:searchView,feedback:feedbackView,signal:signalView}[state.view];
   app.innerHTML = v(state.param);
   initScrub();
   if(state.view==='search'){const i=document.getElementById('search-input');if(i&&!srch.q)i.focus()}
@@ -1220,6 +1234,32 @@ function riskChart(){
 }
 
 /* ---------- views ---------- */
+function signalCard(x,full){
+  const m=mission(x.m)||MISSIONS[0];
+  const d=x.date?new Date(x.date+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}):'';
+  const les=(x.lessons||[]).filter(id=>LESSONS[id]);
+  return `<article class="glass ${m.cls} now-hero sig">
+    <div>
+      <span class="eyebrow">${esc(x.kind||'Signal')} · ${esc(m.short)}${d?' · '+d:''}</span>
+      ${x.stat?`<div class="bignum" style="margin-top:14px">${esc(String(x.stat))}</div>${x.statLabel?`<span class="eyebrow" style="color:rgba(238,241,246,.8)">${esc(x.statLabel)}</span>`:''}`:''}
+      <h3 style="margin-top:8px">${esc(x.title)}</h3>
+      <p>${esc(x.body||'')}</p>
+      ${full&&x.why?`<div class="c-why" style="margin-top:14px"><span class="lbl">What it means for you</span><p>${esc(x.why)}</p></div>`:''}
+      <div class="meta-row">
+        ${les.map((id,i)=>`<button class="pill ${i?'':'solid'}" data-lesson="${id}">${esc(LESSONS[id].title)}</button>`).join('')}
+        ${full?'':`<button class="pill" data-signal="${esc(x.id)}">Read more</button>`}
+        <button class="pill save" data-save="sig:${esc(x.id)}" aria-pressed="${isSaved('sig:'+x.id)}">${isSaved('sig:'+x.id)?'Saved':'Save'}</button>
+      </div>
+      ${(x.sources||[]).length?`<span class="src">Source: ${(x.sources||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(', ')}</span>`:''}
+    </div>
+  </article>`;
+}
+function signalView(id){
+  const x=SIGNALS.find(s=>s.id===id);
+  if(!x) return `<button class="back" data-nav="home">← Today</button><p class="small" style="margin-top:20px">This signal isn't available.</p>`;
+  return `<button class="back" data-nav="home">← Today</button><section style="margin-top:16px">${signalCard(x,true)}</section>`;
+}
+
 function home(){
   const h=new Date().getHours(), greet=h<12?'Good morning':h<18?'Good afternoon':'Good evening';
   const minor=NOW.slice(1).map(n=>{const m=mission(n.m);return `
@@ -1229,7 +1269,8 @@ function home(){
   const g=(r)=>100*Math.pow(1+r/100,98);
   return `
   <section style="margin-top:20px"><h1>${greet}.<br>Here's what's moving.</h1></section>
-  <section style="margin-top:28px">
+  ${SIGNALS.length?`<section style="margin-top:28px">${signalCard(SIGNALS[0])}</section>`:''}
+  <section style="margin-top:${SIGNALS.length?'16':'28'}px">
     <article class="glass m-wealth now-hero">
       <div>
         <span class="eyebrow">Signal · Future</span>
@@ -1262,6 +1303,9 @@ function home(){
       <div class="chart" style="align-self:center">${riskChart()}</div>
     </div>
   </section>
+  ${(()=>{const fresh=Object.keys(LESSONS).filter(isNew).sort((a,b)=>String(LESSONS[b].added).localeCompare(String(LESSONS[a].added)));
+    return fresh.length?`<section><div class="sec-head"><h2>New lessons</h2><span class="eyebrow">this week</span></div><div class="capsules">${fresh.slice(0,6).map(id=>{const L=LESSONS[id],m=mission(L.m);return `<button class="glass ${m.cls} capsule" data-lesson="${id}"><span><span class="k">New · ${m.short}</span><span class="t">${esc(L.title)}</span></span><span class="arrow">${arrowSvg}</span></button>`}).join('')}</div></section>`:''})()}
+  ${SIGNALS.length>1?`<section><div class="sec-head"><h2>Earlier signals</h2><span class="eyebrow">${SIGNALS.length-1} saved here</span></div><div class="savelist">${SIGNALS.slice(1,31).map(x=>{const m=mission(x.m)||MISSIONS[0];return `<button class="glass ${m.cls} capsule" data-signal="${esc(x.id)}"><span><span class="k">${esc(x.date||'')} · ${m.short}</span><span class="t">${esc(x.title)}</span></span><span class="arrow">${arrowSvg}</span></button>`}).join('')}</div></section>`:''}
   <section>
     <div class="sec-head"><h2>Learn</h2><span class="eyebrow">lessons read</span></div>
     ${missionGrid()}
@@ -1287,7 +1331,7 @@ function missionView(id){
   const mods=modulesOf(id).map(g=>`
     <div class="plain module">
       <h3>${g.n}</h3>
-      ${g.ids.map(x=>`<button class="litem" data-lesson="${x}"><span class="lt">${LESSONS[x].title}</span>${readSet.has(x)?'<span class="tag read">Read</span>':'<span class="dotmark" aria-hidden="true"></span>'}</button>`).join('')}
+      ${g.ids.map(x=>`<button class="litem" data-lesson="${x}"><span class="lt">${LESSONS[x].title}</span>${isNew(x)?'<span class="tag" style="color:var(--high)">New</span>':readSet.has(x)?'<span class="tag read">Read</span>':'<span class="dotmark" aria-hidden="true"></span>'}</button>`).join('')}
     </div>`).join('');
   const extra = id==='wealth'?`<div class="meta-row"><button class="pill solid" data-nav="invest">Open the investing tools</button></div>`:'';
   return `<button class="back" data-nav="learn">← Learn</button>
@@ -1311,7 +1355,7 @@ function lessonView(id){
     <div><span class="eyebrow" style="color:rgba(238,241,246,.75)">${m.short} · ${L.mod}</span><h1 style="margin-top:10px">${L.title}</h1></div>
     <button class="pill save" data-save="lesson:${id}" aria-pressed="${isSaved('lesson:'+id)}">${isSaved('lesson:'+id)?'Saved':'Save'}</button>
   </div>
-  <div class="rail">${layers}</div>
+  <div class="rail">${layers}${(L.sources||[]).length?`<span class="src" style="margin-top:-12px">Sources: ${L.sources.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>`).join(', ')}</span>`:''}</div>
   ${askPanel(id)}
   ${nxt?`<div class="next"><button class="glass ${m.cls} capsule" style="max-width:560px" data-lesson="${nxt}"><span><span class="k">Next · ${LESSONS[nxt].mod}</span><span class="t">${LESSONS[nxt].title}</span></span><span class="arrow">${arrowSvg}</span></button></div>`:''}`;
 }
@@ -1822,6 +1866,7 @@ function savedView(){
   const rows=saved.map(s=>{
     const [kind,id]=s.split(':');
     if(kind==='lesson'&&LESSONS[id]){const L=LESSONS[id],m=mission(L.m);return `<button class="glass ${m.cls} capsule" data-lesson="${id}"><span><span class="k">${m.short} · ${L.mod}</span><span class="t">${L.title}</span></span><span class="arrow">${arrowSvg}</span></button>`}
+    if(kind==='sig'){const x=SIGNALS.find(y=>y.id===id); if(x){const m=mission(x.m)||MISSIONS[0];return `<button class="glass ${m.cls} capsule" data-signal="${esc(x.id)}"><span><span class="k">Signal · ${esc(x.date||'')}</span><span class="t">${esc(x.title)}</span></span><span class="arrow">${arrowSvg}</span></button>`} return ''}
     const n=NOW.find(x=>x.id===id); if(n){const m=mission(n.m);return `<button class="glass ${m.cls} capsule" data-nav="home"><span><span class="k">${n.kind}</span><span class="t">${n.title}</span></span><span class="arrow">${arrowSvg}</span></button>`}
     return '';
   }).join('');
@@ -1830,7 +1875,8 @@ function savedView(){
 }
 
 document.addEventListener('click',e=>{
-  const t=e.target.closest('[data-nav],[data-mission],[data-lesson],[data-save],[data-itab],[data-hz],[data-nv],[data-invest],[data-askchip],[data-srchex],[data-anaex],[data-mood],[data-fbagain],[data-fbrefresh],[data-fbcopy]'); if(!t) return;
+  const t=e.target.closest('[data-nav],[data-mission],[data-lesson],[data-save],[data-itab],[data-hz],[data-nv],[data-invest],[data-askchip],[data-srchex],[data-anaex],[data-mood],[data-fbagain],[data-fbrefresh],[data-fbcopy],[data-signal]'); if(!t) return;
+  if(t.dataset.signal) return go('signal',t.dataset.signal);
   if(t.dataset.askchip){askQuestion(state.param,t.dataset.askchip);return}
   if(t.dataset.mood){const d=document.getElementById('fb-text')?.value||'';fb.mood=fb.mood===t.dataset.mood?'':t.dataset.mood;render();const x=document.getElementById('fb-text');if(x)x.value=d;return}
   if(t.dataset.fbagain){fb.sent=false;render();return}
@@ -1850,6 +1896,7 @@ document.addEventListener('click',e=>{
   if(t.dataset.nav) return go(t.dataset.nav);
 });
 
+loadContent();
 document.getElementById('today').textContent=new Date().toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
 render();
 </script>
