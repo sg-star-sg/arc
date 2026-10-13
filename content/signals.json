@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-10-13-memory-chip-rout",
+    "date": "2026-10-13",
+    "kind": "Signal",
+    "m": "future",
+    "title": "A Chinese chip claim knocks 10% off SK hynix in a day",
+    "stat": "−10.09%",
+    "statLabel": "SK hynix share price change on Oct 13, 2026, Korea JoongAng Daily",
+    "body": "Over the weekend, the president of ChangXin Memory Technologies (CXMT), China's largest DRAM maker, said it plans to ship DDR5 server memory built on a new '4F²' cell design by the end of 2026. That layout packs memory cells into roughly 30% less space than today's mainstream design, which could make each bit cheaper to produce. Memory stocks fell on Monday, with Micron down about 4%, and on Tuesday in Seoul SK hynix closed down 10.09% and Samsung Electronics down 7.39%, while the Kospi briefly dropped below 6,000 and triggered a trading curb. Morningstar analysts said mass-producing the design reliably will be 'extremely difficult', and the shortage is still in place: TrendForce expects conventional DRAM contract prices to rise another 10–15% this quarter.",
+    "why": "Memory chips are close to a commodity, so the biggest risk to today's record profits is new supply, not falling demand. Micron's adjusted gross margin hit 87% last quarter, up from 45.7% a year earlier, and markets now react sharply to any sign that a competitor could add capacity. If you own broad Korea, chip or AI funds, check how much of them sits in just three memory makers.",
+    "lessons": [
+      "cyclicals",
+      "aistack",
+      "uschina"
+    ],
+    "sources": [
+      {
+        "name": "Korea JoongAng Daily, Oct 13, 2026",
+        "url": "https://www.koreajoongangdaily.com/business/samsung-sk-hynix-shares-plunge-on-black-tuesday-amid-concerns-over-chinese-chip/12918371"
+      },
+      {
+        "name": "TradingKey (Morningstar view), Oct 12, 2026",
+        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262211996-memory-stocks-selloff-sandisk-micron-drop-cxmt-new-dram-architecture-tradingkey"
+      },
+      {
+        "name": "24/7 Wall St., Oct 12, 2026",
+        "url": "https://247wallst.com/investing/2026/10/12/memory-stocks-slide-as-chinas-cxmt-flags-denser-chip-design-micron-and-sk-hynix-fall-4-western-digital-drops-2/"
+      },
+      {
+        "name": "TrendForce, Sep 30, 2026",
+        "url": "https://www.trendforce.com/presscenter/news/20260930-13258.html"
+      }
+    ]
+  },
+  {
     "id": "2026-10-12-diesel-squeeze",
     "date": "2026-10-12",
     "kind": "Signal",

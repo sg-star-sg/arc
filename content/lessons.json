@@ -49,5 +49,42 @@
         "url": "https://www.news4jax.com/business/2026/10/09/trump-says-us-to-get-diesel-from-russia-relaxing-pressure-on-moscow-to-ease-prices-before-midterms/"
       }
     ]
+  },
+  {
+    "id": "cyclicals",
+    "m": "wealth",
+    "mod": "Stocks",
+    "title": "Cyclical industries: when record profits are a warning",
+    "added": "2026-10-13",
+    "layers": [
+      "A cyclical industry is one where profits rise and fall in big waves, because prices swing with the balance of supply and demand rather than with anything the company controls. Memory chips, oil, steel, shipping, airlines, chemicals and homebuilding all behave this way. What they share: the product is close to a commodity (one maker's chip or barrel is nearly interchangeable with another's), buyers shop on price, and new capacity is expensive and takes years to build. Micron, one of three big memory makers, shows the pattern. In fiscal 2022 it earned $8.7 billion. In fiscal 2023 revenue fell 49% and it lost $5.8 billion, with a gross margin of minus 9.1%, meaning it sold chips for less than they cost to make. By mid-2026 its adjusted gross margin had reached 87%.",
+      "The cycle runs like a loop. Demand jumps (in 2026, AI data centers need huge amounts of memory) while supply is fixed, so prices soar. Soaring prices create fat profits, and every producer uses them to build new factories. Factories take two to three years to come online, so they tend to arrive together, often just as demand cools. Now supply outruns demand, buyers stop ordering and burn through their stockpiles, and prices fall fast because a factory that has already been built is cheapest to keep running, even at a thin margin. That is what happened in early 2023: Micron's DRAM prices dropped about 20% in a single quarter, revenue fell 53% from a year earlier, it wrote down $1.43 billion of inventory and planned to cut close to 15% of its workforce. Losses then force producers to cut investment, supply tightens, and the next boom starts. A second force is technology. A cheaper way to make the same product, like a denser chip design that fits more memory in the same space, works like new supply even before a new factory opens, because it lowers what each unit costs to produce.",
+      "Cyclicals trick investors in a specific way. The price-to-earnings ratio (share price divided by profit per share) usually signals 'cheap' when it is low. For a cyclical company at the top of the cycle, profits are temporarily huge, so the P/E looks low exactly when the risk is highest. At the bottom, profits are tiny or negative, so the P/E looks high or meaningless just when the outlook is about to improve. Professional investors handle this by looking at 'normalized' or 'mid-cycle' earnings, an average across a full boom and bust, and by watching supply rather than demand: how much capacity competitors are building, how full customer inventories are, and whether a new low-cost producer is entering. Markets also move ahead of profits. On October 12–13, 2026, memory stocks fell sharply on news that China's CXMT might make denser chips, even though prices were still rising and the threat was not yet in production. Micron's own earlier cycle shows how fast profits fade: from a $14.1 billion peak in fiscal 2018, net income fell 81% in two years.",
+      "In a commodity business, the most dangerous moment is when everyone is earning record profits, because those profits fund the new supply that ends them. Judge a cyclical company by its earnings across a full cycle, and watch the supply side more closely than the demand story.",
+      [
+        "Is this company's product easy to swap for a competitor's, so that price decides who wins?",
+        "Are today's profits far above the company's average over the last full cycle?",
+        "How much new capacity are competitors building, and when does it come online?",
+        "If prices fell 20% in a quarter, could this company still cover its costs and debts?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Webull News, The last memory boom ended with Micron losing $5.8 billion, 2026",
+        "url": "https://www.webull.com/news/15419983867716608"
+      },
+      {
+        "name": "The Register, Mar 29, 2023",
+        "url": "https://www.theregister.com/2023/03/29/micron_sees_q2_2023/"
+      },
+      {
+        "name": "24/7 Wall St., Oct 12, 2026",
+        "url": "https://247wallst.com/investing/2026/10/12/memory-stocks-slide-as-chinas-cxmt-flags-denser-chip-design-micron-and-sk-hynix-fall-4-western-digital-drops-2/"
+      },
+      {
+        "name": "Korea JoongAng Daily, Oct 13, 2026",
+        "url": "https://www.koreajoongangdaily.com/business/samsung-sk-hynix-shares-plunge-on-black-tuesday-amid-concerns-over-chinese-chip/12918371"
+      }
+    ]
   }
 ]
