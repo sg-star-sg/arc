@@ -86,5 +86,42 @@
         "url": "https://www.koreajoongangdaily.com/business/samsung-sk-hynix-shares-plunge-on-black-tuesday-amid-concerns-over-chinese-chip/12918371"
       }
     ]
+  },
+  {
+    "id": "cpiinside",
+    "m": "economy",
+    "mod": "Money and banks",
+    "title": "Inside the inflation number: headline, core and the basket",
+    "added": "2026-10-14",
+    "layers": [
+      "The Consumer Price Index (CPI) is a monthly measure of how much a fixed basket of goods and services costs compared with before. The Bureau of Labor Statistics collects prices across the economy, from rent and gasoline to airfares and haircuts, and groups them into categories. Each category gets a weight called its relative importance, based on how much households actually spend on it. In August 2026 shelter was 35.3% of the basket, food 13.5%, energy 7.4% and gasoline alone 3.9%. 'Headline' inflation is the change in the whole basket. 'Core' inflation strips out food and energy, which together are about 21% of the basket, leaving the other 79%. The number in the news is usually the change over 12 months.",
+      "A category's effect on the total is roughly its weight times its price change. In September 2026 gasoline rose 9.1% in one month. Multiply by its 3.9% weight and you get about 0.35 percentage points, which is why the BLS said gasoline accounted for over half of the 0.6% monthly rise in all prices. Over 12 months gasoline was up 34.2% and energy 20.4%, while core rose only 2.6%. That gap, 3.7% headline against 2.6% core, is the whole story of that report: an energy shock sitting on top of a much calmer underlying trend. Housing works differently. Most people own their home, so the BLS does not use house prices. It asks what an owned home would rent for, a measure called owners' equivalent rent (25.9% of the basket on its own), and estimates changes from a sample of rented homes. Each home in the sample is priced only every six months, and it reflects what tenants are paying now, including on old leases. So shelter moves slowly and keeps reporting yesterday's rent changes for a long time after new-lease rents turn. Monthly figures are adjusted for seasonal patterns; the 12-month figures are not.",
+      "Central banks care most about the part of inflation that sticks. Food and energy prices can jump on a war, a hurricane or a bad harvest and then fall back, and interest rates can do nothing to make more oil. Core is a better guide to where inflation will settle, so policymakers watch it closely. The Federal Reserve's official 2% target is set on a different measure, the price index for personal consumption expenditures (PCE), so the CPI and the Fed's own gauge can tell slightly different stories. The danger is when an energy shock leaks into everything else: transport and airfares cost more, companies raise prices, workers ask for higher pay, and people start expecting inflation to stay high. In September 2026, airfares were up 22.4% over the year, a sign that fuel costs were already spreading. Bond markets react to surprises: when core came in 0.1 point above forecast, the 10-year Treasury yield rose more than 6 basis points that morning as investors priced in the chance of another Fed hike.",
+      "Read every inflation report in three steps. First, compare headline with core to see whether the rise is broad or concentrated in energy and food. Second, look at the biggest weights, shelter above all, because a small move there outweighs a big move in a small category. Third, compare the result with what economists expected, because markets move on the surprise. Then translate it into your life: your personal inflation rate depends on your own basket. A household that drives a lot and rents feels this report far more than one that works from home and owns with a fixed mortgage. Any cash or bond earning less than inflation is losing purchasing power, even if its balance grows.",
+      [
+        "Is this rise broad, or mostly energy and food?",
+        "Is core inflation speeding up or slowing down over the last three months?",
+        "What would my own inflation rate be, given how I spend?",
+        "Is my cash earning more than inflation after tax?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "US Bureau of Labor Statistics, CPI release, Oct 14, 2026",
+        "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm"
+      },
+      {
+        "name": "BLS, Rent and owners' equivalent rent FAQ",
+        "url": "https://www.bls.gov/cpi/additional-resources/rent-oer-faq.htm"
+      },
+      {
+        "name": "Federal Reserve, Why does the Fed aim for 2 percent inflation?",
+        "url": "https://www.federalreserve.gov/faqs/economy_14400.htm"
+      },
+      {
+        "name": "TheStreet, Oct 14, 2026",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-14-2026"
+      }
+    ]
   }
 ]

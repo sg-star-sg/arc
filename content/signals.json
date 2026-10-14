@@ -1,5 +1,31 @@
 [
   {
+    "id": "2026-10-14-cpi-gasoline-jump",
+    "date": "2026-10-14",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "Gasoline pushes US inflation to 3.7%",
+    "stat": "3.7%",
+    "statLabel": "US consumer prices, 12 months to September 2026 · BLS, Oct 14, 2026",
+    "body": "Consumer prices rose 0.6% in September and 3.7% over the past year, up from 3.4% in August. Gasoline jumped 9.1% in the month and 34.2% over the year, and the Bureau of Labor Statistics says it accounted for over half of the monthly increase. Core inflation, which leaves out food and energy, rose 0.3% in the month and 2.6% over the year, a bit above the 2.5% economists expected, with shelter, airfares and used cars doing the pushing. The 10-year Treasury yield rose to about 5.28% that morning as investors weighed whether the Fed raises rates again at its October 28 meeting.",
+    "why": "Headline inflation tells you what your budget feels; core tells you what is likely to stick. Energy shocks can reverse, but if core keeps creeping up, borrowing costs stay high for longer, which matters for mortgages, business loans and the real return on cash. Check whether your savings rate is beating 3.7% before taxes.",
+    "lessons": [
+      "cpiinside",
+      "inflationcause",
+      "fedrate"
+    ],
+    "sources": [
+      {
+        "name": "US Bureau of Labor Statistics, CPI release, Oct 14, 2026",
+        "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm"
+      },
+      {
+        "name": "TheStreet, Oct 14, 2026",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-14-2026"
+      }
+    ]
+  },
+  {
     "id": "2026-10-13-memory-chip-rout",
     "date": "2026-10-13",
     "kind": "Signal",
