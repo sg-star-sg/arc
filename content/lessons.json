@@ -123,5 +123,42 @@
         "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-14-2026"
       }
     ]
+  },
+  {
+    "id": "lngprices",
+    "m": "world",
+    "mod": "Commodities",
+    "title": "Natural gas and LNG: why the world has no single gas price",
+    "added": "2026-10-15",
+    "layers": [
+      "Natural gas heats homes, runs power plants, and is the raw material for fertilizer and many chemicals. Unlike oil, it has no single world price. It trades in regional markets with their own benchmarks: Henry Hub in the US, TTF in Europe (traded in euros per megawatt-hour), and JKM for spot cargoes into Japan and Korea. The same molecule can cost several times more in Rotterdam or Tokyo than in Louisiana. In October 2026, Europe's TTF reached about €86, roughly 160% above a year earlier, while its all-time high was €345 in March 2022.",
+      "Gas is a gas, so it is bulky and expensive to move. On land it travels by pipeline, which ties buyer and seller together for decades. To cross oceans it must be liquefied: the US Energy Information Administration explains that cooling gas to about -260°F shrinks it about 600 times. Special tankers carry it in cryogenic tanks, and an import terminal turns it back into gas. Each step, liquefaction plants, ships and regasification terminals, costs billions and takes years to build, so supply cannot respond quickly when prices jump. The price gap between regions is what pays for that chain. A US exporter with flexible cargoes sends them wherever the price after shipping is highest, which is why traders watch the spread between TTF and JKM: when Asia pays more, cargoes head east and Europe has to raise its bid. Storage adds a seasonal rhythm. Europe fills underground tanks over summer and draws them down in winter, so a low fill level in October means buyers must compete hard for cargoes all winter.",
+      "It matters far beyond the gas bill. In Europe's power markets, the most expensive plant needed to meet demand often sets the price for all electricity, and that plant is frequently gas-fired, so a gas spike lifts power prices across the board. Fertilizer makers use gas as their main input, so expensive gas feeds into food prices a season later. Energy-heavy industries such as chemicals, steel and glass lose money or shut lines, which is why EU industrial gas demand in September 2026 was nearly 30% below pre-2022 levels in Citi's sample. Geography is destiny here: Persian Gulf supply is about 20% of global LNG exports and passes through the Strait of Hormuz, so one chokepoint can reprice energy for a continent. The 2022 crisis taught the same lesson after Russian pipeline gas stopped flowing to most of Europe.",
+      "Energy is a cost hiding inside almost every business and every price you pay. When you read that gas is up, ask which region, because a European chemical company and an American one can face opposite fortunes from the same headline. Cheap local gas is a competitive advantage that can last years, and the long build times of LNG plants mean shortages and gluts both last longer than people expect. Volatile commodities punish anyone who assumes today's price is permanent, whether they are budgeting a household, pricing a product or valuing a company.",
+      [
+        "Which regional gas price, Henry Hub, TTF or JKM, actually drives the costs of this company or my utility bill?",
+        "How much of this business's cost base is energy, and can it pass higher costs on to customers?",
+        "Is today's price driven by a temporary disruption or by a long-term shortage of supply capacity?",
+        "How full is storage compared with normal, and what happens if the winter is colder than expected?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "US Energy Information Administration, Liquefied natural gas explained",
+        "url": "https://www.eia.gov/energyexplained/natural-gas/liquefied-natural-gas.php"
+      },
+      {
+        "name": "Trading Economics, EU Natural Gas TTF, Oct 15, 2026",
+        "url": "https://tradingeconomics.com/commodity/eu-natural-gas"
+      },
+      {
+        "name": "OilPrice.com, European natural gas prices headed for multi-year highs, Oct 12, 2026",
+        "url": "https://oilprice.com/Energy/Natural-Gas/European-Natural-Gas-Prices-Headed-for-Multi-Year-Highs.html"
+      },
+      {
+        "name": "Gas to Power Journal, TTF price rally tilts LNG arbitrage towards Asia, Oct 15, 2026",
+        "url": "https://gastopowerjournal.com/news/market/ttf-price-rally-tilts-lng-arbitrage-towards-asia/"
+      }
+    ]
   }
 ]

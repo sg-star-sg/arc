@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-15-europe-gas-high",
+    "date": "2026-10-15",
+    "kind": "Signal",
+    "m": "world",
+    "title": "Europe's gas price hits a four-year high before winter",
+    "stat": "€85.9/MWh",
+    "statLabel": "Dutch TTF gas, Europe's benchmark, four-year high · CaixaBank Research, Oct 14, 2026",
+    "body": "Europe's benchmark natural gas price, Dutch TTF, reached €85.9 per megawatt-hour on October 14, its highest in four years, and Trading Economics puts it roughly 160% above a year ago. The squeeze comes from the Strait of Hormuz: Qatar's LNG must sail through it, no Qatari cargoes are reaching Europe, and Persian Gulf supply is about 20% of world LNG exports. Storage is the second problem. EU tanks were about 74% full on October 14, against a 15-year average near 90% for this point in the season, so Europe has to keep bidding against Asia for spot cargoes just as heating demand starts.",
+    "why": "Gas sets the price of a large share of Europe's electricity and feeds fertilizer, chemicals and glass, so a gas spike shows up in power bills, food prices and factory margins months later. Gas also has no single world price: US buyers pay a regional price that follows different forces, so watch where the companies you own or buy from actually source their energy.",
+    "lessons": [
+      "lngprices",
+      "oil",
+      "energy"
+    ],
+    "sources": [
+      {
+        "name": "CaixaBank Research, Financial Markets Daily Report, Oct 14, 2026",
+        "url": "https://www.caixabankresearch.com/en/publications/financial-markets-daily-report/14-october-2026"
+      },
+      {
+        "name": "Trading Economics, EU Natural Gas TTF, Oct 15, 2026",
+        "url": "https://tradingeconomics.com/commodity/eu-natural-gas"
+      },
+      {
+        "name": "TFTC, EU natural gas nears multi-year highs as storage deficit bites, Oct 12, 2026",
+        "url": "https://www.tftc.io/eu-natural-gas-multi-year-highs-winter-storage-deficit-2026"
+      }
+    ]
+  },
+  {
     "id": "2026-10-14-cpi-gasoline-jump",
     "date": "2026-10-14",
     "kind": "Signal",
