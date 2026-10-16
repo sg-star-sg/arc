@@ -160,5 +160,34 @@
         "url": "https://gastopowerjournal.com/news/market/ttf-price-rally-tilts-lng-arbitrage-towards-asia/"
       }
     ]
+  },
+  {
+    "id": "costofcapital",
+    "m": "business",
+    "mod": "Money",
+    "title": "Cost of capital: the hurdle every investment has to clear",
+    "added": "2026-10-16",
+    "layers": [
+      "Every dollar a company spends came from someone who expects to be paid back: lenders want interest, and shareholders want a return that beats what they could earn elsewhere for the same risk. The blended price of that money is the cost of capital. A project creates value only when it earns more than this cost. Growth alone proves nothing; a company can double its sales and still make its owners poorer.",
+      "Finance teams estimate it as the weighted average cost of capital, or WACC. Take the cost of debt (the yield lenders demand today, reduced by the tax deduction on interest) and the cost of equity (a risk-free rate such as the 10-year Treasury, plus a premium for how risky the business is), then weight each by how much of the company it funds. Then compare it with return on invested capital, ROIC: operating profit after tax divided by all the money tied up in the business. A simple illustration: a company earning 12% on its data centers creates value if its capital costs 9%, and destroys value on every new building if its capital costs 15%. The buildings and the customers are the same; only the price of money changed. That is why CoreWeave's bonds matter. Its 9.625% notes due 2032 yielded above 15% in October 2026, its second-quarter interest expense of $640 million was nearly a quarter of revenue, and it carried about $35.6 billion of debt principal. Lenders are telling the company its next dollar will cost far more than its last.",
+      "Debt is cheaper than equity because lenders are paid first and interest is tax-deductible, so borrowing can raise returns for owners. But debt has a deadline. When rates rise or lenders get nervous, maturing loans must be refinanced at the new, higher price, and the hurdle rises for the whole business. Collateral matters too: if lenders believe chips wear out in three or four years while the company depreciates them over longer, they will price that gap into the yield. Equity investors feel it last and most, because they are paid only after every lender.",
+      "Judge a company, or your own business, by the spread between what its capital earns and what its capital costs, and watch whether that spread is widening or shrinking. The bond market often sees a shrinking spread before the stock market does.",
+      [
+        "Does this business earn more on its capital than its capital costs, and by how much?",
+        "How much debt comes due in the next two years, and at what rate could it be refinanced today?",
+        "Is interest expense growing faster than revenue?",
+        "If I borrow to grow my own business, what return does each new dollar need to clear?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Forbes, CoreWeave bonds are warning of a bigger problem for AI stocks, Oct 14, 2026",
+        "url": "https://www.forbes.com/sites/jimosman/2026/10/14/coreweave-bonds-are-warning-of-a-bigger-problem-for-ai-stocks/"
+      },
+      {
+        "name": "Benzinga, CoreWeave bonds yield 15%, Oct 15, 2026",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/10/62399089/coreweave-bonds-15-yield-bank-of-america-140-price-target"
+      }
+    ]
   }
 ]

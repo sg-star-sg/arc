@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-16-coreweave-bond-yield",
+    "date": "2026-10-16",
+    "kind": "Signal",
+    "m": "future",
+    "title": "Lenders now charge an AI cloud company 15% to borrow",
+    "stat": "15%",
+    "statLabel": "Yield on CoreWeave's 9.625% bonds due 2032 · Benzinga, Oct 15, 2026",
+    "body": "CoreWeave rents Nvidia chips to AI companies and has paid for its data centers largely with debt: about $35.6 billion of principal outstanding at the end of June. Its $1.25 billion of 9.625% bonds due 2032, sold only in June, fell to about 78 cents on the dollar this week, which pushed their yield above 15%; S&P rates the company B+, which is junk. The stock dropped about 16% on October 14 to $65.78, and the scare spread to Oracle, another heavy borrower for AI capacity, which fell nearly 9%. The pressure shows in the accounts: in the second quarter CoreWeave's net interest expense was $640 million, up 140% and nearly a quarter of its $2.58 billion revenue.",
+    "why": "Demand for AI is not the question the bond market is asking; the question is whether the returns on borrowed money will beat what that money costs. When a company's cost of capital jumps, growth that looked profitable at 9% can destroy value at 15%, and shareholders sit behind lenders in line. If you own broad index funds, AI-linked companies are a large share of them, so watch interest bills and refinancing, not just revenue headlines.",
+    "lessons": [
+      "costofcapital",
+      "credit",
+      "aistack"
+    ],
+    "sources": [
+      {
+        "name": "Benzinga, CoreWeave bonds yield 15%, Oct 15, 2026",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/10/62399089/coreweave-bonds-15-yield-bank-of-america-140-price-target"
+      },
+      {
+        "name": "Forbes, CoreWeave bonds are warning of a bigger problem for AI stocks, Oct 14, 2026",
+        "url": "https://www.forbes.com/sites/jimosman/2026/10/14/coreweave-bonds-are-warning-of-a-bigger-problem-for-ai-stocks/"
+      },
+      {
+        "name": "24/7 Wall St., Oracle fell nearly 9% as CoreWeave's bond scare spread, Oct 15, 2026",
+        "url": "https://247wallst.com/investing/2026/10/15/oracle-fell-nearly-9-as-coreweaves-bond-scare-spread/"
+      }
+    ]
+  },
+  {
     "id": "2026-10-15-europe-gas-high",
     "date": "2026-10-15",
     "kind": "Signal",
