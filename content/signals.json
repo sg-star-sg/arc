@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-17-bank-trading-boom",
+    "date": "2026-10-17",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "Goldman's stock-trading revenue jumps 72% as markets churn",
+    "stat": "72%",
+    "statLabel": "Rise in Goldman Sachs equities revenue, Q3 2026 vs a year earlier · Goldman 8-K, Oct 2026",
+    "body": "Goldman Sachs earned $6.44 billion from equities in the third quarter, up 72% from a year earlier, and more than half of it, $3.37 billion, came from financing: lending to hedge funds and other big traders so they can hold larger positions. That financing line alone rose 96%. Bond and currency trading went the other way, slipping 1% at Goldman and about 4% at JPMorgan, whose equities revenue still rose about 49% to roughly $5 billion. Underneath the trading noise, ordinary lending held steady: JPMorgan's net interest income rose 12.8% to about $27 billion and Citigroup's rose 13.7% to about $17 billion, while Wells Fargo set aside $1.03 billion for bad loans, up from $681 million a year earlier.",
+    "why": "A trading boom is a reading on how much risk and borrowed money is sloshing through markets, and the fastest-growing piece here is loans to professional traders. Revenue that depends on volatility and leverage can shrink as fast as it grew, which is why investors usually pay less for a dollar of trading profit than for a dollar of steady fees or loan income. When you read any company's results, ask which part of the growth repeats every quarter and which part depends on the weather in markets.",
+    "lessons": [
+      "salestrading",
+      "ibanking",
+      "bankprofit"
+    ],
+    "sources": [
+      {
+        "name": "Goldman Sachs, Q3 2026 earnings results (Form 8-K), Oct 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000886982/000088698226000529/a3q26gsearningsresults.htm"
+      },
+      {
+        "name": "Forbes, Big bank third quarter earnings: lenders steady, Wall Street desks surge, Oct 13, 2026",
+        "url": "https://www.forbes.com/sites/mayrarodriguezvalladares/2026/10/13/big-bank-third-quarter-earnings-lenders-steady-wall-street-desks-surge/"
+      },
+      {
+        "name": "Beinsure, US banks report mixed Q3 2026 earnings as trading results diverge, Oct 13, 2026",
+        "url": "https://beinsure.com/news/us-banks-report-mixed-q3-2026-earnings-as-trading-results-diverge/"
+      }
+    ]
+  },
+  {
     "id": "2026-10-16-coreweave-bond-yield",
     "date": "2026-10-16",
     "kind": "Signal",

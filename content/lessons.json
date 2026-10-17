@@ -189,5 +189,38 @@
         "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/10/62399089/coreweave-bonds-15-yield-bank-of-america-140-price-target"
       }
     ]
+  },
+  {
+    "id": "salestrading",
+    "m": "economy",
+    "mod": "Wall Street",
+    "title": "Sales and trading: how banks profit when markets move",
+    "added": "2026-10-17",
+    "layers": [
+      "Every time a pension fund sells a block of shares, a hedge fund borrows to bet on a stock, or a company swaps euros for dollars, a bank's trading desk is usually on the other side. Sales and trading is the business of standing in the middle of those trades. It is split into two big desks: equities (stocks and stock derivatives) and FICC, which stands for fixed income, currencies and commodities (bonds, interest-rate products, currencies, oil and metals). At the largest banks it is one of the biggest sources of revenue, and it is the most volatile one.",
+      "Desks earn money in two main ways. The first is intermediation, also called market making: the bank quotes a price to buy (the bid) and a slightly higher price to sell (the ask) and keeps the gap, the bid-ask spread. To do this it must hold inventory, so it carries the risk that prices move against it before it can offload a position. It earns more when clients trade more, which usually happens when markets are jumpy. The second is financing: lending cash or securities to clients. Prime brokerage gives hedge funds margin loans to buy more than their own money allows, lends them shares to sell short, and earns interest and fees on the balances. Repo desks lend cash against bonds as collateral. Financing behaves more like a loan book than a bet, but it grows with the amount of leverage in the system. Goldman's third quarter of 2026 shows both engines: equities revenue of $6.44 billion, with $3.08 billion from intermediation (up 52%) and $3.37 billion from financing (up 96%). Its FICC revenue was $3.47 billion, about flat, because weaker credit, mortgage and rate trading offset growth in FICC financing. Since the 2010 Dodd-Frank law, the Volcker rule limits big US banks from making pure bets with their own money, so most trading profit is supposed to come from serving clients rather than speculating.",
+      "Investors judge revenue by its quality, not just its size. Net interest income from loans and management fees on client assets tend to repeat quarter after quarter. Trading revenue depends on volatility, client activity and appetite for borrowing, so a record quarter can be followed by a sharp drop. For that reason the market typically values a bank built on fees and deposits at a higher multiple of earnings than one that depends on trading. Costs matter too: traders are paid largely in bonuses, so pay rises with revenue. Goldman's operating expenses rose 20% in the quarter as revenue rose 23%. Analysts track the efficiency ratio, costs divided by revenue; Goldman's was 59.4% for the first nine months of 2026, versus 62.1% a year earlier, meaning it kept more of each dollar earned. Trading booms also say something about the wider market: when financing to hedge funds is the fastest-growing line, more borrowed money is chasing assets, which raises the risk of forced selling if prices fall.",
+      "Split every set of results into the parts that repeat and the parts that depend on markets, then decide how much each is worth. A bank, an asset manager or any company with a trading arm can look strongest at the peak of a cycle, exactly when its most volatile income is at its highest. Read the segment table, not only the headline profit.",
+      [
+        "What share of this company's revenue would still be there in a calm, quiet market?",
+        "Is the growth coming from more clients and fees, or from more volatility and more leverage?",
+        "How much of the extra revenue is going straight out again as pay and other costs?",
+        "If markets fell sharply, which lines would shrink first, and which could turn into losses?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Goldman Sachs, Q3 2026 earnings results (Form 8-K), Oct 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000886982/000088698226000529/a3q26gsearningsresults.htm"
+      },
+      {
+        "name": "Beinsure, US banks report mixed Q3 2026 earnings as trading results diverge, Oct 13, 2026",
+        "url": "https://beinsure.com/news/us-banks-report-mixed-q3-2026-earnings-as-trading-results-diverge/"
+      },
+      {
+        "name": "Forbes, Big bank third quarter earnings: lenders steady, Wall Street desks surge, Oct 13, 2026",
+        "url": "https://www.forbes.com/sites/mayrarodriguezvalladares/2026/10/13/big-bank-third-quarter-earnings-lenders-steady-wall-street-desks-surge/"
+      }
+    ]
   }
 ]
