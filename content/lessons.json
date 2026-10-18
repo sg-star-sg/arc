@@ -222,5 +222,46 @@
         "url": "https://www.forbes.com/sites/mayrarodriguezvalladares/2026/10/13/big-bank-third-quarter-earnings-lenders-steady-wall-street-desks-surge/"
       }
     ]
+  },
+  {
+    "id": "sovdebt",
+    "m": "economy",
+    "mod": "Cycles and crises",
+    "title": "Sovereign debt: when a country's borrowing becomes the risk",
+    "added": "2026-10-18",
+    "layers": [
+      "Governments borrow by selling bonds, and the interest rate investors demand on that debt is the base price of money in that country. Banks, companies and home buyers all borrow at that base plus a margin, so when a government's cost of borrowing rises, everyone's does. The cleanest way to see how much risk investors attach to a government is its spread: the extra yield it pays over a borrower seen as the safest in the same currency. In the euro area that benchmark is Germany. France paying 4.79% for ten years while Germany pays 3.42% means investors want 1.37 percentage points more each year to hold French debt, even though both are paid back in the same euros.",
+      "Whether a government's debt is sustainable comes down to four numbers: how much it owes compared with the size of its economy (debt-to-GDP), the average interest rate on that debt (r), how fast the economy grows in money terms (g), and the primary balance, meaning taxes minus spending before interest. If r is below g, a country can carry a lot of debt and the ratio shrinks on its own as the economy outgrows it. If r rises above g, the debt ratio climbs every year unless the government runs a primary surplus to offset it. A simple example: with debt at 120% of GDP, every 1 point rise in the average interest rate eventually adds about 1.2% of GDP to the yearly interest bill. That happens slowly, because old bonds only reprice as they mature. France's tradable debt has an average life of about eight and a half years, which is why a rate shock shows up as a steady squeeze rather than an overnight bill. Credit rating agencies such as Moody's, S&P and Fitch read these same numbers plus politics, and a downgrade can force some funds that are only allowed to hold top-rated debt to sell.",
+      "Countries that print their own currency, like the US, the UK or Japan, can always pay in that currency, so their risk tends to show up as inflation or a weaker currency instead of default. Euro countries gave that up: the European Central Bank sets one policy for 21 countries, but each one writes its own budget. That makes a French or Italian bond closer to a corporate bond than a US Treasury, because the government cannot create the euros it owes. This is what turned 2010 to 2012 into a crisis. Spain's spread over Germany sat near zero from 2002 to 2007, then rose above 5 percentage points. Higher rates made deficits bigger, which pushed rates higher again, and banks holding their own government's bonds weakened together with it. The spiral broke on July 26, 2012, when ECB President Mario Draghi said the bank would do 'whatever it takes to preserve the euro.' Today the ECB has a tool to cap unjustified spreads, but its rules exclude countries already in breach of EU deficit rules, which includes France, so markets cannot assume the same safety net.",
+      "A government bond is only risk-free if the government controls the currency it borrows in and the politics allow it to raise taxes or cut spending when needed. Watch three things: whether interest rates on the debt are rising faster than the economy is growing, whether the government can pass a budget at all, and how much of the debt is held by foreigners who can leave quickly. About 60% of French government debt is held abroad. When a spread widens, it moves the price of everything built on top of that bond, from bank shares to mortgages to the currency.",
+      [
+        "What share of my bond fund is in government debt, and from which countries?",
+        "Is this country's interest bill growing faster than its economy?",
+        "Does this government borrow in a currency it controls?",
+        "If this bond were downgraded, who would be forced to sell it?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Ideal Investisseur, OAT / Bund spread data, Oct 16, 2026",
+        "url": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      },
+      {
+        "name": "EFG International, French debt crisis: causes, repercussions and risks, Oct 5, 2026",
+        "url": "https://www.efginternational.com/us/insights/2026/french_debt_crisis_causes_repercussions_and_risks.html"
+      },
+      {
+        "name": "Bank of Singapore, OATs on the edge, Oct 12, 2026",
+        "url": "https://www.bankofsingapore.com/research/oats-on-the-edge.html"
+      },
+      {
+        "name": "Money Inside Out, Whatever it takes… ten years on",
+        "url": "https://moneyinsideout.substack.com/p/whatever-it-takes-ten-years-on"
+      },
+      {
+        "name": "Babypips, Why the OAT-Bund spread matters for the euro, Oct 12, 2026",
+        "url": "https://www.babypips.com/news/explainer-why-the-oat-bund-spread-matters-for-the-euro-2026-10-12"
+      }
+    ]
   }
 ]

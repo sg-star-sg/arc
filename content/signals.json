@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-10-18-france-bond-spread",
+    "date": "2026-10-18",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "Lenders charge France far more than Germany, before a ratings test",
+    "stat": "1.37 points",
+    "statLabel": "Extra yield on France's 10-year bond over Germany's, Oct 16, 2026 · Ideal Investisseur",
+    "body": "On October 16, France's 10-year government bond yielded 4.79% against 3.42% for Germany's, a gap of 137 basis points. In early September the gap was about 85, and on October 2 it hit 147, its widest since the euro debt crisis, briefly making France costlier to fund than Italy or Greece. Almost all of the jump came from French yields rising, not German ones falling. The causes are a deficit near 5.4% of GDP, against an EU limit of 3%, debt near 120% of GDP, and a parliament with no stable majority. A first budget vote is due October 20, and Moody's, which rates France Aa3 with a negative outlook, reviews it on October 23.",
+    "why": "A country's bond yield is the floor under borrowing costs for its banks, companies and mortgages, so a rising spread spreads. France's interest bill could top €91 billion by 2027, close to 3% of GDP, money that cannot go to anything else. If you own European bonds, European bank shares or a global bond fund, check how much France and other high-debt euro countries make up, because that is where this risk would show up.",
+    "lessons": [
+      "sovdebt",
+      "credit",
+      "ratesprices"
+    ],
+    "sources": [
+      {
+        "name": "Ideal Investisseur, OAT / Bund spread data, Oct 16, 2026",
+        "url": "https://www.ideal-investisseur.fr/en/markets/oat-bund-spread.html"
+      },
+      {
+        "name": "EFG International, French debt crisis: causes, repercussions and risks, Oct 5, 2026",
+        "url": "https://www.efginternational.com/us/insights/2026/french_debt_crisis_causes_repercussions_and_risks.html"
+      },
+      {
+        "name": "Babypips, Why the OAT-Bund spread matters for the euro, Oct 12, 2026",
+        "url": "https://www.babypips.com/news/explainer-why-the-oat-bund-spread-matters-for-the-euro-2026-10-12"
+      },
+      {
+        "name": "Newsquawk via Global-View, Week ahead 19-23 October 2026",
+        "url": "https://global-view.com/newsquawk-week-ahead-in-focus-19-23rd-october-2026/"
+      }
+    ]
+  },
+  {
     "id": "2026-10-17-bank-trading-boom",
     "date": "2026-10-17",
     "kind": "Signal",
