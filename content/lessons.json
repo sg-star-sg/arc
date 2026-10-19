@@ -263,5 +263,42 @@
         "url": "https://www.babypips.com/news/explainer-why-the-oat-bund-spread-matters-for-the-euro-2026-10-12"
       }
     ]
+  },
+  {
+    "id": "indexrules",
+    "m": "wealth",
+    "mod": "Funds",
+    "title": "Index providers: the rulebook behind your index fund",
+    "added": "2026-10-19",
+    "layers": [
+      "An index is a list of companies chosen by written rules, plus a formula for how much of each to hold. A handful of companies write most of these rulebooks: S&P Dow Jones Indices, MSCI, FTSE Russell and a few others. An index fund does not choose stocks. It copies the list. So when you buy a 'total market' or 'world' fund, you are really buying a set of decisions made by an index committee and its methodology documents. By the end of 2023, passive US mutual funds and ETFs held about $13.3 trillion, slightly more than active funds for the first time, according to Morningstar data reported by the Financial Times. That means the rulebook now steers more money than stock pickers do.",
+      "Every index answers four questions. First, the universe: which countries, exchanges and share types count. Second, eligibility: what a company must be to get in, such as a minimum size, enough shares that trade freely (the 'free float'), enough daily trading, and for some indexes, profitability. MSCI's new rule for 'non-operating' companies is an eligibility test: it asks whether a company runs a business or mostly holds investments, like a fund does. Third, weighting: most big indexes weight by market value adjusted for free float, so the largest companies get the most money. Fourth, maintenance: indexes are reviewed on a schedule, usually quarterly, and changes are announced ahead of an effective date. Rules include 'buffers' so companies near a cutoff do not bounce in and out every review. MSCI, for example, removes a current member only if it fails its new screen in two straight annual filings, which cuts trading costs for funds.",
+      "Rule changes matter because index funds must trade on the effective date, no matter the price. When a company joins, funds tracking that index must buy; when it leaves, they must sell. Strategy says funds tracking MSCI's global indexes hold about 13 million of its shares, about 3.1% of its basic shares, which would have to be sold if it is removed. Traders know this, so they try to buy before inclusions and sell before removals. That front-running has largely competed the old 'index effect' away. An S&P study found that stocks added to the S&P 500 earned a median 8.32% above the market between announcement and inclusion in 1995-1999, but about zero (-0.04%) in 2011-2021. Index changes still shift ownership and trading, but the price jump is no longer a free lunch. Rules also shape what you own in subtler ways: a market-value weighting means a world fund holds more of whatever has already risen most, and an eligibility rule can quietly keep a whole category, such as companies that are mostly bitcoin holdings, out of your portfolio.",
+      "An index fund is passive about trading, not about choices. Someone chose the universe, the entry rules and the weights, and those choices decide your risk, your sector mix and your country exposure. Two 'world' funds from different providers can hold different companies in different amounts. Before you rely on a fund, read the one-page summary of the index it tracks: what is included, how it is weighted, how often it changes. Then judge the fund on cost and on how closely it tracks the index, and judge the index on whether its rules match what you want to own.",
+      [
+        "Which index does my fund track, and who writes its rules?",
+        "What must a company be to get in, and what gets it removed?",
+        "Is the index weighted by market value, equally, or by something else, and how concentrated does that make my fund?",
+        "How often is the index reviewed, and does a rule change I read about affect anything I own?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Hargreaves Lansdown / Financial Times, Jan 19, 2024 (Morningstar data)",
+        "url": "https://www.hl.co.uk/news/passive-eclipses-active-in-us-fund-market-as-assets-swell-to-133tn"
+      },
+      {
+        "name": "Morningstar, Sep 28, 2021 (S&P index effect study)",
+        "url": "https://www.morningstar.com.au/stocks/investors-can-t-rely-on-the-index-effect-for-a-quick-buck-s-p"
+      },
+      {
+        "name": "The Block, Oct 15, 2026",
+        "url": "https://www.theblock.co/news/business/2026-10-15-msci-rules-could-exclude-strategy-mstr-from-indexes-418729"
+      },
+      {
+        "name": "Finviz, Oct 16, 2026",
+        "url": "https://finviz.com/news/403486/strategy-shares-fall-3-as-msci-introduces-index-eligibility-rules-that-could-lead-to-removal"
+      }
+    ]
   }
 ]

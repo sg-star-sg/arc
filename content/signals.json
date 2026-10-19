@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-19-msci-index-rules",
+    "date": "2026-10-19",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "MSCI writes new rules that could drop bitcoin-holding companies",
+    "stat": "3.1%",
+    "statLabel": "Share of Strategy's basic shares held by funds tracking MSCI's global indexes, per the company, Oct 2026",
+    "body": "On October 15, MSCI, one of the largest index providers, finalized rules for companies that mostly hold investments rather than run a business. Instead of its earlier test, which flagged firms whose digital assets were at least 50% of total assets, MSCI will now screen operating assets and five financial ratios, starting with its November index review. A current member is removed only if it fails the screen in both of its two most recent annual filings, and MSCI will publish the list of companies at risk on November 11. Strategy, the largest public bitcoin holder, says index funds tracking MSCI hold about 13 million of its shares, about 3.1% of its basic shares, and its shares fell about 3% before the market opened the next day.",
+    "why": "If you own an index fund, a committee's rulebook decides which companies you own, not you and not a stock picker. A rule change can force billions of dollars of automatic buying or selling regardless of a company's prospects. Knowing how your fund's index is built tells you what you actually hold and why it changes.",
+    "lessons": [
+      "indexrules",
+      "funds",
+      "alts"
+    ],
+    "sources": [
+      {
+        "name": "The Block, Oct 15, 2026",
+        "url": "https://www.theblock.co/news/business/2026-10-15-msci-rules-could-exclude-strategy-mstr-from-indexes-418729"
+      },
+      {
+        "name": "Finviz, Oct 16, 2026",
+        "url": "https://finviz.com/news/403486/strategy-shares-fall-3-as-msci-introduces-index-eligibility-rules-that-could-lead-to-removal"
+      },
+      {
+        "name": "MSCI announcement, Jan 6, 2026",
+        "url": "https://app2.msci.com/webapp/index_ann/DocGet?pub_key=DD3Olh5uInk%3D&lang=en&format=html"
+      }
+    ]
+  },
+  {
     "id": "2026-10-18-france-bond-spread",
     "date": "2026-10-18",
     "kind": "Signal",
