@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-20-builder-confidence-low",
+    "date": "2026-10-20",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "Homebuilders are the gloomiest since 2012, and 43% are cutting prices",
+    "stat": "29",
+    "statLabel": "NAHB/Wells Fargo builder confidence index, October 2026, lowest since June 2012 (50 is neutral)",
+    "body": "The National Association of Home Builders' confidence index fell three points to 29 in October, its lowest reading since June 2012. Prospective buyer traffic dropped five points to 18, the weakest since April 2012 apart from the pandemic shock of April 2020. To keep homes selling, 43% of builders cut prices, the highest share since at least 2020, with an average cut of 6%, and 65% offered other incentives such as paying to lower buyers' mortgage rates. The trigger is borrowing costs: Freddie Mac's average 30-year mortgage rate was 7.40% last week, the highest in nearly three years, while energy, diesel and construction-loan costs squeeze builders' margins.",
+    "why": "When builders are discounting, the sticker price is not the real price: incentives such as a paid-down mortgage rate can be worth more than a price cut, and they are negotiable. For anyone who owns builder stocks or works near housing, falling buyer traffic is an early warning for orders, jobs and spending on furniture and appliances. For owners locked into a low mortgage rate, it explains why new homes, not resales, are where prices are giving way first.",
+    "lessons": [
+      "newhomes",
+      "mortgages",
+      "realestate"
+    ],
+    "sources": [
+      {
+        "name": "NAHB press release, Oct 2026",
+        "url": "https://www.nahb.org/news-and-economics/press-releases/2026/10/builder-sentiment-falls-on-rising-rates"
+      },
+      {
+        "name": "HousingWire, Oct 2026",
+        "url": "https://www.housingwire.com/articles/nahb-builder-confidence-14-year-low-october/"
+      },
+      {
+        "name": "TheStreet, Oct 19, 2026",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-oct-19-2026-nasdaq-futures-climb-as-tech-rebound-from-sell-off"
+      }
+    ]
+  },
+  {
     "id": "2026-10-19-msci-index-rules",
     "date": "2026-10-19",
     "kind": "Signal",

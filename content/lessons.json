@@ -300,5 +300,38 @@
         "url": "https://finviz.com/news/403486/strategy-shares-fall-3-as-msci-introduces-index-eligibility-rules-that-could-lead-to-removal"
       }
     ]
+  },
+  {
+    "id": "newhomes",
+    "m": "economy",
+    "mod": "Housing",
+    "title": "New homes vs resale: builders, rate buydowns and the lock-in effect",
+    "added": "2026-10-20",
+    "layers": [
+      "The US housing market is really two markets. The resale market is millions of households selling homes they already live in; the new-home market is a few hundred builders selling homes they built as a business. They respond to the same mortgage rates in opposite ways. A homeowner can simply refuse to sell. A builder cannot: it has borrowed to buy land and pay for construction, and every unsold house costs interest, taxes and upkeep each month. So when rates jump, resale supply dries up while builders keep selling, and builders become the part of the market where prices and deals move first. The NAHB/Wells Fargo Housing Market Index measures how builders feel: it surveys them on current sales, sales expected over the next six months, and buyer traffic, and anything below 50 means more builders call conditions poor than good. In October 2026 it fell to 29, its lowest since June 2012, with buyer traffic at 18.",
+      "Two mechanisms drive this. The first is the lock-in effect. Most US homeowners have a 30-year fixed-rate mortgage, so a family that borrowed at 3% keeps that rate only if it stays put; moving means taking a new loan at today's rate. An FHFA study found that for every percentage point market rates sit above a borrower's own rate, the chance they sell falls by 18.1%, and that lock-in prevented about 1.33 million home sales between mid-2022 and the end of 2023. Fewer resales mean fewer homes for buyers to choose from, which pushed prices up an estimated 5.7%, more than the 3.3% that higher rates pushed them down. The second mechanism is how builders compete for the buyers left over: incentives. The most powerful is a rate buydown, where the builder pays the lender up front to lower the buyer's rate. Paying down a rate for the whole loan costs roughly 1% of the loan amount for each 0.25 point of rate, according to John Burns Research and Consulting, so cutting a rate from 6.5% to 5.0% can take 5-6% of the purchase price. A cheaper version, the 2-1 buydown, lowers the rate by two points in year one and one point in year two, costs about 2% of the price, but still requires the buyer to qualify at the full rate.",
+      "Builders often prefer buydowns and other incentives to cutting the list price, for business reasons. A lower list price becomes a public comparable sale that drags down appraisals on every other home in the community and signals weakness to buyers who already signed contracts, who may cancel. A buydown moves the buyer's monthly payment, which is what most buyers can actually afford, while keeping the recorded price higher. That is why, in October 2026, 65% of builders offered incentives, the 19th straight month at or above 60%, even as 43% also cut prices by an average of 6%. When both levers are being pulled at once, the builder's gross margin is being squeezed from two sides. This is also why builder surveys are a leading indicator. Buyer traffic falls before signed contracts, contracts fall before construction starts, and starts drive jobs in construction, lumber, appliances and furniture. Housing has historically turned down before the wider economy, so economists watch builder sentiment closely. Big public builders with cheap land bought years ago and their own mortgage arms can absorb buydowns; small builders who rely on costly construction loans cannot, so slumps tend to shift market share to the largest companies.",
+      "Price is not the same as cost. In a slow market, the real price of a new home is the list price minus any rate buydown, closing-cost help and upgrades, and the rate buydown can be worth tens of thousands of dollars over the loan. Compare offers on monthly payment and total cost, not sticker price, and check whether a buydown is permanent or temporary. On the economy side, read builder confidence and buyer traffic as early signals: they tend to move before housing starts, jobs and prices do. And remember that a market with few resales and heavy builder discounting is not one market in balance; it is two markets reacting differently to the same rates.",
+      [
+        "If a builder offers either a price cut or a rate buydown of the same dollar value, which one lowers my monthly payment more, and which one helps more if I refinance or sell in a few years?",
+        "Is this buydown permanent for the life of the loan, or temporary, and will I qualify at the full rate?",
+        "How does my current mortgage rate compare with today's rate, and what would moving actually cost me each month?",
+        "Are builder confidence and buyer traffic rising or falling, and what does that suggest for housing jobs and prices over the next year?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "FHFA Working Paper 24-03, Mortgage Lock-In, Mobility, and Labor Reallocation, Mar 2024",
+        "url": "https://www.fhfa.gov/research/papers/wp2403"
+      },
+      {
+        "name": "John Burns Research and Consulting, rate buydowns",
+        "url": "https://jbrec.com/insights/rate-buydowns-help-buyers-purchase-new-homes/"
+      },
+      {
+        "name": "NAHB press release, Oct 2026",
+        "url": "https://www.nahb.org/news-and-economics/press-releases/2026/10/builder-sentiment-falls-on-rising-rates"
+      }
+    ]
   }
 ]
