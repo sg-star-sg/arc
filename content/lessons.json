@@ -333,5 +333,38 @@
         "url": "https://www.nahb.org/news-and-economics/press-releases/2026/10/builder-sentiment-falls-on-rising-rates"
       }
     ]
+  },
+  {
+    "id": "fedfutures",
+    "m": "economy",
+    "mod": "Money and banks",
+    "title": "Priced in: how markets put odds on the Fed's next move",
+    "added": "2026-10-21",
+    "layers": [
+      "Eight times a year the Federal Reserve's committee sets a target range for the federal funds rate, the rate banks charge each other for overnight loans. That one rate anchors what you earn on savings and what you pay on credit cards, car loans and, indirectly, mortgages. Long before each meeting, markets publish a running estimate of what the Fed will do: when you read that traders see an 88% chance of a hike, that number comes from 30-day fed funds futures traded on the CME, and CME's FedWatch tool turns their prices into probabilities. It is not a poll of economists or of the Fed. It is a price: what traders with money at stake are willing to pay right now.",
+      "Each futures contract covers one calendar month and trades at 100 minus the average fed funds rate the market expects for that month. A contract at 95.67 implies an average rate of 4.33%; a 2015 December contract at 99.78 implied 0.22%. To turn a price into odds, compare the implied rate with today's rate. A simplified example with made-up numbers: suppose the effective rate is 3.88% and a contract for a month after the meeting trades at 95.93, implying 4.07%. That is 0.19 points above today. A full hike is 0.25 points, so the market is pricing 0.19 / 0.25, about 76% of a hike, which reads as roughly a 76% chance of a hike and 24% of no change. Real calculations are messier: a meeting in mid-month means the month's average mixes the old rate and the new one, so the tool has to back out the post-meeting rate, and it chains months together to estimate later meetings. In 2015 Bloomberg and CME read the same contracts as 74% and 73.6% odds, and the Financial Times argued both understated how sure traders really were, because of where they assumed the effective rate would settle inside the new range.",
+      "The odds move fast because prices move fast. In September 2026, comments on inflation from Fed official Christopher Waller cut the odds of a September hike from around 67% to about 54.6% within minutes, according to investingLive: traders changed what they would pay for a contract, and the probability followed. This is why the phrase 'already priced in' matters. Bond yields, mortgage rates, the dollar and assets with no yield such as gold adjust to the expected path of rates as soon as the odds shift. When the Fed then does exactly what was priced, markets often barely react. What moves prices on decision day is the surprise: the gap between what happened and what the futures had built in, plus any change in the Fed's signal about the meetings after.",
+      "Read rate odds as a snapshot of positioning, not a forecast. A 50% reading does not mean the Fed is flipping a coin; it means traders are split and the next data point can swing them sharply. Odds far out in time are less reliable than odds for the next meeting, and they can embed a small risk premium rather than pure expectation. Use them for one practical job: before you lock in a CD, choose a fixed or variable loan, or pick a bond fund's duration, check what the market already expects. You are only rewarded or hurt by the part of the future that is not yet in the price.",
+      [
+        "What does the futures market already expect the Fed to do at its next two meetings, and how much has that changed in the past week?",
+        "If the Fed does exactly what is priced, which of my rates will actually change, and which have already moved?",
+        "What news, such as an inflation report or oil shock, could push the odds sharply the other way?",
+        "Am I treating a market probability as a forecast, or as the current price of an uncertain outcome?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "investingLive, A look inside CME FedWatch, Sep 3, 2026",
+        "url": "https://investinglive.com/education/how-waller-moved-the-fed-rate-hike-odds-by-12-points-in-minutes-a-look-inside-cme-fedwatch/"
+      },
+      {
+        "name": "World Economic Forum / Financial Times, Nov 25, 2015",
+        "url": "https://www.weforum.org/stories/2015/11/what-do-fed-funds-futures-reveal-about-future-rate-rises/"
+      },
+      {
+        "name": "Reuters via Business Recorder, Oct 21, 2026",
+        "url": "https://www.brecorder.com/news/40445249/gold-dips-for-fourth-session-as-oil-rally-fans-inflation-concerns"
+      }
+    ]
   }
 ]

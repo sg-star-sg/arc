@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-21-december-fed-hike-odds",
+    "date": "2026-10-21",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "Traders now put an 88% chance on another Fed hike in December",
+    "stat": "88%",
+    "statLabel": "Probability of a December 2026 Fed rate hike priced by fed funds futures, CME FedWatch, Oct 21, 2026",
+    "body": "The Federal Reserve already raised its target range by a quarter point to 3.75%-4.00% on September 16, and September consumer prices rose 3.7% from a year earlier, above forecasts. With Brent crude back above $110 a barrel this week, futures traders see only about a 15% chance of another hike at the October 27-28 meeting but an 88% chance by December, according to CME's FedWatch tool, and nearly all economists in a Reuters poll expect the same skip-then-hike path. Those odds are not a survey: they are worked out from the prices of 30-day fed funds futures, which trade at 100 minus the average rate the market expects for a month. Gold, which pays no interest, slipped for a fourth straight session to about $4,119 an ounce as hike bets held.",
+    "why": "Expected Fed moves get built into prices long before the meeting, so mortgage rates, savings yields and bond prices are already moving on that 88%. If you are choosing between locking a CD, a mortgage rate or a bond fund's duration, the question is not what the Fed will do but whether it will do more or less than is already priced. A surprise in either direction is what moves markets on the day.",
+    "lessons": [
+      "fedfutures",
+      "ratesprices",
+      "termpremium"
+    ],
+    "sources": [
+      {
+        "name": "Reuters via Business Recorder, Oct 21, 2026",
+        "url": "https://www.brecorder.com/news/40445249/gold-dips-for-fourth-session-as-oil-rally-fans-inflation-concerns"
+      },
+      {
+        "name": "TradingKey, Oct 21, 2026",
+        "url": "https://www.tradingkey.com/analysis/commodities/metal/262228407-oil-rebounds-110-fed-rate-hike-expectations-gold-drops-4100-tradingkey"
+      },
+      {
+        "name": "Admirals, Central bank super week, Oct 21, 2026",
+        "url": "https://admiralmarkets.com/analytics/traders-blog/central-bank-super-week-october-2026"
+      }
+    ]
+  },
+  {
     "id": "2026-10-20-builder-confidence-low",
     "date": "2026-10-20",
     "kind": "Signal",
