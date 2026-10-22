@@ -366,5 +366,38 @@
         "url": "https://www.brecorder.com/news/40445249/gold-dips-for-fourth-session-as-oil-rally-fans-inflation-concerns"
       }
     ]
+  },
+  {
+    "id": "shareclasses",
+    "m": "business",
+    "mod": "Funding and ownership",
+    "title": "Share classes: owning a company without a vote",
+    "added": "2026-10-22",
+    "layers": [
+      "A share normally bundles two things: a claim on the company's profits and a vote on who runs it. A multi-class structure pulls those apart. One class may carry ten votes per share and sit with the founders, another carries one vote and trades publicly, and a third may carry no vote at all. Every class usually has the same claim on dividends and on the company's value, so the price of each class tracks closely, but control does not follow the money. Meta's new Class C stock, approved in October 2026, is a pure economic claim: it trades on Nasdaq but carries no vote.",
+      "Companies create a new class in one of two ways. The first is at the IPO, when founders keep high-vote shares and sell low-vote shares to the public. The second is a stock dividend: every holder receives one new nonvoting share for each share they own, which works like a two-for-one stock split. Meta is doing the second, giving one Class C share per Class A and Class B share, and says the market price of Class A should then reflect the effect of a two-for-one split. Nobody's voting power changes on day one. The power shows up later: once the nonvoting class exists, the company can sell it for cash, pay employees with it, or use it to buy other companies, and none of those new shares dilute the founder's vote. Alphabet used the same move in 2014, which kept Larry Page and Sergey Brin's combined control just over 50%, and this year half of its $85 billion of new stock for AI carried no vote.",
+      "Founders argue that control lets them make long, expensive bets that quarterly-minded shareholders would block. Meta points to stock growth of more than 1,700% since its IPO versus about 495% for the S&P 500. Critics answer that control without accountability removes the main check on a CEO: shareholders cannot replace the board if a bet goes wrong. The timing matters too. Meta's Q3 2026 capital spending of $34.9 billion pushed free cash flow to negative $2.12 billion, and when a company spends more than it earns, it has to borrow or sell shares. Nonvoting stock makes selling shares easier politically, which also makes dilution easier. Meta tried a similar class in 2017 and dropped it after investor pushback, according to Semafor, so this time it secured approval by written consent of holders who control the vote.",
+      "Separate the money from the control and evaluate each. The economic question is the same for any share: is the company earning more on new capital than that capital costs, and how fast is the share count growing? The control question is who can fire management if they are wrong, and the answer in a founder-controlled company is often no one. Before buying into a company directly or judging one you hold through a fund, find the share classes and votes per share in the annual report or proxy, check who controls the majority of votes, and track the share count over several years. A rising share count with falling free cash flow is the pattern that matters, whatever the voting rights.",
+      [
+        "How many votes does each share class carry, and who controls the majority of the vote?",
+        "Is the share count rising, and what is the new stock being used for: cash, employee pay or acquisitions?",
+        "If management's big bet fails, what mechanism, if any, lets shareholders change course?",
+        "Does free cash flow cover the company's spending, or does it depend on selling shares or borrowing?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Meta Platforms, Q3 2026 results press release (SEC Exhibit 99.1), Oct 21, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066700/meta-09302026xexhibit991.htm"
+      },
+      {
+        "name": "Semafor, Oct 21, 2026",
+        "url": "https://www.semafor.com/article/10/21/2026/meta-plans-nonvoting-shares-eyeing-more-stock-sales-to-fund-its-ai-dreams"
+      },
+      {
+        "name": "Semafor (View column), Oct 22, 2026",
+        "url": "https://www.semafor.com/article/10/22/2026/metas-new-class-of-nonvoting-stock-lets-zuckerberg-fund-ai-without-losing-control"
+      }
+    ]
   }
 ]
