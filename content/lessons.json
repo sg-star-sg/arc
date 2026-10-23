@@ -399,5 +399,38 @@
         "url": "https://www.semafor.com/article/10/22/2026/metas-new-class-of-nonvoting-stock-lets-zuckerberg-fund-ai-without-losing-control"
       }
     ]
+  },
+  {
+    "id": "bearmarkets",
+    "m": "wealth",
+    "mod": "Portfolio",
+    "title": "Bear markets: the math of falling and getting back",
+    "added": "2026-10-23",
+    "layers": [
+      "A bear market is a fall of 20% or more from a market's most recent peak. A correction is a smaller fall of 10% to 20%, and a bull market is the rise that follows a low. The line at 20% is a convention, not a law, but it is the one the financial press and data providers use. By Ned Davis Research's count, cited by Hartford Funds, the S&P 500 has had 27 bear markets since 1928. The average one cut prices by about 35% and lasted 289 days, roughly 9.6 months. The average bull market gained 112% and lasted 988 days, about 2.7 years. In October 2026, China's CSI 300 crossed the line, closing 20.2% below its June peak.",
+      "The key mechanic is that losses and gains are not symmetric. Recovery takes a bigger percentage gain than the loss, because the gain starts from a smaller base. The formula is: gain needed = 1 / (1 - loss) - 1. A 20% fall needs a 25% gain to break even. A 35% fall, the historical average, needs about 54%. A 50% fall needs 100%. Time and depth together decide how long you are underwater. Japan is the extreme case: the Nikkei 225 peaked at 38,915.87 on December 29, 1989, then fell below 8,200 in 2011, a loss of more than 78%, after banks wrote off about 100 trillion yen of bad debts. Getting back needed a gain of more than 375%. The index finally closed above its old record on February 22, 2024, more than 34 years later. Most bear markets end far faster, but Japan shows what happens when a market starts from bubble prices.",
+      "Bear markets happen for a few recurring reasons: prices ran ahead of profits, interest rates rose and made safer assets more attractive, a recession cut earnings, or a shock like a war or financial crisis. They do not always mean recession. There have been 27 bear markets since 1928 but only 15 recessions, according to Hartford Funds. China in 2026 shows the gap: the economy grew 4.5% in the third quarter while stocks fell 20%, because investors had paid high prices for tech and AI profits that came in weaker than hoped. The behavior side matters as much as the math. About 42% of the S&P 500's strongest days in the last 20 years came during bear markets, and another 36% came in the first two months of a new bull market, before it was obvious one had begun. Selling after a fall locks in the loss and risks missing the days that drive the recovery.",
+      "You cannot predict bear markets, so plan for them. Over a 50-year investing life, expect to live through about 14. That means three things. First, keep money you need within a few years in cash or short-term bonds, so a fall never forces you to sell stocks at the bottom. Second, diversify across countries and asset types, because a single market can stay down for decades, as Japan's did. Third, judge risk by drawdown, not by average return: ask how deep a fall your portfolio could take and whether you could hold through it. Rebalancing into a falling asset feels wrong but is how disciplined investors buy low by rule rather than by nerve.",
+      [
+        "How far is this market from its last peak, and what gain would it need to get back to even?",
+        "Is the fall driven by lower profits, higher interest rates, or investors paying less for the same profits?",
+        "How much of my portfolio sits in this one market or sector, and could I hold it through a 35% or 50% drop?",
+        "Do I have enough cash set aside that I would never be forced to sell during a fall?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Hartford Funds, 10 Things You Should Know About Bear Markets (Ned Davis Research data), 2025",
+        "url": "https://www.hartfordfunds.com/practice-management/client-conversations/managing-volatility/bear-markets.html"
+      },
+      {
+        "name": "Associated Press via Bay News 9, Feb 22, 2024",
+        "url": "https://baynews9.com/fl/tampa/ap-top-news/2024/02/22/japans-nikkei-stock-index-breaks-its-1989-record-and-surges-to-an-all-time-high"
+      },
+      {
+        "name": "Invezz, Oct 22, 2026",
+        "url": "https://invezz.com/news/2026/10/22/china-stocks-hit-bear-market-after-10-week-rout-is-20-crash-just-the-start/"
+      }
+    ]
   }
 ]

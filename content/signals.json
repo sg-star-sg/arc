@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-23-china-bear-market",
+    "date": "2026-10-23",
+    "kind": "Signal",
+    "m": "world",
+    "title": "China's main stock index falls into a bear market",
+    "stat": "-20.2%",
+    "statLabel": "CSI 300 fall from its June 22, 2026 high, at the Oct 22, 2026 close of 4,036.30",
+    "body": "China's CSI 300, which tracks the 300 largest companies listed in Shanghai and Shenzhen, fell 1.8% on Thursday to 4,036.30, its lowest close since July 2025 and 20.2% below its June 22 peak. A drop of 20% from a high is the usual definition of a bear market, and the index had already logged ten straight weekly declines, a record streak. Technology led the fall: the STAR 50 index of tech shares is down nearly 40% from its July peak, battery maker CATL fell about 12% in a day after its profit rose only 14.5% on 58.6% higher revenue, and the selloff tracked a global retreat from AI stocks. The economy itself grew 4.5% in the third quarter, above forecasts, while Beijing left lending rates unchanged and favored targeted help over broad stimulus.",
+    "why": "A strong economy and a falling stock market can coexist, because prices move on expected profits and on how much investors already paid for them. A 20% fall needs a 25% gain just to get back to even, which is why the depth of a drawdown matters more than the headline. If you own an international or emerging-markets fund, check how much of it sits in China and in tech, and whether that weight fits the risk you meant to take.",
+    "lessons": [
+      "bearmarkets",
+      "uschina",
+      "diversify"
+    ],
+    "sources": [
+      {
+        "name": "Coinpaper, Oct 22, 2026",
+        "url": "https://coinpaper.com/37741/china-s-csi-300-falls-20-from-june-peak-after-tech-stocks-extend-months-long-selloff"
+      },
+      {
+        "name": "Invezz, Oct 22, 2026",
+        "url": "https://invezz.com/news/2026/10/22/china-stocks-hit-bear-market-after-10-week-rout-is-20-crash-just-the-start/"
+      },
+      {
+        "name": "Investrade (Hammerstone Markets), Market Review, Oct 22, 2026",
+        "url": "https://investrade.com/market-review-october-22-2026/"
+      }
+    ]
+  },
+  {
     "id": "2026-10-22-meta-nonvoting-shares",
     "date": "2026-10-22",
     "kind": "Signal",
