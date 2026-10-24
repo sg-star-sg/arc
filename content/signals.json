@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-24-inflation-expectations",
+    "date": "2026-10-24",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "Americans expect 4.7% inflation next year, and the Fed is listening",
+    "stat": "4.7%",
+    "statLabel": "Year-ahead inflation consumers expect, University of Michigan final October 2026 survey, released Oct 23",
+    "body": "The University of Michigan's final October survey put consumer sentiment at 48.0, a five-month low and close to May's record low, with the current conditions gauge at 46.7. Households now expect prices to rise 4.7% over the next year, up from 4.6% in September, and 3.5% a year over the longer run, up from 3.4%. The early October reading showed buying conditions for big-ticket items deteriorating sharply on high prices and borrowing costs, with the steepest drops among lower-income households. The same day, Brent crude rose 3.1% to $116.72 on Middle East tensions, and futures markets put a 71% chance on a Fed rate hike in December.",
+    "why": "What people expect inflation to be shapes the raises they ask for and the prices businesses set, so rising expectations can keep inflation high on their own. The long-run figure matters most: when it drifts up, the Fed tends to keep rates higher for longer, which feeds through to mortgage, card and business loan rates. If you set prices or salaries, or plan a big purchase on credit, this number tells you which way the pressure is pointing.",
+    "lessons": [
+      "inflexpect",
+      "cpiinside",
+      "fedfutures"
+    ],
+    "sources": [
+      {
+        "name": "Trading Economics, US Consumer Sentiment Falls to Five-Month Low, Oct 9 and Oct 23, 2026",
+        "url": "https://tradingeconomics.com/united-states/consumer-confidence/news/590907"
+      },
+      {
+        "name": "Investrade (Hammerstone Markets), Market Review, Oct 23, 2026",
+        "url": "https://investrade.com/market-review-october-23-2026/"
+      },
+      {
+        "name": "TheStreet, Stock Market Today, Oct 23, 2026",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-23-2026"
+      }
+    ]
+  },
+  {
     "id": "2026-10-23-china-bear-market",
     "date": "2026-10-23",
     "kind": "Signal",

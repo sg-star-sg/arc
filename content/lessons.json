@@ -432,5 +432,38 @@
         "url": "https://invezz.com/news/2026/10/22/china-stocks-hit-bear-market-after-10-week-rout-is-20-crash-just-the-start/"
       }
     ]
+  },
+  {
+    "id": "inflexpect",
+    "m": "economy",
+    "mod": "Money and banks",
+    "title": "Inflation expectations: when believing in higher prices makes them happen",
+    "added": "2026-10-24",
+    "layers": [
+      "Inflation expectations are the rate at which households, businesses and investors think prices will rise. They are measured two ways. Surveys ask people directly: the University of Michigan polls about 600 households a month on prices over the next year and over the next 5 to 10 years, and the New York Fed and professional forecasters run their own. Markets give a second reading: the 10-year breakeven rate is the yield on an ordinary 10-year Treasury minus the yield on a 10-year TIPS, the inflation-protected version. The gap is roughly the inflation investors need to be paid for, though it also carries a risk premium. The Fed even blends 21 measures into one index.",
+      "Expectations turn into real prices through contracts and decisions. If workers expect 3% inflation, they ask for at least 3% raises just to stand still. If a business expects its wages, rent and suppliers to cost 3% more, it raises its own prices ahead of time. Those higher wages and prices then show up in the official data, which confirms the original belief and pushes the next round of expectations higher. That loop is the wage-price spiral, and once it starts it can keep inflation high even when unemployment rises, which is what happened in the 1970s. Brookings estimates that, all else equal, a one point rise in expectations tends to lift actual inflation by about one point. The loop also runs in reverse: if people expect falling prices, they delay purchases, which is why central banks fear deflation too.",
+      "This is why the Fed watches expectations as closely as inflation itself. Economists call expectations anchored when a burst of high prices barely moves what people expect over the long run; Ben Bernanke defined it as being relatively insensitive to incoming data. Anchored expectations give the Fed room to look through a temporary shock like an oil spike. Unanchored ones force it to act harshly. In June 2022, when Michigan's 1-year reading hit 5.3% and the long-run reading jumped, the Fed raised rates by 0.75 point, its biggest single move since 1994, and Powell named rising expectations as a reason. Two details help you read the numbers: consumers have historically expected more inflation than actually arrived, so the trend matters more than the level, and the 5-to-10-year figure matters more than the 1-year one, because short-term views swing with gas prices while long-term views reveal whether people still trust the 2% target.",
+      "Treat long-run inflation expectations as a gauge of trust in the central bank. When the 1-year number jumps on an energy shock but the long-run number holds, the Fed can be patient and rate cuts stay possible. When the long-run number climbs, expect rates to stay higher for longer, with costlier mortgages and loans, pressure on bond prices and on the valuations of companies whose profits are far in the future. In your own business, expectations are also a negotiating fact: they shape what employees will ask for, what customers will tolerate, and how long you should lock in supplier prices or fixed-rate debt.",
+      [
+        "Is the long-run (5 to 10 year) expectation moving, or only the 1-year number?",
+        "Do survey measures and the market breakeven rate tell the same story?",
+        "Is the jump driven by a temporary shock like oil, or by broad price and wage increases?",
+        "If expectations stay high, which of my costs, prices and loans reset first?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Brookings, What are inflation expectations? Why do they matter?",
+        "url": "https://www.brookings.edu/articles/what-are-inflation-expectations-why-do-they-matter"
+      },
+      {
+        "name": "Marketplace, What anchored inflation expectations means for the Fed, Jul 22, 2026",
+        "url": "https://www.marketplace.org/story/2026/07/22/what-anchored-inflation-expectations-means-for-the-fed"
+      },
+      {
+        "name": "Trading Economics, US Consumer Sentiment Falls to Five-Month Low, Oct 2026",
+        "url": "https://tradingeconomics.com/united-states/consumer-confidence/news/590907"
+      }
+    ]
   }
 ]
