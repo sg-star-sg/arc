@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-10-25-japan-inflation-yen",
+    "date": "2026-10-25",
+    "kind": "Signal",
+    "m": "world",
+    "title": "Japan's underlying inflation hits 2.4%, and the yen bounces",
+    "stat": "2.4%",
+    "statLabel": "Japan core-core inflation (excluding fresh food and energy), September 2026, released Oct 23",
+    "body": "Japan's consumer prices rose 2.1% in September from a year earlier, and the measure the Bank of Japan watches most closely for home-grown inflation, which strips out fresh food and energy, jumped to 2.4% from 2.0% in August. The BoJ already lifted its policy rate to 1.25% in September after decades near zero, and analysts expect it to hold at its October 30 meeting but see a December hike as firmly in play. The yen strengthened to around 156 per dollar, down from a recent peak above 160, as a slide in US tech stocks sent investors toward safe havens. The gap is still wide: Japan's 10-year bond sold at an average yield of 3.101% on October 6, while the US 10-year sat at 5.00% on October 23.",
+    "why": "For years investors borrowed yen at almost no cost and put the money into higher-yielding assets abroad, from US stocks to emerging-market currencies. Each BoJ hike makes that borrowing dearer and a stronger yen can force those bets to unwind quickly, as in August 2024 when Japan's main index fell 12.4% in a day. If your portfolio holds global stocks or you price goods in yen, the BoJ's next moves can matter as much as the Fed's.",
+    "lessons": [
+      "carrytrade",
+      "fedfutures",
+      "inflexpect"
+    ],
+    "sources": [
+      {
+        "name": "FXStreet, Japanese Yen gathers strength as CPI inflation exceeds target, Oct 23, 2026",
+        "url": "https://fxstreet.com/news/japanese-yen-gathers-strength-as-cpi-inflation-exceeds-target-backing-boj-rate-hikes-202610230028"
+      },
+      {
+        "name": "The Rio Times, What to Watch at the Bank of Japan's 30 October Meeting, Oct 23, 2026",
+        "url": "https://www.riotimesonline.com/bank-of-japan-rate-decision-october-2026/"
+      },
+      {
+        "name": "Japan Ministry of Finance, Auction Result of 10-Year JGBs, Oct 6, 2026",
+        "url": "https://www.mof.go.jp/english/policy/jgbs/auction/calendar/eresul/eresul20261006a.htm"
+      },
+      {
+        "name": "The Rio Times, Global Economy Briefing, Oct 24, 2026",
+        "url": "https://www.riotimesonline.com/global-economy-briefing-october-24-2026/"
+      }
+    ]
+  },
+  {
     "id": "2026-10-24-inflation-expectations",
     "date": "2026-10-24",
     "kind": "Signal",

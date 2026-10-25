@@ -465,5 +465,42 @@
         "url": "https://tradingeconomics.com/united-states/consumer-confidence/news/590907"
       }
     ]
+  },
+  {
+    "id": "carrytrade",
+    "m": "world",
+    "mod": "Currencies",
+    "title": "The carry trade: borrowing where money is cheap",
+    "added": "2026-10-25",
+    "layers": [
+      "A carry trade borrows money in a currency with low interest rates and invests it in a currency or asset that pays more. The profit is the carry: the gap between what you earn and what you pay to borrow. The classic funding currency is the Japanese yen, because the Bank of Japan kept its rates at or near zero for years. The Swiss franc has played the same role. The money then flows into US Treasuries, US stocks, or high-rate currencies like the Mexican peso. The Bank for International Settlements put a rough middle estimate of yen-funded carry trades at about ¥40 trillion, or $250 billion, going into August 2024, and said that figure was probably too low.",
+      "Say a fund borrows yen at 0.1% and swaps it into dollars to buy a Treasury yielding 5%. If the exchange rate stays still, it earns close to 4.9 points a year, and with borrowed money stacked on top, say five times its own capital, the return on its own money is far larger. The catch is that the trade has two moving parts. Economic theory, called uncovered interest parity, says a high-rate currency should fall over time by about the rate gap, wiping out the gain. In practice it often does not, for years at a time, which is why the trade is popular. But when the funding currency jumps, the losses arrive all at once: a 10% rise in the yen erases two years of a 5-point carry, and with leverage it can wipe out the fund. Lenders then raise margin requirements, so traders must sell whatever they own, stocks, bonds, other currencies, to repay yen, which pushes the yen up further. The BIS calls this procyclical deleveraging: selling that feeds on itself.",
+      "That is what happened in August 2024. The BoJ raised its rate to 0.25% at the end of July, a weak US economic report days later stoked recession fears and bets on Fed cuts, and the rate gap that carry traders lived on suddenly looked set to shrink. The yen surged, Japan's Nikkei 225 fell 12.4% on August 5 and the Mexican peso fell more than 6% in the upheaval. Markets bounced within days, but the episode showed that a currency trade can move stock prices worldwide. Carry trades funded in yen and Swiss francs also played a part in Iceland's financial meltdown in 2007 and 2008. Now the BoJ is at 1.25% and talking about more, so the cheapest funding source in the world is no longer cheap, while US 10-year yields near 5% keep the gap wide enough to tempt borrowers.",
+      "Read a carry trade as picking up coins in front of a steamroller: small, steady gains most of the time, then a sudden large loss when the funding currency turns. The warning signs are a narrowing rate gap, a sharply rising funding currency, and spikes in market volatility, because each one forces leveraged traders to sell at the same time. For you, this explains why a central bank decision in Tokyo can knock your US index fund, and why currency moves can add to or subtract from the returns on any foreign investment you hold. It applies to your own borrowing too: a loan in a currency you do not earn in is a carry trade, and a jump in that currency raises what you owe.",
+      [
+        "What is the interest rate gap between the two currencies, and is it likely to widen or shrink from here?",
+        "How much is borrowed against this position, and what happens if lenders ask for more collateral?",
+        "If the funding currency rose 10% in a month, how many years of carry would that erase?",
+        "Do I earn in the same currency I owe, or am I making a currency bet without meaning to?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "BIS Bulletin No. 90, The market turbulence and carry trade unwind of August 2024, Aug 27, 2024",
+        "url": "https://www.bis.org/publ/bisbull90.htm"
+      },
+      {
+        "name": "Christian Science Monitor (AP), Carry trades partly drove market jitters. What are they?, Aug 6, 2024",
+        "url": "https://csmonitor.com/World/2024/0806/stock-market-recession-carry-trade"
+      },
+      {
+        "name": "The Rio Times, What to Watch at the Bank of Japan's 30 October Meeting, Oct 23, 2026",
+        "url": "https://www.riotimesonline.com/bank-of-japan-rate-decision-october-2026/"
+      },
+      {
+        "name": "Japan Ministry of Finance, Auction Result of 10-Year JGBs, Oct 6, 2026",
+        "url": "https://www.mof.go.jp/english/policy/jgbs/auction/calendar/eresul/eresul20261006a.htm"
+      }
+    ]
   }
 ]
