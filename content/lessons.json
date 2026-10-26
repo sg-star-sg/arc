@@ -502,5 +502,46 @@
         "url": "https://www.mof.go.jp/english/policy/jgbs/auction/calendar/eresul/eresul20261006a.htm"
       }
     ]
+  },
+  {
+    "id": "depositfranchise",
+    "m": "economy",
+    "mod": "Money and banks",
+    "title": "The deposit franchise: why idle cash is a bank's best asset",
+    "added": "2026-10-26",
+    "layers": [
+      "A bank's deposit franchise is the value of its customers' cash that stays put even when the bank pays far less than the market rate. Checking accounts are the core of it: Apollo's Torsten Slok puts the average checking rate near 0.1%, while savings products elsewhere pay 3.3% to 5%. Customers accept that gap because moving money is a chore, because direct deposit, bill pay and cards are wired to one account, and because the account comes with payment services and access to cash. Deposits make up roughly 80% of US bank liabilities, according to the New York Fed, so how cheaply a bank can keep them decides much of what it earns.",
+      "Analysts measure stickiness with the deposit beta: how much of a change in market rates a bank passes on to depositors. If the Fed raises rates by 4 points and a bank lifts its savings rate by 1 point, its beta is 25%. A beta of zero means deposits behave like fixed-rate funding that never reprices; a beta of one means the bank pays the market rate in full and the franchise is worth nothing. The New York Fed notes that deposit betas have stayed below one for the past thirty years, which is why banks profit when rates rise: their loans and securities reprice upward faster than their funding costs. Betas are not fixed, though. During the 2022 hiking cycle they climbed to levels not seen since before the 2008 financial crisis, as customers moved cash into CDs and money market funds and banks leaned on costlier funding. Each customer who notices the gap pushes the beta up.",
+      "The franchise is both an asset and a hidden risk. Because banks count on deposits staying, many buy long-term bonds and fixed-rate loans with them. If deposits leave instead, the bank may have to sell those assets at a loss. That is what broke Silicon Valley Bank: customers pulled about $42 billion on March 9, 2023, with another $100 billion queued for the next day, together about 81% of its $175 billion in deposits, and regulators closed it on March 10. Its depositors were concentrated, connected and quick to act. AI agents threaten to make ordinary depositors behave the same way, not in a panic but in a steady drip. The three largest US banks by Slok's count hold $1.6 trillion in deposits paying nothing, and paying 3% on them would cost about $47 billion a year. That is why the banks blocked outside agents in October 2026 and why bank stocks are partly a bet on customer inertia.",
+      "Your idle cash is someone else's profit. Every dollar sitting in a near-zero checking account above what you need for bills is a loan to your bank at a rate you would never accept from a borrower. Keep a working buffer where your payments run, and put the rest where the rate tracks the market, then check it again after the Fed moves, since many accounts lag. When you evaluate a bank as a business or an investment, look at its share of non-interest-bearing deposits, how much its funding costs rose in the last hiking cycle, and how concentrated or fast-moving its depositors are: a cheap franchise is only valuable if it stays.",
+      [
+        "What rate does my checking and savings cash earn today, and what does a money market fund or Treasury bill pay?",
+        "How much do I need in my everyday account to cover bills, and where should the rest sit?",
+        "How much of this bank's funding pays no interest, and how quickly did its deposit costs rise when rates went up?",
+        "If a large share of depositors could move cash at the touch of a button, what would this bank have to sell?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "DigitalToday, Major financial firms move to block access by personal AI agents, citing deposit-flight risk, Oct 17, 2026",
+        "url": "https://www.digitaltoday.co.kr/en/view/115865/major-financial-firms-move-to-block-access-by-personal-ai-agents-citing-deposit-flight-risk"
+      },
+      {
+        "name": "Federal Reserve Bank of New York, Liberty Street Economics, How Do Interest Rates (and Depositors) Impact Measures of Bank Value?, Apr 7, 2023",
+        "url": "https://libertystreeteconomics.newyorkfed.org/2023/04/how-do-interest-rates-and-depositors-impact-measures-of-bank-value/"
+      },
+      {
+        "name": "Federal Reserve Bank of New York, Liberty Street Economics, Deposit Betas: Up, Up, and Away?, Apr 11, 2023",
+        "url": "https://libertystreeteconomics.newyorkfed.org/tag/deposit-beta"
+      },
+      {
+        "name": "CNBC, SVB customers tried to withdraw nearly all the bank's deposits over two days, Mar 28, 2023",
+        "url": "https://www.cnbc.com/2023/03/28/svb-customers-tried-to-pull-nearly-all-deposits-in-two-days-barr-says.html"
+      },
+      {
+        "name": "Retail Banker International, US banks restrict third-party AI agents from customer accounts, Oct 19, 2026",
+        "url": "https://www.retailbankerinternational.com/?p=108841"
+      }
+    ]
   }
 ]

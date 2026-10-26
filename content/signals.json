@@ -1,5 +1,34 @@
 [
   {
+    "id": "2026-10-26-banks-block-ai-agents",
+    "date": "2026-10-26",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "Big banks lock out AI agents that could move your cash",
+    "stat": "$1.6 trillion",
+    "statLabel": "Non-interest-bearing deposits at JPMorgan, Bank of America and Wells Fargo, per Apollo's Torsten Slok, October 2026",
+    "body": "JPMorgan, Bank of America and Citigroup are stopping outside AI assistants, such as Meta's Muse, from logging into customer accounts or moving money, and Charles Schwab is blocking unauthorized agents that try to move client funds. The banks cite security and the unsettled question of who is liable when a bot approves a payment; Bank of America's Brian Moynihan says a human must approve money leaving an account. The deeper worry is cost: Apollo's chief economist Torsten Slok warned that agents could sweep household cash from checking accounts averaging 0.1% into accounts paying 3.3% to 5%. JPMorgan, Bank of America and Wells Fargo hold $1.6 trillion in deposits that pay no interest at all, and paying 3% on that would cost about $47 billion a year, close to half their combined annual profit.",
+    "why": "Banks earn a large share of their profit from customers who leave cash idle out of habit, and a bot that never forgets to shop for a better rate threatens that. Until agents are allowed in, the job falls to you: check what your checking and savings balances actually earn and compare it with what high-yield savings, money market funds and Treasury bills pay. The same logic tells you which banks are most exposed if their customers ever start moving faster.",
+    "lessons": [
+      "depositfranchise",
+      "bankprofit"
+    ],
+    "sources": [
+      {
+        "name": "DigitalToday, Major financial firms move to block access by personal AI agents, citing deposit-flight risk, Oct 17, 2026",
+        "url": "https://www.digitaltoday.co.kr/en/view/115865/major-financial-firms-move-to-block-access-by-personal-ai-agents-citing-deposit-flight-risk"
+      },
+      {
+        "name": "Retail Banker International, US banks restrict third-party AI agents from customer accounts, Oct 19, 2026",
+        "url": "https://www.retailbankerinternational.com/?p=108841"
+      },
+      {
+        "name": "TipRanks, The Week That Was, The Week Ahead: Macro and Markets, Oct 25, 2026",
+        "url": "https://www.tipranks.com/news/the-week-that-was-the-week-ahead-macro-and-markets-october-25"
+      }
+    ]
+  },
+  {
     "id": "2026-10-25-japan-inflation-yen",
     "date": "2026-10-25",
     "kind": "Signal",
