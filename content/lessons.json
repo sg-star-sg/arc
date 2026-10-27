@@ -543,5 +543,42 @@
         "url": "https://www.retailbankerinternational.com/?p=108841"
       }
     ]
+  },
+  {
+    "id": "ipoprospectus",
+    "m": "wealth",
+    "mod": "Stocks",
+    "title": "Reading an IPO prospectus: what the S-1 really tells you",
+    "added": "2026-10-27",
+    "layers": [
+      "An initial public offering, or IPO, is the moment a private company first sells shares to the public. To do it in the US, the company registers with the SEC, usually on Form S-1, and the core of that filing is the prospectus: the company's own account of its business, finances, risks, management and the terms of the sale. Drafts are amended as S-1/A filings, and the final prospectus with the price is filed later. The SEC reviews the document for disclosure, but, as its investor bulletin stresses, it does not judge whether the deal is a good investment. Anthropic's S-1, filed October 26, 2026, runs to hundreds of pages and is the first full public view of its finances.",
+      "The sale itself is run by underwriters, investment banks that gauge demand from big investors in a roadshow, recommend a price and are paid a percentage of the money raised. Anthropic named Goldman Sachs and Morgan Stanley to lead 20 other banks, with Morgan Stanley as stabilization agent, the bank allowed to buy shares in the first days to support a falling price. The SEC notes that most shares go to institutions and wealthy clients, so most individuals can only buy once trading opens. Banks also tend to price below what the market will pay: Jay Ritter's data show US IPOs from 1980 to 2025 rose 19% on average on their first day, leaving $250 billion on the table that the companies could have raised. Existing holders usually agree to a lock-up, typically 180 days, and the SEC warns that the price can drop when that many shares become free to sell at once.",
+      "Read the prospectus in layers. Start with revenue and its growth, then loss from operations, which shows whether the core business earns money, then net income, which adds items like interest and accounting revaluations. These can tell very different stories. Anthropic's revenue for the first half of 2026 was $16.3 billion against $1.2 billion a year earlier, and its operating loss shrank to $693 million. Its net loss was $80.7 billion, because $72.4 billion came from marking up convertible notes: debt that turns into shares, which became more costly on paper as the company's valuation rose. That charge reflects the valuation, not the cost of running the business, but the shares it implies are real dilution for new buyers. Next read the commitments: Anthropic reports more than $500 billion of computing contracts it largely cannot cancel, a fixed cost that stays even if revenue growth slows. Then read Risk Factors, Use of Proceeds, Dilution and Shares Eligible for Future Sale. Finally read Description of Capital Stock. Anthropic will have five share classes, its founders' class will hold 50.1% of the voting power on most matters, and a Long-Term Benefit Trust will elect a board majority, making it a controlled company under Nasdaq rules.",
+      "Treat an IPO as the start of public price discovery, not a finish line. The headline numbers in the press are the ones easiest to misread, so check operating results against net results, ask what a non-cash charge says about dilution, and size up the obligations a company cannot walk away from. Note who controls the board and how much you will be able to influence it. And remember the mechanics are tilted toward insiders and big clients: by the time you can buy, the first-day pop may already be priced in, and a lock-up expiry months later can bring a wave of new sellers. None of this tells you whether to buy; it tells you what you would be buying.",
+      [
+        "What does the company earn from operations, separate from accounting charges and interest?",
+        "Which costs and commitments can it not cancel if growth slows?",
+        "Who controls the votes and the board after the IPO, and what rights does my share class carry?",
+        "When does the lock-up expire, and how many shares could be sold then?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Anthropic, PBC, Form S-1 registration statement, SEC EDGAR, Oct 26, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm"
+      },
+      {
+        "name": "SEC Investor.gov, Investor Bulletin: Investing in an IPO",
+        "url": "https://www.investor.gov/news-alerts/investor-bulletins/investor-bulletin-investing-ipo"
+      },
+      {
+        "name": "Jay R. Ritter, University of Florida, Initial Public Offerings: Updated Statistics, 1980-2025",
+        "url": "https://site.warrington.ufl.edu/ritter/files/IPO-Statistics.pdf"
+      },
+      {
+        "name": "Reuters via Investing.com, Anthropic's IPO filing shows explosive growth, risks and staggering costs, Oct 26, 2026",
+        "url": "https://www.investing.com/news/stock-market-news/anthropic-opens-books-on-ais-explosive-growth-and-staggering-costs-4972801"
+      }
+    ]
   }
 ]

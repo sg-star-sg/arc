@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-27-anthropic-ipo-filing",
+    "date": "2026-10-27",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "Anthropic files to go public, showing an $80.7 billion loss",
+    "stat": "$80.7 billion",
+    "statLabel": "Anthropic's net loss for the six months to June 30, 2026, of which $72.4 billion was an accounting markup on convertible notes, per its S-1 filed Oct 26, 2026",
+    "body": "Anthropic, the maker of the Claude AI models, publicly filed its S-1 prospectus on October 26 to list on the Nasdaq under the ticker ANT, with Goldman Sachs and Morgan Stanley leading 20 other banks. Revenue for the first half of 2026 was $16.3 billion, up from $1.2 billion a year earlier, and its loss from operations narrowed to $693 million from $2.1 billion. The headline net loss of $80.7 billion came mostly from a $72.4 billion charge because convertible notes it owes investors rose in value as the company's own valuation climbed. The filing also lists more than $500 billion in computing commitments that it largely cannot cancel, and some investors now value the company near $1.5 trillion, down from about $2 trillion a week earlier.",
+    "why": "A prospectus is the most detailed look you will ever get at a private company, and the headline numbers in it can point in opposite directions: here a vast net loss sits next to a small operating loss. Before you form a view on any IPO, read past the headline to the operating results, the commitments and the share classes, which show who controls the company after you buy. Most individuals cannot buy at the IPO price and instead pay whatever the market sets on day one.",
+    "lessons": [
+      "ipoprospectus",
+      "shareclasses",
+      "startupval"
+    ],
+    "sources": [
+      {
+        "name": "Anthropic, PBC, Form S-1 registration statement, SEC EDGAR, Oct 26, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm"
+      },
+      {
+        "name": "Reuters via Investing.com, Anthropic's IPO filing shows explosive growth, risks and staggering costs, Oct 26, 2026",
+        "url": "https://www.investing.com/news/stock-market-news/anthropic-opens-books-on-ais-explosive-growth-and-staggering-costs-4972801"
+      },
+      {
+        "name": "InvestmentNews, Anthropic IPO filing pairs explosive growth with an $80B loss, Oct 2026",
+        "url": "https://www.investmentnews.com/equities/anthropic-ipo-filing-pairs-explosive-growth-with-an-80b-loss/268746"
+      }
+    ]
+  },
+  {
     "id": "2026-10-26-banks-block-ai-agents",
     "date": "2026-10-26",
     "kind": "Signal",
