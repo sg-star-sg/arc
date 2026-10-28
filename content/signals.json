@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-28-sk-hynix-payout",
+    "date": "2026-10-28",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "SK hynix pledges 100 trillion won back to its shareholders",
+    "stat": "₩100 trillion",
+    "statLabel": "SK hynix's planned 2026 payout to shareholders (about $75 billion), seven times last year's 14.3 trillion won, announced Oct 28, 2026",
+    "body": "SK hynix, the South Korean maker of the memory chips inside AI servers, reported third-quarter revenue of 104.6 trillion won, up 328% from a year earlier, and operating profit of 83.33 trillion won, a margin of about 80%. It will return 100 trillion won to shareholders for 2026: more than 30 trillion in cash dividends and more than 60 trillion in buying back and canceling its own shares. A 40 trillion won buyback is already finished, and the board approved a 14 trillion won third-quarter dividend, about 54 times its usual quarterly payout of roughly 260 billion won. From here it plans to hand back more than half of its free cash flow, and separately it will buy 10 trillion won of shares for employee pay, which does not count toward the total.",
+    "why": "The finance chief said the shares are undervalued after a slide of about 49% from June's record, and buybacks only reward the owners who stay if the company pays less than the business is worth. Memory chips are a boom-and-bust industry, so a stock at 3.3 times expected earnings, against an 8.9 average since late 2023, can be cheap or can be pricing in a peak. When any company you own announces a payout, check whether free cash flow or borrowing pays for it, whether canceled shares outnumber those handed to employees, and how much of the profit comes from the top of a cycle.",
+    "lessons": [
+      "buybacks",
+      "cyclicals",
+      "valuation"
+    ],
+    "sources": [
+      {
+        "name": "Seoul Economic Daily, Oct 28, 2026",
+        "url": "https://en.sedaily.com/finance/2026/10/28/sk-hynix-to-spend-100-trillion-won-on-shareholder-returns"
+      },
+      {
+        "name": "The Korea Times, Oct 28, 2026",
+        "url": "https://www.koreatimes.co.kr/amp/business/companies/20261028/sk-hynix-logs-record-q3-operating-profit-of-628-bil"
+      },
+      {
+        "name": "TIKR, Oct 28, 2026",
+        "url": "https://www.tikr.com/blog/sk-hynix-stock-jumps-8-as-it-confirms-75-billion-in-shareholder-returns-with-26-billion-still-to-come"
+      }
+    ]
+  },
+  {
     "id": "2026-10-27-anthropic-ipo-filing",
     "date": "2026-10-27",
     "kind": "Signal",

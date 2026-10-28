@@ -580,5 +580,42 @@
         "url": "https://www.investing.com/news/stock-market-news/anthropic-opens-books-on-ais-explosive-growth-and-staggering-costs-4972801"
       }
     ]
+  },
+  {
+    "id": "buybacks",
+    "m": "wealth",
+    "mod": "Stocks",
+    "title": "Buybacks and dividends: how companies hand cash back",
+    "added": "2026-10-28",
+    "layers": [
+      "A profitable company that has more cash than it can invest well has three choices: keep it, pay it out as a dividend, or use it to buy back its own shares. A dividend is a cash payment to every shareholder, usually per share and on a schedule. A buyback, or share repurchase, is the company buying its stock in the market or from holders; when the bought shares are canceled, the company is split into fewer pieces and each remaining share owns a bigger slice of its profits. In the 12 months to June 2025, S&P 500 companies spent $997.8 billion on buybacks and a record $653.9 billion on dividends, per S&P Dow Jones Indices, and the 20 biggest buyers made up 51.3% of the buyback spending in the second quarter.",
+      "The arithmetic is simple. A company earning $100 million with 100 million shares makes $1.00 per share. If it buys back and cancels 10 million shares, the same $100 million spread over 90 million shares is about $1.11, an 11% rise in earnings per share with no growth in the business. S&P notes that falling share counts have lifted per-share earnings, and 17.3% of S&P 500 companies cut their share count by at least 4% in a year. Two details decide whether that slice really grows. First, cancellation: SK hynix's October 2026 plan counts only shares it buys and cancels, while a separate 10 trillion won purchase for employee pay is excluded, because shares bought to hand out again do not shrink the pie. Second, the cash spent no longer earns interest, so net income dips a little, and if the buyback is paid with debt, risk rises too. In the US, companies also pay a 1% excise tax on net buybacks, which S&P measured at about 0.4% of earnings.",
+      "The value comes from the price, not the act. If a company pays $50 for a share worth $70, the owners who stay gain; at $70 they break even; at $90 the company has transferred wealth to the sellers. This is why timing matters, and why companies often buy most when profits and cash are highest, near the top of a cycle. SK hynix shows the tension: after an 80% operating margin it pledged 100 trillion won for 2026, roughly 10% of its market value in one year by TIKR's estimate, while its finance chief said the shares were undervalued at about 3.3 times expected earnings. In a cyclical industry that low multiple can mean a bargain or can mean investors expect profits to fall. Dividends carry a different signal: once paid regularly they are hard to cut without alarming investors, so boards treat them as a promise, while buybacks can be dialed up or down each quarter. That is why SK hynix tied its future returns to a share of free cash flow, more than 50%, instead of a fixed amount.",
+      "A payout is a decision about where cash earns the most, not a gift. Judge it with a few numbers: free cash flow compared with the payout, whether debt rose to fund it, the share count over five years after employee stock awards, and the price paid compared with a sober estimate of value. A growing company may create more wealth by reinvesting than by paying out, and a mature company that hoards cash may waste it. Add the dividend yield and the net buyback yield together, often called shareholder yield, to see the full return of cash, then ask whether the profits behind it can last.",
+      [
+        "Is the share count actually falling over five years once employee stock awards are added back?",
+        "Is the payout funded by free cash flow, or by new borrowing?",
+        "Is the company buying at a price below a reasonable estimate of value, or near the peak of its profit cycle?",
+        "Would this cash earn more reinvested in the business than handed back?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "S&P Dow Jones Indices, Sept 17, 2025",
+        "url": "https://press.spglobal.com/2025-09-17-S-P-500-Q2-2025-Buybacks-Declines-20-Amidst-Uncertainty-to-235-Billion-From-Q1-2025s-Record-293-Billion-Q3-2025-Expenditures-Expected-to-Increase-Back-to-Near-Record-Levels"
+      },
+      {
+        "name": "Seoul Economic Daily, Oct 28, 2026",
+        "url": "https://en.sedaily.com/finance/2026/10/28/sk-hynix-to-spend-100-trillion-won-on-shareholder-returns"
+      },
+      {
+        "name": "The Korea Times, Oct 28, 2026",
+        "url": "https://www.koreatimes.co.kr/amp/business/companies/20261028/sk-hynix-logs-record-q3-operating-profit-of-628-bil"
+      },
+      {
+        "name": "TIKR, Oct 28, 2026",
+        "url": "https://www.tikr.com/blog/sk-hynix-stock-jumps-8-as-it-confirms-75-billion-in-shareholder-returns-with-26-billion-still-to-come"
+      }
+    ]
   }
 ]
