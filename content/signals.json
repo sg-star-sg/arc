@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-29-fed-holds-split-vote",
+    "date": "2026-10-29",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "The Fed holds rates, but two officials wanted a hike",
+    "stat": "10-2",
+    "statLabel": "FOMC vote to hold rates at 3.75% to 4%, Oct 28, 2026",
+    "body": "The Federal Reserve left its benchmark rate at 3.75% to 4% on Wednesday, after raising it a quarter point in September for the first time since July 2023. The vote was 10-2: Governor Lisa Cook and Cleveland Fed President Beth Hammack dissented because they wanted another quarter-point hike, a sharp change from September's 12-0 vote. The statement still says inflation \"remains elevated,\" and Chair Kevin Warsh said higher rates are already tightening credit. Traders still see an 84% chance of a hike in December, and the 10-year Treasury yield sat near 5.02% before the decision.",
+    "why": "A hold with two hawkish dissents is not the same as a calm hold: it tells you the debate inside the Fed is about how much higher, not when to cut. That keeps pressure on mortgage, card and business loan rates, while savers keep earning more on cash. Watch the votes, not just the decision, because dissents often show where policy goes next.",
+    "lessons": [
+      "fomcvote",
+      "fedfutures",
+      "termpremium"
+    ],
+    "sources": [
+      {
+        "name": "Business Today, Oct 29, 2026",
+        "url": "https://www.businesstoday.in/world/story/us-fed-holds-interest-rates-steady-plans-reduced-rate-setting-meetings-by-2027-564414-2026-10-29"
+      },
+      {
+        "name": "Yahoo Finance, Oct 28, 2026",
+        "url": "https://finance.yahoo.com/economy/policy/live/fed-meeting-live-updates-federal-reserve-october-meeting-kevin-warsh-161129201.html"
+      },
+      {
+        "name": "Fox Business, Oct 28, 2026",
+        "url": "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-october-28-2026"
+      }
+    ]
+  },
+  {
     "id": "2026-10-28-sk-hynix-payout",
     "date": "2026-10-28",
     "kind": "Signal",

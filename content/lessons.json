@@ -617,5 +617,38 @@
         "url": "https://www.tikr.com/blog/sk-hynix-stock-jumps-8-as-it-confirms-75-billion-in-shareholder-returns-with-26-billion-still-to-come"
       }
     ]
+  },
+  {
+    "id": "fomcvote",
+    "m": "economy",
+    "mod": "Money and banks",
+    "title": "Inside the Fed's vote: statements, dissents and the dot plot",
+    "added": "2026-10-29",
+    "layers": [
+      "Interest rates in the US are set by a committee, not a person. The Federal Open Market Committee (FOMC) brings together the Fed's governors in Washington and the presidents of the regional Fed banks; at each meeting a set of them vote on the target range for the federal funds rate, the rate banks charge each other overnight. The committee meets eight times a year. Every meeting produces three things markets read closely: the decision, a short written statement, and the chair's press conference. Some meetings also produce projections from every official, the 'dot plot,' with one dot per person for where they think rates should be. On Oct 28, 2026, the committee held rates at 3.75% to 4% by a vote of 10-2.",
+      "Each piece carries information. The decision tells you what the Fed did. The statement is negotiated word by word, so small edits matter: in October, 'raise' became 'maintain,' growth went from a 'solid' to a 'strong' pace, and 'inflation remains elevated' stayed in. Analysts line up the new statement next to the old one and read the changes as a message. The dissents tell you where the edge of the debate is: a dissent is a public vote against the chair's proposal, with a written reason. In October, Lisa Cook and Beth Hammack voted against holding because they wanted a quarter-point hike. In September the vote had been 12-0. The dot plot shows the middle of the committee's thinking: the latest one pointed to a second hike in 2026. The press conference adds tone. Chair Kevin Warsh said 'interest rates have had an effect' and that the goal 'isn't to throw sand in the gears of the economy.' Finally, futures markets turn all of this into odds; after this meeting traders still put about an 84% chance on a December hike.",
+      "Dissents matter because the Fed works hard to look united. A chair usually builds consensus before the vote, so even one 'no' means a real disagreement could not be bridged. When dissents all lean the same way, they often preview the next move: here both dissenters wanted tighter policy, which tells you the debate is about how high, not when to cut. Direction of dissent is the key detail. A hold with two votes for a hike is hawkish; a hold with two votes for a cut is dovish. The same decision can move markets in opposite directions depending on who voted no and why. Process changes matter too: starting in 2027 the Fed plans to keep eight meetings a year but devote one to broad strategy, and two in 2028, leaving fewer meetings where rates can change. Fewer decision points can mean larger moves when they come, and more weight on each statement.",
+      "Do not stop at the headline 'Fed holds.' Read four things: the direction of any dissents, the words that changed in the statement, where the dots sit, and what futures now price. Together they tell you whether the next move is up, down or nowhere, and that feeds straight into what you pay on a mortgage, a credit card or a business line of credit, and what you earn on cash. A personal rule: when the Fed is split toward hikes, avoid locking in variable-rate debt on the assumption that rates will soon fall.",
+      [
+        "Did anyone dissent, and did they want tighter or easier policy?",
+        "Which words in the statement changed from the last meeting, and what do the changes signal?",
+        "Do the dot plot and futures odds agree on the next move, or is the market betting against the Fed?",
+        "If rates stay where they are for another year, what does that do to my debt costs and my cash returns?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Business Today, Oct 29, 2026",
+        "url": "https://www.businesstoday.in/world/story/us-fed-holds-interest-rates-steady-plans-reduced-rate-setting-meetings-by-2027-564414-2026-10-29"
+      },
+      {
+        "name": "Yahoo Finance, Oct 28, 2026",
+        "url": "https://finance.yahoo.com/economy/policy/live/fed-meeting-live-updates-federal-reserve-october-meeting-kevin-warsh-161129201.html"
+      },
+      {
+        "name": "Fox Business, Oct 28, 2026",
+        "url": "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-october-28-2026"
+      }
+    ]
   }
 ]
