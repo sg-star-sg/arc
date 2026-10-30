@@ -650,5 +650,38 @@
         "url": "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-october-28-2026"
       }
     ]
+  },
+  {
+    "id": "freecashflow",
+    "m": "wealth",
+    "mod": "Stocks",
+    "title": "Free cash flow and capex: when profit is not cash",
+    "added": "2026-10-30",
+    "layers": [
+      "Free cash flow is the cash a business has left after paying for everything it needs to keep running and growing. The formula is short: cash from operations minus capital expenditures. Cash from operations is the money that actually came in from customers, minus the cash paid out to staff, suppliers and tax collectors. Capital expenditures, or capex, are purchases of long-lived assets: buildings, machines, servers, chips, trucks. Net income, the 'profit' in headlines, is something different. It follows accounting rules that match costs to the years they help, so it can be large while the bank account shrinks. Alphabet showed the gap in its third quarter of 2026: $40.6 billion of operating income, $42.3 billion of cash from operations, $51.4 billion of capex, and free cash flow of negative $9.1 billion.",
+      "Three things pull profit and cash apart. First, depreciation. When a company buys a $1 billion data center, it does not record a $1 billion expense that year. It spreads the cost over the asset's useful life, say a slice each year for several years. The cash leaves on day one; the expense trickles into the income statement for years. That is why a company building fast shows healthy profit while its cash flow turns negative: Alphabet's depreciation was $8.4 billion in the quarter, about a sixth of what it spent on new assets. Second, working capital. Money tied up in inventory, or in bills customers have not paid yet, is real cash that has not come back. Alphabet's inventory rose from about $2.4 billion to $13.3 billion as it built chip systems for cloud customers, which absorbed cash even though the sales were contracted. Third, non-cash items. Gains and losses on investments, stock-based pay and write-downs change profit without moving cash; Alphabet booked an $8.7 billion paper loss on equity investments, which cut profit but not cash. Analysts also split capex in two: maintenance capex keeps the business where it is, and growth capex expands it. Only the second is optional, and companies rarely disclose the split, so you estimate it, often by comparing capex to depreciation. Capex far above depreciation means heavy expansion.",
+      "This matters because cash, not accounting profit, is what a company can actually use. Dividends, buybacks, paying down debt and buying other companies all require cash. When free cash flow is negative, the money has to come from somewhere: savings on the balance sheet, new borrowing, or new shares that dilute existing owners. Alphabet raised $28.7 billion of notes and $12.4 billion from share sales in the quarter and did no buybacks. Heavy investment is not bad in itself: a cloud business whose revenue grew 103% may earn excellent returns on those data centers. The question is whether the return on that spending will beat the cost of the money, and that answer arrives years later. History offers both outcomes. Railroads, telecom fiber in the late 1990s, and shale drilling all saw huge capex booms in which some builders earned great returns and others were left with debt and assets worth less than they cost. A business that needs constant heavy spending just to stay in place, called capital-intensive, also tends to be worth less per dollar of profit than one that grows with little new investment, because less of its profit can ever be handed to owners.",
+      "Read cash flow next to profit, every time. Start with the cash flow statement, not the income statement: find cash from operations and capex, and subtract. Then ask four questions. Is free cash flow positive, and is it trending up or down over several quarters? How does capex compare with depreciation: roughly equal suggests maintenance, far higher suggests a build-out whose payoff is still a bet? How is any shortfall being funded: cash on hand, debt or new shares? And does management give a clear account of the return it expects? A useful habit is the cash conversion check: divide free cash flow by net income over a few years. Mature, healthy companies usually turn most of their profit into cash; a persistent large gap deserves an explanation. Valuation metrics such as price to earnings can mislead in a spending boom, so many investors also look at price to free cash flow. Neither number alone is an answer; together they show whether the story and the cash agree.",
+      [
+        "How much of last year's profit actually turned into free cash flow, and why the difference?",
+        "Is capex well above depreciation, and what return does management say it expects from the extra spending?",
+        "If free cash flow is negative, is the gap funded from cash, debt or new shares, and for how long can that continue?",
+        "What share of my index fund sits in companies in the middle of the same spending boom?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Fortune, Oct 28, 2026",
+        "url": "https://fortune.com/2026/10/28/alphabet-google-stock-drops-cloud-revenue-doubles-free-cash-flow-negative/"
+      },
+      {
+        "name": "PPC Land, Oct 29, 2026",
+        "url": "https://ppc.land/alphabets-free-cash-flow-drops-to-negative-9-1bn-despite-26-2bn-profit/"
+      },
+      {
+        "name": "24/7 Wall St via Yahoo Finance, Oct 30, 2026",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/google-just-burned-9-billion-113209095.html"
+      }
+    ]
   }
 ]

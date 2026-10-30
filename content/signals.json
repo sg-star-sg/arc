@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-30-alphabet-negative-free-cash-flow",
+    "date": "2026-10-30",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "Google earns billions in profit but burns $9.1 billion in cash",
+    "stat": "-$9.1B",
+    "statLabel": "Alphabet free cash flow, third quarter 2026",
+    "body": "Alphabet reported revenue of $127.6 billion for the third quarter, up 25%, and operating income of $40.6 billion, up 30%, with Google Cloud revenue more than doubling to $30.7 billion. Yet its free cash flow was negative $9.1 billion, after negative $5.9 billion in the second quarter. The reason is spending on AI data centers and chips: capital expenditures hit $51.4 billion in the quarter, up from $24 billion a year earlier and larger than the $42.3 billion of cash its operations brought in. Alphabet kept its 2026 spending plan of $195 billion to $205 billion, signaled more in 2027, raised $28.7 billion in new debt, and the stock fell more than 11% after hours.",
+    "why": "Profit is an accounting measure; free cash flow is the cash left after a company pays to keep and grow its business, and it is what ultimately funds dividends, buybacks and debt repayment. When even one of the richest companies in the world spends more than it brings in, the AI build-out is being paid for with borrowing and future promises. If you own a broad index fund, the biggest tech companies are a large share of it, so learning to read cash flow next to earnings tells you how much risk sits behind the AI story.",
+    "lessons": [
+      "freecashflow",
+      "statements",
+      "aistack"
+    ],
+    "sources": [
+      {
+        "name": "Fortune, Oct 28, 2026",
+        "url": "https://fortune.com/2026/10/28/alphabet-google-stock-drops-cloud-revenue-doubles-free-cash-flow-negative/"
+      },
+      {
+        "name": "PPC Land, Oct 29, 2026",
+        "url": "https://ppc.land/alphabets-free-cash-flow-drops-to-negative-9-1bn-despite-26-2bn-profit/"
+      },
+      {
+        "name": "24/7 Wall St via Yahoo Finance, Oct 30, 2026",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/google-just-burned-9-billion-113209095.html"
+      }
+    ]
+  },
+  {
     "id": "2026-10-29-fed-holds-split-vote",
     "date": "2026-10-29",
     "kind": "Signal",
