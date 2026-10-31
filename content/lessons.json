@@ -683,5 +683,38 @@
         "url": "https://finance.yahoo.com/markets/stocks/articles/google-just-burned-9-billion-113209095.html"
       }
     ]
+  },
+  {
+    "id": "guidance",
+    "m": "wealth",
+    "mod": "Stocks",
+    "title": "Earnings guidance: why the forecast moves the stock more than the results",
+    "added": "2026-10-31",
+    "layers": [
+      "Guidance is a company's own forecast of its coming results, usually for the next quarter and sometimes the full year. Most large US companies give it in a table at the bottom of their quarterly earnings release: a revenue range, a gross margin, and earnings per share, often in two versions, GAAP (the official accounting rules) and non-GAAP (adjusted to strip out items management considers one-off). Intel's release on October 29, 2026 is a clean example. For the fourth quarter it forecast revenue of $15.0 billion to $16.0 billion, a non-GAAP gross margin of 38.0%, and non-GAAP earnings of $0.25 a share, and it stated that the margin and earnings figures assume the midpoint of the revenue range. Next to guidance sits the consensus: the average of the forecasts published by the analysts who cover the stock. For Intel's fourth quarter, analysts surveyed by LSEG expected $17.1 billion of revenue and $0.43 a share. The gap between guidance and consensus is often the real news of earnings day.",
+      "The mechanism runs through expectations. Before a report, a stock's price already reflects what investors collectively believe about future profits. Results that match those beliefs change little, because nothing new was learned. The market reacts to the surprise, the difference between what came out and what was expected, and it weighs surprises about the future more than surprises about the past, because a stock's value is the worth of all its future cash flows, not last quarter's. Intel shows both sides at once. Its third quarter beat its own guidance: revenue of $16.5 billion, up 21%, and adjusted earnings of $0.52 a share. Yet its fourth-quarter earnings forecast was roughly 42% below consensus, its revenue midpoint about 9% below, and its margin guide six points lower than the quarter just reported. Analysts then cut their models for next quarter and the quarters after it, and lower expected earnings times a lower multiple (investors pay less per dollar of profit when growth looks shakier) gives a much lower price. The stock closed 28.58% down, its worst day since 1974. Watch the pieces of a guidance table, not just the headline: a margin forecast falling faster than revenue tells you costs or pricing are under pressure; a wide range signals uncertainty; and the commentary matters. Intel's finance chief said he sees the PC slowdown continuing at least through the first half of next year, which stretches the bad news beyond one quarter. The effect also spreads: when one company warns about its market, investors reprice its suppliers, customers and competitors, which is why AMD and other chip stocks fell around 10% the same day.",
+      "This matters because it explains moves that look irrational. A company can report record growth and see its stock fall, or report a loss and see it rise, because the price was set by expectations before the news arrived. Management controls guidance, which creates incentives: many companies guide conservatively so they can 'beat' later, and analysts know it, so a small beat of a cautious guide may disappoint. Some companies stop giving guidance in uncertain times, which shifts more weight onto analyst estimates and conference-call tone. For a business owner the same logic applies to lenders and investors: they fund the plan you forecast, and missing your own forecast damages trust more than delivering a modest one you hit. For a long-term investor, a guidance shock is information about a business, not an instruction to act. The useful question is whether the forecast changed your view of the company's long-run earning power or only its next few months.",
+      "A stock moves on the gap between what happens and what was expected, and expectations about the future count most. Read the guidance table and the consensus side by side, check whether margins are falling faster than sales, and listen for how long management says a problem will last. Then separate a temporary reset in expectations from a permanent change in what the business can earn.",
+      [
+        "What did the company guide for next quarter, and how does that compare with the analyst consensus?",
+        "Is the margin forecast falling faster than the revenue forecast, and does management explain why?",
+        "Does management describe the weakness as one quarter or something that lasts into next year?",
+        "Has this company tended to guide conservatively and then beat, or to miss its own forecasts?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Intel, Q3 2026 earnings release, Oct 29, 2026",
+        "url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results"
+      },
+      {
+        "name": "Stock Titan, Oct 30, 2026",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
+      },
+      {
+        "name": "TheStreet via Yahoo Finance, Oct 30, 2026",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-30-141142726.html"
+      }
+    ]
   }
 ]

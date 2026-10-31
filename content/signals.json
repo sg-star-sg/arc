@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-31-intel-guidance-plunge",
+    "date": "2026-10-31",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "Intel beats its forecast, then loses 28% on the next one",
+    "stat": "-28.58%",
+    "statLabel": "Intel's one-day stock fall on Oct 30, 2026, its worst day since 1974",
+    "body": "Intel reported third-quarter revenue of $16.5 billion, up 21% from a year earlier, with data center and AI sales up 78%, and its finance chief said revenue, margins and earnings per share all beat the company's own guidance. But Intel forecast fourth-quarter revenue of $15.0 billion to $16.0 billion, below the $17.1 billion analysts expected, an adjusted gross margin of 38.0% after 44.1%, and adjusted earnings of $0.25 a share against $0.43 expected. The finance chief said he sees 'the PC slowdown continuing at least through the first half of next year,' and PC chip revenue fell 5%. The stock closed 28.58% lower, chip peers such as AMD fell around 10%, and the Nasdaq dropped 2.86%, its worst day since June.",
+    "why": "A share price is a bet on the future, so a company's forecast of next quarter can matter more than the quarter it just finished. When guidance falls well short of what analysts had built into their models, the price resets fast, even for a business that is growing. If you own an index fund you own Intel and its peers, and learning how guidance and expectations work explains why good news can come with a falling stock.",
+    "lessons": [
+      "guidance",
+      "valuation",
+      "readco"
+    ],
+    "sources": [
+      {
+        "name": "Intel, Q3 2026 earnings release, Oct 29, 2026",
+        "url": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results"
+      },
+      {
+        "name": "Stock Titan, Oct 30, 2026",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
+      },
+      {
+        "name": "TheStreet via Yahoo Finance, Oct 30, 2026",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-30-141142726.html"
+      }
+    ]
+  },
+  {
     "id": "2026-10-30-alphabet-negative-free-cash-flow",
     "date": "2026-10-30",
     "kind": "Signal",
