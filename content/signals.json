@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-01-binance-hack",
+    "date": "2026-11-01",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "Hackers take $6.3 billion from Binance in about 20 minutes",
+    "stat": "$6.3bn",
+    "statLabel": "Stolen from Binance wallets on Oct 29-30, 2026, the largest crypto theft on record",
+    "body": "Binance, the world's largest crypto exchange, said hackers stole about $6.3 billion, and blockchain analysts at TRM Labs traced roughly $6.36 billion moving out of its wallets on 10 blockchains, most of it over about 20 minutes starting late on Thursday. The previous record was the $1.5 billion taken from the exchange Bybit in February 2025, and TRM and Chainalysis both linked this attack to the same North Korean unit, TraderTraitor; Binance says its own investigation has not attributed blame. Binance suspended deposits and withdrawals, said about $3 billion had been frozen, including more than $2.3 billion by stablecoin issuers Tether and Circle according to Reuters, and promised to cover all losses from its emergency fund and company money. That fund, set up in 2018 and worth about $1 billion, is less than a sixth of the amount taken; bitcoin fell to a six-week low of $76,368 and Coinbase shares dropped 4.8%.",
+    "why": "When you keep an asset on an exchange or app, you usually own a claim on that company, not the asset itself, so your safety depends on its security, its balance sheet and its promises. Banks and brokerages sit inside legal protection systems built over decades; crypto platforms mostly rely on their own reserves and goodwill. Before you choose where to hold any asset, ask who actually has custody of it and what happens to your money if that firm is hacked or fails.",
+    "lessons": [
+      "custody",
+      "alts",
+      "bankprofit"
+    ],
+    "sources": [
+      {
+        "name": "Al Jazeera, Oct 30, 2026",
+        "url": "https://www.aljazeera.com/news/2026/10/30/binance-says-6-3bn-stolen-in-biggest-crypto-heist-in-history-what-we-know"
+      },
+      {
+        "name": "Forbes, Oct 30, 2026",
+        "url": "https://www.forbes.com/sites/digital-assets/2026/10/30/binances-63-billion-hack-started-with-one-engineers-laptop/"
+      },
+      {
+        "name": "Charles Schwab market update, Oct 30, 2026",
+        "url": "https://www.schwab.com/learn/story/stock-market-update-open"
+      }
+    ]
+  },
+  {
     "id": "2026-10-31-intel-guidance-plunge",
     "date": "2026-10-31",
     "kind": "Signal",

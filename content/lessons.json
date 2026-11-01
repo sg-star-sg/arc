@@ -716,5 +716,34 @@
         "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-30-141142726.html"
       }
     ]
+  },
+  {
+    "id": "custody",
+    "m": "wealth",
+    "mod": "Safekeeping",
+    "title": "Custody: who actually holds your assets, and what happens if they fail",
+    "added": "2026-11-01",
+    "layers": [
+      "Custody is the job of holding an asset on someone's behalf. When you buy a stock through a brokerage app, keep cash in a bank, or buy bitcoin on an exchange, you almost never hold the thing yourself. A custodian holds it, and you hold a claim recorded on that firm's books. The question custody answers is simple and easy to forget: if this firm disappeared tomorrow, how would I get my assets back, and who would make me whole? There are three broad answers. In a bank, your deposit is a loan to the bank, and a government insurance system stands behind it up to a set limit. At a regulated US brokerage, your securities are supposed to be kept separate from the firm's own money, and a separate industry-funded protection system steps in if a broker fails and customer assets are missing. On a crypto exchange, protection depends mostly on the exchange itself: its security, its own reserves, and how its terms of service treat your balance if something goes wrong.",
+      "Segregation is the core mechanism. A well-run custodian keeps client assets in accounts legally walled off from its own, so if the firm goes bankrupt, its creditors cannot seize what belongs to customers. Commingling, mixing client assets with the firm's own, is what turns a company failure into a customer loss. Security is the second layer. Crypto exchanges hold coins in 'hot' wallets connected to the internet for fast withdrawals and 'cold' wallets kept offline. Whoever controls a wallet's private key controls the coins, and blockchain transfers cannot be reversed by a court or a bank. Binance's breach in October 2026 shows how fast that can go wrong: analysts traced about $6.36 billion out of its wallets on 10 blockchains, mostly within about 20 minutes, after attackers got the exchange's systems to send funds to wallets they controlled. The third layer is the backstop. Binance's emergency fund, the Secure Asset Fund for Users, was set up in 2018, holds about $1 billion in bitcoin, and was less than a sixth of the amount stolen, so Binance said company funds would cover the rest. Some money came back by a different route: Tether and Circle, the private companies that issue the dollar-linked stablecoins USDT and USDC, can freeze their own tokens, and Reuters reported they froze more than $2.3 billion. That rescue depended on private firms choosing to act, not on a legal right users held. Notice also what users could not do: Binance suspended withdrawals while it investigated, so even customers who lost nothing could not move their money for days.",
+      "This matters because the same asset can carry very different risk depending on where it sits. A share of an index fund at a regulated broker and a token on an offshore exchange may both show up as a number in an app, but the number means different things. The first is backed by segregation rules, audits and a statutory protection system; the second is backed by one company's reserves and its word. History shows each layer failing in its own way: banks have failed with deposits above the insured limit, brokers have failed with client money mixed into the firm's, and crypto platforms have been hacked or have collapsed with customer funds missing. Protection systems also have clear limits worth knowing: bank deposit insurance covers deposits, not investments, and broker protection replaces missing assets but does not cover a fall in their market value. For a business owner the stakes are similar. Payroll cash, customer deposits and reserve funds held at a single institution, above insured limits or on a platform without legal protections, are an operational risk, not just an investment one. Many firms split cash across banks for exactly this reason.",
+      "Owning an asset and having it held safely are two different questions. Before you put money anywhere, find out who holds it, whether it is kept separate from the firm's own money, what legal protection applies and up to what limit, and how quickly you could get it out in a crisis. A promise from a company is weaker than a legal right, and the time to check is before something breaks.",
+      [
+        "Who is the custodian of this asset, and is it kept separate from the firm's own money?",
+        "What insurance or protection system covers this account, what does it cover, and what is its current limit?",
+        "If this firm were hacked or went bankrupt tomorrow, how and how fast would I get my assets back?",
+        "Am I relying on a legal right or on a company's promise to make me whole?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Al Jazeera, Oct 30, 2026",
+        "url": "https://www.aljazeera.com/news/2026/10/30/binance-says-6-3bn-stolen-in-biggest-crypto-heist-in-history-what-we-know"
+      },
+      {
+        "name": "Forbes, Oct 30, 2026",
+        "url": "https://www.forbes.com/sites/digital-assets/2026/10/30/binances-63-billion-hack-started-with-one-engineers-laptop/"
+      }
+    ]
   }
 ]
