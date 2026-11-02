@@ -1,5 +1,31 @@
 [
   {
+    "id": "2026-11-02-marvell-lumentum",
+    "date": "2026-11-02",
+    "kind": "Signal",
+    "m": "business",
+    "title": "Marvell offers $115 billion in its own stock for Lumentum",
+    "stat": "23.9%",
+    "statLabel": "Premium Marvell is paying over Lumentum's Oct 28, 2026 closing price",
+    "body": "Chipmaker Marvell agreed on Nov 2 to buy Lumentum, which makes the lasers and optical parts that move data through AI data centers using light, in an all-stock deal valued at about $115 billion. Lumentum shareholders will get 4.5 Marvell shares for each share they own, worth about $1,132 at announcement, a 23.9% premium to the price on Oct 28 before talk of a deal emerged; afterward Marvell's current owners will hold about 67% of the combined company and Lumentum's about 33%. Marvell says it sees more than $1 billion a year in cost savings and expects the deal to raise its adjusted earnings per share in the first year, but closing needs shareholder and regulatory approval and is not expected until the first half of 2028. Lumentum is growing fast: the same day it reported quarterly revenue of $1.26 billion, up from $533.8 million a year earlier.",
+    "why": "Because Marvell pays in shares rather than cash, Lumentum's owners are swapping one stock for another and will ride Marvell's price for more than a year before the deal closes, and Marvell's owners give up a third of their company. Whether this creates value depends on whether the promised savings and growth are worth more than the premium and the dilution. The same logic applies when any company, including a small one, is bought or merges using its own shares.",
+    "lessons": [
+      "stockmerger",
+      "exits",
+      "valuation"
+    ],
+    "sources": [
+      {
+        "name": "Yahoo Finance (via ADVFN), Nov 2, 2026",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-acquire-lumentum-115-billion-134153803.html"
+      },
+      {
+        "name": "Yahoo Finance (via Stocktwits), Nov 2, 2026",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-strikes-115b-deal-acquire-124300132.html"
+      }
+    ]
+  },
+  {
     "id": "2026-11-01-binance-hack",
     "date": "2026-11-01",
     "kind": "Signal",

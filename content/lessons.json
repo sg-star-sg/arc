@@ -745,5 +745,34 @@
         "url": "https://www.forbes.com/sites/digital-assets/2026/10/30/binances-63-billion-hack-started-with-one-engineers-laptop/"
       }
     ]
+  },
+  {
+    "id": "stockmerger",
+    "m": "business",
+    "mod": "Scale and exit",
+    "title": "Paying in shares: premiums, exchange ratios and the synergy bet",
+    "added": "2026-11-02",
+    "layers": [
+      "When one company buys another, it can pay with cash, with its own newly issued shares, or a mix. In an all-stock deal, the buyer does not hand over money; it prints new shares and gives them to the seller's owners, who become part-owners of the combined company. The price is set as an exchange ratio: a fixed number of buyer shares for each target share. Three numbers decide whether the deal is a good one. The premium is how much more than the target's undisturbed market price the buyer offers. The ownership split shows how much of the combined company each side ends up with. The synergies are the extra profit the two firms promise to earn together that they could not earn apart. Marvell's November 2026 offer for Lumentum shows all three: 4.5 Marvell shares per Lumentum share, worth about $1,132 at announcement, a 23.9% premium to Lumentum's Oct 28 price, a 67/33 ownership split, and more than $1 billion a year in promised cost savings.",
+      "Start with the premium. Buyers almost always pay one, because a target's owners have no reason to sell at the price they could get by simply selling on the market. The premium is usually measured against the 'undisturbed' price, before rumors pushed the stock up, which is why Lumentum's premium is quoted against Oct 28. A 23.9% premium means roughly a fifth of what Marvell pays is a payment for control, on top of what the market already thought Lumentum was worth. The buyer only comes out ahead if synergies are worth more than that premium plus deal costs. Cost synergies, such as removing duplicate offices, staff and purchasing, are easier to deliver than revenue synergies, such as selling each other's products, which depend on customers. To value a synergy promise, ask what one year of savings is worth as an ongoing stream. As an illustration only: if investors valued each dollar of yearly savings at 15 times, $1 billion a year would be worth about $15 billion, before subtracting the one-time costs of combining and the chance the savings arrive late or smaller. Next, the exchange ratio. With a fixed ratio, the seller's payout moves with the buyer's stock: if Marvell's shares fall 10% before closing, so does the value Lumentum owners receive. Closing can take a long time; this deal is not expected to finish until the first half of 2028. Specialist investors called merger arbitrageurs buy the target and often short the buyer to capture the gap between the target's price and the deal value. That gap, called the deal spread, is the market's live estimate of the risk the deal falls apart. Finally, accretion. Buyers often say a deal will be 'accretive', meaning it raises earnings per share. That depends on what is counted. Adjusted, or non-GAAP, earnings usually leave out the amortization of intangible assets created by the purchase, which can make a deal look accretive even when reported profit per share falls. Accretion also says nothing on its own about whether the price was fair: paying with richly valued shares for a fast-growing company can lift earnings per share and still hand away too much ownership.",
+      "This matters because paying in shares spreads the bet. In a cash deal the buyer's owners carry all the risk of overpaying and the seller's owners walk away with certain money. In a stock deal the seller's owners keep a stake in whether the merger works, and the buyer's owners give up part of their company; Marvell's current owners go from owning all of Marvell to about two thirds of the combined firm. Buyers tend to use stock when they think their own shares are expensive, because expensive shares buy more, which is why the market sometimes reads a stock offer as a hint the buyer thinks its price is high. History offers warnings: mergers paid for with stock at the top of a boom, such as AOL and Time Warner in 2000, can destroy enormous value when the shares used as currency later fall. For a founder, the same choice arrives when a larger company offers to buy you with its stock: you are not just selling your business, you are buying theirs, and your outcome depends on its price, its lockup rules and how long until closing.",
+      "In a stock-for-stock deal, the headline price is a moving number and the real questions are three: how big a premium is being paid, whether the promised synergies are believable and worth more than that premium, and who ends up owning how much of the combined company. If you are on the receiving end of shares, judge the buyer as an investment in its own right, because that is what you are getting.",
+      [
+        "What premium is being paid, measured against which undisturbed price?",
+        "Are the synergies mostly cost savings or hoped-for revenue, and what would they be worth if they arrive late or only half delivered?",
+        "With a fixed exchange ratio and a long wait to close, how exposed is my payout to a fall in the buyer's stock?",
+        "Is 'accretive' measured on reported or adjusted earnings, and what does each side own afterward?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Yahoo Finance (via ADVFN), Nov 2, 2026",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-acquire-lumentum-115-billion-134153803.html"
+      },
+      {
+        "name": "Yahoo Finance (via Stocktwits), Nov 2, 2026",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-strikes-115b-deal-acquire-124300132.html"
+      }
+    ]
   }
 ]
