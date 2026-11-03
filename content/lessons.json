@@ -774,5 +774,34 @@
         "url": "https://finance.yahoo.com/markets/stocks/articles/marvell-strikes-115b-deal-acquire-124300132.html"
       }
     ]
+  },
+  {
+    "id": "equityraise",
+    "m": "wealth",
+    "mod": "Stocks",
+    "title": "Selling new shares: follow-on offerings, dilution and what they signal",
+    "added": "2026-11-03",
+    "layers": [
+      "A company that is already public can raise money by creating and selling brand-new shares. This is called a follow-on, or secondary, offering. It is different from an IPO, which is the first sale of shares to the public, and different from existing owners selling their own shares, which brings the company no money at all. New shares do two things at once: they bring cash into the company, and they spread ownership across more shares, so each existing share owns a smaller slice. That second effect is dilution. Oracle's November 2026 plan shows the mechanics: $10 billion of new stock which, at the Oct 30 price of $130.67, works out to about 76.5 million new shares on top of roughly 3.02 billion, about 2.5% dilution, sold alongside $10 billion of new bonds.",
+      "Start with the dilution math. Divide the money raised by the price per share to get the number of new shares, then divide by the shares already outstanding. $10 billion divided by $130.67 is about 76.5 million shares; 76.5 million divided by 3.02 billion is about 2.5%. Someone who owned 1% of Oracle before would own a little under 0.98% after. Dilution of ownership is not automatically a loss of value. As an illustration only: if a company worth $100 sells $10 worth of new shares at a fair price, it is now worth $110 with 10% more shares, and each share is worth the same as before. Value per share falls only if the shares are sold below what they are really worth, or if the cash is then spent on projects that earn less than investors require, which is the company's cost of capital. Next, the price. New shares are usually sold at a discount to the last trading price, because buyers are being asked to absorb a large block at once and the company wants the deal to fill. Underwriting banks, the bookrunners, gather orders from big investors and set the final price, often overnight. There are other routes too. In an at-the-market program, the company drips shares into the market over weeks or months at whatever price prevails, which avoids a single discount but takes longer. In a rights offering, common in Europe and Asia, existing owners get the first chance to buy the new shares so they can avoid being diluted. A convertible bond is a loan that can turn into shares later, a way of selling equity with a delay. Finally, seniority. New shares rank below every lender: if the company fails, bondholders are paid before shareholders get anything. That is why equity is the most expensive money a company can raise, and why it is usually the last thing a profitable company reaches for.",
+      "This matters because how a company chooses to raise money tells you what it thinks of its own position. Corporate finance has a well-known idea called the pecking order: companies prefer to fund themselves first from cash they generate, then from borrowing, and only last from selling new stock. Two reasons explain it. Managers know more than outside investors, so investors suspect a company sells shares when it believes they are richly priced; and selling shares is costly in fees and discounts. That is why share prices often fall when a large stock sale is announced, as Oracle's did. The order of events at Oracle fits the pattern: capital spending far above the cash coming in, more than $125 billion of borrowings, a credit rating one notch above junk, and then a turn to shareholders. The same logic works in reverse, which is why buybacks are often read as a sign of confidence. A stock sale is not always bad news. A young company with large, profitable opportunities may be wise to sell shares rather than borrow, because equity does not have to be repaid in a downturn and does not push it toward default. The question is never whether dilution happened, but whether the money buys something worth more than the slice of ownership given up.",
+      "When a company you own through a fund or directly announces new shares, look past the headline to four things: how big the sale is compared with the shares already outstanding, the discount to the market price, what the money is for, and why the company did not use its own cash or borrow instead. Then judge the result over years, not days: did the projects funded earn more than the cost of capital? For your own business the lesson is the same. Every time you bring in a new owner, from an angel investor to a partner, you are selling a slice of future profits, so the price and the use of that money decide whether you end up with a smaller share of something bigger, or simply a smaller share.",
+      [
+        "What percentage of the company is being sold, and at what discount to the last price?",
+        "Why is the company selling stock instead of using its cash flow or borrowing?",
+        "Will the money fund projects that can earn more than the company's cost of capital?",
+        "Does this sale fit or break promises management made about how much it would raise?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "ShiftDelete.net, Nov 2, 2026",
+        "url": "https://shiftdelete.net/en/oracle-stock-offering"
+      },
+      {
+        "name": "Tech Times, Nov 3, 2026",
+        "url": "https://www.techtimes.com/articles/329927/20261103/oracle-burns-entire-four-year-capital-promise-one-week-shares-shed-60b.htm"
+      }
+    ]
   }
 ]
