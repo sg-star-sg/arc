@@ -803,5 +803,38 @@
         "url": "https://www.techtimes.com/articles/329927/20261103/oracle-burns-entire-four-year-capital-promise-one-week-shares-shed-60b.htm"
       }
     ]
+  },
+  {
+    "id": "electionmarkets",
+    "m": "world",
+    "mod": "Politics and policy",
+    "title": "Elections and markets: gridlock, policy risk and the sectors that move",
+    "added": "2026-11-04",
+    "layers": [
+      "An election changes who writes the rules, and markets try to price that before anyone takes office. Investors care less about which party wins than about how much each winner can actually do. When one party holds the White House, the House and the Senate, it can pass laws on taxes, spending and regulation. When power is split, each side can block the other, and very little new law gets passed. That stalemate is called gridlock. The 2026 midterms produced a projected example: Democrats were projected to win both chambers of Congress while a Republican president stays in office with a veto, and the morning after, Dow futures were up 1,083 points, or 2.1%, while individual sectors moved far more in both directions.",
+      "Markets read an election in three layers. First, uncertainty. Before the vote, investors cannot know the outcome, so some hedge by selling stocks or buying Treasuries and gold. Once the result is clear, that hedge often unwinds, whichever side won. That is part of why US midterm years have so often been followed by gains: S&P Dow Jones Indices found the S&P 500 rose in the 12 months after every midterm from 1942 to 2014, 19 in a row, with the only losing 12-month periods following 1930 and 1938. Nineteen data points is a small sample, and each of those years also had its own economy, interest rates and valuations, so treat the pattern as a tendency, not a rule. Second, the policy menu. Under gridlock, big new laws are unlikely, but the things that need Congress to keep happening still do: budgets, the debt ceiling, and funding for existing programs, which can create deadline fights. A president can still act through executive orders, trade policy and agencies, and Congress can still investigate and hold hearings. Third, sectors. Some industries live or die by government decisions: health insurers by Medicare and Medicaid rules, defense contractors by the budget, clean energy by tax credits, banks by capital rules, prison operators by federal contracts, and data centers by permitting and power rules. On Nov 4, 2026, solar stocks such as First Solar rose more than 7% and health insurers gained, while AI data center names such as CoreWeave fell more than 6% after a winning Texas governor candidate pledged a pause on data center growth. The broad index moved about 1%; the policy-exposed corners moved five to seven times as much.",
+      "This matters because political news feels huge and personal, which makes it one of the easiest triggers for bad money decisions. People sell everything when the side they oppose wins, or pile into stocks they think the winners will favor, and often both trades are already priced in by the time the polls close. The deeper reason elections matter less to a diversified portfolio than they feel is that company profits, interest rates and inflation drive long-run returns, and most of those barely change with who controls a chamber of Congress. Where elections do matter is concentration. A business owner who sells to the government, a professional whose industry depends on a subsidy, or an investor holding a big position in one sector is exposed to policy risk the way a homeowner on a coast is exposed to storms. MBA courses call this political or regulatory risk, and it is assessed like any other risk: how likely is the change, how big is the hit, and how long would it take to adapt.",
+      "Elections reprice sectors far more than they reprice the whole market. Gridlock usually means fewer new laws, so the broad market often shrugs, while industries that depend on government money or rules can swing sharply. Judge your exposure by what you actually own and earn, not by which side you hoped would win.",
+      [
+        "Which of my holdings, clients or income sources depend on a government contract, subsidy, tax credit or regulation?",
+        "If the policy I fear actually passed, how much would it cut that income or value, and how quickly could I adjust?",
+        "Am I about to make a trade because of how I feel about the result, rather than because the facts about a company have changed?",
+        "With power split, what still needs Congress to act, such as a budget or debt ceiling deadline, and could a standoff there affect me?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "S&P Dow Jones Indices, Indexology blog, Nov 10, 2018",
+        "url": "https://www.indexologyblog.com/2018/11/10/stocks-rocked-the-house-post-midterm-elections/"
+      },
+      {
+        "name": "StockTitan, Nov 4, 2026",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+      },
+      {
+        "name": "TheStreet, Nov 4, 2026",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+      }
+    ]
   }
 ]

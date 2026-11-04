@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-04-midterms-split-government",
+    "date": "2026-11-04",
+    "kind": "Signal",
+    "m": "world",
+    "title": "Democrats are projected to win Congress, and stock futures jump",
+    "stat": "2.1%",
+    "statLabel": "Rise in Dow futures (1,083 points) at 8:45 a.m. ET on Nov 4, 2026, the morning after the midterms",
+    "body": "In the Nov 3 midterms, Democrats were projected by the Associated Press, CNBC and Decision Desk HQ to win majorities in both the House and the Senate, while President Trump remains in the White House for two more years; final seat counts are still being tallied. Overnight, futures first sold off, with Nasdaq-100 futures touching their lowest level since July 30, then recovered, and by 8:45 a.m. ET Dow futures were up 1,083 points, or 2.1%, and S&P 500 futures 1.1%, as Treasury yields and the dollar slipped and gold rose about 2.9%. The moves split by sector: solar names such as First Solar rose more than 7% and health insurers like Centene and Molina gained, while AI data center stocks such as CoreWeave fell more than 6% and defense and prison operators slipped. Trump congratulated Democrats but warned he could 'just veto everything', and strategists at Morgan Stanley Investment Management and Freedom Capital Markets described the result as gridlock, which they said markets have historically liked.",
+    "why": "A split government usually passes few new laws, so the big question shifts from 'what changes' to 'which industries depend on rules, contracts or subsidies that one side wants to change'. That is why the market as a whole barely blinked while individual sectors moved 5% or more in a morning. If you own index funds, election swings mostly wash out; if you own a business or a concentrated position tied to government spending, regulation or energy policy, this is the moment to map how exposed you really are.",
+    "lessons": [
+      "electionmarkets",
+      "diversify",
+      "behavior"
+    ],
+    "sources": [
+      {
+        "name": "StockTitan, Nov 4, 2026",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+      },
+      {
+        "name": "TheStreet, Nov 4, 2026",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-04-2026"
+      },
+      {
+        "name": "TheStreet, Nov 3, 2026 (election night live blog)",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-03-2026"
+      }
+    ]
+  },
+  {
     "id": "2026-11-03-oracle-stock-sale",
     "date": "2026-11-03",
     "kind": "Signal",
