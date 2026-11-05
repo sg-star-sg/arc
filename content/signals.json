@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-05-boe-first-hike-since-2023",
+    "date": "2026-11-05",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "The Bank of England raises rates even as growth slows",
+    "stat": "4%",
+    "statLabel": "UK Bank Rate after the Nov 5, 2026 hike from 3.75%, the first increase since August 2023",
+    "body": "The Bank of England's Monetary Policy Committee voted 8-1 to raise Bank Rate by 0.25 percentage points to 4%, ending six straight holds; Catherine Mann voted for a larger 0.5-point rise. UK inflation was 3.5% in September, up from 2.9% in July, with energy adding about one percentage point, after Brent crude averaged $108 a barrel in the 15 working days to Oct 27, 38% above the level in the Bank's July forecast. The Bank now expects inflation to peak around 5% in mid-2027 and not return to its 2% target until the third quarter of 2028, while it cut growth to 1.6% this year and 1.3% next and said household income from work will fall in both years. Governor Andrew Bailey said the hike 'shouldn't be seen as the first in an inevitable long sequence', but that unless the Middle East conflict is resolved, 'neither does it seem likely to be the last.'",
+    "why": "This is the classic supply-shock bind: higher energy prices push inflation up and growth down at the same time, and a central bank can only fight one with its single tool. The Bank chose to protect its inflation credibility, which means borrowers pay more while incomes are already squeezed; Moneyfacts estimates the hike adds about £37 a month to a £250,000 tracker mortgage. If your loans float with the policy rate, the forecast for oil now matters as much as the forecast for the economy.",
+    "lessons": [
+      "supplyshock",
+      "inflexpect",
+      "mortgages"
+    ],
+    "sources": [
+      {
+        "name": "Reuters via Global Banking & Finance Review, Nov 5, 2026",
+        "url": "https://www.globalbankingandfinance.com/bank-england-raises-rates-first-time-since-2023-come/"
+      },
+      {
+        "name": "Mortgage Introducer, Nov 5, 2026",
+        "url": "https://www.mpamag.com/uk/mortgage-industry/market-trends/recap-how-the-bank-of-england-voted-to-raise-rates/596302"
+      },
+      {
+        "name": "MoneyWeek live blog, Nov 5, 2026",
+        "url": "https://moneyweek.com/economy/news/live/uk-interest-rates-november-bank-of-england"
+      }
+    ]
+  },
+  {
     "id": "2026-11-04-midterms-split-government",
     "date": "2026-11-04",
     "kind": "Signal",
