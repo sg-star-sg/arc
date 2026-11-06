@@ -873,5 +873,42 @@
         "url": "https://www.xtb.com/int/market-analysis/news-and-research/what-drives-the-market-top-morning-news-november-5-2026"
       }
     ]
+  },
+  {
+    "id": "betavol",
+    "m": "wealth",
+    "mod": "Portfolio",
+    "title": "Beta and volatility: why some stocks fall three times as hard",
+    "added": "2026-11-06",
+    "layers": [
+      "Volatility is how widely a price swings. Beta measures something narrower: how much a stock tends to move when the whole market moves. A beta of 1 means it usually rises and falls about as much as the market; a beta of 2 means roughly twice as much in either direction; a beta below 1 means it tends to move less, which is typical of utilities or consumer staples. Beta is estimated from past returns, by comparing a stock's daily or monthly moves with an index such as the S&P 500 over a few years. For the market as a whole there is also a forward-looking gauge, the Cboe Volatility Index or VIX, which reads S&P 500 option prices to estimate how much the index may swing over the next 30 days. November 5, 2026 showed the difference in one session: the S&P 500 fell 4.36% while the Philadelphia Semiconductor Index fell more than 12%, nearly three times as far, and Micron alone fell 17.46%.",
+      "Some businesses are built to swing harder. Four forces do most of the work. First, operating leverage: chipmakers and other heavy-industry companies carry large fixed costs in factories and research, so a small change in sales becomes a big change in profit. Second, concentrated, cyclical demand: a handful of giant customers are building AI data centers, and when the outlook for that spending changes, it changes for the whole supply chain at once. On Nov 5, UBS strategists estimated that about 30% of the data center additions expected in 2028 were at risk after the midterm results, which cut expected sales for years, not quarters. Third, long-dated value: when much of a stock's price rests on profits expected far in the future, any change in those expectations, or in interest rates, moves the price sharply. Fourth, crowding: when the same funds and traders own the same winners, they sell them together. Earlier in 2026 the pattern ran the same way: on June 5 the semiconductor index dropped 10%, its biggest one-day fall since March 2020, erasing over $1 trillion of value while the S&P 500 fell 2.3%; yet the index was still up 75% for the year. High beta works in both directions, which is why these stocks lead rallies too.",
+      "Beta matters because your risk is not the number of holdings you own but how they move together. Ten AI and chip stocks behave much more like one large bet than ten separate ones, and in a selloff correlations rise, so diversification within a theme gives less protection exactly when you want it. It also changes position sizing: a holding that can fall three times as far as the market carries the swing of a much larger, calmer position. Losses are asymmetric, too: a 50% fall needs a 100% gain to get back to even, so deep drawdowns in high-beta holdings take time to repair. Read the VIX with care. NerdWallet's rule of thumb, drawing on S&P Dow Jones Indices, is that readings of 0 to 15 usually mean calm markets, 15 to 25 moderate volatility, 25 to 30 turbulence and 30 and above an expectation of extreme swings; on Nov 5 it briefly reached 28.09. A high VIX tells you options have become expensive and investors are nervous, not which way prices will go next. And beta is backward-looking: a company's sensitivity changes as its business, debt and shareholders change.",
+      "Before you own something, ask how far it could fall on an ordinary bad day for the market, and whether you could hold it through that without selling. Size holdings by their downside, not their upside. Diversify across different drivers of return, such as industries that depend on different customers, bonds and cash, rather than across many names that share one story. The same lens applies to a business: if most of your revenue depends on one customer group's spending cycle, your company has a high beta of its own.",
+      [
+        "If the overall market fell 20%, roughly how much might each of my largest holdings fall, given how they have behaved in past selloffs?",
+        "How much of my portfolio, including the top holdings inside my index funds, depends on the same theme or the same customers?",
+        "Is a high-volatility holding sized so that a 50% drop would hurt but not change my plans?",
+        "Does my own business or job rise and fall with the same cycle as my investments?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "StockTitan market live blog, Nov 5, 2026",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+      },
+      {
+        "name": "Fox Business, Nov 5, 2026",
+        "url": "https://www.foxbusiness.com/markets/stocks-nov-5-2026"
+      },
+      {
+        "name": "Deep News via Tiger Brokers, Jun 6, 2026",
+        "url": "https://www.itiger.com/news/1178739426"
+      },
+      {
+        "name": "NerdWallet, What Is the VIX Index?, updated Feb 2, 2026",
+        "url": "https://www.nerdwallet.com/investing/learn/vix"
+      }
+    ]
   }
 ]

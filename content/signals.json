@@ -1,5 +1,31 @@
 [
   {
+    "id": "2026-11-06-chip-selloff-nasdaq-correction",
+    "date": "2026-11-06",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "Chip stocks crash and push the Nasdaq into a correction",
+    "stat": "-5.52%",
+    "statLabel": "Nasdaq Composite on Nov 5, 2026, its worst day since April 2025",
+    "body": "On Thursday the Nasdaq Composite fell 5.52% and closed in correction territory, at least 10% below its Oct. 6 record, while the S&P 500 lost 4.36% and the Dow dropped 1,833.06 points, or 3.44%. Chip stocks led the fall: the Philadelphia Semiconductor Index plunged more than 12%, Micron fell 17.46%, AMD 17.26%, Broadcom 10.43% and Nvidia 9.26%. Investors feared the Democrats' sweeping midterm win would bring tougher AI regulation and slow data center building, and UBS strategists said about 30% of the data center additions expected in 2028 are now at risk. The VIX, Wall Street's fear gauge, briefly hit 28.09, its highest since March 31.",
+    "why": "The same news moved the overall market about 4% and chip stocks about 12%, roughly three times as much. That gap is beta: companies whose sales hang on one spending cycle swing harder in both directions, and they now make up a large part of many index funds. Knowing how much of your portfolio rides on a single theme tells you how big a day like this will feel before it arrives.",
+    "lessons": [
+      "betavol",
+      "bearmarkets",
+      "electionmarkets"
+    ],
+    "sources": [
+      {
+        "name": "Fox Business, Nov 5, 2026",
+        "url": "https://www.foxbusiness.com/markets/stocks-nov-5-2026"
+      },
+      {
+        "name": "StockTitan market live blog, Nov 5, 2026",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-5-2026"
+      }
+    ]
+  },
+  {
     "id": "2026-11-05-boe-first-hike-since-2023",
     "date": "2026-11-05",
     "kind": "Signal",
