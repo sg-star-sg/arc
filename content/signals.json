@@ -1,5 +1,31 @@
 [
   {
+    "id": "2026-11-07-october-jobs-blowout",
+    "date": "2026-11-07",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "Hiring nearly triples forecasts, and a December rate hike looks likelier",
+    "stat": "165,000",
+    "statLabel": "US jobs added in October 2026, against a forecast of 59,000",
+    "body": "US employers added 165,000 jobs in October, almost three times the 59,000 economists expected, and August and September were revised sharply higher. Unemployment fell to 4.1%, its lowest since July, and the share of adults working or looking for work rose to 61.9%, the highest since March. Average hourly pay rose 0.4% in the month and 3.1% over the year, with professional services adding 70,000 jobs and health care 55,100, while leisure and hospitality lost 13,000. Not every line was strong: 1.96 million people have been out of work for 27 weeks or more, the most since May.",
+    "why": "The Fed is fighting inflation, so a hot job market makes another rate rise more likely, not less. KPMG's economists said the report locks in a quarter-point hike in December, which means savings rates stay high while card, mortgage and business loan costs keep climbing. Reading past the headline number, to revisions, wages and who is stuck out of work, tells you whether the economy is heating up or just shifting.",
+    "lessons": [
+      "jobsreport",
+      "fedfutures",
+      "fomcvote"
+    ],
+    "sources": [
+      {
+        "name": "KPMG Economics, Nov 6, 2026",
+        "url": "https://kpmg.com/us/en/articles/2026/october-2026-jobs-report.html"
+      },
+      {
+        "name": "TheStreet, Nov 6, 2026",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-06-2026"
+      }
+    ]
+  },
+  {
     "id": "2026-11-06-chip-selloff-nasdaq-correction",
     "date": "2026-11-06",
     "kind": "Signal",

@@ -910,5 +910,34 @@
         "url": "https://www.nerdwallet.com/investing/learn/vix"
       }
     ]
+  },
+  {
+    "id": "jobsreport",
+    "m": "economy",
+    "mod": "Cycles and crises",
+    "title": "The jobs report: two surveys, revisions and what the Fed sees",
+    "added": "2026-11-07",
+    "layers": [
+      "On the first Friday of most months, the US Bureau of Labor Statistics publishes the Employment Situation, better known as the jobs report. It is really two separate surveys released together. The establishment survey asks businesses and government agencies how many people are on their payrolls, and produces the headline 'jobs added' number plus pay and hours. The household survey asks people in their homes whether they worked or looked for work, and produces the unemployment rate and the participation rate. In October 2026 the payroll survey showed 165,000 new jobs while the household survey put unemployment at 4.1% and participation at 61.9%.",
+      "Each piece answers a different question. Payrolls tell you whether employers are adding or cutting positions overall; the industry breakdown shows where, as when October's gains came from professional services (+70,000) and health care (+55,100) while leisure and hospitality shed 13,000. The unemployment rate counts only people actively looking for work, so it can fall either because people found jobs or because they gave up looking. That is why the participation rate matters: when unemployment falls and participation rises at the same time, as it did in October, more people are working, which is the healthy version. Average hourly earnings show whether pay is rising fast enough to feed inflation, and long-term unemployment (27 weeks or more, 1.96 million people in October) shows whether the people who lose jobs can find new ones. The broadest measure, U-6, adds part-timers who want full-time work and people only loosely attached to the job market; it stood at 7.9%.",
+      "The first number is an estimate, and it changes. Many businesses report late, so the bureau revises each month's payroll figure in each of the next two reports, and once a year it re-benchmarks the whole series against tax records. Revisions often matter as much as the new month: October's report came with sharp upward revisions to August and September, which turned a slowing story into a firming one. Markets react to the surprise, the gap between the figure and the forecast, not the figure itself. A print of 165,000 against a 59,000 forecast is a big upside surprise. And because the Federal Reserve is trying to hold down inflation, strong hiring and rising wages raise the odds of higher interest rates. That is why a 'good' jobs report can push bond yields up and hurt stocks that depend on cheap borrowing, and a weak one can lift them.",
+      "Never judge a jobs report by its headline. Check the forecast it beat or missed, the revisions to prior months, whether unemployment moved for a good reason (more people working) or a bad one (people dropping out), whether pay is running ahead of inflation, and how long the unemployed are staying unemployed. Then ask what the Fed will make of it, because that is what moves the rate on your savings, your loans and the value of your investments. For your own career and business, the industry detail is the useful part: it shows which fields are hiring and where wage pressure is building.",
+      [
+        "Did this month's number beat or miss the forecast, and how were the prior two months revised?",
+        "Did unemployment fall because more people are working, or because fewer are looking?",
+        "Are wages growing faster than inflation, and what does that mean for the Fed's next move?",
+        "Which industries are hiring, and how does that affect my field or my customers?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "KPMG Economics, Nov 6, 2026",
+        "url": "https://kpmg.com/us/en/articles/2026/october-2026-jobs-report.html"
+      },
+      {
+        "name": "TheStreet, Nov 6, 2026",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-06-2026"
+      }
+    ]
   }
 ]
