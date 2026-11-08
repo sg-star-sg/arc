@@ -939,5 +939,50 @@
         "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-06-2026"
       }
     ]
+  },
+  {
+    "id": "futurescurve",
+    "m": "world",
+    "mod": "Commodities",
+    "title": "The futures curve: contango, backwardation and the price of later",
+    "added": "2026-11-08",
+    "layers": [
+      "The oil price in the news is one point on a line. A futures contract fixes a price today for a set amount of a commodity to be delivered in a specific future month, and each delivery month has its own price. Plot those prices from nearest to farthest and you have the futures curve. When later months cost more than the nearest one, the curve slopes up and the market is in contango. When the nearest month costs more than later ones, the curve slopes down and the market is in backwardation. On April 24, 2026, during the Iran war, June Brent settled at $105.33 a barrel while the same curve fell toward the high $60s for delivery in the early 2030s. The headline said oil was above $100. The rest of the curve said buyers would pay far less for a barrel years out.",
+      "The slope comes from the physical cost of waiting. Holding a barrel means paying for a tank, insurance and the money tied up in it, so in a calm, well-supplied market later barrels usually cost more; otherwise nobody would bother storing oil. Backwardation is the shortage signal. Refiners need crude now to keep running, so a barrel today is worth more than a barrel in six months, and anyone holding oil is paid to release it. Traders track this with spreads, the gap between two delivery months. On July 14, 2026, first-month Brent traded $8.92 above the sixth month, after being below later contracts earlier that month, so the shape flipped within about two weeks as tanker attacks resumed. The extreme case runs the other way. On April 20, 2020, with demand collapsed and the Cushing, Oklahoma storage hub essentially full, the expiring May WTI contract closed at negative $37.62 while June closed at $20.43. WTI requires physical delivery, so holders with nowhere to put the oil paid others to take it.",
+      "The curve matters because different people live on different parts of it. Your gasoline bill follows the near end. A company deciding whether to drill a new well cares about the price of oil it will actually pump in a few years, so a $100 front month does not bring new supply if the far end sits much lower. That is why price spikes do not always fix themselves quickly. A curve is also not a pure forecast: later prices include what hedgers will pay for certainty and a premium or discount for risk. That risk premium is what moved in the week of November 6, 2026, when Brent fell more than 13% to $98.32 while ships were still being attacked. Investors were cutting the odds of a long war before the barrels had fully returned. Funds feel the shape directly too. A fund that holds futures cannot keep a contract past expiry, so it sells the expiring one and buys the next, called rolling. If it sells at $100 and buys at $101, it ends up with nearly 1% less oil, and doing that every month costs nearly 13% a year even if the spot price never moves. In backwardation the same roll buys more contracts and adds to returns. The big US oil fund USO had already rolled out of the May contract before it went negative in 2020, and it later moved to a managed blend of contracts.",
+      "Read the shape, not just the price. A falling front with a steady far end says a near-term squeeze is easing. A whole curve moving together says the long-run view has changed. A steep backwardation says the shortage is now, and a flip into contango says supply is catching up or storage is filling. Remember that a commodity fund does not deliver the headline price: its return is the spot move plus or minus the roll, plus interest on its collateral. The same logic applies wherever things are delivered over time, including natural gas, grains and metals. When you budget fuel, price a contract or judge a commodity investment, ask what the market charges for later and why.",
+      [
+        "Is the front of the curve moving alone, or is the whole curve shifting, and what does each imply?",
+        "Is this price move driven by barrels actually returning, or by a change in the odds of something that has not happened yet?",
+        "If I hold a commodity fund, what has rolling cost or earned it over the last year, compared with the spot price?",
+        "Which of my costs follow the near-term price, and could I lock in a later price if I needed certainty?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Reuters via Baird Maritime, Jul 15, 2026",
+        "url": "https://www.bairdmaritime.com/shipping/tankers/us-iran-tensions-are-reshaping-the-global-brent-oil-curve"
+      },
+      {
+        "name": "Commodity Board Europe, Apr 27, 2026",
+        "url": "https://commodity-board.com/crude-oil-corrects-from-war-spike-as-curve-shows-deep-backwardation"
+      },
+      {
+        "name": "Congressional Research Service, Apr 22, 2020",
+        "url": "https://www.everycrsreport.com/reports/IN11354.html"
+      },
+      {
+        "name": "ETF.com, A Guide to Contango and Backwardation, Jun 1, 2020",
+        "url": "https://www.etf.com/publications/etfr/etf-univ-guide-contango-backwardation"
+      },
+      {
+        "name": "ETF.com, How Oil ETFs Work, May 19, 2020",
+        "url": "https://www.etf.com/sections/news/how-oil-etfs-work"
+      },
+      {
+        "name": "The National, Nov 6, 2026",
+        "url": "https://www.thenationalnews.com/business/energy/2026/11/06/oil-prices-set-for-weekly-drop-on-trumps-election-rout/"
+      }
+    ]
   }
 ]

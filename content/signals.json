@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-08-oil-weekly-plunge-iran-hopes",
+    "date": "2026-11-08",
+    "kind": "Signal",
+    "m": "world",
+    "title": "Oil has its steepest weekly fall since Covid on peace hopes",
+    "stat": "$98.32",
+    "statLabel": "Brent crude settlement on November 6, 2026, down more than 13% on the week",
+    "body": "Brent crude settled at $98.32 a barrel on Friday, down more than 13% for the week and its steepest weekly percentage fall since the Covid pandemic, while US crude ended at $90.83, down 12.7%. The slide began after Democrats won the House and Senate on Tuesday and traders bet that Washington would look for a way out of the war with Iran; Brent lost 8.7% on Wednesday alone. Physical signs of easing are real but partial: spot premiums for Middle East crude are returning to pre-war levels and Saudi Aramco cut its December prices for Asian buyers by $2 a barrel. The war itself has not ended, and attacks on ships carrying oil were still running close to a record pace, and a seafarer died in a November 5 tanker explosion believed to be a missile strike.",
+    "why": "Oil feeds into gasoline, freight and shipping costs, so a sustained fall would ease the inflation pressure behind higher interest rates. But this move priced in a deal that does not exist yet, and as one Kpler analyst put it, a lower price does not mean the underlying problems have gone. If fuel or shipping is a real cost in your household or business, plan around a range of prices, and look at what the market is charging for later delivery as well as today's headline.",
+    "lessons": [
+      "futurescurve",
+      "oil",
+      "chain"
+    ],
+    "sources": [
+      {
+        "name": "The National, Nov 6, 2026",
+        "url": "https://www.thenationalnews.com/business/energy/2026/11/06/oil-prices-set-for-weekly-drop-on-trumps-election-rout/"
+      },
+      {
+        "name": "RTE / Reuters, Nov 6, 2026",
+        "url": "https://www.rte.ie/news/business/2026/1106/1598252-world-oil-prices/"
+      },
+      {
+        "name": "OilPrice.com, Nov 6, 2026",
+        "url": "https://oilprice.com/Energy/Energy-General/The-Iran-War-Isnt-Over-but-Oil-Traders-Are-Already-Pricing-In-Peace.html"
+      }
+    ]
+  },
+  {
     "id": "2026-11-07-october-jobs-blowout",
     "date": "2026-11-07",
     "kind": "Signal",
