@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-09-china-factory-prices",
+    "date": "2026-11-09",
+    "kind": "Signal",
+    "m": "world",
+    "title": "China's factory prices surge 5.7% while consumer prices barely move",
+    "stat": "5.7%",
+    "statLabel": "Rise in China's producer prices, October 2026 vs a year earlier, the fastest since June 2022",
+    "body": "China's producer price index rose 5.7% in October from a year earlier, up from 5.0% in September, above the 5.3% forecast and the fastest pace since June 2022. The surge sits at the start of the supply chain: coal mining prices rose 36.6% and oil and gas extraction 35.0% as the war in Iran kept energy expensive, and nine industries added more than 6 percentage points, which is more than the entire increase, while prices rose in only half of 30 major industries. Consumer prices rose just 0.7%, down from 0.9%, with gasoline up 22.4% and food down 2.9%, and core inflation slipped to 0.8% from 1.0%. Factory prices for consumer goods fell 0.1%, so the cost increases are mostly stopping before they reach the shelf.",
+    "why": "A five-point gap between factory and consumer inflation usually means someone in the middle is absorbing the cost, and with weak demand in China that someone is often the manufacturer's profit margin. If your business buys from Chinese suppliers, or you own companies that depend on them, ask who is eating the increase and how long they can keep doing it. Forecasts disagree on what comes next, with Capital Economics expecting producer prices to fall again in 2027 and Trading Economics' model projecting a rise of about 1.5%, so treat one month's number as a question and not a trend.",
+    "lessons": [
+      "producerprices",
+      "cpiinside",
+      "supplyshock"
+    ],
+    "sources": [
+      {
+        "name": "Seoul Economic Daily, Nov 9, 2026",
+        "url": "https://en.sedaily.com/international/2026/11/09/china-producer-prices-jump-57-percent-fastest-in-over-four"
+      },
+      {
+        "name": "Trading Economics, China Producer Prices, Nov 9, 2026",
+        "url": "https://tradingeconomics.com/china/producer-prices-change"
+      },
+      {
+        "name": "Bloomingbit / Bloomberg, Nov 8, 2026",
+        "url": "https://en.bloomingbit.io/feed/news/123947"
+      }
+    ]
+  },
+  {
     "id": "2026-11-08-oil-weekly-plunge-iran-hopes",
     "date": "2026-11-08",
     "kind": "Signal",

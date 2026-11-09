@@ -984,5 +984,70 @@
         "url": "https://www.thenationalnews.com/business/energy/2026/11/06/oil-prices-set-for-weekly-drop-on-trumps-election-rout/"
       }
     ]
+  },
+  {
+    "id": "producerprices",
+    "m": "economy",
+    "mod": "Money and banks",
+    "title": "Producer prices: the inflation that starts at the factory gate",
+    "added": "2026-11-09",
+    "layers": [
+      "The producer price index, or PPI, tracks what businesses receive for what they make and sell. The consumer price index, or CPI, tracks what households pay. They come out in the same week and often get treated as one story, but they measure different points on a long chain, and the distance between them tells you who is carrying a cost. In October 2026, China's PPI rose 5.7% from a year earlier while its CPI rose 0.7%. Only months before, that first number had been negative for a very long time: China's factory prices fell for 41 straight months before a 0.5% rise in March 2026 ended the run. A country can swing from falling factory prices to the fastest increase in more than four years while its shoppers barely notice.",
+      "Start with what is being measured. In the US, the Bureau of Labor Statistics collects prices from about 25,000 reporters and publishes about 10,000 separate indexes. The headline is final demand, which covers goods, services and construction sold to consumers, businesses making capital investments, governments and foreign buyers. Separate intermediate demand indexes follow the inputs businesses sell to one another, which is where you can watch a price move through the stages of production. The two inflation measures also cover different ground. Imports count in the CPI and not in the PPI. Exports count in the PPI and not in the CPI. Sales and excise taxes are in what you pay at the register and not in what the producer receives. Owners' equivalent rent, the housing cost that makes up about 24% of the US CPI, has no place in the PPI at all, and services were about 67% of US final demand at the end of 2023. So the two can diverge for reasons that have nothing to do with anyone's margin. China's October figures show the chain clearly, because prices lose force at each step: mining prices rose 27.9%, raw materials 11.6%, processing 3.5%, and consumer goods fell 0.1%. The same pattern shows up when one category dominates. In June 2022, US final demand prices rose 11.3% over the year while goods alone rose 17.9%, the largest advance since 12-month data began in November 2010. The headline blended a goods shock with slower services.",
+      "The reason to care is margin arithmetic. Suppose a company sells a product for $100 and spends $70 on inputs and $20 on everything else, leaving $10 of profit. If input prices rise 10% and it cannot raise its price, inputs cost $77, and profit falls to $3. A 10% cost increase has wiped out 70% of its profit. Whether that happens depends on pricing power, and pricing power depends on demand. Research on Swedish microdata from 2010 to 2022 found that a 1% rise in producer prices lifted consumer prices about 0.25% in the same month and about 0.35% after two months, then stayed about there. Products whose shelf prices change often, like fuel and common foods, adjusted within about two months, while durable goods moved slowly. So some of a cost shock reaches shoppers fast, and a large part may never arrive. That is one country and one period, and it should be read as a guide. China in 2026 is a harder case. Weak domestic demand and price competition have limited companies' ability to pass costs along: purchase prices for raw materials rose 7.9% in October while shipment prices for consumer goods have fallen for more than three years. Economist Mao Zhenhua warned in April that higher oil costs would squeeze margins in the middle and lower supply chain if end demand stayed weak. Gasoline, up 22.4%, did reach Chinese consumers quickly, which fits the research. The rest of the basket mostly did not, and food fell 2.9%. Be careful with the forecast too. The BLS itself says the assumption that the PPI will anticipate or parallel the CPI is often contradicted by the numbers, and for China, one forecaster expects producer prices to turn negative in 2027 while a model projects a rise of about 1.5%.",
+      "Read the PPI as a map of where cost pressure sits, and do not use it to predict next month's CPI. First ask which stage is moving: a surge in mining and energy is different from a rise that has reached finished goods. Then ask how narrow it is. In China's October data, nine industries added more than the entire increase, which means the rest were a net drag. Compare the PPI with the CPI and ask who is absorbing the gap, because a wide gap often shows up later as lower profits, not higher shelf prices. Check revisions as well, since US producer price indexes can be revised up to four months after first publication. Finally, apply it to what you own or run. A company with strong brands and few competitors can pass costs on. A company selling a look-alike product into weak demand usually cannot. The US reports its next PPI on Friday, November 13, 2026, and the same questions apply.",
+      [
+        "Which stage of the chain is driving this number: raw materials, processing, or finished goods?",
+        "How much of the headline comes from a few industries, and what is the rest of the index doing?",
+        "If my costs rose 10% tomorrow, could I raise prices, and what would happen to my profit if I could not?",
+        "For a company I own or buy from, does it have the pricing power to pass on higher input costs?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Seoul Economic Daily, Nov 9, 2026",
+        "url": "https://en.sedaily.com/international/2026/11/09/china-producer-prices-jump-57-percent-fastest-in-over-four"
+      },
+      {
+        "name": "Trading Economics, China Producer Prices, Nov 9, 2026",
+        "url": "https://tradingeconomics.com/china/producer-prices-change"
+      },
+      {
+        "name": "Bloomingbit / Bloomberg, Nov 8, 2026",
+        "url": "https://en.bloomingbit.io/feed/news/123947"
+      },
+      {
+        "name": "China Daily, Apr 13, 2026",
+        "url": "https://www.chinaservicesinfo.com/s/202604/13/WS69dc52e7498e23165e06eb7d/chinas-ppi-turns-positive-after-41-months-of-decline.html"
+      },
+      {
+        "name": "Trading Economics, Apr 10, 2026",
+        "url": "https://tradingeconomics.com/china/producer-prices-change/news/540783"
+      },
+      {
+        "name": "US Bureau of Labor Statistics, PPI Questions and Answers",
+        "url": "https://www.bls.gov/ppi/faqs/questions-and-answers.htm"
+      },
+      {
+        "name": "BLS, Beyond the Numbers, Misconceptions about the PPI, Jun 26, 2024",
+        "url": "https://www.bls.gov/opub/btn/volume-13/misconceptions-ppi.htm"
+      },
+      {
+        "name": "BLS, Comparing the PPI for Personal Consumption with the CPI",
+        "url": "https://www.bls.gov/ppi/methodology-reports/comparing-the-producer-price-index-for-personal-consumption-with-the-us-all-items-cpi-for-all-urban-consumers.htm"
+      },
+      {
+        "name": "BLS, The Economics Daily, Jul 20, 2022",
+        "url": "https://www.bls.gov/opub/ted/2022/producer-prices-for-goods-up-17-9-percent-from-june-2021-to-june-2022.htm"
+      },
+      {
+        "name": "SUERF Policy Brief 675, Ahlander, Carlsson and Klein, Sep 7, 2023",
+        "url": "https://suerf.org/publications/suerf-policy-notes-and-briefs/how-producer-price-changes-transmit-into-final-goods-prices"
+      },
+      {
+        "name": "Saxo, Market Quick Take, Nov 9, 2026",
+        "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---asian-chipmakers-rebound-and-brent-holds-below-usd-100---9-november-2026-09112026"
+      }
+    ]
   }
 ]
