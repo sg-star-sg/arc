@@ -1049,5 +1049,46 @@
         "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---asian-chipmakers-rebound-and-brent-holds-below-usd-100---9-november-2026-09112026"
       }
     ]
+  },
+  {
+    "id": "annualize",
+    "m": "economy",
+    "mod": "Money and banks",
+    "title": "Monthly vs yearly inflation: annualizing and base effects",
+    "added": "2026-11-10",
+    "layers": [
+      "Inflation is reported two ways, and they answer different questions. The monthly change tells you how much prices moved since last month. The 12-month change tells you how much they moved since the same month a year ago. Headlines usually lead with the 12-month figure, but markets and the Fed react to the monthly one, because it is the freshest. In November 2026 the gap became impossible to ignore: the October report showed prices up 0.4% for the month and core prices up 0.3%, yet there was no annual number at all. The government shutdown of October 1 to November 12, 2025 stopped most CPI data collection, the Bureau of Labor Statistics never issued an October 2025 report, and so it said it would not publish 12-month changes for October 2026 where the year-earlier base month is missing.",
+      "To compare a monthly number with a yearly goal, you annualize it, which means asking what the yearly rate would be if this month's pace repeated for twelve months. The rule is compounding, not multiplication: take 1 plus the monthly rate, raise it to the 12th power, and subtract 1. A 0.2% month annualizes to about 2.4%, close to the Fed's 2% target. A 0.3% month annualizes to about 3.7%. A 0.4% month becomes about 4.9%, and September 2026's 0.6% would be about 7.4%. That is why a difference of one tenth of a point on a monthly report can move bond markets: it is roughly 1.2 points a year. A single month is noisy, so analysts also annualize three-month and six-month averages. In July 2023, for example, the White House Council of Economic Advisers pointed out that three-month annualized headline inflation was 1.9%, the lowest since June 2020, while the 12-month rate was 3.2%. The yearly figure has its own quirk, called the base effect. A 12-month rate is the sum of the last twelve monthly changes, so every new month adds one month and drops the month from a year earlier. If the month dropping out was unusually low, the yearly rate rises even when this month is calm, and the reverse is true for an unusually high month. In July 2023 CPI rose only 0.2% for the month, yet the 12-month rate climbed from 3.0% to 3.2%, because July 2022, a month of roughly 0% inflation when energy prices fell, had just left the window. The opposite happened in spring 2021: the Dallas Fed showed 12-month CPI jumping from 2.6% in March to 4.2% in April, and core from 1.6% to 3.0%, largely because the deep price drops of spring 2020 were falling out of the calculation.",
+      "The reason this matters is that each measure can mislead on its own. The 12-month rate is smooth and easy to compare with a 2% target, but it is slow and carries echoes of what happened a year ago. The monthly rate is current but jumpy, swung by gasoline or a seasonal adjustment. Serious readers look at both and ask whether they agree. If the yearly number is falling but recent months annualize well above it, inflation may be turning back up, and the Fed tends to act on that direction rather than wait. That is close to the situation in late 2026: core prices rose 0.3% three months running, which annualizes to about 3.7%, traders put an 84% chance on a December rate hike, and Fed Governor Christopher Waller said a half-point hike should be considered. Data gaps add another layer. When BLS could not collect October 2025 prices, it mostly carried September's prices forward, and rents from April 2025, and it warned that this method may understate inflation when prices are generally rising. Any annual comparison that touches that month carries the flaw for a year. The Dallas Fed's suggestion in 2021 is useful here: when base effects distort the picture, measure the average annualized rate across a longer stretch, which gave 2.6% for headline CPI and 2.2% for core from February 2020 to April 2021.",
+      "Never read an inflation number without asking which window it measures. Convert monthly figures to an annual pace by compounding, look at three- and six-month annualized rates to see the direction, and check what month is about to drop out of the 12-month figure before deciding a jump or fall is real. The same habits apply to your own finances: a raise, a rent increase or a price hike from a supplier means more when you know whether it is per month, per year, and compared with which base.",
+      [
+        "What does this month's change annualize to, and is that above or below the 2% target?",
+        "Do the 3-month and 6-month annualized rates point the same direction as the 12-month rate?",
+        "Which month is dropping out of the 12-month window, and was it unusually high or low?",
+        "Is any part of the data imputed or missing, and could that bias the comparison?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "US Bureau of Labor Statistics, 2025 shutdown impact on the CPI (FAQ)",
+        "url": "https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi-faq.htm"
+      },
+      {
+        "name": "Council of Economic Advisers, Aug 10, 2023",
+        "url": "https://bidenwhitehouse.archives.gov/cea/written-materials/2023/08/10/the-july-consumer-price-index-its-all-about-that-base-effect"
+      },
+      {
+        "name": "Federal Reserve Bank of Dallas, May 13, 2021",
+        "url": "https://www.dallasfed.org/research/economics/2021/0513"
+      },
+      {
+        "name": "Federal Reserve Bank of St. Louis, May 30, 2023",
+        "url": "https://www.stlouisfed.org/on-the-economy/2023/may/scenarios-inflation-2023-base-effects-action"
+      },
+      {
+        "name": "Yahoo Finance, Nov 10, 2026",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+      }
+    ]
   }
 ]

@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-10-october-cpi-hotter",
+    "date": "2026-11-10",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "Prices rise faster than expected, and a December hike looks likely",
+    "stat": "0.4%",
+    "statLabel": "Rise in US consumer prices from September to October 2026, vs 0.3% expected",
+    "body": "US consumer prices rose 0.4% in October from September, above the 0.3% economists expected, though slower than September's 0.6%. Core prices, which leave out food and energy, rose 0.3% for a third straight month against a 0.2% forecast; housing rose 0.3%, food 0.5% and energy 0.7%. There is no year-over-year figure this time: the Bureau of Labor Statistics could not collect October 2025 data during last year's government shutdown, so it is not publishing 12-month changes for October 2026 where that base month is missing. After the release the 10-year Treasury yield rose 7 basis points to 4.93%, Nasdaq-100 futures fell about 1%, and traders put an 84% chance on a quarter-point Fed hike in December, with Governor Christopher Waller saying a half-point hike should be considered.",
+    "why": "A 0.3% monthly rise sounds small, but repeated for a year it compounds to about 3.7%, well above the Fed's 2% goal, and that is the math pushing officials toward raising rates. Higher policy rates tend to lift what you earn on cash and what you pay on credit cards and new loans, so this is a good week to check both. With the annual number missing, read the monthly figures and short-run annualized rates yourself instead of waiting for a headline percentage.",
+    "lessons": [
+      "annualize",
+      "cpiinside",
+      "fedfutures"
+    ],
+    "sources": [
+      {
+        "name": "Yahoo Finance, Nov 10, 2026",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+      },
+      {
+        "name": "StockTitan, Nov 10, 2026",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-10-2026"
+      },
+      {
+        "name": "US Bureau of Labor Statistics, 2025 shutdown impact on the CPI",
+        "url": "https://www.bls.gov/cpi/additional-resources/2025-federal-government-shutdown-impact-cpi-faq.htm"
+      }
+    ]
+  },
+  {
     "id": "2026-11-09-china-factory-prices",
     "date": "2026-11-09",
     "kind": "Signal",
