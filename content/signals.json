@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-11-11-ten-year-auction-weak",
+    "date": "2026-11-11",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "A weak Treasury sale pushes the 10-year yield to 5%",
+    "stat": "5.02%",
+    "statLabel": "Yield at which the US sold $42 billion of 10-year notes, Nov 10, 2026",
+    "body": "On November 10 the US Treasury sold $42 billion of 10-year notes at a yield of 5.02%. Investors bid for 2.46 times the amount on offer, down from 2.77 at October's sale and below the 2.54 average of the previous ten. The yield came in 1 basis point above where the notes were trading just before the deadline, the widest such gap, or tail, since February, and indirect bidders, the group that includes foreign central banks, took 61.2% after taking 80.3% in October. The sale landed hours after a hotter-than-expected inflation report: the 10-year yield rose about 10 basis points to just under 5% after briefly topping it, and the 2-year yield jumped 17 basis points, its largest one-day rise in 19 months.",
+    "why": "The 10-year Treasury yield is the base rate that mortgages, car loans and many business loans are priced from, so a move toward 5% tends to make new borrowing more expensive. For savers it also means bonds and Treasury notes being sold today pay more than they did a few weeks ago. When buyers grow choosier at government auctions, the government has to offer higher yields to sell its debt, and that pressure can persist even if the Fed stands still.",
+    "lessons": [
+      "treasuryauctions",
+      "ratesprices",
+      "termpremium"
+    ],
+    "sources": [
+      {
+        "name": "RTTNews, Nov 10, 2026",
+        "url": "https://www.rttnews.com/3712690/ten-year-note-auction-attracts-below-average-demand.aspx"
+      },
+      {
+        "name": "Pomegra, Nov 10, 2026",
+        "url": "https://pomegra.io/news/treasury-10-year-auction-clears-at-502-on-weak-demand"
+      },
+      {
+        "name": "Saxo Bank, Market Quick Take, Nov 11, 2026",
+        "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---us-treasury-yields-rip-higher---11-november-2026-11112026"
+      },
+      {
+        "name": "Tickmill, Daily Market Outlook, Nov 11, 2026",
+        "url": "https://www.tickmill.com/blog/daily-market-outlook-november-11-2026"
+      }
+    ]
+  },
+  {
     "id": "2026-11-10-october-cpi-hotter",
     "date": "2026-11-10",
     "kind": "Signal",

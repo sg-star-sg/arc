@@ -1090,5 +1090,42 @@
         "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
       }
     ]
+  },
+  {
+    "id": "treasuryauctions",
+    "m": "wealth",
+    "mod": "Bonds",
+    "title": "Treasury auctions: how the government borrows, and how to read the results",
+    "added": "2026-11-11",
+    "layers": [
+      "The US government pays for its deficits by selling Treasury bills, notes and bonds, and almost all of that new debt is sold at public auctions on a published calendar. A typical week brings several of them; on November 10, 2026, for example, the Treasury sold $42 billion of 10-year notes, and a 30-year bond sale followed two days later. Anyone can take part, from a large bank to an individual using TreasuryDirect. Because the government has to keep borrowing whatever the market mood, each auction works as a public test of how much investors want US debt, and at what price. The results come out minutes after bidding closes, and traders read them the way analysts read a company's quarterly results.",
+      "There are two ways to bid. A noncompetitive bid says: give me this amount at whatever yield the auction sets. Most individuals bid this way, the Treasury caps it at $10 million per auction, and these bids are filled in full. A competitive bid names the lowest yield the buyer will accept, and no single bidder can be awarded more than 35% of the offering. After setting aside the noncompetitive amount, the Treasury ranks competitive bids from the lowest yield up and accepts them until the sale is covered. The last yield it needs to accept is the high yield, or the stop, and since the US moved to a single-price format (starting in 1992 and extended to every auction in 1998) every winner pays that same yield. Bids exactly at the stop are filled pro rata. The results also sort winners into three groups: primary dealers, the large banks and brokers bidding for their own books; direct bidders, other institutions bidding for themselves; and indirect bidders, customers bidding through a dealer or other submitter, a group that includes foreign central banks bidding through the New York Fed.",
+      "Three numbers tell you how well an auction went. The bid-to-cover ratio is total bids divided by the amount sold: on November 10 investors bid $2.46 for every $1 of notes, down from $2.77 in October and below the 2.54 average of the previous ten 10-year sales. The tail compares the auction's yield with the when-issued yield, the price at which the not-yet-delivered notes were already trading just before bids closed. The notes sold at 5.02% against 5.010% when-issued, a 1 basis point tail, which means the Treasury had to pay a little more than the market expected; recent auctions had averaged a 0.6 basis point 'stop-through', a yield below when-issued. The bidder mix shows who stepped up: indirect bidders took 61.2% after 80.3% in October, while primary dealers took 9.8% against a 7.45% average, which means dealers were left holding more than usual and will try to sell it on. One weak auction can be noise, but a run of tails and falling bid-to-cover ratios is how markets signal that buyers want higher yields to keep funding the government.",
+      "Auction results show the bond market's real appetite, not its talk. When demand softens, the government pays more to borrow, and because Treasury yields are the base for mortgage, auto, corporate and small-business loan rates, that cost flows through to everyone. It also works the other way for savers: the same weak sale means new Treasury notes, CDs and bond funds are offering higher income than before. Reading an auction is a way to see whether a rise in rates is coming from the Fed, from inflation fears, or from the sheer amount of debt that has to be sold, and each of those has a different shelf life.",
+      [
+        "Was the bid-to-cover ratio above or below the average of recent auctions of the same maturity?",
+        "Did the auction tail (yield above when-issued) or stop through (yield below it), and by how much?",
+        "Which group bought less this time, foreign and other indirect buyers or domestic institutions, and did dealers have to absorb the gap?",
+        "Is the government's borrowing need rising, so that more of these sales are coming, and how might that keep long-term rates high?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "BondPro (US Treasury), FAQs about Auctions",
+        "url": "https://bondpro.gov/help-center/faqs/auction-faqs/"
+      },
+      {
+        "name": "Federal Reserve Bank of New York, The Treasury Auction Process, Feb 2005",
+        "url": "https://www.newyorkfed.org/medialibrary/media/research/current_issues/ci11-2.html"
+      },
+      {
+        "name": "RTTNews, Nov 10, 2026",
+        "url": "https://www.rttnews.com/3712690/ten-year-note-auction-attracts-below-average-demand.aspx"
+      },
+      {
+        "name": "Pomegra, Nov 10, 2026",
+        "url": "https://pomegra.io/news/treasury-10-year-auction-clears-at-502-on-weak-demand"
+      }
+    ]
   }
 ]
