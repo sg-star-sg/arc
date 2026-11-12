@@ -389,5 +389,80 @@
       "base": "It works through its backlog with steady growth and improving margins.",
       "bear": "Data-center building slows, orders are delayed or cancelled, and the wind business keeps losing money."
     }
+  },
+  {
+    "ticker": "TSM",
+    "name": "Taiwan Semiconductor Manufacturing (TSMC)",
+    "country": "Taiwan",
+    "sector": "Technology",
+    "theme": "AI chips",
+    "what": "Manufactures the most advanced chips in the world for other companies, including the AI chips designed by Nvidia and others.",
+    "past": {
+      "label": "Net income a year earlier (Jul–Sep 2025)",
+      "value": "NT$452.3B",
+      "detail": "Profit grew 68.7% to NT$763.1B in the latest quarter."
+    },
+    "current": {
+      "label": "Latest quarter revenue (Jul–Sep 2026)",
+      "value": "US$46.7B",
+      "growth": 41.2,
+      "detail": "Up 50.9% in Taiwan dollars. Gross margin 66.4%; 7-nanometer and more advanced chips were 79% of wafer revenue."
+    },
+    "future": {
+      "label": "Q4 2026 revenue guidance",
+      "value": "US$52.3–54.3B",
+      "detail": "Company guidance: gross margin 65–67%, operating margin 56.5–58.5%, as its 2-nanometer technology ramps up."
+    },
+    "drivers": [
+      "Demand for AI chips from data centers",
+      "The shift to 2- and 3-nanometer manufacturing",
+      "Very high margins on leading-edge production"
+    ],
+    "risks": [
+      "Geopolitical tension around Taiwan",
+      "Dependence on a few large customers such as Nvidia",
+      "Huge spending needed to stay ahead; currency swings affect reported results"
+    ],
+    "watch": [
+      "Quarterly revenue versus guidance",
+      "Share of revenue from the newest nodes",
+      "Gross margin as new factories open"
+    ],
+    "updated": "2026-11-12",
+    "sources": [
+      {
+        "name": "TSMC 3Q26 earnings release (SEC Form 6-K), Oct 15, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000726/a3q26e_withguidancexfinal.htm"
+      },
+      {
+        "name": "investingLive, Oct 15, 2026",
+        "url": "https://investinglive.com/stocks/icymi-tsmc-profit-jumps-nearly-70-on-ai-demand-but-margin-outlook-weighs-on-shares/"
+      },
+      {
+        "name": "Futurum Group, Oct 20, 2026",
+        "url": "https://futurumgroup.com/insights/tsmc-q3-fy-2026-earnings-beat-and-raise-on-ai-and-hpc-demand/"
+      },
+      {
+        "name": "CRN Asia, Oct 16, 2026",
+        "url": "https://www.crnasia.com/news/2026/components-and-peripherals/tsmc-third-quarter-revenue-tops-guidance-as-ceo-says-ai-dema"
+      }
+    ],
+    "why": "Almost every advanced AI chip, whoever designs it, is made in TSMC's factories, so it earns from the AI build-out no matter which chip designer wins. Demand for its newest processes is running ahead of what it can produce, which lets it keep margins near two-thirds of revenue: 7-nanometer and newer technologies were 79% of wafer revenue last quarter.",
+    "expect": {
+      "company": [
+        "Q4 2026 revenue of US$52.3–54.3B with a 65–67% gross margin (Oct 15, 2026)",
+        "Full-year 2026 revenue growth of about 44% in US dollars, raised from slightly above 40% in July",
+        "2026 capital spending of US$60–64B, with 2026–2028 spending significantly higher than the previous three years"
+      ],
+      "analysts": [
+        "Q3 profit came in slightly ahead of analyst estimates compiled by LSEG (Oct 15, 2026)",
+        "Futurum Group said the Q4 guidance midpoint was ahead of prior Street expectations (Oct 20, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "AI demand keeps outrunning supply, the 2-nanometer ramp goes smoothly and margins stay near record levels.",
+      "base": "Revenue keeps growing with AI spending while heavy factory investment and new overseas plants trim margins slightly.",
+      "bear": "Big customers cut AI chip orders, tension around Taiwan disrupts operations or trade, or new factories cost more than planned."
+    }
   }
 ]

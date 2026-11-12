@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-12-nvidia-ceo-resigns",
+    "date": "2026-11-12",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "Nvidia's CEO resigns, and the world's chip leader loses its founder",
+    "stat": "10%+",
+    "statLabel": "Nvidia's fall in early trading, Nov 12, 2026, after its CEO resigned",
+    "body": "On November 12 Nvidia said Jensen Huang had resigned as President, Chief Executive Officer and board member, effective immediately, ending a leadership the company itself described as 33 years long. Chief Financial Officer Colette Kress becomes interim CEO while keeping her finance job, the board will consider internal and external candidates for a permanent successor, and director Harvey C. Jones becomes the board's first-ever chair. The move followed news reports about Huang's personal conduct and a Wall Street Journal report that the board was preparing to remove him; the shares fell 8.61% after hours on November 11 and more than 10% in early trading the next morning, from a close of $173.73 that was already about 27% below the October 6 record of $239.24. Because Nvidia is one of the largest weights in US indexes, the S&P 500 fell 0.6% and the Nasdaq 0.9% in early trading.",
+    "why": "When one person is seen as the strategy, investors price that person, and losing them suddenly adds uncertainty that markets mark down fast. If you own an S&P 500 or Nasdaq index fund, you own a meaningful slice of Nvidia whether you chose it or not, so a governance shock at one giant company moves your whole portfolio. For founders and business owners, the lesson is that a company that cannot run without its leader carries a hidden risk that a succession plan reduces.",
+    "lessons": [
+      "keyperson",
+      "guidance",
+      "betavol"
+    ],
+    "sources": [
+      {
+        "name": "NVIDIA, Announces CEO Transition, Nov 12, 2026",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx"
+      },
+      {
+        "name": "Yahoo Finance, Stock market today, Nov 12, 2026",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
+      },
+      {
+        "name": "Stock Titan, Stock Market Today, Nov 11, 2026",
+        "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-11-2026"
+      }
+    ]
+  },
+  {
     "id": "2026-11-11-ten-year-auction-weak",
     "date": "2026-11-11",
     "kind": "Signal",

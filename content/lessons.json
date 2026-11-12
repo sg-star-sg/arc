@@ -1127,5 +1127,38 @@
         "url": "https://pomegra.io/news/treasury-10-year-auction-clears-at-502-on-weak-demand"
       }
     ]
+  },
+  {
+    "id": "keyperson",
+    "m": "wealth",
+    "mod": "Stocks",
+    "title": "Key-person risk: when a company's value rests on one leader",
+    "added": "2026-11-12",
+    "layers": [
+      "Key-person risk is the chance that a business loses value because one person, usually a founder or long-serving CEO, leaves, falls ill, dies or is forced out. Investors often treat such a leader as part of the asset: they trust that person's judgment on what to build, which customers to win and when to spend. Nvidia shows the scale it can reach. On November 12, 2026, the company announced that Jensen Huang, who had led it for 33 years, had resigned as CEO, president and director effective immediately. The shares had already dropped 8.61% after hours the evening before on reports the board might remove him, and fell more than 10% in early trading after the announcement. Nothing about Nvidia's chips, customers or factories changed overnight; what changed was who would make the decisions.",
+      "Markets react through three channels. The first is strategy risk: will the next leader keep the same priorities, or rethink spending, products and partnerships? The second is execution risk: key engineers, salespeople and customers may follow or lose confidence in a departed leader, and big customers may slow commitments while they wait. The third is a higher discount rate. Valuation is future cash flows discounted back to today, and when the range of outcomes widens, investors demand a higher return for holding the stock, which mathematically lowers the price today even if the expected profits are unchanged. Boards try to limit the shock with an emergency succession plan: a named interim leader, usually the CFO, COO or a director, who can step in on day one. Nvidia used this playbook. Its CFO Colette Kress became interim CEO while staying CFO, the board opened a search for internal and external candidates, a new independent chair took over the board, and the company kept its scheduled November 17 earnings date to show that operations would continue without interruption.",
+      "Key-person risk is a governance question, and governance is about who holds power and who can check it. A founder-CEO who also leads the board, controls the agenda and is the public face of the company concentrates power, which can speed decisions in good years and leave a vacuum when that person goes. Separating the chair from the CEO, building a bench of senior executives and reviewing succession every year are the main defenses. Research shows how often boards fall short: in a survey of directors summarized by the Harvard Law School Forum on Corporate Governance, only 35% believed their board had ample time for succession planning, many boards begin the process only 12 to 18 months before an expected transition, and even when an emergency successor is named the plan is rarely stress-tested or kept current. Investors also watch who the replacement is. An insider usually signals continuity; an outsider usually signals that the board wants change, which can be good news or a sign of deeper problems.",
+      "Before you rely on a company, ask whether it would still work without the person at the top. For investors, the signs of high key-person risk are a leader who is the brand, a thin executive bench, a board with no independent chair, and no visible succession plan; when those are present, a single headline can move the stock far more than any quarterly result. Index funds do not remove this risk, they spread it, but the bigger one company becomes in an index, the more its leadership matters to everyone who owns the fund. For your own business, the same logic applies at a smaller scale: if clients, passwords, supplier relationships and know-how live only in your head, the business is worth less to a buyer, a lender or your family. Documenting processes, training a deputy and, where it fits, buying key-person life or disability insurance turn a fragile company into a durable one.",
+      [
+        "Who would run this company tomorrow if the CEO left today, and has the board said so publicly?",
+        "Is the chair of the board independent from the CEO, or does one person hold both roles?",
+        "How much of the company's strategy, customer relationships and public trust are tied to one individual?",
+        "In my own business, what would stop working if I were unavailable for three months?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "NVIDIA, Announces CEO Transition, Nov 12, 2026",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx"
+      },
+      {
+        "name": "Yahoo Finance, Stock market today, Nov 12, 2026",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
+      },
+      {
+        "name": "Harvard Law School Forum on Corporate Governance, CEO Succession: 10 Pitfalls Boards Must Avoid, Jul 9, 2025",
+        "url": "https://corpgov.law.harvard.edu/2025/07/09/ceo-succession-10-pitfalls-boards-must-avoid-and-the-chro-practices-that-help/"
+      }
+    ]
   }
 ]
