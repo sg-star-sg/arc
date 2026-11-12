@@ -40,6 +40,9 @@ An array of lessons in the five-layer format. `layers` has exactly 5 items: What
 }
 ```
 
+### `content/companies.json`
+Company profiles shown in Invest → Companies. Each: `ticker`, `name`, `country`, `sector`, `theme`, `what` (one sentence), `past`, `current`, `future` (each `{label, value, detail}`; `current` also has numeric `growth`, the year-over-year % from the source), `drivers`, `risks`, `watch` (arrays of short strings), `updated` (YYYY-MM-DD), `sources`. `future` uses the company's own guidance, backlog or announced investment, never invented forecasts or price targets. When a company reports new quarterly results, update its entry rather than adding a duplicate.
+
 ## Rules for content
 - Every number and current fact comes from a page that was opened and read, and is cited in `sources`. Never invent figures.
 - Teach how to evaluate. Never tell the reader to buy or sell a specific investment.
