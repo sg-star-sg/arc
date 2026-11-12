@@ -1720,6 +1720,14 @@ function companyView(t){
     </div>
   </div>
   <div class="ana-two" style="margin-top:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))">${col('past','Past')}${col('current','Now')}${col('future','Ahead')}</div>
+  ${c.why?`<div class="c-why" style="margin-top:14px"><span class="lbl">Why it's doing well</span><p>${esc(c.why)}</p></div>`:''}
+  ${c.expect?`<div class="ana-two" style="margin-top:14px">
+    <div class="plain ana-card"><span class="lbl">What the company expects</span>${ul(c.expect.company)}</div>
+    <div class="plain ana-card"><span class="lbl">What analysts expect</span>${ul(c.expect.analysts)}</div>
+  </div>`:''}
+  ${c.scenarios?`<div class="plain ana-card" style="margin-top:14px"><span class="lbl">Where it could go</span>
+    <div class="scen">${[['bull','Bull case','var(--low)'],['base','Base case','var(--med)'],['bear','Bear case','var(--vhigh)']].map(([k,n,cl])=>c.scenarios[k]?`<div class="sn" style="--c:${cl}"><b>${n}</b><p>${esc(c.scenarios[k])}</p></div>`:'').join('')}</div>
+    <p class="small" style="margin:10px 0 0">Predictions are often wrong. Scenarios show what would have to happen for each outcome.</p></div>`:''}
   <div class="ana-two" style="margin-top:14px">
     <div class="plain ana-card"><span class="lbl" style="color:var(--low)">What drives growth</span>${ul(c.drivers)}</div>
     <div class="plain ana-card"><span class="lbl" style="color:var(--vhigh)">What could go wrong</span>${ul(c.risks)}</div>
