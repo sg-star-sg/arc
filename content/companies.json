@@ -464,5 +464,74 @@
       "base": "Revenue keeps growing with AI spending while heavy factory investment and new overseas plants trim margins slightly.",
       "bear": "Big customers cut AI chip orders, tension around Taiwan disrupts operations or trade, or new factories cost more than planned."
     }
+  },
+  {
+    "ticker": "SONY",
+    "name": "Sony Group",
+    "country": "Japan",
+    "sector": "Entertainment and electronics",
+    "theme": "Games, music and film",
+    "what": "Owns PlayStation, one of the world's largest music companies, a Hollywood film and TV studio, and the leading maker of camera image sensors.",
+    "past": {
+      "label": "Operating income, Jul–Sep 2025",
+      "value": "¥429.0B",
+      "detail": "Rose 45% to ¥622.3B in the latest quarter; operating margin went from 13.8% to 18.1%."
+    },
+    "current": {
+      "label": "Latest quarter sales (Jul–Sep 2026)",
+      "value": "¥3.43T",
+      "growth": 10,
+      "detail": "Up about 4% at constant exchange rates. Net income rose 44% to ¥449.6B. Pictures sales rose 48% and games operating income 83%."
+    },
+    "future": {
+      "label": "FY2026 operating income forecast (year to March 2027)",
+      "value": "¥1.87T",
+      "detail": "Company forecast raised Nov 5 from ¥1.72T; sales forecast raised to ¥13.0T from ¥12.5T, with a 35-yen dividend, up 10 yen."
+    },
+    "drivers": [
+      "PlayStation games and network services",
+      "Film and TV hits in Pictures",
+      "Music streaming",
+      "A weak yen that lifts overseas earnings in yen"
+    ],
+    "risks": [
+      "About 6 points of the 10% sales growth came from the weak yen and would reverse if it strengthens",
+      "Image sensor sales fell 6% on weaker smartphone demand",
+      "Film results depend on hits and swing year to year",
+      "Changing US tariff policy on hardware"
+    ],
+    "watch": [
+      "Game segment profit as the console ages",
+      "Image sensor sales to phone makers",
+      "Whether the yen stays weak",
+      "Results against the raised full-year forecast"
+    ],
+    "why": "Sony has turned into an entertainment company that makes money from the content people return to: games, music catalogs, films and shows, sold digitally at high margins. In the July–September quarter games operating income rose 83% and Pictures sales 48%, and the company raised its full-year profit forecast by 9%. A weak yen helps: the dollar averaged 159.3 yen in the quarter versus 147.4 a year earlier, which inflates overseas earnings when counted in yen.",
+    "expect": {
+      "company": [
+        "FY2026 sales of ¥13.0T, operating income ¥1.87T and net income ¥1.33T, all raised on Nov 5, 2026",
+        "Image sensor sales essentially flat for the year at ¥2.12T, with operating income forecast raised to ¥450B",
+        "Forecast assumes about 153 yen per dollar for the rest of the year, below the quarter's 159.3 average"
+      ],
+      "analysts": [
+        "Zacks attributed the quarter's sales growth to gaming and Pictures strength (Nov 5, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "Games and music keep growing digital sales at high margins, Pictures has more hits, and sensor demand from phone makers recovers.",
+      "base": "Entertainment keeps growing while sensors stay flat, and the raised forecast is roughly met.",
+      "bear": "The yen strengthens and shrinks overseas earnings, console sales fade, and smartphone sensor demand keeps falling."
+    },
+    "updated": "2026-11-13",
+    "sources": [
+      {
+        "name": "Sony Group Q2 FY2026 results presentation (SEC Form 6-K), Nov 5, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000313838/000110465926122964/tm2628525d5_6k.htm"
+      },
+      {
+        "name": "Zacks, Sony Q2 earnings, Nov 5, 2026",
+        "url": "https://www.zacks.com/stock/news/3023888/sony-q2-earnings-revenues-rise-on-gaming-pictures-strength"
+      }
+    ]
   }
 ]

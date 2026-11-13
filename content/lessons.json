@@ -1160,5 +1160,46 @@
         "url": "https://corpgov.law.harvard.edu/2025/07/09/ceo-succession-10-pitfalls-boards-must-avoid-and-the-chro-practices-that-help/"
       }
     ]
+  },
+  {
+    "id": "passthrough",
+    "m": "business",
+    "mod": "Money",
+    "title": "Cost pass-through: who pays when costs rise",
+    "added": "2026-11-13",
+    "layers": [
+      "When a business's costs rise, the increase has to land somewhere. It can be passed through to customers as higher prices, absorbed as a thinner profit margin, pushed back onto suppliers, or offset by working more efficiently. Pass-through is the share of a cost increase that ends up in the selling price. If a company's costs rise 4% and it raises prices 2.5%, as one equipment maker told New York Fed researchers it would, it has passed through part of the increase and eaten the rest. The US economy is running a live test of this: producer prices rose 6.5% in the 12 months to October 2026, the most since November 2022, and every business between the factory and the shopper is deciding how much of that to hand on.",
+      "Start with the margin, the gap between what a business sells something for and what it costs. The Bureau of Labor Statistics measures the output of wholesalers and retailers exactly this way: current selling price minus current acquisition price equals the margin price. Because the margin is a small slice of the price, it swings hard. In BLS's own example, an item bought for $0.90 and sold for $1.00 earns a $0.10 margin; raising the selling price by just 5 cents lifts the margin 50%. The same math works in reverse. In September 2026, when gasoline prices at the producer level jumped 20.3%, the PPI index for margins earned by fuel retailers fell 30.3%: stations raised pump prices, but not as fast as their own costs rose, so they absorbed much of the shock. Meanwhile margins for machinery and vehicle wholesalers rose 3.9%, showing that some sellers were able to charge more than their costs went up.",
+      "Why do some firms pass costs on and others cannot? Survey work from the New York Fed with about 700 businesses found that virtually all firms have a target margin, yet almost none mechanically follow a strict cost-plus rule. What competitors do is often decisive: a tire maker said the biggest consideration was what the competition was doing. The type of cost matters: raw material increases are more likely to be passed on, often through contracts indexed to commodity prices, while about a quarter of goods producers interviewed said they offset labor cost increases with productivity rather than price. Demand matters most of all; the researchers concluded that stronger demand allows more pass-through, and weaker demand less. This is why margins expanded in the post-Covid boom, when customers accepted price rises, and why pricing power, the ability to raise prices without losing customers, is one of the clearest signs of a strong business.",
+      "Read cost shocks as a contest over margins. For an investor, the questions are which companies have pricing power and which sit in the squeezed middle; a business that cannot pass on rising costs will see profits shrink even as its sales in dollars grow. Watch gross margin over several quarters, and listen to what management says about pricing on earnings calls. For a business owner, know your own pass-through before the shock arrives: which costs are tied to contracts you can adjust, how loyal your customers are, and how much your competitors are likely to raise. And for the economy, a big gap between producer and consumer inflation is a warning: either margins absorb it and profits fall, or more of it reaches shoppers in the months ahead.",
+      [
+        "If my main input cost rose 10% tomorrow, how much of it could I raise prices by without losing customers, and how do I know?",
+        "Is this company's gross margin holding up while its costs rise, or is it quietly absorbing the increase?",
+        "Are my costs tied to contracts or indexes, and do my own prices adjust the same way?",
+        "Are competitors raising prices too, or would I be the only one?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "US Bureau of Labor Statistics, Wholesale and retail producer price indexes: margin prices, Beyond the Numbers, Aug 2012",
+        "url": "https://www.bls.gov/opub/btn/volume-1/wholesale-and-retail-producer-price-indexes-margin-prices.htm"
+      },
+      {
+        "name": "US Bureau of Labor Statistics, Trade indexes in the Producer Price Index, Nov 20, 2014",
+        "url": "https://www.bls.gov/blog/2014/trade-indexes-in-the-producer-price-index.htm"
+      },
+      {
+        "name": "Federal Reserve Bank of New York, Liberty Street Economics, How Businesses Set Prices: In Their Own Words, Nov 24, 2025",
+        "url": "https://libertystreeteconomics.newyorkfed.org/2025/11/how-businesses-set-prices-in-their-own-words/"
+      },
+      {
+        "name": "US Bureau of Labor Statistics, PPI news release for September 2026, Oct 15, 2026",
+        "url": "https://www.bls.gov/news.release/ppi.nr0.htm"
+      },
+      {
+        "name": "TheStreet, Stock Market Today, Nov 13, 2026",
+        "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-13-2026"
+      }
+    ]
   }
 ]
