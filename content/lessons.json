@@ -1201,5 +1201,42 @@
         "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-13-2026"
       }
     ]
+  },
+  {
+    "id": "leverage",
+    "m": "wealth",
+    "mod": "Risk",
+    "title": "Leverage and liquidation: how borrowed bets force selling",
+    "added": "2026-11-14",
+    "layers": [
+      "Leverage means investing with borrowed money so that your position is bigger than the cash you put in. The cash you put up is called margin or collateral; the lender, whether a broker or a crypto exchange, holds it as a cushion against losses. With 10 times leverage, $1,000 of your own money controls a $10,000 position. Gains and losses are both calculated on the full $10,000, but they come out of your $1,000. That is the whole appeal and the whole danger. On November 13, 2026, about $1.64 billion of leveraged crypto positions were force-closed in 24 hours as bitcoin fell below $70,000, and 88.7% of them were bets that prices would rise.",
+      "Work the numbers. A $10,000 position funded with $1,000 of your money and $9,000 borrowed. If the price rises 5%, the position is worth $10,500; you repay $9,000 and keep $1,500, a 50% gain on your cash. If the price falls 5%, the position is worth $9,500 and your equity is $500: half your money is gone after a move that an unleveraged holder would barely notice, which is exactly the example The Coin Republic gave. Lenders do not wait for your equity to reach zero. Every leveraged account has a maintenance requirement, a minimum amount of equity it must keep. When losses push you below it, you get a margin call: add cash or the position is closed. On fast-moving crypto exchanges there is often no call at all; the system liquidates automatically. That is why CryptoTicker noted that someone betting on a rise with tenfold leverage loses their stake after a decline of just under 10%, before the price ever falls 10%.",
+      "Liquidations feed on themselves. Closing a long position means selling, and selling into a falling market pushes the price lower, which pushes the next group of traders below their maintenance level, which forces more selling. Analysts quoted by Forbes tied the November drop to high futures exposure relative to market size combined with thin liquidity: when few buyers are waiting, each forced sale moves the price further. In the hour bitcoin slipped below $70,000, almost $500 million was liquidated. The cascade also explains why leveraged markets fall faster than they rise, and why the price can overshoot whatever news started the move, here a stronger dollar, rising odds of a Fed hike and outflows from bitcoin funds. The same mechanics apply far beyond crypto: stock margin accounts, hedge funds borrowing against bonds, and companies with debt all face the moment when a lender's rules, not the owner's judgment, decide when to sell.",
+      "Leverage does not change what an asset is worth; it changes how much of a fall you can survive. An unleveraged owner who believes in a long-term holding can wait out a 30% decline. A leveraged one may be sold out at the bottom by someone else's rules and never see the recovery. Before borrowing to invest, calculate your liquidation point: the percentage fall that wipes out your margin. Compare it with how far the asset has fallen in the past; bitcoin is about 45% below its October 2025 record. Watch leverage across a market too: rising futures open interest and heavy borrowing are signs that the next drop could be sharper than the news alone would justify.",
+      [
+        "At what percentage price fall would this position be closed, and has the asset fallen that far before?",
+        "Who decides when my position is sold, and do they need to warn me first?",
+        "Could I lose more than the money I put in?",
+        "How much of this market's recent rise was funded with borrowed money?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "The Coin Republic, Nov 13, 2026",
+        "url": "https://www.thecoinrepublic.com/2026/11/13/bitcoin-price-usd-falls-below-70000-as-crypto-selloff-deepens/"
+      },
+      {
+        "name": "CryptoTicker, Nov 13, 2026",
+        "url": "https://cryptoticker.io/en/bitcoin-price-below-70000-liquidations-extreme-fear/"
+      },
+      {
+        "name": "Forbes, Nov 13, 2026",
+        "url": "https://www.forbes.com/sites/digital-assets/2026/11/13/bitcoin-falls-below-70000-to-reach-lowest-since-august/"
+      },
+      {
+        "name": "CoinPaprika, Nov 14, 2026",
+        "url": "https://coinpaprika.com/news/bitcoin-sinks-12-week-low-resurgent-dollar"
+      }
+    ]
   }
 ]

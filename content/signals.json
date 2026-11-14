@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-14-bitcoin-liquidations",
+    "date": "2026-11-14",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "Bitcoin drops below $70,000 as $1.6 billion in borrowed bets unwind",
+    "stat": "$1.64B",
+    "statLabel": "Crypto futures positions force-closed in 24 hours to Nov 13, 2026, 88.7% of them bets on rising prices",
+    "body": "On November 13 bitcoin fell to $67,555, its lowest price since August 19, extending a slide from $81,000 the week before. CoinDesk data cited by CoinPaprika put crypto liquidations at $1.64 billion over 24 hours, with 88.7% of that coming from long positions and the single largest a $31.1 million bitcoin bet on the Hyperliquid exchange. A liquidation is the exchange closing a borrowed bet once the trader's collateral no longer covers the margin requirement, and closing a long means selling, which pushes the price lower and trips the next set of positions. The triggers came from outside crypto: the dollar index rose above 103, futures priced an 88% chance of a quarter-point Fed hike in December, US spot bitcoin funds saw about $1.44 billion of outflows over six days, and Nvidia's leadership shock hit risk assets.",
+    "why": "Bitcoin is now about 45% below its record of roughly $126,000 from October 2025, and a good share of the speed of this fall came from forced selling by people who had borrowed. Leverage turns an ordinary price drop into a total loss: at 10 times leverage, a decline of just under 10% wipes out the stake. Before using margin on anything, ask how far the price can fall before someone else decides to sell for you.",
+    "lessons": [
+      "leverage",
+      "alts",
+      "riskreturn"
+    ],
+    "sources": [
+      {
+        "name": "CoinPaprika, Nov 14, 2026",
+        "url": "https://coinpaprika.com/news/bitcoin-sinks-12-week-low-resurgent-dollar"
+      },
+      {
+        "name": "The Coin Republic, Nov 13, 2026",
+        "url": "https://www.thecoinrepublic.com/2026/11/13/bitcoin-price-usd-falls-below-70000-as-crypto-selloff-deepens/"
+      },
+      {
+        "name": "CryptoTicker, Nov 13, 2026",
+        "url": "https://cryptoticker.io/en/bitcoin-price-below-70000-liquidations-extreme-fear/"
+      }
+    ]
+  },
+  {
     "id": "2026-11-13-producer-prices-6-5",
     "date": "2026-11-13",
     "kind": "Signal",

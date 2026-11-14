@@ -533,5 +533,74 @@
         "url": "https://www.zacks.com/stock/news/3023888/sony-q2-earnings-revenues-rise-on-gaming-pictures-strength"
       }
     ]
+  },
+  {
+    "ticker": "CFRUY",
+    "name": "Richemont",
+    "country": "Switzerland",
+    "sector": "Luxury goods",
+    "theme": "Jewelry and luxury spending",
+    "what": "Owns Cartier, Van Cleef & Arpels and Buccellati jewelry and watchmakers including IWC, Jaeger-LeCoultre and Vacheron Constantin.",
+    "past": {
+      "label": "Sales, six months to Sep 2025",
+      "value": "€10.62B",
+      "detail": "Operating profit was €2.36B, a 22.2% margin."
+    },
+    "current": {
+      "label": "Sales, six months to Sep 2026",
+      "value": "€12.28B",
+      "growth": 16,
+      "detail": "Up 17% at constant exchange rates. Operating profit rose 33% to €3.13B (25.5% margin; 23.6% excluding €229M of one-time tariff-related gains). Jewelry sales rose 19% at constant rates with a 35.3% margin."
+    },
+    "future": {
+      "label": "Company outlook",
+      "value": "No numeric guidance",
+      "detail": "The chairman expects the environment to remain volatile for the foreseeable future and says the watch recovery is unlikely to be linear. Net cash stood at €7.73B."
+    },
+    "drivers": [
+      "Jewelry demand at Cartier and Van Cleef & Arpels",
+      "Sales through its own stores, now 78% of the total",
+      "Americas sales up 23% and Japan up 30% at constant rates",
+      "Price increases that mostly offset higher gold costs"
+    ],
+    "risks": [
+      "High gold prices squeeze gross margin; excluding the tariff item, gross margin fell 0.7 points",
+      "Growth slowed to 13% in the second quarter from 20% in the first",
+      "Middle East and Africa sales fell 2% amid the regional conflict",
+      "Watch demand in China remains soft",
+      "Currency hedging losses of €418M outweighed €316M of currency gains"
+    ],
+    "watch": [
+      "Jewelry growth each quarter",
+      "Gross margin as gold prices move",
+      "Watchmaker margins, 8.8% this half",
+      "Spending by Chinese and Middle East shoppers"
+    ],
+    "why": "Richemont is a jewelry business more than a watch business, and jewelry is where luxury demand is strongest: its jewelry houses grew sales 19% at constant rates and earned a 35.3% operating margin, against 8.8% at the watchmakers. Selling mostly through its own stores (72% retail, 6% online) gives it control over pricing, which let it raise prices enough to mostly offset the higher cost of gold. Operating cash flow rose 35% to €2.5B.",
+    "expect": {
+      "company": [
+        "No numeric forecast; management expects a volatile environment for the foreseeable future (Nov 13, 2026)",
+        "Watchmaker recovery described as unlikely to be linear, with soft demand in China (Nov 13, 2026)"
+      ],
+      "analysts": [
+        "Shares opened more than 4% lower on Nov 13, 2026 even though first-half net profit beat forecasts (Yahoo Finance)"
+      ]
+    },
+    "scenarios": {
+      "bull": "Jewelry keeps growing in the double digits, price increases keep pace with gold, and watch demand in China recovers.",
+      "base": "Jewelry growth slows toward the second-quarter pace while watches improve gradually and margins hold.",
+      "bear": "Gold keeps rising faster than prices can follow, wealthy shoppers in China and the Gulf pull back, and growth slows further."
+    },
+    "updated": "2026-11-14",
+    "sources": [
+      {
+        "name": "Richemont, results for the six months ended 30 September 2026, Nov 13, 2026",
+        "url": "https://www.richemont.com/news-media/press-releases-news/richemont-posts-strong-results-for-the-six-month-period-ended-30-september-2026-driven-by-sustained-double-digit-sales-growth/"
+      },
+      {
+        "name": "Yahoo Finance, Stock market today, Nov 13, 2026",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
+      }
+    ]
   }
 ]
