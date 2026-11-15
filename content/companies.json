@@ -602,5 +602,83 @@
         "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
       }
     ]
+  },
+  {
+    "ticker": "HDB",
+    "name": "HDFC Bank",
+    "country": "India",
+    "sector": "Financials",
+    "theme": "India's credit boom and rising rates",
+    "what": "An Indian bank lending to households and businesses and owning stakes in HDFC Life, HDFC AMC and HDB Financial Services.",
+    "past": {
+      "label": "Consolidated net profit, Jul–Sep 2025",
+      "value": "₹19,611 cr",
+      "detail": "Net interest income, the gap between interest earned and paid, was ₹31,552 crore at the bank level."
+    },
+    "current": {
+      "label": "Consolidated net profit, Jul–Sep 2026",
+      "value": "₹20,700 cr",
+      "growth": 5.6,
+      "detail": "Net interest income rose 9.7% to ₹34,619 crore. Deposits grew 18.8% and gross advances about 16%. Net interest margin slipped to 3.16% of total assets. Gross bad loans fell to 1.11% of loans and net bad loans to 0.37%. Treasury trading gains fell about ₹1,610 crore from a year earlier."
+    },
+    "future": {
+      "label": "Company plans",
+      "value": "New CEO; no numeric guidance",
+      "detail": "Anup Bagchi takes over as managing director and CEO from Sashidhar Jagdishan after the quarter, in late October 2026. The bank gave no loan-growth or margin forecast in the reports read. Capital adequacy is about 18.9%, with a CET1 ratio of 17.1%."
+    },
+    "drivers": [
+      "Deposits growing faster than loans (18.8% vs about 16%)",
+      "SME and mid-market lending up 23.5%",
+      "Improving asset quality",
+      "Profits from insurance, asset management and consumer-finance subsidiaries"
+    ],
+    "risks": [
+      "Margins at a record low as time deposits (up 22.8%) grow faster than cheap current and savings accounts, now 31.6% of deposits",
+      "Rising Indian inflation and RBI rate hikes could lift funding costs and slow borrowers",
+      "Profit growth of about 5% trails loan growth",
+      "Leadership change at the top",
+      "Rupee moves affect returns for holders of the US-listed shares"
+    ],
+    "watch": [
+      "Net interest margin each quarter",
+      "Share of low-cost current and savings deposits",
+      "Bad-loan ratios as rates rise",
+      "The new CEO's first targets"
+    ],
+    "why": "HDFC Bank is growing its balance sheet steadily: deposits rose 18.8% and advances about 16%, while bad loans keep falling, a sign of conservative lending. Its core lending income rose 9.7%, but headline profit grew only about 5%, partly because treasury gains shrank and margins narrowed as it paid more for deposits. Shares were down about 28% in 2026 by mid-October, against an 11.5% fall in the Nifty 50, per Kotak Neo.",
+    "expect": {
+      "company": [
+        "No numeric guidance in the Q2 FY27 reports read; management commentary was awaited (Oct 2026)",
+        "CEO transition to Anup Bagchi after the September quarter (Oct 2026)"
+      ],
+      "analysts": [
+        "Standalone profit came in slightly below the LSEG consensus of ₹19,526 crore, per NiftyTrader (Oct 17, 2026)",
+        "Shares fell about 2% in early trade after the results, to ₹712, per Kotak Neo (Oct 19, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "Deposit growth stays strong, cheaper deposits return, margins recover, and the new CEO lifts loan growth without hurting credit quality.",
+      "base": "Loans and deposits keep growing in the mid-teens while margins stay near current levels and profit grows modestly.",
+      "bear": "RBI hikes push funding costs higher, margins keep shrinking, and rising inflation squeezes borrowers so bad loans turn up."
+    },
+    "updated": "2026-11-15",
+    "sources": [
+      {
+        "name": "EquityBulls (results release), Oct 17, 2026",
+        "url": "https://www.equitybulls.com/news/377166/hdfc-bank-q2fy27-standalone-net-profit-at-19-609-96-crore"
+      },
+      {
+        "name": "Kotak Neo, Oct 19, 2026",
+        "url": "https://www.kotakneo.com/news/stocks/hdfc-bank-q2-results-2026-nii-growth-profit-and-asset-quality/"
+      },
+      {
+        "name": "NiftyTrader, Oct 17, 2026",
+        "url": "https://www.niftytrader.in/markets/hdfc-bank-q2-fy27-results-treasury-drop/"
+      },
+      {
+        "name": "Mint via TradingView, Oct 17, 2026",
+        "url": "https://www.tradingview.com/news/moodys:64eed3e6776ec:0-hdfc-bank-q2-results-net-profit-rises-5-to-rs-19-610-crore-nii-jumps-10-in-last-quarter-under-outgoing-ceo-jagdishan/"
+      }
+    ]
   }
 ]

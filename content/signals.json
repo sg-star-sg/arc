@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-15-india-inflation-breach",
+    "date": "2026-11-15",
+    "kind": "Signal",
+    "m": "world",
+    "title": "India's inflation breaks the central bank's 6% ceiling",
+    "stat": "6.09%",
+    "statLabel": "India's retail inflation in October 2026, up from 5.54% in September and above the RBI's 2–6% band",
+    "body": "India's consumer prices rose 6.09% in the year to October, the government's statistics ministry reported on November 12, the first time in two years that inflation has broken above the Reserve Bank of India's tolerance band of 2% to 6% around its 4% target. Food did most of the damage: food inflation jumped to 8.94% from 7.74%, with onions up 116% and garlic up 61% from a year earlier, after erratic rains linked to El Niño and higher fuel and fertiliser costs from the West Asia conflict. Prices are rising faster in villages (6.63%) than in cities (5.41%), and core inflation, which strips out food and fuel, edged up to 4.5%. The RBI already raised its repo rate by a quarter point to 5.50% in October, its first increase in nearly four years, and several economists now expect another hike in December.",
+    "why": "A central bank that misses its own promised range has to win back credibility, and that usually means higher rates for longer: India's 10-year government bond yield is around 7.25%, and traders are pricing in about a full percentage point of further hikes. For anyone holding Indian stocks, bonds or deposits, or running a business that buys there, the question is whether food-driven inflation spreads into wages and core prices. Watch core inflation and the RBI's December decision, not just the headline.",
+    "lessons": [
+      "inflationtarget",
+      "cpiinside",
+      "inflexpect"
+    ],
+    "sources": [
+      {
+        "name": "Business Standard, Nov 12, 2026",
+        "url": "https://www.business-standard.com/economy/news/retail-inflation-at-6-09-in-october-breaches-rbi-s-upper-band-after-2-yrs-126111201088_1.html"
+      },
+      {
+        "name": "Down To Earth, Nov 13, 2026",
+        "url": "https://www.downtoearth.org.in/economy/indias-retail-inflation-hits-two-year-high-of-609-as-food-prices-rise"
+      },
+      {
+        "name": "DSIJ, Nov 14, 2026",
+        "url": "https://insights.dsij.in/dsijarticledetail/indias-retail-inflation-rises-to-609-in-october-2026-food-inflation-surges-to-894-60445"
+      }
+    ]
+  },
+  {
     "id": "2026-11-14-bitcoin-liquidations",
     "date": "2026-11-14",
     "kind": "Signal",

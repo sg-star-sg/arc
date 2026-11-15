@@ -1238,5 +1238,38 @@
         "url": "https://coinpaprika.com/news/bitcoin-sinks-12-week-low-resurgent-dollar"
       }
     ]
+  },
+  {
+    "id": "inflationtarget",
+    "m": "economy",
+    "mod": "Money and banks",
+    "title": "Inflation targeting: the promise, the band and the breach",
+    "added": "2026-11-15",
+    "layers": [
+      "Inflation targeting is a public promise by a central bank to keep price growth near a stated number, judged against an official measure. India's version is typical: the Reserve Bank of India aims for 4% consumer price inflation, with a tolerance band of 2 percentage points on either side, so anything from 2% to 6% counts as within range. The target is the aim; the band is the zone where the bank can wait and watch; a reading outside the band is a breach the bank is expected to answer for. In October 2026 India's inflation hit 6.09%, a breach for the first time in two years.",
+      "The main tool is the policy rate (in India, the repo rate, at which the RBI lends to banks). Raising it makes borrowing dearer, slows spending and credit, and over many months cools prices; it also tends to strengthen the currency, which makes imports cheaper. Because rates work with a long lag, central banks steer by forecasts, not by today's number: the RBI raised its rate to 5.50% in October 2026, before the breach was published, because it projected inflation averaging about 6% in the October–December quarter. The band exists because some shocks, like a failed harvest, push prices around for reasons a rate hike cannot fix quickly. A good central bank asks whether a shock is spreading: are core prices (excluding food and fuel) rising, and are workers and firms starting to expect higher inflation? In India core inflation was 4.5% and 19 of 43 price sub-groups were at 4% or higher in October, up from 14 a month earlier, which is the kind of broadening that worries policymakers.",
+      "The number itself matters less than whether people believe it. If households and businesses trust the target, they set wages and prices as if inflation will return to it, and a shock fades on its own. If they stop believing, every price rise feeds the next, and the bank has to raise rates far more to regain control. That is why a breach is costly: it tests credibility. Emerging markets face an extra problem. Food is a much bigger share of spending in India than in rich countries (roughly 37–40% of the CPI basket), so weather and harvests swing the headline, and rural households, who spend more on food, feel it most: rural inflation was 6.63% against 5.41% in cities. Bond markets react before the bank does: traders priced in about 1 percentage point of further hikes and the 10-year yield sat near 7.25%.",
+      "Read any inflation report against the target and the band, then look under the headline. Ask three things: is the overshoot coming from food or energy, which can reverse, or from core prices, which tend to stick; is the central bank already acting, and does its own forecast see a return to target; and what is the market pricing for future rates and yields? A breach means the central bank will likely keep rates higher for longer, which raises borrowing costs, can lift deposit and bond yields, and can pressure stock valuations and the currency. For your own plans, the gap between what your savings earn and the inflation you actually face is what decides whether you are getting richer.",
+      [
+        "Is inflation above the target only because of food or fuel, or is core inflation rising too?",
+        "What does the central bank's own forecast say, and has it already moved rates?",
+        "How much tightening are bond markets already pricing in?",
+        "Does my savings rate beat the inflation I personally face?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Business Standard, Nov 12, 2026",
+        "url": "https://www.business-standard.com/economy/news/retail-inflation-at-6-09-in-october-breaches-rbi-s-upper-band-after-2-yrs-126111201088_1.html"
+      },
+      {
+        "name": "Down To Earth, Nov 13, 2026",
+        "url": "https://www.downtoearth.org.in/economy/indias-retail-inflation-hits-two-year-high-of-609-as-food-prices-rise"
+      },
+      {
+        "name": "DSIJ, Nov 14, 2026",
+        "url": "https://insights.dsij.in/dsijarticledetail/indias-retail-inflation-rises-to-609-in-october-2026-food-inflation-surges-to-894-60445"
+      }
+    ]
   }
 ]
