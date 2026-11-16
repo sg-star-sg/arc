@@ -1271,5 +1271,34 @@
         "url": "https://insights.dsij.in/dsijarticledetail/indias-retail-inflation-rises-to-609-in-october-2026-food-inflation-surges-to-894-60445"
       }
     ]
+  },
+  {
+    "id": "gdpinside",
+    "m": "economy",
+    "mod": "Cycles and crises",
+    "title": "Inside GDP: the four engines behind the growth number",
+    "added": "2026-11-16",
+    "layers": [
+      "Gross domestic product (GDP) is the value of everything an economy produces in a period, after removing what was imported. Economists split it into four spending engines: consumption (C, what households buy), investment (I, what businesses spend on equipment, software and buildings, plus new homes and inventories), government spending (G, salaries, roads, defence, though not transfers like pensions), and net exports (NX, exports minus imports). GDP = C + I + G + NX. In most rich economies consumption is the biggest engine, often more than half of the total, which is why a squeeze on households can stall a whole country. Real GDP strips out inflation, so it measures volume, not prices; nominal GDP does not.",
+      "Statistics agencies publish GDP as a change from the previous quarter. The US, and often Japan's headlines, convert that to an annualized rate: what the economy would grow if the quarter's pace lasted a full year, roughly the quarterly rate times four. Europe, China and India mostly quote the change from a year earlier instead, so always check which basis a number uses before comparing countries. First releases are preliminary and are revised as fuller data arrive; revisions of half a point or more are common. Japan's July–September 2026 report shows how the engines can pull apart: overall output shrank at an annualized 0.1%, private consumption fell an annualized 1.1%, while business investment rose 6.8% on AI, digital and automation spending. Imports also rose, and because imports are subtracted, they dragged on the total. A common rule of thumb calls two straight quarters of falling real GDP a 'technical recession', but official recession calls, like those of the US National Bureau of Economic Research, look at jobs, income and output together.",
+      "The headline number tells you whether the economy grew; the components tell you whether that growth is healthy and whether it will last. Growth led by households spending rising real wages is sturdy. Growth propped up by inventories piling up in warehouses often reverses the next quarter. Growth led by business investment can mean companies see demand ahead, but if it is concentrated in one theme, such as AI data centres, it can fade if that theme cools. Net exports can swing on currency moves or a single shipment of aircraft. Context matters too: in Japan, rising oil costs and a yen near 160 per dollar push up the price of imports, so households spend more just to buy the same things and cut back on everything else. That is how an energy shock turns into weaker consumption, and why a central bank can face rising prices and slowing growth at the same time.",
+      "Never stop at the headline GDP figure. First check the basis: annualized, quarter-on-quarter or year-on-year. Then look at which engine moved: consumption tells you about households, investment about business confidence, government about policy, net exports about trade and the currency. Check whether the result beat or missed forecasts, because markets move on surprises, and remember that the first estimate will be revised. For your own money, consumer-led weakness tends to hit retailers and consumer brands first, while investment-led strength favours the suppliers of whatever businesses are buying.",
+      [
+        "Is this growth figure annualized, quarter-on-quarter or year-on-year?",
+        "Which of consumption, investment, government or net exports drove the change?",
+        "Is the strongest engine likely to keep running, or is it a one-off like inventories?",
+        "Did the number beat or miss forecasts, and how might later revisions change it?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Associated Press via KSAT, Nov 15, 2026",
+        "url": "https://www.ksat.com/business/2026/11/16/japans-economy-contracts-slightly-in-the-latest-quarter-as-oil-prices-remain-high/"
+      },
+      {
+        "name": "Dainik Jagran English, Nov 16, 2026",
+        "url": "https://english.dainikjagranmpcg.com/international/japan-gdp-contracts-01-as-rising-living-costs-hit-spending/article-44397"
+      }
+    ]
   }
 ]

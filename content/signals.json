@@ -1,5 +1,31 @@
 [
   {
+    "id": "2026-11-16-japan-gdp-contracts",
+    "date": "2026-11-16",
+    "kind": "Signal",
+    "m": "world",
+    "title": "Japan's economy shrinks as costly oil squeezes shoppers",
+    "stat": "-0.1%",
+    "statLabel": "Japan's real GDP change in July–September 2026, at an annualized rate (preliminary, Cabinet Office, Nov 16, 2026)",
+    "body": "Japan's economy contracted at an annualized rate of 0.1% in July–September, the Cabinet Office reported on Monday, its first contraction in four quarters after three quarters of moderate growth; some analysts had expected small growth. Households did the damage: private consumption, the biggest part of the economy, fell an annualized 1.1% as prices rose and weather was poor. Business investment pulled the other way, rising an annualized 6.8% on digital, AI and automation spending. Japan imports almost all its oil, and the war in Iran has effectively blocked the Strait of Hormuz, while the yen near 160 per dollar, against below 115 five years ago, makes every imported barrel dearer.",
+    "why": "This is the hard mix for a central bank: prices rising while the economy stalls. Several analysts still expect the Bank of Japan to consider another rate increase as early as December, and Prime Minister Sanae Takaichi's government is pushing a food tax cut whose financing is unclear given Japan's large public debt. If you own Japanese stocks, a global fund, or a business that buys from Japan, watch what each part of GDP is doing, not just the headline, along with the yen and the BOJ's December decision.",
+    "lessons": [
+      "gdpinside",
+      "supplyshock",
+      "cycle"
+    ],
+    "sources": [
+      {
+        "name": "Associated Press via KSAT, Nov 15, 2026",
+        "url": "https://www.ksat.com/business/2026/11/16/japans-economy-contracts-slightly-in-the-latest-quarter-as-oil-prices-remain-high/"
+      },
+      {
+        "name": "Dainik Jagran English, Nov 16, 2026",
+        "url": "https://english.dainikjagranmpcg.com/international/japan-gdp-contracts-01-as-rising-living-costs-hit-spending/article-44397"
+      }
+    ]
+  },
+  {
     "id": "2026-11-15-india-inflation-breach",
     "date": "2026-11-15",
     "kind": "Signal",

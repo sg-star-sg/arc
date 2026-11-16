@@ -680,5 +680,80 @@
         "url": "https://www.tradingview.com/news/moodys:64eed3e6776ec:0-hdfc-bank-q2-results-net-profit-rises-5-to-rs-19-610-crore-nii-jumps-10-in-last-quarter-under-outgoing-ceo-jagdishan/"
       }
     ]
+  },
+  {
+    "ticker": "MUFG",
+    "name": "Mitsubishi UFJ Financial Group",
+    "country": "Japan",
+    "sector": "Financials",
+    "theme": "Japan's return to positive interest rates",
+    "what": "Japan's largest banking group, lending, taking deposits and earning fees at home and abroad, and owning a large stake in Morgan Stanley.",
+    "past": {
+      "label": "Net income, Apr–Sep 2025",
+      "value": "¥1.29 tn",
+      "detail": "Net income attributable to owners was ¥1,292.9 billion; net interest income was ¥1,440.0 billion."
+    },
+    "current": {
+      "label": "Net income, Apr–Sep 2026",
+      "value": "¥1.63 tn",
+      "growth": 26.1,
+      "detail": "A record first half. Net interest income rose 28.6% to ¥1.85 trillion and net fees and commissions about 14%. Higher Japanese interest rates added about ¥140 billion to net operating profit and the weaker yen about ¥35 billion. Equity-method earnings, helped by Morgan Stanley, rose to ¥473 billion. Return on equity was 14.5%, up from 12.5%."
+    },
+    "future": {
+      "label": "Company target, year to March 2027",
+      "value": "¥2.8 tn net income",
+      "detail": "Raised from ¥2.7 trillion on Nov 13, 2026; the first half delivered about 58% of it. Net operating profit target unchanged at ¥2.9 trillion and credit-cost target at ¥350 billion. Dividend forecast raised to ¥100 a share, from ¥86 last year, plus a buyback of up to ¥200 billion in the second half."
+    },
+    "drivers": [
+      "Higher yen interest rates widening lending margins",
+      "Loan growth in Japan and overseas",
+      "Rising fee income",
+      "Earnings from its Morgan Stanley stake"
+    ],
+    "risks": [
+      "¥196 billion of losses on debt securities in the half, mostly from selling US mortgage-backed bonds while rebalancing",
+      "The company warns it may need significant additional loan-loss provisions tied to the Middle East situation",
+      "A slowing Japanese economy could raise bad loans",
+      "Profits are flattered by a weak yen and could shrink if it strengthens",
+      "Costs are rising, including for inflation and cybersecurity"
+    ],
+    "watch": [
+      "Bank of Japan rate decisions",
+      "Net interest income each quarter",
+      "Credit costs against the ¥350 billion target",
+      "Bond portfolio gains or losses",
+      "Progress on the buyback"
+    ],
+    "why": "After decades of near-zero rates, Japan's banks can finally earn a real margin on lending, and MUFG's net interest income jumped 28.6% in the first half. Fees and its Morgan Stanley stake added more, lifting return on equity to 14.5%. Management raised its profit target and dividend and added a buyback, a sign it expects the gains to hold.",
+    "expect": {
+      "company": [
+        "Full-year net income target raised to ¥2.8 trillion from ¥2.7 trillion (Nov 13, 2026)",
+        "Annual dividend forecast ¥100 a share; buyback of up to ¥200 billion in the second half (Nov 13, 2026)",
+        "Net operating profit target kept at ¥2.9 trillion 'considering future growth initiatives' (Nov 13, 2026)"
+      ],
+      "analysts": [
+        "No analyst estimates were given in the sources read; an investor briefing is scheduled for Nov 17, 2026"
+      ]
+    },
+    "scenarios": {
+      "bull": "The Bank of Japan keeps raising rates gradually, lending margins widen further, loan losses stay near target and buybacks continue.",
+      "base": "Rates edge up, net interest income keeps growing, and the group lands near its ¥2.8 trillion target with credit costs around plan.",
+      "bear": "Japan's slowdown and the Middle East conflict push loan losses well above target, bond losses recur, and a stronger yen shrinks overseas profits."
+    },
+    "updated": "2026-11-16",
+    "sources": [
+      {
+        "name": "MUFG Form 6-K (H1 FY2026 results), SEC, Nov 13, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0000067088/000119312526459151/d138419d6k.htm"
+      },
+      {
+        "name": "Investing.com via Yahoo Finance, Nov 13, 2026",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/mufg-raises-annual-profit-target-084706551.html"
+      },
+      {
+        "name": "EconoTimes, Nov 14, 2026",
+        "url": "https://econotimes.com/MUFG-Net-Earnings-Climb-337-9-Billion-to-1-6308-Trillion-1776706"
+      }
+    ]
   }
 ]
