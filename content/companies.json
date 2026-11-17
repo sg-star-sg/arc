@@ -755,5 +755,82 @@
         "url": "https://econotimes.com/MUFG-Net-Earnings-Climb-337-9-Billion-to-1-6308-Trillion-1776706"
       }
     ]
+  },
+  {
+    "ticker": "RNMBF",
+    "name": "Rheinmetall",
+    "country": "Germany",
+    "sector": "Industrials",
+    "theme": "Europe's rearmament",
+    "what": "Germany's largest defense company, making ammunition, artillery, armored vehicles, air defense, naval ships and military digital systems.",
+    "past": {
+      "label": "Sales, Jan–Sep 2025",
+      "value": "€6.06 bn",
+      "detail": "Nine-month sales were €6,057 million with an operating result of €795 million, a 13.1% margin. Full-year 2025 sales were €9,935 million."
+    },
+    "current": {
+      "label": "Sales, Jan–Sep 2026",
+      "value": "€8.38 bn",
+      "growth": 38,
+      "detail": "Sales rose 38% to €8,376 million and the operating result rose about 69% to a record €1,339 million, a 16.0% margin. Air defense sales grew 63%, weapons and ammunition 34%, digital systems 29% and vehicles 20%; the naval business was added from February 2026. Earnings per share from continuing operations were €14.44, against €7.83."
+    },
+    "future": {
+      "label": "Backlog, Sep 30, 2026",
+      "value": "€78.0 bn",
+      "detail": "Up from €56.7 billion a year earlier, including signed framework agreements; new nominations were €19.1 billion in nine months. Full-year 2026 guidance was cut to sales of around €13.2 billion, from €13.7–14.2 billion, and an operating margin of around 18.5%, from around 19%."
+    },
+    "drivers": [
+      "European governments raising defense budgets",
+      "Ammunition and artillery demand",
+      "Air defense orders, where backlog rose 81%",
+      "Large German vehicle and digital programs",
+      "Acquisitions such as the naval business"
+    ],
+    "risks": [
+      "Revenue depends on government budgets, parliamentary approvals and contract timing",
+      "2026 guidance was cut because Germany's Arminius vehicle program and artillery acceptance tests slipped",
+      "Operating free cash flow was −€1.7 billion in nine months as inventories and working capital grew",
+      "Management told analysts the backlog will fall short of its €100 billion-plus end-2026 aim without Arminius",
+      "A ceasefire or peace deal in Ukraine could change how urgently governments buy"
+    ],
+    "watch": [
+      "Bundestag approval of large German orders",
+      "Whether full-year sales reach about €13.2 billion",
+      "Operating free cash flow turning positive as guided",
+      "Targets at the upcoming Capital Markets Day",
+      "Ukraine peace talks and European defense budgets"
+    ],
+    "why": "Europe is rebuilding its armed forces, and Rheinmetall makes many of the things being ordered, from shells to air defense. Nine-month sales rose 38% and profit grew faster, lifting the margin to 16%, while the backlog reached €78 billion, more than eight times 2025 sales. The catch is timing: when governments delay approvals or tests, revenue slips, as the guidance cut shows.",
+    "expect": {
+      "company": [
+        "2026 sales of around €13.2 billion, cut from €13.7–14.2 billion (Nov 5, 2026)",
+        "2026 operating margin of around 18.5%, from around 19% (Nov 5, 2026)",
+        "Operating result expected to improve in 2026, including acquisitions (Nov 5, 2026)",
+        "Management told analysts it still expects positive operating free cash flow for 2026 and capex above €1 billion (Nov 5, 2026 call)"
+      ],
+      "analysts": [
+        "No analyst estimates were given in the sources read"
+      ]
+    },
+    "scenarios": {
+      "bull": "German parliament approves delayed programs quickly, European budgets keep rising, the backlog converts to sales on time and cash flow turns positive.",
+      "base": "Sales grow strongly but lumpily as orders are approved and delivered, with the company near its cut 2026 guidance.",
+      "bear": "Approvals and acceptance tests keep slipping, a peace deal in Ukraine cools urgency, and cash stays tied up in inventory."
+    },
+    "updated": "2026-11-17",
+    "sources": [
+      {
+        "name": "Rheinmetall, Q3 2026 quarterly statement press release, Nov 5, 2026",
+        "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/11/2026-11-05-rheinmetall-news-quarterly-statement-q3"
+      },
+      {
+        "name": "Rheinmetall, Q3 2026 statement (PDF), Nov 5, 2026",
+        "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/11/2026-11-05-Rheinmetall-News-Quarterly-Statement-Q3.pdf"
+      },
+      {
+        "name": "GuruFocus via Yahoo Finance, Q3 2026 earnings call highlights",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/rheinmetall-ag-rnmbf-q3-2026-111359466.html"
+      }
+    ]
   }
 ]

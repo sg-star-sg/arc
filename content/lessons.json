@@ -1300,5 +1300,38 @@
         "url": "https://english.dainikjagranmpcg.com/international/japan-gdp-contracts-01-as-rising-living-costs-hit-spending/article-44397"
       }
     ]
+  },
+  {
+    "id": "exportcontrols",
+    "m": "world",
+    "mod": "Money and power",
+    "title": "Export controls: how governments ration technology",
+    "added": "2026-11-17",
+    "layers": [
+      "An export control is a rule that says certain goods, software or know-how cannot leave a country, or reach certain buyers, without a government license. It is different from a sanction, which cuts off a whole country or person from trade and finance, and different from a tariff, which taxes imports but still lets them in. Export controls target the seller's side: they decide who is allowed to buy a technology at all. In the US the Commerce Department's Bureau of Industry and Security (BIS) runs them, sorting products into classification codes and countries into groups by risk. Advanced AI chips and the machines that make them are now among the most tightly controlled products in the world.",
+      "The system works through three levers. First, a product threshold: rules are written around a measurable capability, so a regulator can say which chips count. The November 2026 rule uses 'total processing power' (TPP), and requires a license when a data center gives restricted companies more than 12,000,000 TPP in total; one analyst estimates that is about 758 Nvidia H100s, or about 222 of the newer B300s. Second, a destination list: shipping to Singapore, Malaysia, Indonesia, Thailand or Brazil now needs a license, reviewed case by case. Third, an end-user test: what matters is who ultimately controls the buyer, so a company headquartered in China, Macau or another restricted group is caught even if its data center sits in a third country. Linked data centers are counted together so a buyer cannot split an order to stay under the line. Exporters that use the exemption for US-owned customers must file monthly reports naming every party and product. Each new rule tends to close a gap the last one left open: earlier rules stopped chips going to China directly, so buyers turned to third countries and to renting chips remotely through the cloud, and this rule targets both.",
+      "Controls exist because some technologies give military and economic power, and once a rival has them they cannot be taken back. But they leak. Chips are small and valuable, and a shell company in a trading hub can buy them legally and pass them on; Asia Times reported that the Malaysian arm of Megaspeed, a Singapore company suspected of funneling chips to China (which it denies), bought nearly $2 billion of Nvidia chips. So governments keep tightening, and every tightening hits innocent customers too: data centers in Southeast Asia now face licensing delays and paperwork even when they sell to no one restricted. For companies, export controls turn geopolitics into a line item. A rule can wipe out a market overnight, force a company to design a weaker product for one country, or slow the sales cycle while licenses are reviewed.",
+      "To judge a company's exposure, do not stop at the headline revenue split. Companies usually report revenue by where the customer is headquartered or billed, not where the product ends up. Nvidia said customers based outside the US, Taiwan and China were 1.3% of its revenue in the quarter to July 2026, yet the chips sold to US cloud companies may sit in data centers in Malaysia or Singapore and serve customers anywhere. Look for three things in filings: how the company defines its geographic revenue, what it says about license requirements in its risk factors, and whether its customers rent capacity across borders. Then think second-order: who wins when supply is rationed (domestic chip makers in the restricted country, data centers in safer locations, compliance software) and who loses (hubs built on being a neutral middleman). A rule's comment period and deadlines, here 60 days for comments and 90 days for existing data centers to get licensed, tell you when the next shoe can drop.",
+      [
+        "Does this company report revenue by customer location or by where its products are shipped and used?",
+        "What do its risk factors say about export licenses, and has the list of controlled products or countries grown in recent rules?",
+        "If a market closed tomorrow, who would fill the gap, and would that rival become stronger over time?",
+        "Which countries or companies make money as middlemen, and how exposed are they to the next tightening?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Fortune, Nov 16, 2026",
+        "url": "https://fortune.com/2026/11/16/new-commerce-rule-nvidia-chip-singapore-malaysia-china/"
+      },
+      {
+        "name": "The Daily Brief (beri.net), Nov 16, 2026",
+        "url": "https://www.beri.net/article/bis-remote-access-rule-ai-chips-12-million-tpp-data-center-license-singapore-malaysia-indonesia-thailand-brazil-monthly-reporting-gpu-capacity-contracts"
+      },
+      {
+        "name": "TECHi, Nov 17, 2026",
+        "url": "https://www.techi.com/us-ai-chip-export-rule-nvidia-revenue-exposure/"
+      }
+    ]
   }
 ]
