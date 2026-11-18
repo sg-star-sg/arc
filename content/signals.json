@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-18-nvidia-sales-double-cash-lags",
+    "date": "2026-11-18",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "Nvidia's sales double, but unpaid customer bills double too",
+    "stat": "$81.0B",
+    "statLabel": "Nvidia accounts receivable on Oct 25, 2026, up from $38.5B on Jan 25, 2026 (company balance sheet)",
+    "body": "Nvidia reported revenue of $115.8 billion for the quarter to Oct 25, up 103% from a year earlier, beating the roughly $108.8 billion Wall Street expected; data center sales were $107.6 billion, up 110%. It guided to about $130 billion next quarter, a period with one extra week, but expects gross margin to slip to 71% to 72% from 74.8%. Underneath, net income of $65.3 billion turned into only $48.3 billion of operating cash, because $18.1 billion went into bills customers had not yet paid and $8.1 billion into more inventory. Receivables now stand at $81.0 billion and inventory at $39.7 billion, both close to double their January levels, in the company's first report since its founder resigned as chief executive.",
+    "why": "A record quarter can still leave less cash than the profit line suggests, and the gap lives in working capital: money owed by customers and chips sitting in warehouses. For a fast grower, some of that is normal, but if receivables keep rising faster than sales, it can mean customers are paying more slowly or getting easier terms. Whether you own a chip stock, an index fund or your own business, check how much of the profit actually arrived as cash.",
+    "lessons": [
+      "workingcapital",
+      "freecashflow",
+      "guidance"
+    ],
+    "sources": [
+      {
+        "name": "Nvidia press release (SEC 8-K), Nov 17, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000088/q3fy27pr.htm"
+      },
+      {
+        "name": "Kiplinger, Nov 17, 2026",
+        "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+      },
+      {
+        "name": "24/7 Wall St, Nov 17, 2026",
+        "url": "https://247wallst.com/cards/nvidia-q3-2027-earnings-nvda-01m7nph36m2fmpwcfatxg16f2z"
+      }
+    ]
+  },
+  {
     "id": "2026-11-17-ai-chip-license-five-countries",
     "date": "2026-11-17",
     "kind": "Signal",

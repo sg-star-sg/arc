@@ -1333,5 +1333,38 @@
         "url": "https://www.techi.com/us-ai-chip-export-rule-nvidia-revenue-exposure/"
       }
     ]
+  },
+  {
+    "id": "workingcapital",
+    "m": "wealth",
+    "mod": "Stocks",
+    "title": "Working capital: receivables, inventory and the cash conversion cycle",
+    "added": "2026-11-18",
+    "layers": [
+      "Working capital is the money a business has tied up in running its day-to-day operations. The three pieces that matter most are accounts receivable (sales already made and booked as revenue, but not yet paid for by customers), inventory (goods bought or built but not yet sold) and accounts payable (bills the company owes its own suppliers but has not paid yet). Receivables and inventory soak up cash; payables free it up, because the company is effectively borrowing from its suppliers for free until the bill is due. The idea applies to every size of business: a bakery that pays for flour upfront and sells cakes to a café on 60-day terms has the same problem, at a smaller scale, as Nvidia selling AI systems to cloud companies. Nvidia's balance sheet on Oct 25, 2026 showed $81.0 billion of receivables, $39.7 billion of inventory and $21.1 billion of payables.",
+      "The tool analysts use is the cash conversion cycle: the number of days between paying for inputs and collecting from customers. It has three parts. Days sales outstanding (DSO) is receivables divided by revenue, times the days in the period: how long customers take to pay. Days inventory outstanding (DIO) is inventory divided by cost of goods sold, times days: how long goods sit before they are sold. Days payable outstanding (DPO) is payables divided by cost of goods sold, times days: how long the company takes to pay suppliers. The cycle is DSO plus DIO minus DPO. Nvidia's quarter to Oct 25 ran about 91 days and brought in $115.8 billion of revenue, so its $81.0 billion of receivables works out to roughly 64 days of sales waiting to be collected. Growth itself pulls cash in: when sales rise, receivables and inventory grow with them, and that increase is subtracted on the cash flow statement under 'changes in operating assets and liabilities'. In Nvidia's quarter, receivables used $18.1 billion of cash and inventory $8.1 billion, which is a big reason $65.3 billion of net income became $48.3 billion of operating cash. A short worked example: a shop with $100,000 of monthly sales that lets customers pay in 60 days instead of 30 has about $100,000 more cash stuck in receivables at any moment, with no change in profit at all.",
+      "This matters because working capital is where accounting profit and real cash part ways, and where trouble often shows up first. Revenue is booked when a product ships, not when the money arrives, so a company can report record sales while its bank balance lags. Some causes are healthy: a fast-growing company naturally carries more receivables and stock. Others are warnings. Receivables growing much faster than sales can mean customers are paying slowly, are under strain, or were offered generous terms to pull sales forward into the quarter, a practice called channel stuffing. Inventory piling up faster than sales can mean demand is cooling, or that the company is stockpiling ahead of a product launch. Strong businesses use the cycle in their favour: some retailers turn their stock over so fast that they sell goods before they have to pay suppliers, so growth generates cash instead of consuming it. For a small business owner, a long cycle is one of the most common reasons a profitable company runs out of money, because every new order needs cash upfront before it pays back.",
+      "To judge working capital, compare speeds rather than sizes. Calculate DSO and inventory days for at least four quarters and watch the trend: steady or falling is reassuring, rising needs an explanation from management. Compare receivables growth with revenue growth over the same period, and compare operating cash flow with net income; over a few years a healthy company converts most of its profit into cash. Check the cash flow statement's working capital lines to see exactly where cash went. Look for concentration too: if a few large customers owe most of the receivables, one slow payer can matter a lot. Then read the context. In a supply-constrained boom, extra inventory can be a deliberate choice, but it becomes a risk if demand turns, because unsold chips or products lose value fast. For your own business, the levers are simple: invoice promptly, set and enforce payment terms, ask for deposits on large orders, order stock closer to when you need it, and negotiate longer terms with suppliers.",
+      [
+        "Are receivables growing faster or slower than revenue, and what does management say about it?",
+        "How many days of sales are waiting to be collected, and is that number rising?",
+        "What share of net income turned into operating cash over the last year, and where did the rest go?",
+        "In my own business, how many days pass between paying for inputs and getting paid by customers?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Nvidia press release (SEC 8-K), Nov 17, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000088/q3fy27pr.htm"
+      },
+      {
+        "name": "Nvidia Newsroom, Nov 17, 2026",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+      },
+      {
+        "name": "Kiplinger, Nov 17, 2026",
+        "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
+      }
+    ]
   }
 ]
