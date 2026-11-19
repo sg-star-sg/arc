@@ -839,5 +839,81 @@
         "url": "https://finance.yahoo.com/markets/stocks/articles/rheinmetall-ag-rnmbf-q3-2026-111359466.html"
       }
     ]
+  },
+  {
+    "ticker": "BABA",
+    "name": "Alibaba Group",
+    "country": "China",
+    "sector": "Technology",
+    "theme": "AI cloud in China",
+    "what": "China's largest e-commerce company, running Taobao and Tmall, which is turning itself into an AI cloud and computing provider.",
+    "past": {
+      "label": "Revenue, June quarter 2026",
+      "value": "RMB 269.0 bn",
+      "detail": "Revenue was RMB 268,953 million (US$39.6 billion), up 9%. AI Cloud and Compute Services revenue was RMB 48,437 million, up 45%. Adjusted EBITA fell 30% and net income fell 75% as the company spent heavily on quick commerce and AI; capex rose 75% to RMB 67,678 million."
+    },
+    "current": {
+      "label": "Revenue, September quarter 2026",
+      "value": "RMB 271.5 bn",
+      "growth": 10,
+      "detail": "Revenue rose 10% to RMB 271.5 billion, slightly ahead of the RMB 269.81 billion analysts expected (LSEG). AI Cloud and Compute Services revenue rose 53% to about RMB 61 billion, with segment adjusted EBITA up 121% to RMB 8.8 billion. Customer management revenue, mainly merchant fees on Taobao and Tmall, fell 5%. Net income tripled to RMB 64.4 billion, helped by investment gains; non-GAAP net income rose 92% to RMB 19.9 billion, but adjusted earnings per ADS of RMB 8.10 missed the RMB 11.16 expected. Free cash flow was an outflow of RMB 34.47 billion and capex rose 60% to RMB 50.48 billion."
+    },
+    "future": {
+      "label": "Data-centre plan",
+      "value": "20+ GW by 2032",
+      "detail": "In September Alibaba announced plans to expand global data-centre capacity to more than 20 gigawatts by 2032. It raised about $10 billion through a share placement in August to fund AI infrastructure, its T-Head chip unit has confidentially filed for a Hong Kong listing, and a new AI processor is due for commercial release in early 2027. The CFO said it aims to return to positive free cash flow."
+    },
+    "drivers": [
+      "AI cloud demand, with external recurring cloud revenue up 67%",
+      "AI-related product revenue growing at triple digits for 13 straight quarters",
+      "Narrowing losses in Taobao Instant Commerce",
+      "In-house AI chips"
+    ],
+    "risks": [
+      "Heavy capex has pushed free cash flow negative",
+      "Core merchant fee revenue fell 5%",
+      "Profit was flattered by investment gains; adjusted EPS missed forecasts",
+      "US export controls and China–US tensions affect access to advanced chips",
+      "AI Labs and Applications losses tripled to RMB 10.5 billion",
+      "Shares down about 40% this year, per Reuters"
+    ],
+    "watch": [
+      "Cloud growth staying above 50%",
+      "Whether free cash flow turns positive as targeted",
+      "Customer management revenue trend on Taobao and Tmall",
+      "Quick-commerce losses",
+      "T-Head listing and chip launch in early 2027"
+    ],
+    "why": "Alibaba is spending heavily to become China's main AI cloud provider, and that part of the business is growing fast: cloud revenue rose 53% and its profit more than doubled. The older shopping business is under pressure, with merchant fees down 5%, and the build-out is consuming cash, so the company is betting today's spending turns into tomorrow's cloud profits.",
+    "expect": {
+      "company": [
+        "Plans more than 20 GW of global data-centre capacity by 2032 (announced Sep 2026)",
+        "Disciplined AI investment focused on return on capital, targeting positive free cash flow (CFO, Nov 19, 2026)",
+        "New AI processor commercial release in early 2027 (Nov 2026)"
+      ],
+      "analysts": [
+        "Analysts expected September-quarter revenue of RMB 269.81 billion and adjusted EPADS of RMB 11.16 (LSEG via Reuters, Nov 19, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "Cloud demand keeps growing above 50%, new chips ease supply limits, quick-commerce losses keep shrinking and free cash flow turns positive.",
+      "base": "Cloud grows strongly while the shopping business stays flat to down and heavy capex keeps cash flow weak for a while.",
+      "bear": "Chip restrictions or price wars slow cloud growth, merchant revenue keeps falling, and spending fails to earn its cost of capital."
+    },
+    "updated": "2026-11-19",
+    "sources": [
+      {
+        "name": "Reuters via KFGO, Nov 19, 2026",
+        "url": "https://kfgo.com/2026/11/19/chinas-alibaba-beats-quarterly-revenue-estimates/"
+      },
+      {
+        "name": "The Next Web, Nov 19, 2026",
+        "url": "https://thenextweb.com/news/alibaba-results-profit-triples-ai-cloud-revenue-53"
+      },
+      {
+        "name": "Alibaba June quarter 2026 results (SEC Form 6-K exhibit), Aug 20, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm"
+      }
+    ]
   }
 ]

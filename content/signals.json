@@ -1,5 +1,34 @@
 [
   {
+    "id": "2026-11-19-medicare-audit-rule-hits-insurers",
+    "date": "2026-11-19",
+    "kind": "Signal",
+    "m": "business",
+    "title": "A Medicare audit plan wipes 13% off Humana in a day",
+    "stat": "$90B",
+    "statLabel": "CMS estimate of savings over 10 years from its proposed CRUSH anti-fraud rule, Nov 16, 2026",
+    "body": "On Nov 16, Medicare's administrator, CMS, proposed a broad anti-fraud rule it calls CRUSH, which it estimates could save almost $90 billion over ten years. The part that matters most to insurers revives audits of Medicare Advantage plans: CMS would check a sample of patient records, and if diagnoses the plan billed for are not supported, it would extrapolate that error rate across the whole contract, going back to payment year 2018, which CMS says would recover roughly $9 billion per payment year. A federal judge struck down a similar 2023 rule in September 2025 after Humana sued, and that case is on appeal. On Nov 18, Humana fell 12.98%, UnitedHealth 10.21% and Elevance 7.63%, and comments on the proposal are open until Jan 19, 2027.",
+    "why": "When a company earns much of its money from one government program, a rule change can move its value more than any quarter's results. Medicare pays private plans more for members who look sicker on paper, and MedPAC estimates it will spend 14%, or $76 billion, more on Advantage members in 2026 than on similar people in traditional Medicare. If you own health insurers directly or through an index fund, or run a business paid by government programs, ask how much revenue depends on rules that can be rewritten.",
+    "lessons": [
+      "govcustomer",
+      "electionmarkets"
+    ],
+    "sources": [
+      {
+        "name": "American Hospital Association, Nov 17, 2026",
+        "url": "https://www.aha.org/news/headline/2026-11-17-cms-issues-proposed-rule-crush-initiative-addressing-fraud"
+      },
+      {
+        "name": "Becker's Hospital Review, Nov 2026",
+        "url": "https://www.beckershospitalreview.com/legal-regulatory-issues/cms-targets-90b-in-savings-with-sweeping-new-anti-fraud-rule/"
+      },
+      {
+        "name": "Cappnotes, Closing Look, Nov 18, 2026",
+        "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-18"
+      }
+    ]
+  },
+  {
     "id": "2026-11-18-nvidia-sales-double-cash-lags",
     "date": "2026-11-18",
     "kind": "Signal",

@@ -1366,5 +1366,42 @@
         "url": "https://www.kiplinger.com/news/live/nvidia-earnings-live-updates-and-commentary-november-2026"
       }
     ]
+  },
+  {
+    "id": "govcustomer",
+    "m": "business",
+    "mod": "Business model",
+    "title": "When the government is your customer: Medicare Advantage, risk adjustment and audits",
+    "added": "2026-11-19",
+    "layers": [
+      "Some of the biggest companies in America get most of their money from one customer: the government. Health insurers that run Medicare Advantage plans are the clearest case. Traditional Medicare pays doctors and hospitals directly for each service. Medicare Advantage works differently: the government hands a private insurer such as UnitedHealth, Humana or Elevance a fixed monthly payment for each person who joins its plan, and the insurer takes on the job of paying that person's medical bills. If care costs less than the payment, the insurer keeps the difference as profit; if it costs more, the insurer loses money. Defense contractors paid by ministries of defense, hospitals paid by Medicaid and companies building roads for states live with the same arrangement: one powerful buyer that also writes the rules.",
+      "The monthly payment is not the same for everyone. Through a system called risk adjustment, Medicare pays more for members who appear sicker, based on the diagnosis codes the plan's doctors record, such as diabetes with complications or heart failure. Each code adds to a member's risk score, and a higher score means a bigger check. That creates an incentive to record every possible condition, and sometimes conditions that are not well supported in the medical record, a practice called upcoding. Medicare's advisory body, MedPAC, estimates Medicare will spend 14%, or $76 billion, more on Advantage members in 2026 than on similar people in traditional Medicare, driven largely by more intensive coding and healthier-than-average members. The check on this is the Risk Adjustment Data Validation audit, or RADV: Medicare pulls a sample of members' records and tests whether the billed diagnoses are backed up. The fight is over extrapolation. If 10% of the sampled codes are unsupported, does the insurer repay only for those few patients, or is the 10% error rate applied to the whole contract, which can mean far larger sums? A 2023 rule allowed extrapolation back to 2018; a judge in Texas vacated it in September 2025 after Humana sued; and on Nov 16, 2026, CMS proposed reviving it in its CRUSH rule, estimating it could recover roughly $9 billion per payment year.",
+      "This matters because government revenue is both the safest and the most fragile money a company can have. It is safe because the government pays reliably and in huge amounts. It is fragile because the payer can change the formula, add audits or cut rates with one proposed rule, and the effect lands on every competitor at once. That is why Humana fell 12.98%, UnitedHealth 10.21% and Elevance 7.63% on Nov 18 without reporting any new results: investors repriced how much past and future profit might have to be handed back. The risk is also slow and legal: proposed rules take public comment, final rules get challenged in court, and appeals can run for years, so the uncertainty hangs over the stock long before any money changes hands. For investors this is regulatory risk, and it belongs next to competition and the economy on any checklist. For a small business, it shows up in a different form: a contractor whose main client is a city agency, or a clinic that depends on Medicaid, has the same exposure in miniature.",
+      "When a company's biggest customer is the government, treat policy as part of the business model, not background noise. Find out what share of revenue comes from government programs, how the payment formula works, and whether profit depends on parts of that formula that regulators already think are too generous. Read proposed rules, comment deadlines and court cases the way you would read an earnings report, because they can move the value more. Diversified revenue, a history of clean audits and money set aside for possible repayments are signs of resilience; profits that rise faster than the underlying service, or that depend on how aggressively paperwork is coded, are signs that the government may one day ask for some of it back.",
+      [
+        "What share of this company's revenue comes from government programs, and which ones?",
+        "How is it paid, and which part of the payment formula is the regulator questioning?",
+        "If an audit or rule change forced repayments, how much past profit could be at stake, and has the company set money aside?",
+        "What is the timeline: comment period, final rule, court challenges, and when would cash actually move?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Becker's Hospital Review, Nov 2026",
+        "url": "https://www.beckershospitalreview.com/legal-regulatory-issues/cms-targets-90b-in-savings-with-sweeping-new-anti-fraud-rule/"
+      },
+      {
+        "name": "American Hospital Association, Nov 17, 2026",
+        "url": "https://www.aha.org/news/headline/2026-11-17-cms-issues-proposed-rule-crush-initiative-addressing-fraud"
+      },
+      {
+        "name": "Fierce Healthcare, Nov 17, 2026",
+        "url": "https://www.fiercehealthcare.com/regulatory/cms-proposes-sweeping-medicare-integrity-rule-it-says-will-save-90b"
+      },
+      {
+        "name": "Cappnotes, Closing Look, Nov 18, 2026",
+        "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-18"
+      }
+    ]
   }
 ]
