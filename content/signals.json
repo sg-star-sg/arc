@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-20-amd-short-seller-report",
+    "date": "2026-11-20",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "A short seller's report knocks nearly 8% off AMD",
+    "stat": "-7.72%",
+    "statLabel": "AMD's share move on Nov 19, 2026, closing at $489.19, per The Motley Fool",
+    "body": "On November 19, Hunterbrook, which said it had taken a short position in AMD, published a report alleging that newer AMD firmware was used by IEIT Systems, a Chinese server maker the US Commerce Department blacklisted in March 2025, and by three companies tied to it that sell servers built on AMD chips. It also said AMD reported $67 million of licensing income in 2025 that it traced to two Chinese chip ventures blacklisted in 2019. AMD said the claims 'misrepresent AMD's business practices and relationships' and that it complies with US export control laws; Reuters said it could not independently verify the report. The stock fell 7.72% to $489.19 on a day the S&P 500 fell 2.02%.",
+    "why": "A short seller profits only if the price falls, so its research is both evidence and a sales pitch, and the first-day drop says more about fear than about whether the claims are true. When a company you own is targeted, separate what is documented from what is inferred, read the company's specific rebuttal, and watch for what would settle it: regulators, auditors or the company's own filings. A stock already priced for strong growth and exposed to export rules has less room to absorb doubt.",
+    "lessons": [
+      "shortselling",
+      "exportcontrols",
+      "betavol"
+    ],
+    "sources": [
+      {
+        "name": "Reuters via Investing.com, AMD shares slide as report says China links could invite US scrutiny, Nov 19, 2026",
+        "url": "https://www.investing.com/news/stock-market-news/amd-shares-slide-as-report-says-china-links-could-invite-us-scrutiny-5039625"
+      },
+      {
+        "name": "International Business Times, AMD shares tumble 7% after short seller questions China ties, Nov 19, 2026",
+        "url": "https://www.ibtimes.com/amd-shares-fall-hunterbrook-china-export-risks-3809979"
+      },
+      {
+        "name": "The Motley Fool via Yahoo Finance, Stock market today, Nov 19, 2026",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-19-222025646.html"
+      }
+    ]
+  },
+  {
     "id": "2026-11-19-medicare-audit-rule-hits-insurers",
     "date": "2026-11-19",
     "kind": "Signal",

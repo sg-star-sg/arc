@@ -1403,5 +1403,46 @@
         "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-18"
       }
     ]
+  },
+  {
+    "id": "shortselling",
+    "m": "wealth",
+    "mod": "Stocks",
+    "title": "Short sellers: betting against a stock, and why their reports move prices",
+    "added": "2026-11-20",
+    "layers": [
+      "Most investors make money when a price rises. A short seller makes money when it falls. The SEC defines a short sale as the sale of a stock you do not own, or that you will borrow to deliver. The investor borrows shares, sells them at today's price, and later buys them back to return to the lender. The SEC's own example: borrow and sell at $60, buy back at $40, and keep $20 a share minus costs. Some short sellers simply trade quietly. Others are activists: they bet against a company and then publish research arguing that it is overvalued, misleading investors or breaking rules, as Hunterbrook did with AMD on November 19, 2026, saying it had taken a short position before releasing its report.",
+      "The mechanics are built on borrowing, and borrowing has costs and limits. Your broker lends you the shares from its own inventory, from other clients' margin accounts or from another lender, and, as the SEC explains, charges interest on the loan and applies margin rules; if the stock pays a dividend, the short seller pays it to the lender. Under Regulation SHO a broker must have reasonable grounds to believe the shares can be borrowed, a 'locate', before it accepts a short sale, and failures to deliver must be closed out quickly. The risk is lopsided. A buyer can lose at most what she paid; the SEC warns that a short seller faces the possibility of unlimited losses, because a price can keep rising. When it does, short sellers rush to buy back shares at the same time, which pushes the price higher still: a short squeeze. Schwab notes that the broker can close a short position at any time without regard to profit or loss, and that heavily shorted stocks often carry high borrowing fees. Investors track how crowded a bet is through short interest, the total of open short positions, which brokers report to FINRA twice a month, and 'days to cover', how many days of normal trading it would take for all short sellers to buy back.",
+      "Short reports move prices because they arrive suddenly and pair a public accusation with money at stake. A study of 1,237 activist short campaigns from 2010 to 2018 by researchers at HEC Paris and McGill found that targeted stocks fell about 5% on average over the day of the attack and the next trading day, and about 1.4 percentage points more when the report named a target price. Only about 10% of companies reached the short seller's target a year later, but the size of the predicted drop still helped predict how far the stock fell over the following months. That is the tension: short sellers have a clear incentive to frighten the market, yet they also do real digging, and some of the biggest corporate frauds were first exposed by them. Markets need people willing to argue that a price is too high, or prices drift up on optimism alone. The SEC also limits the tactic: a 10% one-day fall triggers a rule that restricts further short selling at falling prices for the rest of that day and the next, and manipulating a stock to profit from a squeeze or a crash is illegal.",
+      "Treat a short report as an argument to test, not a verdict. Sort its claims into three piles: facts you can check in filings, government lists or court records; inferences the author draws from them; and opinions about value. Read the company's answer and notice whether it rebuts the specific facts or only the tone. Ask what would settle the question, such as an auditor, a regulator or the next annual report, and when. If you own a stock, short interest and days to cover tell you how crowded the opposing bet is, which can mean sharp moves in either direction. And remember the asymmetry before you are ever tempted to short: being early or wrong on a rising stock can cost far more than you put in.",
+      [
+        "Which of the report's claims can be checked in public documents, and which are the author's interpretation?",
+        "Did the company rebut the specific facts, or only deny in general terms?",
+        "How large is short interest relative to shares outstanding, and how many days would it take to cover?",
+        "What event, such as a filing, audit or regulator's decision, would show who is right, and when?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "US SEC, Key Points About Regulation SHO",
+        "url": "https://sec.gov/investor/pubs/regsho.htm"
+      },
+      {
+        "name": "FINRA, Short Interest: What It Is, What It Is Not, Jan 25, 2023",
+        "url": "https://www.finra.org/investors/insights/short-interest"
+      },
+      {
+        "name": "Charles Schwab, Short Interest Monitor Explained, May 13, 2026",
+        "url": "https://www.schwab.com/learn/story/short-interest-monitor"
+      },
+      {
+        "name": "HEC Paris, How Activist Short Sellers Move a Stock, Feb 6, 2026",
+        "url": "https://www.hec.edu/en/dare/economics-finance/how-activist-short-sellers-move-stock"
+      },
+      {
+        "name": "International Business Times, Nov 19, 2026",
+        "url": "https://www.ibtimes.com/amd-shares-fall-hunterbrook-china-export-risks-3809979"
+      }
+    ]
   }
 ]
