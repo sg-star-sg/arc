@@ -992,5 +992,82 @@
         "url": "https://www.investing.com/news/company-news/nu-holdings-q326-slides-record-profit-19-efficiency-ratio-93CH-5023730"
       }
     ]
+  },
+  {
+    "ticker": "WMT",
+    "name": "Walmart",
+    "country": "United States",
+    "sector": "Consumer Staples",
+    "theme": "Retail with advertising and membership income",
+    "what": "The world's largest retailer, selling groceries and general merchandise through stores, Sam's Club warehouses and e-commerce in the US and abroad.",
+    "past": {
+      "label": "Total revenue, Q3 FY26",
+      "value": "$179.5 bn",
+      "detail": "Total revenue was $179,496 million in the quarter to October 2025. For the full fiscal year to January 2026, net sales were $706.4 billion, adjusted operating income $31.0 billion and adjusted EPS $2.64."
+    },
+    "current": {
+      "label": "Total revenue, Q3 FY27",
+      "value": "$188.8 bn",
+      "growth": 5.2,
+      "detail": "Revenue rose 5.2% (4.5% at constant currency) in the quarter to October 31, 2026. Walmart U.S. comparable sales rose 2.9% excluding fuel, with transactions up 1.5% and average ticket up 1.4%; US e-commerce grew 23% and global e-commerce 17%. Global advertising grew 25% and membership fee revenue 17%. Operating income rose 16.0% to $7.77 billion (adjusted, constant currency: +5.5%) and the gross profit rate rose 28 basis points. Adjusted EPS was $0.65 vs $0.62; GAAP EPS was $0.62 vs $0.77. Year to date, operating cash flow was $29.4 billion, capital spending $22.6 billion and free cash flow $6.8 billion, down $2.0 billion."
+    },
+    "future": {
+      "label": "FY27 adjusted EPS guidance",
+      "value": "$2.84–$2.89",
+      "detail": "On Nov 19, 2026 Walmart raised its fiscal 2027 outlook for the third time: net sales growth of 4.9% to 5.2% at constant currency (from 4.0% to 5.0%), adjusted operating income growth of 8.0% to 8.6% (from 7.0% to 8.5%), and adjusted EPS of $2.84 to $2.89 (from $2.80 to $2.87; originally $2.75 to $2.85). Capital spending is planned at about 4.0% of net sales."
+    },
+    "drivers": [
+      "E-commerce growth, 23% in the US, with stores used as fulfillment hubs",
+      "High-margin advertising: Walmart Connect up 36% excluding acquisitions",
+      "Membership income from Walmart+ and Sam's Club, fees up 17%",
+      "More customer visits: US transactions up 1.5%, Sam's Club up 5.1%",
+      "Growth in China, with net sales up 28.5% at constant currency"
+    ],
+    "risks": [
+      "Heavy capital spending is cutting free cash flow, down $2.0 billion year to date",
+      "Over $2 billion of extra costs this year from fuel, transportation and investments",
+      "Tariffs and trade restrictions named as risks in its forward-looking statements",
+      "Drug price regulation: about 70 bps drag on US comps from pharmacy deflation",
+      "Sam's Club operating income fell 15.8% as a new membership bundle dilutes profit",
+      "Inventory up 8.1%, faster than sales"
+    ],
+    "watch": [
+      "Walmart U.S. comps and the transaction vs ticket split",
+      "Advertising and membership growth as a share of profit",
+      "Free cash flow against capital spending",
+      "Sam's Club profit as the membership bundle is lapped",
+      "Fourth-quarter holiday results against the raised outlook"
+    ],
+    "why": "Walmart is growing faster than its size would suggest because it is turning its stores and traffic into newer, higher-margin businesses: online delivery, advertising sold to brands, and paid memberships. More customers are visiting, which matters more than price-driven ticket growth. On a day the S&P 500 fell 3.70%, its shares rose about 1.5%, showing how investors treat steady essentials as shelter in a sell-off.",
+    "expect": {
+      "company": [
+        "FY27 net sales growth of 4.9%–5.2% at constant currency (Q3 FY27 release, Nov 19, 2026)",
+        "FY27 adjusted operating income growth of 8.0%–8.6% cc and adjusted EPS of $2.84–$2.89 (Nov 19, 2026)",
+        "Capital spending of about 4.0% of net sales (Nov 19, 2026)"
+      ],
+      "analysts": [
+        "Revenue of $188.8 billion and adjusted EPS of $0.65 beat Wall Street expectations, EPS by $0.01 (Investing.com, Nov 19, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "E-commerce turns more profitable as volumes grow, advertising and membership keep rising faster than sales, and heavy investment starts lifting free cash flow.",
+      "base": "Sales grow mid-single digits, profit grows faster on advertising and membership, and free cash flow stays squeezed by capital spending.",
+      "bear": "Tariffs, fuel and wage costs outrun price increases, shoppers trade down, and spending on automation and delivery fails to pay back."
+    },
+    "updated": "2026-11-21",
+    "sources": [
+      {
+        "name": "Walmart, Q3 FY27 earnings release (SEC 8-K exhibit), Nov 19, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm"
+      },
+      {
+        "name": "Investing.com, Walmart Q3 FY27 slides, Nov 2026",
+        "url": "https://www.investing.com/news/company-news/walmart-q3-fy27-slides-strong-results-raised-guidance-amid-costs-93CH-5039238"
+      },
+      {
+        "name": "The Motley Fool, Stock market today, Nov 20, 2026",
+        "url": "https://www.fool.com/coverage/stock-market-today/2026/11/20/stock-market-today-nov-20-stocks-plunge-as-ai-trade-unwinds/"
+      }
+    ]
   }
 ]

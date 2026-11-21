@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-11-21-nvidia-sec-accounting-probe",
+    "date": "2026-11-21",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "Reports of an SEC accounting probe sink Nvidia 14% in a day",
+    "stat": "$491B",
+    "statLabel": "Nvidia market value lost in the Nov 20, 2026 session, per The Motley Fool",
+    "body": "On November 20 Reuters, citing two people briefed on the matter, reported that SEC enforcement staff are examining potential accounting issues at Nvidia; the Wall Street Journal had reported on November 17 that the SEC was investigating the company, and Reuters could not determine when the inquiry began or which practices are under review. The SEC declined to comment and Nvidia did not immediately respond. The stock, already down about 7% before the news, closed at $125.53, down 14%, erasing roughly $491 billion of value and leaving it nearly 48% below its October 6 record, after a 23% fall for the week. Because Nvidia is so large, the S&P 500 fell 3.70% to 6,910 and entered a correction, while the Nasdaq dropped 5.28% and erased its gains for the year.",
+    "why": "An SEC investigation is a question, not a verdict: the agency investigates to find out whether rules were broken, and many cases close with no action. But markets price the chance that past numbers were wrong, so a probe hits hardest at companies whose value rests on trusting fast-growing sales, and through index funds it reaches everyone who owns the market. The useful move is to read what the filings already disclose, such as guarantees, customer financing and how revenue is classified, rather than react to the headline.",
+    "lessons": [
+      "secprobes",
+      "workingcapital",
+      "betavol"
+    ],
+    "sources": [
+      {
+        "name": "Reuters via Investing.com, Nvidia's accounting is a focus of US SEC investigation, sources say, Nov 20, 2026",
+        "url": "https://www.investing.com/news/economy-news/exclusiveus-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-5042460"
+      },
+      {
+        "name": "Investing.com, Nvidia shares fall as report of SEC accounting probe adds to pressure, Nov 20, 2026",
+        "url": "https://in.investing.com/news/stock-market-news/nvidia-shares-fall-115-as-report-of-sec-accounting-probe-adds-to-pressure-5718405"
+      },
+      {
+        "name": "The Motley Fool, Nvidia stock plunge wipes out nearly $500 billion in one day, Nov 20, 2026",
+        "url": "https://www.fool.com/investing/2026/11/20/nvidia-stock-plunge-wipes-out-nearly-usd500-billion-in-one-day-as-sec-reportedly-probes-its-accounting/"
+      },
+      {
+        "name": "The Motley Fool, Stock market today, Nov 20, 2026: stocks plunge as AI trade unwinds",
+        "url": "https://www.fool.com/coverage/stock-market-today/2026/11/20/stock-market-today-nov-20-stocks-plunge-as-ai-trade-unwinds/"
+      }
+    ]
+  },
+  {
     "id": "2026-11-20-amd-short-seller-report",
     "date": "2026-11-20",
     "kind": "Signal",

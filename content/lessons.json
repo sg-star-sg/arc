@@ -1444,5 +1444,42 @@
         "url": "https://www.ibtimes.com/amd-shares-fall-hunterbrook-china-export-risks-3809979"
       }
     ]
+  },
+  {
+    "id": "secprobes",
+    "m": "wealth",
+    "mod": "Risk",
+    "title": "SEC investigations: how a probe works and what it can and cannot tell you",
+    "added": "2026-11-21",
+    "layers": [
+      "The Securities and Exchange Commission is the US regulator that polices the stock market. Its Division of Enforcement investigates, in the SEC's own words, 'to determine whether any persons or entities violated the federal securities laws': misleading investors, manipulating prices, insider trading, stealing customer money or selling unregistered securities. Cases start from tips and complaints, whistleblowers, market surveillance, other parts of the SEC and even media reports. An accounting investigation asks a narrower question: did the company's reported numbers, or the way it described them, give investors a true picture? On November 20, 2026, Reuters reported that SEC enforcement staff were examining potential accounting issues at Nvidia, three days after the Wall Street Journal reported an SEC investigation; neither report said exactly which practices were under review.",
+      "An investigation moves in stages. At first, staff can only ask: they 'may request documents and interview witnesses on a voluntary basis.' If the Commission grants a formal order of investigation, staff can issue subpoenas that compel documents and sworn testimony. The work is slow and quiet: the SEC says investigations 'often last months or even years' and are 'generally conducted on a confidential basis', so it will not confirm or deny one unless it brings charges. That is why investors usually learn about probes from leaks to reporters or from the company's own disclosure, not from the SEC. Near the end, staff may send a Wells notice, a letter describing the charges they plan to recommend, and the company can answer with a written Wells submission. Only the Commission can authorize a case, which goes either to federal court as a civil lawsuit or to an internal administrative proceeding. Remedies include fines, giving back ill-gotten gains (disgorgement), court orders, and bars that stop individuals from serving as officers or directors of public companies. The SEC is a civil regulator: 'the SEC cannot put people in jail', though it can refer cases to criminal prosecutors. And many investigations simply close with no action.",
+      "Why a rumored probe can erase hundreds of billions of dollars in a day: a stock price is a bet on future cash flows, and those forecasts are built on the company's reported numbers. If the numbers might be wrong, every forecast built on them is in doubt, and investors sell first and read later. Nvidia closed November 20 at $125.53, down 14%, and lost roughly $491 billion of market value, per The Motley Fool. Context made the reaction bigger: the company had just lost its founder as CEO, its customers' unpaid bills had risen sharply in its latest report, and investors had grown uneasy about 'circular' AI financing, in which chipmakers help customers pay for chips and data centers. Nvidia's finance chief said on the November 17 call that guarantees at quarter end totaled $118 billion, including $105 billion of credit support tied to a single data-center campus. History shows the range of outcomes. In May 2022 the SEC charged Nvidia itself with inadequate disclosures: in two quarterly reports for fiscal 2018 it reported fast growth in gaming revenue without saying that crypto mining drove a significant part of it. Nvidia paid a $5.5 million penalty and agreed to a cease-and-desist order, without admitting or denying the findings. That is a typical settlement: a fine and a promise, not a collapse. At the other extreme, investigations that uncover invented revenue end with restated results, executives barred, and shareholders wiped out.",
+      "Treat an SEC investigation as an open question with a long timeline, not a verdict, and judge the risk by what could be wrong rather than by the headline. The areas that most often draw accounting scrutiny are the ones where judgment, not cash, sets the number: when revenue is recognized, how it is classified by region or product, sales to customers the company is also financing or guaranteeing, and receivables growing faster than sales. Ask whether the issue touches the cash a company collects or only how its results were described: a disclosure case usually ends in a fine, while a case about revenue that never turned into cash can force a restatement. Watch for what moves the story from rumor to fact: the company's own 8-K or 10-Q disclosure, a Wells notice, an auditor resigning or qualifying its opinion, a delayed filing, or a restatement. And remember that if you own an S&P 500 or Nasdaq index fund, a probe at one of the largest companies reaches your portfolio whether you chose that stock or not.",
+      [
+        "Is the reported issue about how results were described, or about whether the revenue and cash were real?",
+        "Has the company itself disclosed the investigation, and has it received a Wells notice?",
+        "How much of the company's revenue depends on customers it finances, guarantees or invests in?",
+        "Are receivables growing faster than sales, and has the auditor said anything unusual?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Investor.gov (SEC), Investor Bulletin: SEC Investigations, Oct 22, 2014",
+        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-55"
+      },
+      {
+        "name": "SEC press release 2022-79, SEC Charges NVIDIA Corporation with Inadequate Disclosures about Impact of Cryptomining, May 6, 2022",
+        "url": "https://www.sec.gov/newsroom/press-releases/2022-79"
+      },
+      {
+        "name": "Reuters via Investing.com, Nvidia's accounting is a focus of US SEC investigation, sources say, Nov 20, 2026",
+        "url": "https://www.investing.com/news/economy-news/exclusiveus-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-5042460"
+      },
+      {
+        "name": "The Motley Fool, Nvidia stock plunge wipes out nearly $500 billion in one day, Nov 20, 2026",
+        "url": "https://www.fool.com/investing/2026/11/20/nvidia-stock-plunge-wipes-out-nearly-usd500-billion-in-one-day-as-sec-reportedly-probes-its-accounting/"
+      }
+    ]
   }
 ]
