@@ -1481,5 +1481,38 @@
         "url": "https://www.fool.com/investing/2026/11/20/nvidia-stock-plunge-wipes-out-nearly-usd500-billion-in-one-day-as-sec-reportedly-probes-its-accounting/"
       }
     ]
+  },
+  {
+    "id": "concentration",
+    "m": "wealth",
+    "mod": "Portfolio",
+    "title": "Index concentration and breadth: when a few giants carry the market",
+    "added": "2026-11-22",
+    "layers": [
+      "The S&P 500 is weighted by market value: the bigger a company's stock market value, the bigger its slice of the index and of every fund that tracks it. That means an S&P 500 fund is not 500 equal bets. According to Chartrow, which rebuilds weights from the SPY fund's SEC filings, the ten largest companies made up 37.9% of the index in June 2026, up from 22.8% in September 2019; Walnut, using SPY holdings, puts it at 38.6% on November 19, 2026, just below the 2025 record of 40.7%. For comparison, a 145-year study by Morgan Stanley's Michael Mauboussin and Dan Callahan, cited by Walnut, puts the top ten at about 26% at the 2000 dot-com peak. Concentration is the question of how much of the index depends on a few names. Breadth is its partner: how many stocks are actually rising or falling.",
+      "Two tools make concentration visible. The first is the 'effective number of stocks', calculated as one divided by the sum of every weight squared. It answers: if the index were split equally, how many stocks would give the same diversification? Chartrow's figure fell from 106 in 2019 to 47 in June 2026, so the 500-stock index behaves like a portfolio of about 47 equal holdings. The second is comparing the normal index with an equal-weight version, which holds each company at the same 0.2% and rebalances regularly (the RSP fund tracks one). When giants lead, cap-weight wins: in 2023 SPY returned 26.2% against 13.7% for RSP, and in 2024 24.9% against 12.8%. When giants stumble, the gap flips: in 2026 to November 20 SPY was up 1.9% and RSP 9.6%. Breadth is read from counts. On November 20, 2026, the S&P 500 fell 3.70% while Nvidia, its largest member, fell 14% and chip stocks 10.7%; only 122 of 503 members rose. A falling index with most stocks also falling is a broad sell-off; an index held up or dragged down by a handful while the rest go the other way is a narrow market.",
+      "Concentration builds for good reasons: the largest companies grew profits faster than everyone else. Chartrow calculates that in June 2026 the top ten held 38% of the index's weight and earned 38% of its members' net income, but only 15% of their revenue, which shows how much more profitable they are. The risk is that the index's fate becomes tied to one theme. Walnut cites Goldman Sachs estimating that AI-linked stocks are nearly 45% of the index's weight, so when doubts grow about whether AI spending will pay off, a 'diversified' fund falls like a tech fund. History shows both sides. The 'Magnificent Seven' drove most of the S&P 500's gains in 2023 and 2024, but in 2022 they lost 41.3% while the index lost 20.4%, per Walnut. Narrow leadership is not a signal to sell; markets can stay concentrated for years. But leadership from a few stocks leaves less support underneath if they falter, and a broad rally with many stocks rising has historically been on firmer ground than one carried by a few.",
+      "Know what you actually own. An S&P 500 fund, a Nasdaq-100 fund, a tech fund and shares of Apple or Nvidia can add up to the same handful of companies several times over, so check the top ten holdings of each fund and add up your real exposure. Decide whether you are comfortable with it: cap-weighting is cheap, tax-efficient and lets winners run, while adding equal-weight, value, small-company or international funds spreads your bets at the cost of sometimes trailing the giants. During a sell-off, look at breadth before deciding how worried to be, because a market falling on a few big names is different from one where nearly everything is falling. And rebalance by rule, not by headline.",
+      [
+        "What share of my total portfolio sits in the ten biggest US companies once I add up every fund I own?",
+        "Is this market's move broad, with most stocks going the same way, or narrow, driven by a few giants?",
+        "How has an equal-weight version of my index performed against the normal one this year, and why?",
+        "If the leading theme of the market fell out of favor, how much of my portfolio would fall with it?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Chartrow, S&P 500 (SPY) Concentration 2026, data to Nov 20, 2026",
+        "url": "https://chartrow.com/sp500/concentration"
+      },
+      {
+        "name": "Walnut, Stock Market Concentration Statistics (2026), updated Nov 2026",
+        "url": "https://walnutinvest.com/stats/market-concentration-statistics"
+      },
+      {
+        "name": "The Closing Print, Post-Market & Weekly Summary, Nov 20, 2026",
+        "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-20/"
+      }
+    ]
   }
 ]

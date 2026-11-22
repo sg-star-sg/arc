@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-11-22-sp500-worst-week-correction",
+    "date": "2026-11-22",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "The S&P 500 falls 8.6% in a week and enters a correction",
+    "stat": "8.61%",
+    "statLabel": "S&P 500 decline in the week of Nov 16–20, 2026",
+    "body": "The S&P 500 closed Friday, November 20 at 6,910.39, down 3.70% on the day and 8.61% for the week, its worst week since April 2025 and its seventh straight daily loss. It now sits 11.62% below its October 6 record of 7,818.93, past the 10% line that defines a correction; the Dow (down 8.02% for the week) is also in correction and the Nasdaq (down 10.02%) is 18.05% off its high and negative for 2026. The selling was narrow at the top and wide underneath: Nvidia fell 14% on reports of an SEC accounting probe and chip stocks dropped 10.7%, yet only 122 of 503 S&P 500 stocks rose, while consumer staples were the one sector that gained. Hawkish Fed minutes and talk of a December rate hike added pressure, and the VIX fear gauge closed at 35.89, its highest level of 2026.",
+    "why": "When roughly 38% of an index sits in ten companies, a fall in a few AI giants drags every index fund holder down with them, even if most other businesses are fine. A correction is common and not a forecast of a crash, but it is a moment to check how concentrated your own portfolio really is, including the overlap between an S&P 500 fund, a tech fund and any single stocks. Knowing what you own, and why, is what lets you hold steady instead of selling at the low.",
+    "lessons": [
+      "concentration",
+      "bearmarkets",
+      "betavol"
+    ],
+    "sources": [
+      {
+        "name": "Marketcalls, Weekly Market Roundup 21 November 2026",
+        "url": "https://www.marketcalls.in/futures-and-options/weekly-market-roundup-21-november-2026.html"
+      },
+      {
+        "name": "The Closing Print, Post-Market & Weekly Summary, Nov 20, 2026",
+        "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-20/"
+      },
+      {
+        "name": "JournalArta, US Stock Market Plunges as Major Indexes Enter Correction, Nov 21, 2026",
+        "url": "https://journalarta.com/en/2026/11/21/us-stock-market-plunges-correction-tech-selloff/"
+      },
+      {
+        "name": "Fortune, Fed governor says people see higher inflation as the new normal, Nov 20, 2026",
+        "url": "https://fortune.com/2026/11/20/fed-rate-hikes-higher-inflation-expectations-unanchored-chris-waller"
+      }
+    ]
+  },
+  {
     "id": "2026-11-21-nvidia-sec-accounting-probe",
     "date": "2026-11-21",
     "kind": "Signal",

@@ -1069,5 +1069,77 @@
         "url": "https://www.fool.com/coverage/stock-market-today/2026/11/20/stock-market-today-nov-20-stocks-plunge-as-ai-trade-unwinds/"
       }
     ]
+  },
+  {
+    "ticker": "NVMI",
+    "name": "Nova",
+    "country": "Israel",
+    "sector": "Semiconductor Equipment",
+    "theme": "Measurement tools for advanced chips and AI memory",
+    "what": "Nova makes metrology systems that measure materials, dimensions and chemistry on silicon wafers during production, so chipmakers can control their manufacturing processes.",
+    "past": {
+      "label": "Revenue, Q3 2025",
+      "value": "$224.6 M",
+      "detail": "Revenue was $224.6 million in the quarter to September 2025, with GAAP net income of $61.4 million, or $1.90 per diluted share, and a GAAP operating margin of 28%."
+    },
+    "current": {
+      "label": "Revenue, Q3 2026",
+      "value": "$287.8 M",
+      "growth": 28,
+      "detail": "Record revenue of $287.8 million, up 28% from a year earlier and 13% from the prior quarter. Products were $231.9 million and services $56.0 million. GAAP gross margin was 58% and GAAP operating margin rose to 32% (non-GAAP 36%). GAAP net income was $90.0 million, or $2.64 per diluted share (non-GAAP $2.86). Operating cash flow was $138.1 million and the company bought back $38.5 million of shares. Records came in advanced packaging, driven by HBM memory and advanced logic, and in memory metrology."
+    },
+    "future": {
+      "label": "Q4 2026 revenue guidance",
+      "value": "$305–$315 M",
+      "detail": "For the quarter ending December 31, 2026, Nova guided to revenue of $305 million to $315 million, GAAP diluted EPS of $2.78 to $2.93 and non-GAAP diluted EPS of $3.03 to $3.18 (Nov 5, 2026)."
+    },
+    "drivers": [
+      "Record advanced packaging revenue from HBM and advanced logic capacity expansions",
+      "Record memory revenue in dimensional and materials metrology",
+      "Smaller, more complex chips need more measurement steps",
+      "Recurring service revenue of $56 million a quarter",
+      "Rising margins: GAAP operating margin up from 28% to 32% in a year"
+    ],
+    "risks": [
+      "Dependence on a small number of large chipmaker customers",
+      "Semiconductor demand is cyclical; chip stocks fell 10.7% on Nov 20, 2026",
+      "Export restrictions and risks of doing business with China",
+      "A single manufacturing facility per product line",
+      "Exposure to conflict in Israel, where it is based",
+      "About $735 million of convertible notes outstanding"
+    ],
+    "watch": [
+      "Q4 revenue against the $305–$315 million guide",
+      "Advanced packaging and memory as a share of sales",
+      "China revenue as export rules change",
+      "Margins as revenue grows",
+      "Whether AI memory spending holds up after the sell-off"
+    ],
+    "why": "Nova sells measuring tools that chipmakers need more of as chips become smaller and are stacked into packages such as the high-bandwidth memory used in AI systems. Its revenue grew 28% in a year and profits grew faster, because extra sales on a mostly fixed cost base widen margins. Its fortunes depend on how much a few large chipmakers spend, which ties it to the AI investment cycle.",
+    "expect": {
+      "company": [
+        "Q4 2026 revenue of $305–$315 million (Q3 release, Nov 5, 2026)",
+        "Q4 2026 GAAP diluted EPS of $2.78–$2.93 and non-GAAP $3.03–$3.18 (Nov 5, 2026)"
+      ],
+      "analysts": [
+        "No analyst estimates were given in the sources read"
+      ]
+    },
+    "scenarios": {
+      "bull": "Chipmakers keep adding HBM and advanced logic capacity, Nova's packaging and memory records continue, and margins keep widening as revenue grows.",
+      "base": "Revenue lands within guidance and growth continues at a slower pace as the AI build-out matures, with margins holding near current levels.",
+      "bear": "The AI sell-off turns into spending cuts at a few big customers, export rules squeeze China sales, or conflict disrupts operations, and revenue and margins fall back."
+    },
+    "updated": "2026-11-22",
+    "sources": [
+      {
+        "name": "Nova Ltd, Form 6-K: Nova Reports Record Third Quarter 2026 Financial Results, Nov 5, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001109345/000117891326005034/zk2636340.htm"
+      },
+      {
+        "name": "The Closing Print, Post-Market & Weekly Summary, Nov 20, 2026",
+        "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-20/"
+      }
+    ]
   }
 ]
