@@ -1141,5 +1141,88 @@
         "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-20/"
       }
     ]
+  },
+  {
+    "ticker": "CPNG",
+    "name": "Coupang",
+    "country": "South Korea",
+    "sector": "Consumer Discretionary",
+    "theme": "Same-day delivery and the cost of rebuilding trust",
+    "what": "Coupang runs South Korea's largest online store with its own warehouses and drivers, plus food delivery, video streaming and a growing business in Taiwan, all bundled into a paid WOW membership.",
+    "past": {
+      "label": "Revenue, Q3 2025",
+      "value": "$9.27 B",
+      "detail": "In the quarter to September 2025, net revenue was $9.267 billion, with operating income of $162 million, net income of $95 million and adjusted EBITDA of $413 million (4.5% margin). Product Commerce had 24.7 million active customers, up 10%, and free cash flow was $442 million in the quarter and $1.3 billion over twelve months."
+    },
+    "current": {
+      "label": "Revenue, Q3 2026",
+      "value": "$9.96 B",
+      "growth": 7.5,
+      "detail": "Net revenue was $9.962 billion, up 7.5% (11% in constant currency, after 10% in Q2 and 8% in Q1). Developing offerings, including Taiwan, grew 27% in constant currency to $1.588 billion. Active customers rose only 2% to 25.2 million after a personal-data leak drove some away. A July fire at a fulfillment center in Incheon cost $248 million, leaving a GAAP operating loss of $450 million and a net loss of $501 million. Adjusted EBITDA fell to $116 million (1.2% margin), and free cash flow was negative $409 million over twelve months."
+    },
+    "future": {
+      "label": "Q4 2026 revenue growth guidance",
+      "value": "13–14% cc",
+      "detail": "Management guided to constant-currency revenue growth of 13% to 14% in Q4 2026 and an adjusted EBITDA margin 50 to 150 basis points above Q3's 1.2%. It called Q3 the low point for Product Commerce margins, expects them to return near pre-incident levels by mid-2027, and raised the top of its loss guidance for developing offerings to fund Taiwan (reported Nov 3–4, 2026)."
+    },
+    "drivers": [
+      "Constant-currency growth re-accelerated from 8% to 11% over three quarters",
+      "Taiwan WOW membership more than doubled from a year earlier",
+      "Dawn delivery now reaches more than half of Taiwan's population",
+      "Korean WOW membership at a record",
+      "Developing offerings growing 27% in constant currency"
+    ],
+    "risks": [
+      "Customers lost after the data leak have not fully returned, and winning them back costs money",
+      "Korean fines: $410 million set aside in Q2 2026 for sanctions linked to the data leak, plus later fines reported over food delivery and competition rules",
+      "Margins near their lowest: adjusted EBITDA margin 1.2% against 4.5% a year earlier",
+      "Negative twelve-month free cash flow and cash down from $6.32 billion to $5.44 billion in 2026",
+      "Taiwan expansion widens losses before it pays off",
+      "Fixed warehouse costs while volumes recover slowly after the fire"
+    ],
+    "watch": [
+      "Whether active customers start growing again",
+      "Product Commerce margin recovery toward mid-2027",
+      "Q4 constant-currency growth against the 13–14% guide",
+      "Free cash flow turning positive again",
+      "Further Korean regulatory fines"
+    ],
+    "why": "Coupang built a delivery network in Korea that rivals find hard to copy, and sales are still growing at a double-digit pace in local currency. But 2026 shows how a data leak, a warehouse fire and regulatory fines can wipe out thin retail margins: it swung from a $95 million profit to a $501 million loss in a year. It matters now as a test of whether a scale advantage survives a loss of customer trust.",
+    "expect": {
+      "company": [
+        "Q4 2026 constant-currency revenue growth of 13–14% (Nov 3, 2026)",
+        "Adjusted EBITDA margin up 50–150 basis points from Q3 in Q4 2026 (Nov 3, 2026)",
+        "Product Commerce margins near pre-incident levels by mid-2027 (Nov 4, 2026)"
+      ],
+      "analysts": [
+        "Consensus Q3 revenue was about $9.74–$9.75 billion, which Coupang beat by about 2% (Earnings Whispers; S&P via StockStory, Nov 3, 2026)",
+        "Consensus Q3 adjusted EBITDA was $192.1 million, which Coupang missed at $116 million (StockStory, Nov 3, 2026)",
+        "Analysts expect about 12.9% revenue growth over the next 12 months (S&P via StockStory, Nov 3, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "Customers return, warehouse volumes recover, margins rebuild toward pre-incident levels by mid-2027, and Taiwan grows into a second profitable market.",
+      "base": "Sales keep growing at a low double-digit pace in local currency while margins recover slowly and fines and Taiwan spending keep profits thin.",
+      "bear": "Trust does not recover, new fines or rules raise costs in Korea, and Taiwan losses keep cash flow negative."
+    },
+    "updated": "2026-11-23",
+    "sources": [
+      {
+        "name": "Kyunghyang Shinmun, Coupang third-quarter results, Nov 4, 2026",
+        "url": "https://www.khan.co.kr/en/article/202611041112017"
+      },
+      {
+        "name": "Finviz (Earnings Whispers), Coupang beats on a fire-adjusted loss as revenue re-accelerates, Nov 3, 2026",
+        "url": "https://finviz.com/news/415062/coupang-beats-on-a-fire-adjusted-loss-as-revenue-re-accelerates-but-margins-and-free-cash-flow-hit-new-lows"
+      },
+      {
+        "name": "StockStory, Coupang's Q3 2026 sales beat estimates, Nov 3, 2026",
+        "url": "https://stockstory.org/us/stocks/nyse/cpng/news/earnings/coupangs-nysecpng-q3-2026-sales-beat-estimates"
+      },
+      {
+        "name": "Coupang, Coupang Announces Results for Third Quarter 2025 (Business Wire), Nov 4, 2025",
+        "url": "https://www.businesswire.com/news/home/20251104744103/en"
+      }
+    ]
   }
 ]

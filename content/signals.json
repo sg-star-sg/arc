@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-11-23-korea-kospi-stabilization-fund",
+    "date": "2026-11-23",
+    "kind": "Signal",
+    "m": "world",
+    "title": "Korea readies a rescue fund as its stock market halves",
+    "stat": "48.3%",
+    "statLabel": "Kospi fall from its June 22, 2026 record close of 9,114.55, as of Nov 23, 2026",
+    "body": "South Korea's Kospi closed Monday, November 23 at 4,708.54, down 3.31%, after a 5.2% plunge on Friday; it dipped below 4,600 during the day for the first time in about 10 months, and only 71 of its stocks rose while 824 fell. A sell-side 'sidecar' paused computer-driven program selling for five minutes after Kospi 200 futures dropped 5%, the 60th sidecar of 2026, and foreign investors were net sellers for a seventh straight day. At an emergency meeting on Sunday, Finance Minister Lee Hyoung-il and Bank of Korea Governor Shin Hyun Song began preparing a market stabilization fund, a pool from banks, securities firms and related institutions that buys shares when buyers vanish; Korea last deployed one in 2008, with 515 billion won, and raised 10.76 trillion won in 2020 that was never used. The government also loosened daily limits on company buybacks for three months and stepped up checks for illegal short selling, as the US chip sell-off hit a market where Samsung Electronics and SK hynix made up about 46% of total value in early November.",
+    "why": "A market can fall by half when its index rests on a few companies tied to one theme, here AI memory chips, even in a country whose economy keeps running. Rescue funds and trading pauses can slow panic selling, but they cannot change what the companies will earn; Korean analysts quoted on Monday said the direction of interest rates matters more, with a Bank of Korea hike expected on Thursday. If you own an emerging-markets or Asia fund, check how much of it sits in a handful of chipmakers.",
+    "lessons": [
+      "circuitbreakers",
+      "concentration",
+      "crash"
+    ],
+    "sources": [
+      {
+        "name": "MoneyToday, KOSPI sell-side sidecar triggered; government measures and the rate outlook, Nov 23, 2026",
+        "url": "https://www.mt.co.kr/en/stock/2026/11/23/2026112316200722096"
+      },
+      {
+        "name": "Asia Business Daily, KOSPI's 'Black Monday'... Stabilization Fund Steps In, Nov 23, 2026",
+        "url": "https://www.asiae.co.kr/en/article/2026112310315844683"
+      },
+      {
+        "name": "Admirals, Why Is the KOSPI Falling? Sidecars, a 40%+ Drop and Korea's Stabilisation Fund, Nov 23, 2026",
+        "url": "https://admiralmarkets.com/analytics/traders-blog/why-is-kospi-falling-november-2026"
+      },
+      {
+        "name": "Investing.com via Yahoo Finance, South Korea prepares stock market stabilization fund after Kospi plunges 5.2%, Nov 22, 2026",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/south-korea-prepares-stock-market-112422594.html"
+      }
+    ]
+  },
+  {
     "id": "2026-11-22-sp500-worst-week-correction",
     "date": "2026-11-22",
     "kind": "Signal",

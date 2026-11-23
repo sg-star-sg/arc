@@ -1514,5 +1514,50 @@
         "url": "https://www.theclosingprint.net/2026/11/post-market-and-weekly-summary-2026-11-20/"
       }
     ]
+  },
+  {
+    "id": "circuitbreakers",
+    "m": "economy",
+    "mod": "Cycles and crises",
+    "title": "Circuit breakers and rescue funds: how markets try to stop a panic",
+    "added": "2026-11-23",
+    "layers": [
+      "When prices fall fast, exchanges and governments have two kinds of brakes. The first is mechanical: circuit breakers and trading pauses that stop trading for a set time when prices move too far, too quickly. The second is financial: a stabilization fund, a pool of money from banks, brokers and public bodies that steps in to buy shares when ordinary buyers disappear. In the US, market-wide circuit breakers are tied to the S&P 500's fall from the previous day's close: a 7% drop (Level 1) or 13% drop (Level 2) before 3:25 p.m. Eastern halts all trading for 15 minutes, and a 20% drop (Level 3) closes the market for the day. South Korea uses 8%, 15% and 20% for the Kospi, plus a lighter tool called a 'sidecar' that pauses only computer-driven program orders for five minutes when Kospi 200 futures move 5%. On November 23, 2026, Korea hit its 60th sidecar of the year and began preparing a stabilization fund with the Kospi down 48.3% from its June record.",
+      "Circuit breakers work by forcing a pause. In a crash, sell orders pile up faster than buyers can assess them, prices gap down, and automatic selling (stop-loss orders, margin calls, program trades) adds to the pressure. A halt gives everyone time to check facts, raise cash and place considered orders. For single US stocks, the Limit Up-Limit Down rule sets a price band of 5%, 10% or 20% around the average price of the last five minutes, depending on the stock; if the price stays outside the band for 15 seconds, trading pauses for five minutes. The US rules took their current shape in 2013, replacing older 10%, 20% and 30% triggers based on the Dow. Market-wide breakers were introduced after the 1987 crash and first fired on October 27, 1997; in March 2020 the Level 1 breaker halted trading on four days in two weeks. A stabilization fund works differently: it adds demand. Korea's version is funded by financial institutions; it put in 400 billion won in 2003 and 515 billion won in 2008, and raised 10.76 trillion won in 2020 that was never spent. Its size matters: Korean analysts noted that even a fund in the trillions of won is a fraction of a percent of a Kospi worth about 3,860 trillion won.",
+      "These tools exist because markets can feed on themselves. Falling prices trigger forced selling from borrowers, which pushes prices lower, which triggers more forced selling. A pause can break that loop, and a visible buyer can calm fear that no one will buy at any price. Research firms in Korea point out that the Kospi rose 41.3% and 42.0% in the year after the 2003 and 2008 fund deployments, but those were also years when the global economy recovered, so the fund cannot take all the credit. The limits are just as important. A halt does not change the news: on November 23 Korean analysts said the government's steps were unlikely to reverse the slide and that the direction of interest rates mattered more. Halts can also make things worse at the edges: traders who fear being trapped may rush to sell before a threshold is hit. And government buying can prop up prices that need to fall, which delays the point where long-term buyers see real value.",
+      "Treat a circuit breaker or a rescue fund as a seatbelt, not a steering wheel. It can stop a bad day from becoming chaotic, but it does not tell you what the businesses you own are worth. When you hear that trading was halted or a fund is being prepared, ask what caused the fall and whether it changes companies' long-term earnings. Avoid placing market orders during a halt or right after trading resumes, when prices can jump; a limit order lets you set the price you will accept. And remember that the safest protection against a crash is your own: a portfolio diversified beyond one theme, enough cash for near-term needs so you are never a forced seller, and no borrowed money that a fall could call in.",
+      [
+        "What exactly caused this fall, and does it change what the companies will earn over the next five years?",
+        "If trading halted today, would I be forced to sell anything, and why?",
+        "How large is the rescue fund compared with the whole market, and who is paying for it?",
+        "Am I using limit orders rather than market orders when prices are moving fast?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Investor.gov (SEC), Stock Market Circuit Breakers",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/stock-market-circuit-breakers"
+      },
+      {
+        "name": "SEC Investor Bulletin, New Measures to Address Market Volatility, modified Apr 9, 2013",
+        "url": "https://www.sec.gov/files/investor/alerts/circuitbreakersbulletin.htm"
+      },
+      {
+        "name": "Nasdaq (Schaeffer's), Stock Market Circuit Breakers: What You Need to Know, Apr 8, 2025",
+        "url": "https://www.nasdaq.com/articles/stock-market-circuit-breakers-what-you-need-know"
+      },
+      {
+        "name": "Admirals, Why Is the KOSPI Falling? Sidecars, a 40%+ Drop and Korea's Stabilisation Fund, Nov 23, 2026",
+        "url": "https://admiralmarkets.com/analytics/traders-blog/why-is-kospi-falling-november-2026"
+      },
+      {
+        "name": "Asia Business Daily, KOSPI's 'Black Monday'... Stabilization Fund Steps In, Nov 23, 2026",
+        "url": "https://www.asiae.co.kr/en/article/2026112310315844683"
+      },
+      {
+        "name": "MoneyToday, KOSPI sell-side sidecar triggered; government measures and the rate outlook, Nov 23, 2026",
+        "url": "https://www.mt.co.kr/en/stock/2026/11/23/2026112316200722096"
+      }
+    ]
   }
 ]
