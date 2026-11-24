@@ -1224,5 +1224,93 @@
         "url": "https://www.businesswire.com/news/home/20251104744103/en"
       }
     ]
+  },
+  {
+    "ticker": "CCJ",
+    "name": "Cameco",
+    "country": "Canada",
+    "sector": "Energy",
+    "theme": "Uranium and nuclear power for a power-hungry grid",
+    "what": "Cameco mines and sells uranium from Saskatchewan and Kazakhstan, converts it into reactor fuel, and owns 49% of Westinghouse, which designs and services nuclear reactors.",
+    "past": {
+      "label": "Revenue, Q3 2025",
+      "value": "C$615 M",
+      "detail": "In the quarter to September 2025, revenue was C$615 million. For the full year 2025, revenue was C$3.48 billion (up from C$3.14 billion in 2024), adjusted net earnings were C$627 million, uranium production was 21.0 million pounds and sales were 33.0 million pounds at an average realized price of US$62.11 per pound."
+    },
+    "current": {
+      "label": "Revenue, Q3 2026",
+      "value": "C$619 M",
+      "growth": 1,
+      "detail": "Revenue rose 1% to C$619 million, but gross profit fell 28% to C$122 million and adjusted net earnings swung to a C$2 million loss from C$32 million, as uranium production fell to 3.5 million pounds from 4.4 million during an extended maintenance outage at the Key Lake mill. Net earnings were C$43 million. The average realized uranium price rose 6% to US$65.78 per pound, and Cameco's share of Westinghouse adjusted EBITDA rose to C$143 million from C$124 million. Year to date, adjusted EBITDA was C$1.17 billion, down from C$1.34 billion."
+    },
+    "future": {
+      "label": "2026 uranium deliveries guidance",
+      "value": "29.5–30.5 M lb",
+      "detail": "On October 30, 2026, Cameco narrowed 2026 guidance to uranium production of 19.5 to 20.5 million pounds and sales of 29.5 to 30.5 million pounds. Its long-term contracts call for average deliveries of more than 28 million pounds a year over the next five years. A 2025 partnership with Brookfield and the US government, worth at least US$80 billion, aims to finance new Westinghouse reactors, and a non-binding framework would have Korea invest up to US$120 billion toward up to eight large US reactors, pending definitive agreements."
+    },
+    "drivers": [
+      "Long-term uranium contract prices at record highs: TradeTech's indicator hit US$99 per pound on Oct 31, 2026",
+      "Realized price rising as older, cheaper contracts roll off",
+      "Westinghouse reactor projects in the US, Poland and Slovakia",
+      "Government financing for new US reactors",
+      "Electricity demand from data centers, which management treats as upside rather than its core case"
+    ],
+    "risks": [
+      "Production shortfalls: Q3 output was well below forecasts during the Key Lake outage, and cost-of-sales guidance rose",
+      "Uranium prices and the slow, uneven pace of utility contracting",
+      "Transport and delivery risk at the Inkai joint venture in Kazakhstan",
+      "Westinghouse depends on government financing and deals that are not yet final",
+      "Tariffs on Canadian energy products and changing sanctions",
+      "A high valuation: shares traded at about 89 times earnings before the Q3 report"
+    ],
+    "watch": [
+      "Whether Key Lake returns to full production",
+      "Definitive agreements on new US reactors",
+      "New long-term contracts and their prices",
+      "Westinghouse earnings in Q4",
+      "Realized price versus the long-term price"
+    ],
+    "why": "Utilities are signing long-term uranium contracts at the highest prices since at least 1996 as governments push new reactors and power demand rises, and Cameco is one of the few large Western suppliers. Through Westinghouse it also earns from building and servicing reactors. But 2026 shows the gap between a strong market and quarterly results: lower output and older, cheaper contracts left Q3 earnings near zero.",
+    "expect": {
+      "company": [
+        "2026 uranium production of 19.5–20.5 million pounds (Oct 30, 2026)",
+        "2026 uranium sales and deliveries of 29.5–30.5 million pounds (Oct 30, 2026)",
+        "Average contracted deliveries above 28 million pounds a year over the next five years (Oct 30, 2026)",
+        "Next results expected Feb 12, 2027"
+      ],
+      "analysts": [
+        "Consensus Q3 2026 EPS was about $0.27, down from $0.35 ninety days earlier, and consensus revenue $753.9 million, which Cameco missed (247 Wall St, Oct 26, 2026)",
+        "Q3 production was 19% below BMO Capital Markets' forecast (Crux Investor, Nov 3, 2026)",
+        "FY2026 consensus revenue about $3.48 billion (247 Wall St, Oct 26, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "Key Lake recovers, new contracts are signed near record prices, and definitive US reactor deals turn Westinghouse into a steady growth engine.",
+      "base": "Output recovers gradually, realized prices climb slowly as old contracts expire, and reactor deals progress but take years to reach earnings.",
+      "bear": "Production problems persist, utilities delay contracting, or government reactor financing stalls, leaving a highly valued stock with flat earnings."
+    },
+    "updated": "2026-11-24",
+    "sources": [
+      {
+        "name": "Cameco, Cameco Reports Third Quarter Results (Business Wire via Seeking Alpha), Oct 30, 2026",
+        "url": "https://seekingalpha.com/pr/20707115"
+      },
+      {
+        "name": "RTTNews, Cameco 9-Month Profit Falls, Narrows FY26 Guidance, Oct 30, 2026",
+        "url": "https://www.rttnews.com/3706590/cameco-9-month-profit-falls-narrows-fy26-guidance.aspx"
+      },
+      {
+        "name": "Cameco, Cameco Announces 2025 Results (Business Wire), Feb 12, 2026",
+        "url": "https://www.businesswire.com/news/home/20260212233756/en/Cameco-Announces-2025-Results"
+      },
+      {
+        "name": "Crux Investor, Record US$99 Uranium Contract Price Favors Miners With Supply Left to Sell, Nov 3, 2026",
+        "url": "https://www.cruxinvestor.com/posts/record-us-99-uranium-contract-price-favors-miners-with-supply-left-to-sell"
+      },
+      {
+        "name": "247 Wall St, Can Cameco's 89x Premium Valuation Survive Another Big Miss on Oct. 30?, Oct 26, 2026",
+        "url": "https://247wallst.com/investing/2026/10/26/can-camecos-89x-premium-valuation-survive-another-big-miss-on-oct-30/"
+      }
+    ]
   }
 ]

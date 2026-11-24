@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-11-24-huang-returns-relief-rally",
+    "date": "2026-11-24",
+    "kind": "Signal",
+    "m": "wealth",
+    "title": "Nvidia rehires its founder, and stocks have their best day in 18 months",
+    "stat": "+4.74%",
+    "statLabel": "S&P 500 gain on Monday, Nov 23, 2026, its largest one-day rise in more than a year and a half",
+    "body": "On Monday, November 23, Nvidia's board voted unanimously to reinstate Jensen Huang as president, CEO and board director, effective immediately, eleven days after his ouster; interim CEO Colette Kress returns to her job as CFO and Harvey Jones stays on as chair. The board said it had input from senior levels of the US government and is confident the return poses no national security risk, while an investigation by independent directors continues and a new National Security and Export Control Committee is being formed. Nvidia closed up 31.48% at $165.05, and the relief spread: the S&P 500 rose 4.74% to 7,237, ending a seven-day losing streak and leaving correction territory, the Nasdaq jumped 6.51% and the Dow gained 1,448 points. The surge came one trading day after the S&P 500 fell 3.7% on Friday and the Nasdaq erased its gains for the year.",
+    "why": "Some of the market's biggest up days arrive in the middle of its worst stretches, often within days of the sharpest drops. Someone who sold during last week's slide to wait for calm would have missed Monday entirely; Wells Fargo found that missing the 30 best days from 1994 to 2024 cut the S&P 500's average annual return from 8.0% to 1.8%. The governance questions at Nvidia remain open, so one rally does not mean the risk is gone.",
+    "lessons": [
+      "bestdays",
+      "keyperson",
+      "behavior"
+    ],
+    "sources": [
+      {
+        "name": "NVIDIA, NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director (Form 8-K exhibit), Nov 23, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm"
+      },
+      {
+        "name": "The Motley Fool, Stock Market Today, Nov. 23: Markets Rebound From Correction on AI Relief Rally, Nov 23, 2026",
+        "url": "https://www.fool.com/coverage/stock-market-today/2026/11/23/stock-market-today-nov-23-markets-rebound-from-correction-on-ai-relief-rally/"
+      },
+      {
+        "name": "Eurasia Business News, Stock Market Today, November 23, 2026: Nvidia Surges on Jensen Huang's Return, Nov 23, 2026",
+        "url": "https://eurasiabusinessnews.com/2026/11/23/stock-market-today-november-23-2026-nvidia-surges-on-jensen-huangs-return-nasdaq-jumps-nearly-7-dow-soars/"
+      },
+      {
+        "name": "Wells Fargo Investment Institute, The perils of trying to time volatile markets",
+        "url": "https://www.wellsfargo.com/investment-institute/sr-perils-time-volatile-markets"
+      }
+    ]
+  },
+  {
     "id": "2026-11-23-korea-kospi-stabilization-fund",
     "date": "2026-11-23",
     "kind": "Signal",

@@ -1559,5 +1559,42 @@
         "url": "https://www.mt.co.kr/en/stock/2026/11/23/2026112316200722096"
       }
     ]
+  },
+  {
+    "id": "bestdays",
+    "m": "wealth",
+    "mod": "Portfolio",
+    "title": "The best days hide in the worst weeks: why timing the market backfires",
+    "added": "2026-11-24",
+    "layers": [
+      "Stock market returns are not spread evenly. A large share of the long-run gain comes from a small number of unusually strong days, and those days tend to arrive in clusters with the worst days, during recessions, bear markets and panics. Wells Fargo Investment Institute studied the S&P 500 from February 1994 to January 2024: staying invested the whole time earned an average of 8.0% a year, but missing just the 30 best days cut that to 1.8%, below the 2.5% average inflation of the period. Missing the best 40 days left about 0.44% a year, and missing the best 50 left a loss of 0.86% a year. Vanguard's look at daily S&P 500 moves from 1980 to 2024 found the same pattern from the other side: 10 of the 20 best days came in years when the market lost money overall, and 11 of the 20 worst days came in years when it gained.",
+      "The clustering happens because big moves are a product of uncertainty, and uncertainty runs in both directions at once. When fear is high, prices swing hard on each new piece of news: a bad headline sets off forced selling by borrowers and funds, then a hint of relief sends short sellers and sidelined buyers rushing back in. In the Wells Fargo study, all of the 10 best days happened during recessions, six of them during bear markets, and in just eight trading days from March 9 to March 18, 2020, the market logged 3 of its 30 best days and 5 of its 30 worst. November 2026 gave a live example: the S&P 500 fell 3.7% on Friday, November 20, entered a correction after seven straight losses, then rose 4.74% on Monday, November 23, its biggest one-day gain in more than a year and a half, when Nvidia's board reinstated founder Jensen Huang. An investor who sold on Friday to wait for things to settle missed Monday completely.",
+      "This is why timing the market is harder than it looks. To beat buy-and-hold you must be right twice: when to get out and when to get back in. People usually sell after the pain has begun and wait for calm before buying again, but calm returns only after the sharp rebound days have passed. Studies note that missing both the best and worst days can produce slightly higher returns than staying invested, which is true but not useful, because no one can reliably step aside for one and not the other when they sit days apart. The result shows up in what investors actually earn: DALBAR's research, cited by Wells Fargo, found the average stock fund investor earned 18.39% in 2021 while the S&P 500 returned 28.71%, a gap of more than 10 percentage points, largely from buying and selling at the wrong moments. The lesson holds either way: the cost of being out of the market is concentrated in exactly the moments when being out feels safest.",
+      "Decide your risk level when markets are calm, not in the middle of a sell-off. Hold an amount in stocks you can live through a 20% to 30% drop with, keep cash for near-term needs outside the market so you are never forced to sell, and use rebalancing rules rather than feelings to decide when to trim or add. If you feel the urge to sell during a slide, remember that the next big up day may be only a session or two away, and that a plan you can stick to beats a perfect plan you abandon. Regular automatic investing helps because it keeps you buying through both kinds of days.",
+      [
+        "If I sold after a 10% drop, what exact signal would tell me to buy back in, and has that signal ever worked in real time?",
+        "How much of my portfolio am I holding in stocks that I would need to sell within the next three years?",
+        "Do I have written rules for rebalancing, so that a sharp fall or rally triggers a plan rather than a reaction?",
+        "When a chart shows the cost of missing the best days, what does it assume about the worst days?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Wells Fargo Investment Institute, The perils of trying to time volatile markets",
+        "url": "https://www.wellsfargo.com/investment-institute/sr-perils-time-volatile-markets"
+      },
+      {
+        "name": "Vanguard, S&P 500 Price Index daily returns (January 1, 1980, through December 31, 2024)",
+        "url": "https://corporate.vanguard.com/etc.clientlibs/corporatesite/clientlibs/clientlib-site/resources/dwcharts/LFRwD.htm"
+      },
+      {
+        "name": "The Motley Fool, Stock Market Today, Nov. 23: Markets Rebound From Correction on AI Relief Rally, Nov 23, 2026",
+        "url": "https://www.fool.com/coverage/stock-market-today/2026/11/23/stock-market-today-nov-23-markets-rebound-from-correction-on-ai-relief-rally/"
+      },
+      {
+        "name": "Eurasia Business News, Stock Market Today, November 23, 2026, Nov 23, 2026",
+        "url": "https://eurasiabusinessnews.com/2026/11/23/stock-market-today-november-23-2026-nvidia-surges-on-jensen-huangs-return-nasdaq-jumps-nearly-7-dow-soars/"
+      }
+    ]
   }
 ]
