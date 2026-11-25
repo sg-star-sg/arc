@@ -1312,5 +1312,83 @@
         "url": "https://247wallst.com/investing/2026/10/26/can-camecos-89x-premium-valuation-survive-another-big-miss-on-oct-30/"
       }
     ]
+  },
+  {
+    "ticker": "DELL",
+    "name": "Dell Technologies",
+    "country": "United States",
+    "sector": "Technology",
+    "theme": "Servers that power AI data centers",
+    "what": "Dell builds the servers, storage and networking that run data centers, including AI servers packed with Nvidia chips, and sells PCs to companies and consumers.",
+    "past": {
+      "label": "Revenue, Q3 FY2026",
+      "value": "$27.0 B",
+      "detail": "In the quarter to October 31, 2025, revenue was $27.0 billion, up 11%. The Infrastructure Solutions Group (servers, storage, networking) brought in $14.1 billion, up 24%, and the PC business $12.5 billion, up 3%. AI server orders were a record $12.3 billion and the AI backlog stood at $18.4 billion."
+    },
+    "current": {
+      "label": "Revenue, Q3 FY2027",
+      "value": "$54.9 B",
+      "growth": 103,
+      "detail": "Revenue doubled, up 103% to a record $54.9 billion in the quarter to late October 2026. Infrastructure revenue nearly tripled to $42.0 billion (up 198%), with AI-optimized servers at $22.0 billion (up 291%), traditional servers and networking $15.0 billion (up 235%) and storage $4.9 billion (up 24%). PCs grew 3% to $12.9 billion. Operating income rose 251% to $7.4 billion, net income 266% to $5.7 billion, and cash from operations 280% to $4.5 billion. Dell booked $60.2 billion of AI orders in the quarter."
+    },
+    "future": {
+      "label": "AI backlog",
+      "value": "$132.3 B",
+      "detail": "Dell ended the quarter with a record $132.3 billion AI backlog, orders signed but not yet shipped. It raised full-year FY2027 guidance for revenue to $202 billion (from $192 billion), up 78%, AI server revenue to $78 billion (from $74 billion), and non-GAAP EPS to $29.68 (from $25.50). For Q4 it guides to $56.3 billion of revenue, up 69%. The board approved an additional $25 billion of share buybacks."
+    },
+    "drivers": [
+      "AI server demand from cloud companies, AI labs and large enterprises",
+      "A $132.3 billion backlog that gives visibility into coming quarters",
+      "Traditional server upgrades, up 235% in Q3",
+      "Scale in buying chips, memory and parts",
+      "Cash returned through buybacks: a record $4.9 billion in Q3"
+    ],
+    "risks": [
+      "Customer concentration: a few large AI buyers can delay or cancel orders",
+      "Thin margins on AI servers compared with storage or software, since much of the price is the Nvidia chips inside",
+      "Supply of GPUs and memory, and rising component prices",
+      "Tariffs on imported parts and assembled systems, including new proposals on Asian economies",
+      "The PC business is barely growing, and its operating income fell 6%",
+      "A slowdown in AI data center spending, which already shook chip stocks in November 2026"
+    ],
+    "watch": [
+      "How fast the backlog converts into shipped revenue",
+      "AI orders each quarter versus shipments",
+      "Infrastructure operating margin, 17.0% in Q3",
+      "Cash flow versus profit as receivables and inventory grow",
+      "Any change in AI spending plans by the largest cloud companies"
+    ],
+    "why": "Dell has become one of the main suppliers of the servers that hold AI chips, and orders are arriving faster than it can ship them: $60.2 billion booked in one quarter against $22.0 billion of AI server revenue. That backlog, plus a broad upgrade of traditional servers, doubled revenue in a year. Its PC business, still about a quarter of sales, grew only 3%.",
+    "expect": {
+      "company": [
+        "FY2027 revenue of about $202 billion, up 78% (Nov 24, 2026)",
+        "FY2027 AI-optimized server revenue of about $78 billion (Nov 24, 2026)",
+        "Q4 FY2027 revenue of about $56.3 billion and non-GAAP EPS of $8.40 (Nov 24, 2026)",
+        "FY2027 non-GAAP EPS of $29.68 (Nov 24, 2026)"
+      ],
+      "analysts": [
+        "Analysts expected Q3 adjusted EPS of $6.59 and revenue of $49.32 billion; Dell reported $9.45 and $54.94 billion (Investrade, Nov 25, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "The backlog ships on schedule, AI customers keep ordering at Q3's pace, and server margins hold as supply of chips and memory loosens.",
+      "base": "Backlog converts over several quarters, orders slow from their peak, and growth stays strong but well below 100% as comparisons get tougher.",
+      "bear": "Large AI buyers cut or delay spending, component costs or tariffs squeeze already thin server margins, and the backlog shrinks."
+    },
+    "updated": "2026-11-25",
+    "sources": [
+      {
+        "name": "Dell Technologies, Dell Technologies Delivers Third Quarter Fiscal 2027 Financial Results, Nov 24, 2026",
+        "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results"
+      },
+      {
+        "name": "Dell Technologies, Third Quarter Fiscal 2026 Financial Results (Form 8-K exhibit), Nov 25, 2025",
+        "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199625000118/exhibit991earnings8kq3fy26.htm"
+      },
+      {
+        "name": "Investrade (Hammerstone Markets), Morning Preview: November 25, 2026",
+        "url": "https://investrade.com/morning-preview-november-25-2026/"
+      }
+    ]
   }
 ]

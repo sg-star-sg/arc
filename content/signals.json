@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-25-section-301-tariffs-14-economies",
+    "date": "2026-11-25",
+    "kind": "Signal",
+    "m": "world",
+    "title": "The US proposes new tariffs of up to 35% on 14 economies",
+    "stat": "Up to 35%",
+    "statLabel": "Proposed extra US tariff on goods from Vietnam, the highest of 14 rates USTR announced on Nov 25, 2026",
+    "body": "On November 25, the US Trade Representative ruled that policies in 14 economies that build up 'structural excess capacity' in manufacturing are unreasonable and burden US commerce, which lets it act under Section 301 of the Trade Act of 1974. The proposed extra tariffs run from 15% on the EU, Japan, Korea, Taiwan and Switzerland, to 18% on Bangladesh, Cambodia, Indonesia, Malaysia and Thailand, up to 20% on China and Singapore, up to 25% on India and up to 35% on Vietnam, with lower rates offered to India, Singapore and Vietnam if they sign trade agreements. For some Chinese goods the new 20% would sit on top of existing duties of about 25%, for a total near 45%. The duties are meant to replace tariffs the Supreme Court struck down in February, when it ruled the emergency powers law used for them did not allow them; Mexico and Norway were investigated but left out for now.",
+    "why": "Nothing changes at the checkout yet: written comments are due January 5, 2027, hearings start January 25, and no start date has been set, so rates can still move or be traded away in deals. If you run a business that buys goods or parts from these countries, now is the time to price out the worst case, look at other suppliers and, if it matters enough, file a comment. For shoppers and investors, the question is who absorbs the cost: importers, foreign makers, or customers.",
+    "lessons": [
+      "tradelaw",
+      "tariffs",
+      "passthrough"
+    ],
+    "sources": [
+      {
+        "name": "Office of the US Trade Representative, USTR Makes Determinations and Proposes Actions in 14 Section 301 Investigations Relating to Structural Excess Capacity, Nov 25, 2026",
+        "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural"
+      },
+      {
+        "name": "Euronews via Yahoo News, US proposes new tariffs on 14 major trading partners, the EU included, Nov 25, 2026",
+        "url": "https://www.yahoo.com/news/politics/articles/us-proposes-tariffs-14-major-144207888.html"
+      },
+      {
+        "name": "Modern Diplomacy (Reuters), Will Trump Impose New Tariffs on 16 Trading Partners to Replace Court-Blocked Duties?, Nov 25, 2026",
+        "url": "https://moderndiplomacy.eu/2026/11/25/will-trump-impose-new-tariffs-on-16-trading-partners-to-replace-court-blocked-duties/"
+      }
+    ]
+  },
+  {
     "id": "2026-11-24-huang-returns-relief-rally",
     "date": "2026-11-24",
     "kind": "Signal",

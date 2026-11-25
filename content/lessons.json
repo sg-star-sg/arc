@@ -1596,5 +1596,42 @@
         "url": "https://eurasiabusinessnews.com/2026/11/23/stock-market-today-november-23-2026-nvidia-surges-on-jensen-huangs-return-nasdaq-jumps-nearly-7-dow-soars/"
       }
     ]
+  },
+  {
+    "id": "tradelaw",
+    "m": "world",
+    "mod": "Money and power",
+    "title": "How a tariff gets made: trade laws, stacking and the comment window",
+    "added": "2026-11-25",
+    "layers": [
+      "A US tariff is not just a number a president announces. It has to rest on a law in which Congress handed part of its power over trade to the executive branch, and each law comes with its own trigger, its own agency and its own process. The three that matter most today: Section 232 of the Trade Expansion Act of 1962 lets the Commerce Department recommend tariffs on goods whose imports threaten national security, and it is the basis for today's duties on steel, aluminium and cars. Section 301 of the Trade Act of 1974 lets the US Trade Representative (USTR) act against a specific country whose policies are 'unreasonable' or 'discriminatory' and burden US commerce. And the International Emergency Economic Powers Act of 1977 lets a president regulate trade during a declared national emergency. In February 2026 the Supreme Court ruled that this emergency powers law did not authorise the broad tariffs it had been used for, which is why the government has turned to Section 301 to rebuild them.",
+      "Section 301 works like a trial with a public record. USTR opens an investigation (the excess-capacity cases began on March 11, 2026, covering 16 economies; USTR describes structural excess capacity as production capacity beyond domestic and global demand, kept alive by government support), takes written comments and holds hearings (it heard nearly 140 witnesses and received 1,070 comments), then issues a determination. If it finds the practice actionable, it proposes a remedy and opens a second round of comments before anything takes effect. On November 25, 2026 it found against 14 of the 16 and proposed rates from 15% to up to 35%, with comments due January 5, 2027 and hearings from January 25. Three details decide what an importer actually pays. 'Up to' means the ceiling, not the final rate. 'Net of MFN' means the new rate includes the normal most-favoured-nation duty a country already pays, so a 15% rate on EU goods replaces rather than adds to the usual tariff. 'Stacking' is when duties under different laws pile on top of each other: the proposal for China would add a new 20% to existing duties of about 25% on some goods, near 45% in total, while goods already hit by Section 232 are treated differently. Product annexes then list exemptions line by line.",
+      "Process matters for your money because it creates time and leverage. A proposed tariff is a negotiating position: USTR offered India 17% instead of 25%, Singapore 10% instead of 20% and Vietnam 20% instead of 35% if they sign trade agreements, and earlier deals already set ceilings, such as 15% for the EU, Japan and Korea. Companies use the comment window to argue for exemptions on parts they cannot source elsewhere, and products often move on or off the lists between proposal and final action. The legal basis also decides how durable a tariff is. Duties built on a narrow emergency reading can be overturned by courts, as happened in February; duties built on a full Section 301 record, with findings, comments and hearings, rest on a law written for exactly this purpose and are harder to attack in court, though they take months longer to put in place. That is why markets often react less to the announcement than to the final rates and the start date.",
+      "Read a tariff headline the way a lawyer would. Ask which law it uses, whether it is proposed or final, whether the rate is a ceiling, whether it replaces or stacks on existing duties, and when it starts. A proposed rate with a comment period months away is a warning to plan, not a cost you are already paying. If you run a business that imports, map which of your suppliers sit in which country, price the worst case, and treat the comment period as a real chance to be heard. If you invest, look for companies that disclose how much of their cost comes from affected countries and how much of a price rise they think they can pass on.",
+      [
+        "Which law is this tariff based on, and could a court overturn it?",
+        "Is the rate proposed or final, and is it a ceiling or a fixed number?",
+        "Does the new duty replace the existing tariff or stack on top of it?",
+        "What share of my costs, or this company's costs, comes from the countries named?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Office of the US Trade Representative, USTR Makes Determinations and Proposes Actions in 14 Section 301 Investigations Relating to Structural Excess Capacity, Nov 25, 2026",
+        "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural"
+      },
+      {
+        "name": "Euronews via Yahoo News, US proposes new tariffs on 14 major trading partners, the EU included, Nov 25, 2026",
+        "url": "https://www.yahoo.com/news/politics/articles/us-proposes-tariffs-14-major-144207888.html"
+      },
+      {
+        "name": "Modern Diplomacy (Reuters), Will Trump Impose New Tariffs on 16 Trading Partners to Replace Court-Blocked Duties?, Nov 25, 2026",
+        "url": "https://moderndiplomacy.eu/2026/11/25/will-trump-impose-new-tariffs-on-16-trading-partners-to-replace-court-blocked-duties/"
+      },
+      {
+        "name": "KPMG, USTR initiates Section 301 investigations on structural excess capacity in manufacturing sectors, Mar 2026",
+        "url": "https://kpmg.com/us/en/taxnewsflash/news/2026/03/ustr-initiates-section-301-investigations-structural-excess-capacity-manufacturing-sectors.html"
+      }
+    ]
   }
 ]
