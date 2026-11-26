@@ -172,6 +172,18 @@ nav.dock .srch{display:grid;place-items:center;padding:10px 13px}
 .co-name{font-family:var(--display);font-size:26px;line-height:1.1}
 .co-what{font-size:14px;color:rgba(238,241,246,.75)}
 .co-g{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:4px}
+.live-row{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;min-height:20px}
+.live-px{font-family:var(--stat);font-size:17px;font-variant-numeric:tabular-nums}
+.live-ch{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums}
+.live-na{opacity:.7}
+.live-big{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.live-big .big{font-family:var(--stat);font-weight:300;font-size:30px;line-height:1;font-variant-numeric:tabular-nums}
+.spark{display:block;max-width:100%}
+.mk-ctx{border-left:2px solid var(--med);padding:2px 0 2px 12px}
+.mk-ctx p{margin:4px 0 0}
+.radar-wrap{display:flex;flex-direction:column;gap:6px}
+.radar-why{margin:0 4px}
+.sm-lens{max-width:72ch;margin:0 0 14px}
 .gnum{font-family:var(--stat);font-weight:300;font-size:30px;line-height:1;color:var(--low)}
 .cophase .gnum{font-size:18px}
 .gbar{height:6px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden}
@@ -1148,6 +1160,76 @@ async function loadContent(){
     if(Array.isArray(sig)) SIGNALS=sig.filter(x=>x&&x.id&&x.title).sort((a,b)=>String(b.date).localeCompare(String(a.date)));
     render();
   }catch(e){}
+  try{
+    const [mk,sm]=await Promise.all(['content/markets.json','content/smartmoney.json'].map(u=>fetch(u,{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null)));
+    if(mk&&Array.isArray(mk.assets)) MARKETS=mk;
+    if(sm&&typeof sm==='object') SMART=sm;
+    render();
+  }catch(e){}
+}
+
+/* ---------- live prices ---------- */
+// Prices come from /api/quotes (a small Vercel function that reads Yahoo Finance).
+// If it is unreachable, metals fall back to gold-api.com and bitcoin to CoinGecko.
+// Nothing is ever estimated: a missing price shows as unavailable.
+let MARKETS = null, SMART = null;
+const LIVE = {}, TRIED = {}; let liveBusy = false, liveErr = false, liveAt = 0;
+const ySym = c => c.yahoo || c.ticker;
+function liveWanted(){
+  const s=new Set();
+  const onInvest=state.view==='invest'||state.view==='company';
+  if(!onInvest) return [];
+  if(state.view==='company'){const c=COMPANIES.find(x=>x.ticker===state.param); if(c) s.add(ySym(c)); return [...s]}
+  if(investTab==='markets'&&MARKETS) MARKETS.assets.forEach(a=>a.sym&&s.add(a.sym));
+  if(investTab==='companies') COMPANIES.forEach(c=>s.add(ySym(c)));
+  return [...s];
+}
+async function fallbackQuote(a){
+  try{
+    if(a.alt?.src==='gold-api'){const r=await fetch('https://api.gold-api.com/price/'+a.alt.code);if(!r.ok)return null;const j=await r.json();
+      return typeof j.price==='number'?{price:j.price,time:Date.parse(j.updatedAt)||Date.now(),src:'gold-api.com (spot)'}:null}
+    if(a.alt?.src==='coingecko'){const r=await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${a.alt.code}&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true`);if(!r.ok)return null;const j=(await r.json())[a.alt.code];
+      return j&&typeof j.usd==='number'?{price:j.usd,d1:j.usd_24h_change!=null?+j.usd_24h_change.toFixed(2):null,time:(j.last_updated_at||0)*1000||Date.now(),src:'CoinGecko'}:null}
+  }catch(e){}
+  return null;
+}
+async function refreshLive(force){
+  const want=liveWanted().filter(s=>force||Date.now()-(TRIED[s]||0)>120000);
+  if(!want.length||liveBusy) return;
+  want.forEach(s=>TRIED[s]=Date.now());
+  liveBusy=true; let changed=false;
+  try{
+    for(let i=0;i<want.length;i+=40){
+      const r=await fetch('/api/quotes?s='+encodeURIComponent(want.slice(i,i+40).join(',')));
+      if(!r.ok) throw new Error('http '+r.status);
+      const j=await r.json();
+      Object.entries(j.quotes||{}).forEach(([k,q])=>{ if(q&&typeof q.price==='number'){LIVE[k]={...q,src:'Yahoo Finance',got:Date.now()};changed=true} });
+    }
+    liveErr=false;
+  }catch(e){ liveErr=true }
+  if(MARKETS) for(const a of MARKETS.assets){
+    if(a.alt&&(!a.sym||!LIVE[a.sym])&&want.includes(a.sym)){const q=await fallbackQuote(a); if(q){LIVE[a.sym]={...q,got:Date.now()};changed=true}}
+  }
+  liveBusy=false; liveAt=Date.now();
+  if(changed||liveErr) render();
+}
+setInterval(()=>{ if(document.visibilityState==='visible') refreshLive() },60000);
+const fmtPx=(v,cur)=>{ if(typeof v!=='number') return '—'; const d=Math.abs(v)>=1000?0:Math.abs(v)>=10?2:Math.abs(v)>=1?2:4;
+  const s=v.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+  const sym={USD:'$',JPY:'¥',EUR:'€',INR:'₹',KRW:'₩',GBP:'£'}[cur]; return sym?sym+s:s+(cur?' '+cur:'') };
+const chg=(v,lbl)=>typeof v==='number'?`<span>${lbl} <b style="color:${v>=0?'var(--low)':'var(--vhigh)'}">${v>=0?'+':''}${v.toFixed(2)}%</b></span>`:'';
+function spark(arr,w=120,h=34){
+  if(!Array.isArray(arr)||arr.length<2) return '';
+  const lo=Math.min(...arr),hi=Math.max(...arr),r=hi-lo||1;
+  const pts=arr.map((v,i)=>`${(i/(arr.length-1)*w).toFixed(1)},${(h-2-(v-lo)/r*(h-4)).toFixed(1)}`).join(' ');
+  const up=arr.at(-1)>=arr[0];
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="${up?'var(--low)':'var(--vhigh)'}" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
+}
+const whenTxt=t=>{ if(!t) return ''; const d=new Date(t); return d.toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}) };
+function livePill(sym){
+  const q=LIVE[sym];
+  if(!q) return `<span class="small live-na">${liveErr?'Live price unavailable':'Loading price…'}</span>`;
+  return `<span class="live-px">${fmtPx(q.price,q.currency)}</span>${typeof q.d1==='number'?`<span class="live-ch" style="color:${q.d1>=0?'var(--low)':'var(--vhigh)'}">${q.d1>=0?'+':''}${q.d1.toFixed(2)}% today</span>`:''}`;
 }
 const isNew = id => LESSONS[id]?.added && daysAgo(LESSONS[id].added) <= NEWDAYS;
 
@@ -1186,6 +1268,7 @@ function render(){
   const v = {home,invest,learn,mission:missionView,lesson:lessonView,world,saved:savedView,search:searchView,feedback:feedbackView,signal:signalView,note:noteView,company:companyView}[state.view];
   app.innerHTML = v(state.param);
   initScrub();
+  if(!liveBusy&&liveWanted().some(s=>Date.now()-(TRIED[s]||0)>120000)) setTimeout(()=>refreshLive(),0);
   if(state.view==='search'){const i=document.getElementById('search-input');if(i&&!srch.q)i.focus()}
 }
 
@@ -1680,18 +1763,31 @@ function coCard(c){
   return `<button class="plain cocard" data-company="${esc(c.ticker)}">
     <div class="co-top"><span class="tk">${esc(c.ticker)}</span><span class="chip" style="color:var(--med)">${esc(c.theme||c.sector)}</span>${on?'<span class="chip" style="color:var(--low)">Tracking</span>':''}</div>
     <span class="co-name">${esc(c.name)}</span>
+    <div class="live-row">${livePill(ySym(c))}</div>
     <span class="co-what">${esc(c.what)}</span>
     ${typeof g==='number'?`<div class="co-g"><span class="gnum">+${g}%</span><span class="small">${esc(c.current.label)}</span></div>${coBar(g)}`:''}
   </button>`;
 }
+const radarList=()=>COMPANIES.filter(c=>c.radar&&c.radar.added).sort((a,b)=>String(b.radar.added).localeCompare(String(a.radar.added))).slice(0,5);
 function investCompanies(){
-  const themes=['All','Tracking',...new Set(COMPANIES.map(c=>c.theme||c.sector))];
-  const list=COMPANIES.filter(c=>coTheme==='All'||(coTheme==='Tracking'?tracked.includes(c.ticker):(c.theme||c.sector)===coTheme));
+  const radar=radarList(), core=COMPANIES.filter(c=>c.list==='core');
+  const lib=COMPANIES.filter(c=>c.list!=='core'&&!radar.includes(c));
+  const themes=['All','Core 10','On the radar','Tracking',...[...new Set(COMPANIES.map(c=>c.sector).filter(Boolean))].sort()];
+  const grid=l=>`<div class="assets">${l.map(coCard).join('')}</div>`;
+  let body;
+  if(!COMPANIES.length) body=`<p class="small">Company profiles load from the live site.</p>`;
+  else if(coTheme==='All') body=`
+    <div class="sec-head" style="margin-top:6px"><h3>Core 10</h3><span class="small">Leaders in AI, chips, power, defense, health and India, followed every quarter.</span></div>${grid(core)}
+    <div class="sec-head" style="margin-top:28px"><h3>On the radar</h3><span class="small">Five companies whose growth or orders are picking up. One new name rotates in each day; older ones move to the library.</span></div>
+    <div class="assets">${radar.map(c=>`<div class="radar-wrap">${coCard(c)}<p class="small radar-why"><b>Why now:</b> ${esc(c.radar.why)} <span class="eyebrow">${esc(c.radar.added)}</span></p></div>`).join('')}</div>
+    ${lib.length?`<div class="sec-head" style="margin-top:28px"><h3>Library</h3><span class="small">Earlier radar picks, still profiled.</span></div>${grid(lib)}`:''}`;
+  else { const list=COMPANIES.filter(c=>coTheme==='Core 10'?c.list==='core':coTheme==='On the radar'?radar.includes(c):coTheme==='Tracking'?tracked.includes(c.ticker):c.sector===coTheme);
+    body=grid(list).replace('<div class="assets"></div>',`<p class="small">${coTheme==='Tracking'?'Tap Track on any company to follow it here.':'No companies in this group yet.'}</p>`) }
   return `<section style="margin-top:28px">
-    <div class="sec-head"><h2>Companies growing fast right now</h2>${COMPANIES[0]?.updated?`<span class="eyebrow">Updated ${esc(COMPANIES.map(c=>c.updated).sort().at(-1))}</span>`:''}</div>
-    ${COMPANIES.length?`<div class="chips" style="margin-bottom:16px">${themes.map(t=>`<button class="pill ${coTheme===t?'on':''}" data-cotheme="${esc(t)}">${esc(t)}${t==='Tracking'?' · '+tracked.length:''}</button>`).join('')}</div>
-    <div class="assets">${list.map(coCard).join('')||`<p class="small">${coTheme==='Tracking'?'Tap Track on any company to follow it here.':'No companies in this group yet.'}</p>`}</div>`
-    :`<p class="small">Company profiles load from the live site.</p>`}
+    <div class="sec-head"><h2>Companies to follow</h2>${COMPANIES[0]?.updated?`<span class="eyebrow">Updated ${esc(COMPANIES.map(c=>c.updated).sort().at(-1))}</span>`:''}</div>
+    ${COMPANIES.length?`<div class="chips" style="margin-bottom:16px">${themes.map(x=>`<button class="pill ${coTheme===x?'on':''}" data-cotheme="${esc(x)}">${esc(x)}${x==='Tracking'?' · '+tracked.length:''}</button>`).join('')}</div>`:''}
+    ${body}
+    <p class="note">Prices are live from ${LIVE_SRC()} when available and may be delayed. Being listed here is not a recommendation to buy.</p>
   </section>
   <section style="margin-top:36px">
     <div class="sec-head"><h2>How to find companies yourself</h2></div>
@@ -1719,6 +1815,9 @@ function companyView(t){
       <div class="meta-row"><button class="pill ${on?'on':'solid'}" data-track="${esc(c.ticker)}" aria-pressed="${on}">${on?'Tracking':'Track'}</button><button class="pill" data-newnote="co:${esc(c.ticker)}">Add a note</button>${sampleFn?`<button class="pill" data-anaex="${esc(c.name)}">Full AI analysis</button>`:''}</div>
     </div>
   </div>
+  ${(()=>{const q=LIVE[ySym(c)];return `<div class="plain ana-card" style="margin-top:14px"><span class="lbl">Share price</span>
+    ${q?`<div class="live-big"><span class="big">${fmtPx(q.price,q.currency)}</span>${spark(q.spark,220,48)}</div><div class="stats">${chg(q.d1,'Today')}${chg(q.m1,'1 month')}${chg(q.ytd,'This year')}${chg(q.y1,'1 year')}</div><p class="small" style="margin:6px 0 0">${esc(q.src||'')}${q.exchange?' · '+esc(q.exchange):''} · ${whenTxt(q.time)}. May be delayed.</p>`:`<p class="small">${liveErr?'Live price unavailable right now.':'Loading price…'}</p>`}</div>`})()}
+  ${c.radar?`<div class="c-why" style="margin-top:14px"><span class="lbl">On the radar since ${esc(c.radar.added)}</span><p>${esc(c.radar.why)}</p></div>`:''}
   <div class="ana-two" style="margin-top:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))">${col('past','Past')}${col('current','Now')}${col('future','Ahead')}</div>
   ${c.why?`<div class="c-why" style="margin-top:14px"><span class="lbl">Why it's doing well</span><p>${esc(c.why)}</p></div>`:''}
   ${c.expect?`<div class="ana-two" style="margin-top:14px">
@@ -1737,9 +1836,68 @@ function companyView(t){
   <p class="note">Figures from the company's own reports${c.updated?', checked '+esc(c.updated):''}. ${(c.sources||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(', ')}. Not a recommendation to buy or sell.</p>`;
 }
 
+const LIVE_SRC=()=>'Yahoo Finance';
+const srcLinks=a=>(a||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join(', ');
+let mkGroup='All';
+function investMarkets(){
+  if(!MARKETS) return `<p class="small" style="margin-top:28px">Market data loads from the live site.</p>`;
+  const groups=['All',...new Set(MARKETS.assets.map(a=>a.group))];
+  const list=MARKETS.assets.filter(a=>mkGroup==='All'||a.group===mkGroup);
+  const card=a=>{const q=a.sym?LIVE[a.sym]:null, cx=a.context;
+    return `<article class="plain asset mk">
+      <div class="co-top"><span class="chip" style="color:var(--med)">${esc(a.group)}</span>${q?`<span class="chip live-dot" style="color:var(--low)">Live</span>`:''}</div>
+      <h3>${esc(a.name)}</h3>
+      ${a.sym?(q?`<div class="live-big"><span class="big">${fmtPx(q.price, a.id==='us10y'?null:q.currency)}${a.id==='us10y'?'%':''}</span>${spark(q.spark)}</div>
+        <div class="stats">${chg(q.d1,'Today')}${chg(q.m1,'1 mo')}${chg(q.ytd,'YTD')}${chg(q.y1,'1 yr')}</div>
+        <p class="small" style="margin:0">${esc(a.unit)} · ${esc(q.src||'')} · ${whenTxt(q.time)}</p>`
+        :`<p class="small" style="margin:0">${liveErr?'Live price unavailable right now. Latest sourced figure below.':'Loading live price…'}</p>`)
+      :`<p class="small" style="margin:0">${esc(a.unit)}. No live feed: published on a schedule, latest release below.</p>`}
+      <p>${esc(a.what)}</p>
+      ${cx?`<div class="mk-ctx"><span class="lbl">${esc(cx.value)} · ${esc(cx.label)}</span><p>${esc(cx.detail)}</p><p class="small" style="margin:6px 0 0">${srcLinks(cx.sources)}</p></div>`:''}
+    </article>`};
+  return `<section style="margin-top:28px">
+    <div class="sec-head"><h2>Markets</h2><span class="eyebrow">Context updated ${esc(MARKETS.updated||'')}</span></div>
+    <p class="small" style="max-width:68ch">Live prices for metals, energy, rates, real estate, world stock markets and bitcoin, with what has been moving each one. Futures prices can differ slightly from spot.</p>
+    <div class="chips" style="margin:12px 0 16px">${groups.map(g=>`<button class="pill ${mkGroup===g?'on':''}" data-mkgroup="${esc(g)}">${esc(g)}</button>`).join('')}<button class="pill" data-liverefresh="1">Refresh prices</button></div>
+    <div class="assets">${list.map(card).join('')}</div>
+    <p class="note">Live prices from Yahoo Finance (gold-api.com or CoinGecko as backup), may be delayed 10–20 minutes. Context figures are from the dated sources linked on each card. Not a recommendation.</p>
+  </section>`;
+}
+let smTab='funds';
+function investMoney(){
+  if(!SMART) return `<p class="small" style="margin-top:28px">This section loads from the live site.</p>`;
+  const tabs=[['funds','Big investors'],['corporate','Company spending'],['flows','Money flows'],['insiders','Insider buying']];
+  const ul=a=>(a&&a.length)?`<ul class="pc">${a.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
+  const views={
+    funds:()=>`<p class="small sm-lens"><b>How to read it.</b> Big US managers must report their US stock holdings each quarter in a 13F filing, up to 45 days after the quarter ends. So these are positions as of the end of September, they show only long positions in US-listed stocks, and the fund may already have changed them.</p>
+      <div class="assets">${(SMART.funds||[]).map(f=>`<article class="plain asset"><span class="eyebrow">${esc(f.period||'')}</span><h3>${esc(f.name)}</h3><p>${esc(f.who||'')}</p>
+        ${f.bought?.length?`<span class="lbl" style="color:var(--low)">Bought or added</span>${ul(f.bought)}`:''}
+        ${f.sold?.length?`<span class="lbl" style="color:var(--vhigh)">Sold or cut</span>${ul(f.sold)}`:''}
+        ${f.top?.length?`<span class="lbl">Biggest holdings</span>${ul(f.top)}`:''}
+        ${f.note?`<div class="mk-ctx"><p>${esc(f.note)}</p></div>`:''}
+        <p class="small" style="margin:0">${srcLinks(f.sources)}</p></article>`).join('')}</div>`,
+    corporate:()=>`<p class="small sm-lens"><b>How to read it.</b> Capital spending (capex) is money companies put into data centers, chips, factories and power. When the biggest companies spend at this scale, their suppliers earn first. Whether the spending pays off for the spenders takes years to know.</p>
+      <div class="assets">${(SMART.corporate||[]).map(x=>`<article class="plain asset"><div class="co-top"><span class="tk">${esc(x.ticker||'')}</span></div><h3>${esc(x.company)}</h3>
+        <div><span class="gnum" style="font-size:26px">${esc(x.stat||'')}</span><p class="small" style="margin:4px 0 0">${esc(x.statLabel||'')}</p></div><p>${esc(x.detail||'')}</p><p class="small" style="margin:0">${srcLinks(x.sources)}</p></article>`).join('')}</div>`,
+    flows:()=>`<p class="small sm-lens"><b>How to read it.</b> Flows show where money is moving: into or out of funds, and what central banks buy. Flows often chase what has already gone up, so they describe the crowd rather than predict prices.</p>
+      <div class="assets">${(SMART.flows||[]).map(x=>`<article class="plain asset"><h3>${esc(x.title)}</h3>
+        <div><span class="gnum" style="font-size:26px">${esc(x.stat||'')}</span><p class="small" style="margin:4px 0 0">${esc(x.statLabel||'')}</p></div><p>${esc(x.detail||'')}</p><p class="small" style="margin:0">${srcLinks(x.sources)}</p></article>`).join('')}</div>`,
+    insiders:()=>`<p class="small sm-lens"><b>How to read it.</b> Executives sell their own stock for many reasons, such as taxes, a house or diversifying. They usually buy on the open market for one reason: they think the price is too low. Purchases are reported to the SEC on Form 4 within two business days. Insiders can still be wrong.</p>
+      <div class="assets">${(SMART.insiders||[]).map(x=>`<article class="plain asset"><div class="co-top"><span class="tk">${esc(x.ticker||'')}</span><span class="eyebrow">${esc(x.date||'')}</span></div><h3>${esc(x.company)}</h3>
+        <p><b>${esc(x.who||'')}</b>: ${esc(x.what||'')}</p><p>${esc(x.detail||'')}</p><p class="small" style="margin:0">${srcLinks(x.sources)}</p></article>`).join('')}</div>`
+  };
+  return `<section style="margin-top:28px">
+    <div class="sec-head"><h2>Where serious money is going</h2><span class="eyebrow">Updated ${esc(SMART.updated||'')}</span></div>
+    <p class="small" style="max-width:68ch">What large investors, the biggest companies and central banks are actually doing with their money, from filings and published data.</p>
+    <div class="chips" style="margin:12px 0 16px">${tabs.map(([k,n])=>`<button class="pill ${smTab===k?'on':''}" data-smtab="${k}">${n}</button>`).join('')}</div>
+    ${views[smTab]()}
+    <p class="note">Following famous investors is not a strategy on its own: you see their moves late, without their reasons, risk limits or exit plans. Use this to learn how professionals think, not as a list to copy.</p>
+  </section>`;
+}
+
 function invest(){
-  const tabs=[['companies','Companies'],['ladder','Risk ladder'],['mix','Build a mix'],['sectors','Sectors'],['themes','Future themes'],['analyze','Analyze a stock'],['order','Where to start']];
-  const body={companies:investCompanies,ladder:investLadder,mix:investMix,sectors:investSectors,themes:investThemes,analyze:investAnalyze,order:investOrder}[investTab]();
+  const tabs=[['companies','Companies'],['markets','Markets'],['money','Smart money'],['ladder','Risk ladder'],['mix','Build a mix'],['sectors','Sectors'],['themes','Future themes'],['analyze','Analyze a stock'],['order','Where to start']];
+  const body={companies:investCompanies,markets:investMarkets,money:investMoney,ladder:investLadder,mix:investMix,sectors:investSectors,themes:investThemes,analyze:investAnalyze,order:investOrder}[investTab]();
   return `<section style="margin-top:20px"><h1>Invest</h1>
     <div class="tabs" role="tablist">${tabs.map(([k,n])=>`<button class="pill ${investTab===k?'on':''}" role="tab" aria-selected="${investTab===k}" data-itab="${k}">${n}</button>`).join('')}</div>
   </section>
@@ -2048,9 +2206,12 @@ document.addEventListener('input',e=>{
 });
 
 document.addEventListener('click',e=>{
-  const t=e.target.closest('[data-nav],[data-mission],[data-lesson],[data-save],[data-itab],[data-hz],[data-nv],[data-invest],[data-askchip],[data-srchex],[data-anaex],[data-mood],[data-fbagain],[data-fbrefresh],[data-fbcopy],[data-signal],[data-libtab],[data-newnote],[data-opennote],[data-askdel],[data-delnote],[data-canceldel],[data-notesback],[data-copynotes],[data-company],[data-cotheme],[data-track]'); if(!t) return;
+  const t=e.target.closest('[data-nav],[data-mission],[data-lesson],[data-save],[data-itab],[data-hz],[data-nv],[data-invest],[data-askchip],[data-srchex],[data-anaex],[data-mood],[data-fbagain],[data-fbrefresh],[data-fbcopy],[data-signal],[data-libtab],[data-newnote],[data-opennote],[data-askdel],[data-delnote],[data-canceldel],[data-notesback],[data-copynotes],[data-company],[data-cotheme],[data-track],[data-mkgroup],[data-smtab],[data-liverefresh]'); if(!t) return;
   if(t.dataset.company) return go('company',t.dataset.company);
   if(t.dataset.cotheme){coTheme=t.dataset.cotheme;render();return}
+  if(t.dataset.mkgroup){mkGroup=t.dataset.mkgroup;render();return}
+  if(t.dataset.smtab){smTab=t.dataset.smtab;render();return}
+  if(t.dataset.liverefresh){refreshLive(true);return}
   if(t.dataset.track){const k=t.dataset.track;tracked=tracked.includes(k)?tracked.filter(x=>x!==k):[...tracked,k];saveTracked();render();return}
   if(t.dataset.libtab){libTab=t.dataset.libtab;render();return}
   if(t.dataset.newnote!==undefined){newNote(t.dataset.newnote);setTimeout(()=>document.getElementById('note-text')?.focus(),50);return}

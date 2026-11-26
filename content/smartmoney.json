@@ -1,0 +1,435 @@
+{
+  "updated": "2026-11-25",
+  "funds": [
+    {
+      "name": "Berkshire Hathaway",
+      "who": "Run by CEO Greg Abel, who now oversees the stock portfolio. Warren Buffett stepped down as chairman in September 2026 and stays on as an adviser. Long-term value investing in a few large holdings.",
+      "period": "Q3 2026 (13F filed Nov 16, 2026)",
+      "bought": [
+        "Lennar: bought 12.9 million Class A shares (about $1.1 billion) and 0.3 million Class B shares ($20 million), roughly doubling the stake",
+        "Bending Spoons (new): 20.7 million shares, worth $689 million at quarter-end",
+        "Delta Air Lines: bought 7.1 million more shares ($630 million), taking the stake to more than 64 million shares worth $5.4 billion",
+        "Macy's: added 0.2 million shares, taking the stake to 7.5 million shares ($172 million)"
+      ],
+      "sold": [
+        "Bank of America: sold 27.5 million shares (about $1.5 billion), a cut of about 5.7%. It is still a top-five holding",
+        "VeriSign: sold 3.1 million shares ($820 million), about a third of the stake",
+        "Capital One: sold 1.9 million shares ($360 million), a 62% cut after more than halving it the quarter before",
+        "Kroger: sold 4.0 million shares ($230 million), a cut of more than 10%",
+        "Nucor: sold 0.3 million shares ($60 million), a cut of almost 15%",
+        "No position was sold completely"
+      ],
+      "top": [
+        "Apple: about 25% of the stock portfolio, unchanged",
+        "Top five U.S. holdings: about 69% of the portfolio. Top ten: almost 90%",
+        "Apple, American Express, Coca-Cola and Alphabet were unchanged",
+        "13F U.S. stock portfolio: about $304 billion. Cash: $357 billion"
+      ],
+      "note": "Sales slightly outweighed purchases: $2.8 billion sold against $2.4 billion bought. Morningstar wrote that Abel moved more quickly than it expected toward fewer, more concentrated holdings, selling stakes linked to former managers Todd Combs and Ted Weschler.",
+      "sources": [
+        {
+          "name": "Kiplinger, Here's What Berkshire Hathaway Bought and Sold in Q3, Nov 16, 2026",
+          "url": "https://www.kiplinger.com/investing/stocks/stocks-berkshire-hathaway-bought-sold-q3-2026"
+        },
+        {
+          "name": "Morningstar, Berkshire Hathaway 13F: Sales Outweighed Purchases; Swapping Bank of America Stock for Lennar, Nov 2026",
+          "url": "https://www.morningstar.com/stocks/berkshire-hathaway-13f-sales-outweighed-purchases-swapping-bank-america-stock-lennar"
+        },
+        {
+          "name": "Placera, Miljardärernas drag – Tepper köper SpaceX och Dalio säljer Nvidia, Nov 17, 2026",
+          "url": "https://placera.se/nyheter/miljardarernas-drag-tepper-koper-spacex-och-dalio-salljer-nvidia-2026-11-17"
+        }
+      ]
+    },
+    {
+      "name": "Pershing Square",
+      "who": "Bill Ackman's hedge fund. It holds a small number of large companies for years and sometimes pushes management for change.",
+      "period": "Q3 2026 (holdings as of Sept 30, 2026; reported Nov 16, 2026)",
+      "bought": [
+        "Intercontinental Exchange (new): about 6.6 million shares, worth about $1.01 billion",
+        "Alcon (new): about 14.7 million shares, worth about $954 million",
+        "Netflix: raised to about 15.4 million shares, from 13.08 million"
+      ],
+      "sold": [
+        "Microsoft: cut by about 34.5% (about $1.1 billion) to about 4.1 million shares, worth about $2.08 billion",
+        "Hertz: sold the whole stake",
+        "Restaurant Brands International: cut to about 22 million shares, worth about $1.56 billion",
+        "Smaller cuts to Visa, Mastercard, Meta and Brookfield"
+      ],
+      "top": [
+        "Uber: about 34.3 million shares, about $2.35 billion",
+        "Amazon: about 8.5 million shares, about $2.12 billion",
+        "Howard Hughes Holdings: about 27.9 million shares, about $2.05 billion",
+        "Total 13F holdings: about $30.8 billion"
+      ],
+      "note": "The fund put money into two new businesses, a market operator and an eye-care company, and paid for them partly by cutting Microsoft. The sources report the trades but give no comment from Ackman on his reasons.",
+      "sources": [
+        {
+          "name": "Stocktwits, Bill Ackman Adds More To Netflix In Q3; Exits Hertz, Cuts Microsoft, Nov 16, 2026",
+          "url": "https://stocktwits.com/news-articles/markets/equity/bill-ackman-adds-more-to-netflix-in-q3-exits-hertz-cuts-microsoft/cNbaf33R9gj"
+        },
+        {
+          "name": "Placera, Miljardärernas drag – Tepper köper SpaceX och Dalio säljer Nvidia, Nov 17, 2026",
+          "url": "https://placera.se/nyheter/miljardarernas-drag-tepper-koper-spacex-och-dalio-salljer-nvidia-2026-11-17"
+        }
+      ]
+    },
+    {
+      "name": "Appaloosa Management",
+      "who": "David Tepper's hedge fund, known for bold, concentrated bets that often go against the crowd. It manages $20.4 billion in total.",
+      "period": "Q3 2026 (13F filed Nov 16, 2026)",
+      "bought": [
+        "SpaceX: added 3,658,329 shares, taking the stake to 3,883,329 shares (about $557 million), up 1,626%",
+        "Micron: added 275,000 shares, taking the stake to 1.25 million shares (about $1.33 billion), up 28%",
+        "Nvidia: up 31% to 2.00 million shares, worth $457 million",
+        "Oracle (new): 1.3 million shares, $172 million",
+        "Applied Materials (new): 225,000 shares, $115 million",
+        "PG&E (new): 2.5 million shares, $30.9 million"
+      ],
+      "sold": [
+        "AMD: sold all 197,500 shares (a $115 million position at June 30)",
+        "Broadcom: sold all 150,000 shares",
+        "Apple: sold the whole stake",
+        "Alphabet: cut by 850,000 shares to 1 million shares"
+      ],
+      "top": [
+        "Micron: 17.6%",
+        "SpaceX: 7.4%",
+        "Nvidia: 6.0%",
+        "13F U.S. stocks: $7.56 billion across 24 positions"
+      ],
+      "note": "TIKR wrote that Appaloosa leaned harder into AI last quarter, with its biggest additions all depending on AI spending. Tepper himself gave no public reasons for the trades.",
+      "sources": [
+        {
+          "name": "TIKR, Inside David Tepper's Portfolio: Every Move He Made in the Third Quarter, Nov 19, 2026",
+          "url": "https://www.tikr.com/blog/inside-david-teppers-portfolio-every-move-he-made-in-the-third-quarter"
+        },
+        {
+          "name": "Blockonomi, Tepper Sold Apple and Two Chip Stocks in Q3 but Kept Buying Micron and SpaceX, Nov 2026",
+          "url": "https://blockonomi.com/tepper-sold-apple-and-two-chip-stocks-in-q3-but-kept-buying-micron-and-spacex/"
+        }
+      ]
+    },
+    {
+      "name": "Duquesne Family Office",
+      "who": "Stanley Druckenmiller's family office. It makes large macro bets on where the economy, interest rates and commodities are heading, and changes positions quickly.",
+      "period": "Q3 2026 (13F accepted by the SEC Nov 16, 2026)",
+      "bought": [
+        "Gold miners (new): Newmont 380,400 shares ($43.9 million), Barrick 1,054,600 shares ($42.9 million), Agnico Eagle 231,050 shares ($42.3 million), $129.1 million combined",
+        "Seagate: up 180.2% to 341,790 shares, worth $315.2 million, plus a call option on 98,000 shares worth $90.4 million",
+        "Amazon: up 42.7% to 772,600 shares",
+        "Western Digital (new): 80,960 shares, $36.8 million",
+        "YPF: up 13% to about 3.5 million shares, $177.6 million"
+      ],
+      "sold": [
+        "Taiwan Semiconductor: cut 94.5%, from 589,680 to 32,700 shares (about $254 million sold)",
+        "Alphabet: sold the whole stake (336,300 shares, worth $120.2 million at June 30)",
+        "Copper and steel: sold all of Southern Copper, Cleveland-Cliffs and Alcoa ($70.7 million combined at June 30)",
+        "STMicroelectronics: cut 47.9% to 1,615,380 shares"
+      ],
+      "top": [
+        "Natera: $1.31 billion, 29.2% of the portfolio",
+        "Seagate: $315 million in shares, about 7%",
+        "13F total: $4.47 billion. Positions fell to 65 from 95"
+      ],
+      "note": "Druckenmiller said at the TomorrowX conference that he was betting on a fall in copper prices, and Barron's reported him saying his priority was preserving capital. Short bets do not appear in a 13F, so the filing shows only part of his positioning.",
+      "sources": [
+        {
+          "name": "The Northern Miner, Druckenmiller exits copper, steel to buy gold miners, Nov 17, 2026",
+          "url": "https://www.northernminer.com/news/druckenmiller-exits-copper-steel-to-buy-gold-miners/1003897930/"
+        },
+        {
+          "name": "FourWeekMBA, Druckenmiller Cut TSMC 94.5% in Q3, Added Seagate, 13F Shows, Nov 2026",
+          "url": "https://fourweekmba.com/ai-druckenmiller-cut-tsmc-94-5-in-q3-added-seagate-13f-shows/"
+        }
+      ]
+    },
+    {
+      "name": "Bridgewater Associates",
+      "who": "The hedge fund founded by Ray Dalio. It is known for macro investing and spreads its money across hundreds of positions, including large index funds.",
+      "period": "Q3 2026 (13F for quarter ended Sept 30, 2026; reported Nov 17, 2026)",
+      "bought": [
+        "SanDisk: up 20,959% to 66,756 shares, about $116.1 million",
+        "Applied Materials: added 271,953 shares, taking the stake to 563,379 ($288.1 million)",
+        "Micron: added 120,453 shares, taking the stake to 237,119 (about $252.6 million)",
+        "AppLovin: added 536,438 shares, taking the stake to 683,040 ($198.4 million), up 366%",
+        "Qualcomm: added 715,649 shares, taking the stake to 878,115 ($161.6 million)",
+        "Meta: added 109,921 shares, taking the stake to 220,004 ($159.5 million), roughly double"
+      ],
+      "sold": [
+        "Nvidia: sold about 1.2 million shares, about 30.5% of the stake, leaving over 2.6 million shares ($613.9 million)",
+        "Microsoft: sold 490,635 shares (-68.9%), leaving 221,261 ($113.5 million)",
+        "Alphabet Class A: sold 861,943 shares (about -65%), leaving 460,233 ($158.4 million)",
+        "Amazon: sold 1,054,725 shares (-52.1%), leaving 970,756 ($241.9 million)",
+        "S&P 500 index funds: sold 1,916,991 shares of SPDR S&P 500 and 1,494,233 shares of iShares Core S&P 500"
+      ],
+      "top": [
+        "SPDR S&P 500 ETF Trust: about $2.6 billion",
+        "iShares Core S&P 500 ETF: about $1.15 billion",
+        "Nvidia: $613.9 million",
+        "13F total: about $22.99 billion across 974 positions, down from $24.38 billion across 997"
+      ],
+      "note": "Bridgewater cut its biggest tech names and its S&P 500 index funds, and added to chip-equipment and memory makers. IBTimes described this as an aggressive reshaping of the portfolio. Bridgewater gave no reasons for the trades.",
+      "sources": [
+        {
+          "name": "IBTimes UK, Ray Dalio's Bridgewater Associates Drastically Cuts Mag 7 Holdings in Q3, Boosts SanDisk Position by 21,000%, Nov 17, 2026",
+          "url": "https://www.ibtimes.co.uk/bridgewater-cuts-big-tech-stakes-q3-1832802"
+        },
+        {
+          "name": "Placera, Miljardärernas drag – Tepper köper SpaceX och Dalio säljer Nvidia, Nov 17, 2026",
+          "url": "https://placera.se/nyheter/miljardarernas-drag-tepper-koper-spacex-och-dalio-salljer-nvidia-2026-11-17"
+        }
+      ]
+    }
+  ],
+  "corporate": [
+    {
+      "company": "Microsoft",
+      "ticker": "MSFT",
+      "stat": "$45.2B",
+      "statLabel": "Capital spending including finance leases, fiscal Q1 2027 (July-Sept 2026)",
+      "detail": "Microsoft spent $45.2 billion on capital projects in the quarter, mostly CPUs, GPUs and other AI infrastructure. Its cash spending on property and equipment alone was $39.4 billion, more than double a year earlier. Microsoft expects to spend more than $50 billion next quarter and about $170 billion in calendar 2026. Contracted future revenue (commercial RPO) rose 73% to $677 billion.",
+      "sources": [
+        {
+          "name": "Fortune, Microsoft's cloud growth accelerates and so too does the spending, Oct 28 2026",
+          "url": "https://fortune.com/2026/10/28/microsofts-cloud-growth-accelerates-and-so-too-does-the-spending/"
+        },
+        {
+          "name": "Redmond Magazine, Microsoft revenue jumps as Azure and AI demand fuel growth, Oct 30 2026",
+          "url": "https://redmondmag.com/articles/2026/10/30/microsoft-revenue-jumps-as-azure-and-ai-demand--fuel-growth.aspx"
+        },
+        {
+          "name": "24/7 Wall St., Microsoft Q1 2027 earnings, Oct 28 2026",
+          "url": "https://247wallst.com/cards/microsoft-q1-2027-earnings-msft-01m6223bcjxyqzvby9cw8yzzqb"
+        }
+      ]
+    },
+    {
+      "company": "Alphabet",
+      "ticker": "GOOGL",
+      "stat": "$51.4B",
+      "statLabel": "Capital expenditures, Q3 2026",
+      "detail": "Alphabet spent $51.4 billion in the quarter, which exceeded the $42.3 billion of cash its operations brought in, leaving free cash flow at minus $9.1 billion. It expects $195 billion to $205 billion of capital spending in 2026 and said spending will rise significantly in 2027. Google Cloud revenue grew 103% to $30.7 billion, and its cloud backlog reached $561 billion.",
+      "sources": [
+        {
+          "name": "NeoTeo, Alphabet's Q3 2026 results, Oct 31 2026",
+          "url": "https://www.neoteo.com/en/alphabets-q3-2026-results-search-and-cloud-grow-free-cash-flow-is-negative"
+        },
+        {
+          "name": "AI Weekly, Alphabet posts $127.6B Q3 (from SEC Exhibit 99.1), Oct 28 2026",
+          "url": "https://aiweekly.co/alerts/alphabet-posts-1276b-q3-with-google-cloud-up-103-to-307b-as-2027-capex-set-to"
+        },
+        {
+          "name": "9to5Google, Alphabet Q3 2026 earnings, Oct 28 2026",
+          "url": "https://9to5google.com/2026/10/28/alphabet-q3-2026-earnings/"
+        }
+      ]
+    },
+    {
+      "company": "Amazon",
+      "ticker": "AMZN",
+      "stat": "$77.3B",
+      "statLabel": "Purchases of property and equipment, Q3 2026 (vs $35.1B a year earlier)",
+      "detail": "Amazon spent $77.3 billion on property and equipment in the quarter and $175.7 billion in the first nine months of 2026. The company says the increase mainly reflects investment in artificial intelligence, and it still expects about $220 billion of cash capital spending in 2026. AWS sales rose 39% to $46.0 billion.",
+      "sources": [
+        {
+          "name": "Amazon.com, Amazon.com announces third quarter results (via Finviz), Oct 29 2026",
+          "url": "https://finviz.com/news/412054/amazoncom-announces-third-quarter-results"
+        },
+        {
+          "name": "About Amazon, Amazon Q3 2026 earnings report, Oct 29 2026",
+          "url": "https://aboutamazon.com/news/company-news/amazon-earnings-q3-2026-report"
+        }
+      ]
+    },
+    {
+      "company": "Meta",
+      "ticker": "META",
+      "stat": "$34.9B",
+      "statLabel": "Capital expenditures including finance lease payments, Q3 2026",
+      "detail": "Meta spent $34.91 billion on capital projects in the quarter. It narrowed its 2026 capital spending outlook to $135 billion to $145 billion, from $130 billion to $145 billion. It expects to keep investing heavily in AI and its core business in 2027.",
+      "sources": [
+        {
+          "name": "Meta Investor Relations, Meta Reports Third Quarter 2026 Results, Oct 21 2026",
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+        }
+      ]
+    },
+    {
+      "company": "Oracle",
+      "ticker": "ORCL",
+      "stat": "$28.5B",
+      "statLabel": "Capital expenditures, fiscal Q1 2027 (June-Aug 2026, reported Sept 10 2026)",
+      "detail": "Oracle spent $28.5 billion in the quarter, mainly on data center equipment. It expects gross capital spending of $90 billion to $95 billion for the fiscal year ending May 2027, with $20 billion to $25 billion offset by customer prepayments. Its contracted future revenue (RPO) reached $664 billion, and cloud infrastructure revenue grew 121%.",
+      "sources": [
+        {
+          "name": "Oracle Investor Relations, Oracle Announces Q1 Results, Sept 10 2026",
+          "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx"
+        },
+        {
+          "name": "Futurum Group, Oracle Q1 FY 2027: AI Infrastructure Contracts Convert Into Growth, Sept 14 2026",
+          "url": "https://futurumgroup.com/insights/oracle-q1-fy-2027-ai-infrastructure-contracts-convert-into-growth/"
+        }
+      ]
+    },
+    {
+      "company": "SpaceX",
+      "ticker": "Private",
+      "stat": "$74B+",
+      "statLabel": "Announced investment in two supercomputing data center campuses, Nov 2026",
+      "detail": "SpaceX announced more than $74 billion for two AI supercomputing campuses: about $50 billion in Cochise County, Arizona, and more than $24 billion at Starbase, Texas. The Arizona campus is planned with local electric cooperatives to add power capacity. Together the projects are expected to create about 8,500 construction jobs.",
+      "sources": [
+        {
+          "name": "Just The News, SpaceX says it will invest $74 billion into building data centers in Arizona, Texas, Nov 12 2026",
+          "url": "https://justthenews.com/nation/technology/spacex-says-it-will-invest-74-billion-building-data-centers-arizona-texas"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "title": "October was a near-record month for US ETFs",
+      "stat": "$204B",
+      "statLabel": "Net inflows into US ETFs, October 2026",
+      "detail": "US ETFs took in $204.2 billion in October, up 45% from September, and total ETF assets reached $16.5 trillion. Stock ETFs took about $126 billion and bond ETFs about $74 billion. Currency ETFs lost $1.6 billion.",
+      "sources": [
+        {
+          "name": "FactSet Insight, U.S. ETF Monthly Summary: October 2026 Results, Nov 6 2026",
+          "url": "https://insight.factset.com/u.s.-etf-monthly-summary-october-2026-results"
+        }
+      ]
+    },
+    {
+      "title": "Bond ETFs had their best month ever",
+      "stat": "$71.0B",
+      "statLabel": "Net inflows into US bond ETFs, October 2026 (TD Securities, Bloomberg data)",
+      "detail": "Bond ETFs took in a record $71.0 billion in October, and municipal bond ETFs also had their best month at $21.1 billion. Money left some areas: crypto ETFs lost $2.3 billion, US gold ETFs lost $699 million, and the SPDR S&P 500 ETF lost $6.9 billion.",
+      "sources": [
+        {
+          "name": "InvestmentNews, US ETF flows hit $204BN in October as fixed income sets record, Nov 5 2026",
+          "url": "https://www.investmentnews.com/etfs/us-etf-flows-hit-204bn-in-october-as-fixed-income-sets-record/268895"
+        }
+      ]
+    },
+    {
+      "title": "Central banks bought 42% more gold",
+      "stat": "321t",
+      "statLabel": "Central bank net gold purchases, Q3 2026 (World Gold Council)",
+      "detail": "Central banks bought 321 tonnes of gold in the third quarter, up 42% from a year earlier, bringing 2026 purchases to 675 tonnes. China's central bank reported the most at 63 tonnes, followed by Poland at 40 tonnes, while Russia sold 19 tonnes. Total gold demand was 1,369 tonnes, worth $188 billion (up 22%), at an average price of $4,262 an ounce.",
+      "sources": [
+        {
+          "name": "World Gold Council, Central bank buying and ETF inflows support gold demand in Q3, Nov 3 2026",
+          "url": "https://www.gold.org/news-and-events/press-releases/central-bank-buying-and-etf-inflows-support-gold-demand-q3/"
+        },
+        {
+          "name": "World Gold Council, Gold Demand Trends Q3 2026: Central Banks",
+          "url": "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q3-2026/central-banks"
+        }
+      ]
+    },
+    {
+      "title": "Gold ETFs kept growing outside the US",
+      "stat": "$2.7B",
+      "statLabel": "Global gold ETF net inflows, October 2026 (World Gold Council)",
+      "detail": "Global gold ETFs took in $2.7 billion in October, their fourth monthly inflow in a row, and holdings reached a record 4,275 tonnes. Europe added $1.8 billion and Asia $1.3 billion, while North American funds lost $512 million. In Q3, gold ETFs added 211 tonnes.",
+      "sources": [
+        {
+          "name": "World Gold Council, Gold ETF Flows: October 2026, Nov 5 2026",
+          "url": "https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/11"
+        },
+        {
+          "name": "World Gold Council, Central bank buying and ETF inflows support gold demand in Q3, Nov 3 2026",
+          "url": "https://www.gold.org/news-and-events/press-releases/central-bank-buying-and-etf-inflows-support-gold-demand-q3/"
+        }
+      ]
+    },
+    {
+      "title": "Bitcoin ETFs lost money for two straight weeks",
+      "stat": "$2.35B",
+      "statLabel": "Net outflows from US spot bitcoin ETFs, first nine trading days of Nov 2026 (SoSoValue)",
+      "detail": "US spot bitcoin ETFs lost about $1.28 billion and then $1.07 billion in back-to-back weeks in early November. That left them down about $1.98 billion for 2026 as bitcoin fell below $69,000.",
+      "sources": [
+        {
+          "name": "The Block, Bitcoin ETFs lose $1 billion for the second week in a row, Nov 14 2026",
+          "url": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-440337"
+        }
+      ]
+    },
+    {
+      "title": "Nearly $8 trillion still sits in money market funds",
+      "stat": "$7.98T",
+      "statLabel": "US money market fund assets, week ended Nov 18 2026 (ICI)",
+      "detail": "Money market funds held $7.98 trillion in the week to November 18, down $3.58 billion from the week before. Government funds held $6.59 trillion of that, and institutions owned $4.86 trillion against $3.11 trillion for retail investors.",
+      "sources": [
+        {
+          "name": "Investment Company Institute, Money Market Fund Assets, Nov 19 2026",
+          "url": "https://www.ici.org/research/stats/mmf"
+        }
+      ]
+    },
+    {
+      "title": "Silver ETFs kept adding metal",
+      "stat": "4.9M oz",
+      "statLabel": "Rise in known silver ETF holdings, October 2026 (Sprott, Bloomberg data)",
+      "detail": "Known silver ETF holdings rose about 4.9 million ounces in October. Cumulative additions since the end of July reached about 19.5 million ounces.",
+      "sources": [
+        {
+          "name": "Kitco (Sprott commentary), Gold and silver weather a perfect storm as demand holds firm, Nov 18 2026",
+          "url": "https://www.kitco.com/opinion/2026-11-18/gold-and-silver-weather-perfect-storm-demand-holds-firm"
+        }
+      ]
+    }
+  ],
+  "insiders": [
+    {
+      "company": "Intel",
+      "ticker": "INTC",
+      "who": "Lip-Bu Tan, CEO (through his family trust)",
+      "what": "Bought 150,000 shares at a weighted average of $64.73, about $9.71 million",
+      "date": "2026-11-02",
+      "detail": "The stock fell 28.6% on Oct 30 after a weaker-than-expected fourth-quarter outlook, and was down about 51% over a month by Nov 4. Tan also bought about $10 million of stock at $95 in August.",
+      "sources": [
+        {
+          "name": "Quiver Quantitative, Intel CEO Lip-Bu Tan Buys $9.7 Million in Stock Amid Extended Selloff, Nov 4, 2026",
+          "url": "https://www.quiverquant.com/news/Intel+CEO+Lip-Bu+Tan+Buys+%249.7+Million+in+Stock+Amid+Extended+Selloff"
+        }
+      ]
+    },
+    {
+      "company": "Kinder Morgan",
+      "ticker": "KMI",
+      "who": "Richard D. Kinder, Executive Chairman and co-founder",
+      "what": "Bought 500,000 shares at an average of $29.99, about $15 million",
+      "date": "2026-11-06",
+      "detail": "After the purchase he owns 246.7 million shares, about 11% of the company, so the buy raised his stake by only about 0.2%. The stock was about 14% below its 52-week high of $34.81.",
+      "sources": [
+        {
+          "name": "TIKR, Kinder Morgan's Executive Chairman Just Bought $15 Million of Stock, Nov 10, 2026",
+          "url": "https://www.tikr.com/blog/kinder-morgans-executive-chairman-just-bought-15-million-of-stock-his-stake-is-now-246-7-million-shares"
+        },
+        {
+          "name": "InsiderPrint Weekly, Insider buys this week: MDGL, KOD, KMI, Nov 16, 2026",
+          "url": "https://buttondown.com/insiderprint/archive/insider-buys-this-week-mdgl-kod-kmi-plus-our/"
+        }
+      ]
+    },
+    {
+      "company": "HubSpot",
+      "ticker": "HUBS",
+      "who": "Brian Halligan, co-founder, who returned as CEO on Nov 12, 2026",
+      "what": "Bought 22,985 shares at an average of $217.44, just under $5 million",
+      "date": "2026-11-13",
+      "detail": "He bought the day after returning as CEO, which he called a refounding. The stock closed at $216.30 on Nov 17, 47% below its 52-week high, after the company guided to slower growth.",
+      "sources": [
+        {
+          "name": "TIKR, HubSpot Is 47% Below Its High. Its Co-Founder Is Back for a Refounding and Bought $5 Million, Nov 18, 2026",
+          "url": "https://www.tikr.com/blog/hubspot-is-47-below-its-high-its-co-founder-is-back-for-a-refounding-and-bought-5-million"
+        },
+        {
+          "name": "Quiver Quantitative, Insider Stock Purchases: November 16, 2026",
+          "url": "https://www.quiverquant.com/news/Insider+Stock+Purchases%3A+November+16%2C+2026"
+        }
+      ]
+    }
+  ]
+}

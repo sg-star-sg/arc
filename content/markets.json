@@ -1,0 +1,443 @@
+{
+  "updated": "2026-11-25",
+  "assets": [
+    {
+      "id": "gold",
+      "name": "Gold",
+      "group": "Metals",
+      "sym": "GC=F",
+      "unit": "US$ per troy ounce (futures)",
+      "what": "A store of value with no income. It tends to rise when real interest rates fall, the dollar weakens or fear rises, and central banks are major buyers.",
+      "alt": {
+        "src": "gold-api",
+        "code": "XAU"
+      },
+      "context": {
+        "value": "$3,548/oz",
+        "label": "Spot gold bid, Nov 25, 2026 (2:41 pm ET)",
+        "detail": "Gold fell from above $4,000 in early November to a 14-month low as a hot October inflation reading and hawkish Fed comments pushed markets to price in a December rate hike, which lifted the dollar. Higher interest rates raise the cost of holding gold, which pays no income.",
+        "sources": [
+          {
+            "name": "Kitco, Precious metals text quotes, Nov 25, 2026",
+            "url": "https://www.kitco.com/price/precious-metals/text-quotes"
+          },
+          {
+            "name": "Khaleej Times, Gold drops 3% to over one-year low, Nov 12, 2026",
+            "url": "https://www.khaleejtimes.com/business/gold-drops-3-to-over-one-year-low-as-fading-middle-east-peace-hopes-fan-inflation-fears"
+          },
+          {
+            "name": "Trading Economics, Gold news stream, Nov 16-25, 2026",
+            "url": "https://tradingeconomics.com/commodity/gold/news/601617"
+          }
+        ]
+      }
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "group": "Metals",
+      "sym": "SI=F",
+      "unit": "US$ per troy ounce (futures)",
+      "what": "Half precious metal, half industrial input for solar panels and electronics, so it swings harder than gold in both directions.",
+      "alt": {
+        "src": "gold-api",
+        "code": "XAG"
+      },
+      "context": {
+        "value": "$40.67/oz",
+        "label": "Spot silver bid, Nov 25, 2026 (2:41 pm ET)",
+        "detail": "Silver fell from about $50 on Nov 12 to 14-month lows near $41, pressured by expected Fed rate hikes and a selloff in tech stocks. It swings harder than gold: it jumped 5% on Nov 23 during a brief tech rally, then gave it back.",
+        "sources": [
+          {
+            "name": "Kitco, Precious metals text quotes, Nov 25, 2026",
+            "url": "https://www.kitco.com/price/precious-metals/text-quotes"
+          },
+          {
+            "name": "Trading Economics, Silver news stream, Nov 13-25, 2026",
+            "url": "https://tradingeconomics.com/commodity/silver/news/601262"
+          },
+          {
+            "name": "Khaleej Times, Gold drops 3% to over one-year low, Nov 12, 2026",
+            "url": "https://www.khaleejtimes.com/business/gold-drops-3-to-over-one-year-low-as-fading-middle-east-peace-hopes-fan-inflation-fears"
+          }
+        ]
+      }
+    },
+    {
+      "id": "platinum",
+      "name": "Platinum",
+      "group": "Metals",
+      "sym": "PL=F",
+      "unit": "US$ per troy ounce (futures)",
+      "what": "Used mostly in car catalytic converters and industry; supply is concentrated in South Africa and Russia.",
+      "alt": {
+        "src": "gold-api",
+        "code": "XPT"
+      },
+      "context": {
+        "value": "$1,269/oz",
+        "label": "Spot platinum bid, Nov 25, 2026 (2:41 pm ET)",
+        "detail": "Platinum fell alongside gold and silver, from about $1,519 on Nov 12, as a stronger dollar and rate-hike bets weighed on metals.",
+        "sources": [
+          {
+            "name": "Kitco, Precious metals text quotes, Nov 25, 2026",
+            "url": "https://www.kitco.com/price/precious-metals/text-quotes"
+          },
+          {
+            "name": "Khaleej Times, Gold drops 3% to over one-year low, Nov 12, 2026",
+            "url": "https://www.khaleejtimes.com/business/gold-drops-3-to-over-one-year-low-as-fading-middle-east-peace-hopes-fan-inflation-fears"
+          }
+        ]
+      }
+    },
+    {
+      "id": "copper",
+      "name": "Copper",
+      "group": "Metals",
+      "sym": "HG=F",
+      "unit": "US$ per pound (futures)",
+      "what": "The metal of wiring, grids, motors and data centers. Its price is read as a gauge of global industrial demand, especially China's.",
+      "context": {
+        "value": "about $5.30/lb",
+        "label": "US copper futures, Nov 24, 2026",
+        "detail": "Copper fell close to its lowest since December 2025 on doubts about AI data-center spending, soft Chinese demand and expected Fed rate hikes. On the London Metal Exchange, three-month copper dropped from $13,226.50 to $12,471 a tonne between Nov 17 and Nov 18 as investors cut record long positions and inventories rose.",
+        "sources": [
+          {
+            "name": "Trading Economics, Copper, Nov 2026",
+            "url": "https://tradingeconomics.com/commodity/copper?user=analyst43256"
+          },
+          {
+            "name": "Kalkine, Copper falls on the LME, Nov 18, 2026",
+            "url": "https://kalkine.com.au/news/mining/copper-falls-on-the-lme-freeport-and-antofagasta-exposure-in-focus"
+          }
+        ]
+      }
+    },
+    {
+      "id": "brent",
+      "name": "Brent crude oil",
+      "group": "Energy",
+      "sym": "BZ=F",
+      "unit": "US$ per barrel (futures)",
+      "what": "The global oil benchmark. Moves with supply decisions by OPEC+, conflict in the Gulf, and demand from China and the US.",
+      "context": {
+        "value": "$91.40/bbl",
+        "label": "Brent crude close, Nov 24, 2026",
+        "detail": "Brent fell from about $108 in early November as US-Iran talks eased fears of supply disruption, Gulf exports recovered and the IEA forecast a fourth-quarter surplus of about 2 million barrels a day. Attacks on tankers near the Strait of Hormuz still cause sharp one-day jumps.",
+        "sources": [
+          {
+            "name": "Capp Notes, Closing Look, Nov 24, 2026",
+            "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+          },
+          {
+            "name": "Trading Economics, Brent Crude Falls Sharply on Monday, Nov 2, 2026",
+            "url": "https://tradingeconomics.com/commodity/brent-crude-oil/news/597300"
+          },
+          {
+            "name": "Trading Economics, Brent Extends Decline on Improving Supply Outlook, Nov 16, 2026",
+            "url": "https://tradingeconomics.com/commodity/brent-crude-oil/news/601699"
+          },
+          {
+            "name": "Trading Economics, Brent news stream, Nov 16-25, 2026",
+            "url": "https://tradingeconomics.com/commodity/brent-crude-oil/news/601607"
+          }
+        ]
+      }
+    },
+    {
+      "id": "natgas",
+      "name": "US natural gas",
+      "group": "Energy",
+      "sym": "NG=F",
+      "unit": "US$ per million BTU (Henry Hub futures)",
+      "what": "Heats homes and runs power plants. US prices depend on weather, storage levels and how much is exported as LNG.",
+      "context": {
+        "value": "about $3.67/MMBtu",
+        "label": "US natural gas futures (Henry Hub), Nov 24, 2026",
+        "detail": "US gas prices rose toward nine-month highs as storage fell by a larger-than-expected 24 billion cubic feet in the week to Nov 20 and LNG exports stayed strong. Record production and mild weather forecasts limit the gains.",
+        "sources": [
+          {
+            "name": "Trading Economics, Natural gas news stream, Nov 16-25, 2026",
+            "url": "https://tradingeconomics.com/commodity/natural-gas/news/601655"
+          }
+        ]
+      }
+    },
+    {
+      "id": "us10y",
+      "name": "US 10-year Treasury yield",
+      "group": "Rates and the dollar",
+      "sym": "^TNX",
+      "unit": "Yield, %",
+      "what": "The interest rate the US government pays to borrow for ten years. It sets the tone for mortgage rates and for how much investors pay for stocks.",
+      "context": {
+        "value": "4.86%",
+        "label": "US 10-year Treasury yield, Nov 25, 2026",
+        "detail": "The 10-year yield topped 5.30% in early October and has drifted lower since, as falling oil eased inflation fears and investors bought Treasuries for safety during the AI stock selloff. Markets still price a near-certain Fed rate hike in December.",
+        "sources": [
+          {
+            "name": "Trading Economics, US 10-year yield news stream, Nov 16-25, 2026",
+            "url": "https://tradingeconomics.com/united-states/government-bond-yield/news/601580"
+          },
+          {
+            "name": "AJC (AP), Average US 30-year mortgage rate falls to 7.11%, Nov 12, 2026",
+            "url": "https://www.ajc.com/news/2026/11/the-average-us-30-year-mortgage-rate-falls-to-711-this-week-its-fourth-straight-decline/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mortgage30",
+      "name": "30-year US mortgage rate",
+      "group": "Rates and the dollar",
+      "sym": null,
+      "unit": "Average rate, % (Freddie Mac, weekly)",
+      "what": "What a typical buyer pays on a 30-year fixed loan. It follows the 10-year Treasury yield plus a spread for risk and lender costs.",
+      "context": {
+        "value": "7.28%",
+        "label": "Freddie Mac 30-year fixed average (PMMS), week of Nov 19, 2026",
+        "detail": "The average 30-year rate rose from 7.11% the week before, ending four straight weekly declines, and is up from 6.26% a year earlier. Persistent inflation and expectations of a December Fed rate hike keep mortgage rates high.",
+        "sources": [
+          {
+            "name": "Freddie Mac, Primary Mortgage Market Survey, Nov 19, 2026",
+            "url": "https://www.freddiemac.com/pmms?sf232241821=1"
+          },
+          {
+            "name": "AJC (AP), Average US 30-year mortgage rate falls to 7.11%, Nov 12, 2026",
+            "url": "https://www.ajc.com/news/2026/11/the-average-us-30-year-mortgage-rate-falls-to-711-this-week-its-fourth-straight-decline/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dxy",
+      "name": "US dollar index",
+      "group": "Rates and the dollar",
+      "sym": "DX-Y.NYB",
+      "unit": "Index vs six major currencies",
+      "what": "Measures the dollar against the euro, yen, pound and others. A stronger dollar makes imports cheaper for Americans and dollar debts heavier for other countries.",
+      "context": {
+        "value": "about 103.8",
+        "label": "US dollar index, Nov 25, 2026",
+        "detail": "The dollar climbed to its highest level since April 2025 in mid-November as Fed officials signaled more rate hikes to fight inflation. Higher US rates attract money into dollars, and safe-haven buying during the stock selloff and new tariffs added support.",
+        "sources": [
+          {
+            "name": "Trading Economics, Dollar news stream, Nov 17-25, 2026",
+            "url": "https://tradingeconomics.com/united-states/currency/news/601984"
+          }
+        ]
+      }
+    },
+    {
+      "id": "homeprices",
+      "name": "US home prices",
+      "group": "Real estate",
+      "sym": null,
+      "unit": "Case-Shiller national index, % change from a year earlier (monthly)",
+      "what": "The broadest measure of what US homes sell for, released with a two-month lag. Compare it with inflation to see whether homes gained real value.",
+      "context": {
+        "value": "+2.1%",
+        "label": "S&P Cotality Case-Shiller US National Home Price Index, year over year, September 2026 (released Nov 24, 2026)",
+        "detail": "National home prices rose 2.1% from a year earlier, the same as in August, while consumer prices rose 3.7%. That makes September the 16th straight month in which home prices fell after inflation; Chicago led at +6.9% and Seattle fell most at -1.9%.",
+        "sources": [
+          {
+            "name": "S&P Dow Jones Indices, S&P Cotality Case-Shiller Index Reports Annual Gain in September 2026, Nov 24, 2026",
+            "url": "https://press.spglobal.com/2026-11-24-S-P-Cotality-Case-Shiller-Index-Reports-Annual-Gain-in-September-2026"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reits",
+      "name": "US real estate stocks (REITs)",
+      "group": "Real estate",
+      "sym": "VNQ",
+      "unit": "Vanguard Real Estate ETF (VNQ), US$, a live stand-in for listed real estate",
+      "what": "Real estate investment trusts own offices, warehouses, apartments, towers and data centers and pay out most of their income. They trade daily and are sensitive to interest rates.",
+      "context": {
+        "value": "+13.0% YTD",
+        "label": "FTSE Nareit All Equity REITs total return, year to date through Oct 31, 2026",
+        "detail": "REITs rose 4.7% in October and beat the broad US stock market, which fell 0.8%, as the 10-year Treasury yield dropped from 5.27% to 4.91%. REITs borrow heavily and compete with bonds for income investors, so falling yields tend to help them.",
+        "sources": [
+          {
+            "name": "Nareit, REITs rebounded in October, leading broader equities, Nov 9, 2026",
+            "url": "https://www.reit.com/news/blog/market-commentary/reits-rebounded-october-leading-broader-equities"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sp500",
+      "name": "S&P 500",
+      "group": "Stocks",
+      "sym": "^GSPC",
+      "unit": "Index points",
+      "what": "500 large US companies weighted by size. The benchmark most US investors measure themselves against.",
+      "context": {
+        "value": "7,201.09",
+        "label": "S&P 500 close, Nov 24, 2026",
+        "detail": "The index jumped 4.7% on Nov 23 when Nvidia reinstated Jensen Huang as CEO, then slipped as the AI rally faded, its eighth loss in nine sessions. Doubts about AI spending, new US tariffs and expected Fed rate hikes pushed it down again early on Nov 25.",
+        "sources": [
+          {
+            "name": "Capp Notes, Closing Look, Nov 24, 2026",
+            "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+          },
+          {
+            "name": "Zacks via Yahoo Finance, Stock Market News for Nov 24, 2026",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-24-080800306.html"
+          },
+          {
+            "name": "Trading Economics, US stock market news stream, Nov 25, 2026",
+            "url": "https://tradingeconomics.com/united-states/stock-market/news/504530"
+          },
+          {
+            "name": "Investrade (Hammerstone Markets), Morning Preview: November 25, 2026",
+            "url": "https://investrade.com/morning-preview-november-25-2026/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nasdaq",
+      "name": "Nasdaq Composite",
+      "group": "Stocks",
+      "sym": "^IXIC",
+      "unit": "Index points",
+      "what": "Heavy in technology and AI companies, so it moves more than the S&P 500.",
+      "context": {
+        "value": "23,733.54",
+        "label": "Nasdaq Composite close, Nov 24, 2026",
+        "detail": "Tech-heavy Nasdaq has swung hardest on AI news: it rose 6.5% on Nov 23 after Nvidia reinstated its CEO, fell 1.5% the next day, and the Nasdaq 100 dropped up to 4% early on Nov 25. Investors are questioning whether heavy AI spending will pay off while rates rise.",
+        "sources": [
+          {
+            "name": "Capp Notes, Closing Look, Nov 24, 2026",
+            "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+          },
+          {
+            "name": "Zacks via Yahoo Finance, Stock Market News for Nov 24, 2026",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-24-080800306.html"
+          },
+          {
+            "name": "Trading Economics, US stock market news stream, Nov 25, 2026",
+            "url": "https://tradingeconomics.com/united-states/stock-market/news/504530"
+          }
+        ]
+      }
+    },
+    {
+      "id": "europe",
+      "name": "Germany's DAX",
+      "group": "Stocks",
+      "sym": "^GDAXI",
+      "unit": "Index points",
+      "what": "Europe's best-known index of 40 large German companies, many of them exporters and industrial firms.",
+      "context": {
+        "value": "25,012",
+        "label": "Germany's DAX close, Nov 24, 2026",
+        "detail": "The DAX fell 1.3% on Nov 24 and is down from about 26,600 in mid-November, led by chipmaker Infineon and Siemens Energy. Tech uncertainty and reports of new US tariffs on the EU and others weighed on European shares.",
+        "sources": [
+          {
+            "name": "Trading Economics, DAX news stream, Nov 17-24, 2026",
+            "url": "https://tradingeconomics.com/germany/stock-market/news/601991"
+          },
+          {
+            "name": "Finanznachrichten (RTTNews), European stocks close weak after cautious session, Nov 16, 2026",
+            "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70145948-european-stocks-close-weak-after-cautious-session-020.htm"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nikkei",
+      "name": "Japan's Nikkei 225",
+      "group": "Stocks",
+      "sym": "^N225",
+      "unit": "Index points",
+      "what": "225 large Japanese companies. Moves with the yen, exports and chip stocks.",
+      "context": {
+        "value": "57,002",
+        "label": "Nikkei 225 close, Nov 25, 2026",
+        "detail": "The Nikkei fell 2.8% on Nov 25 and is down from about 61,100 on Nov 13, as Wall Street's AI selloff hit Japanese chip and tech stocks such as SoftBank. New US tariff plans on China, the EU and other economies added pressure.",
+        "sources": [
+          {
+            "name": "Trading Economics, Nikkei 225 news stream, Nov 13-25, 2026",
+            "url": "https://tradingeconomics.com/japan/stock-market/news/600983"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sensex",
+      "name": "India's Sensex",
+      "group": "Stocks",
+      "sym": "^BSESN",
+      "unit": "Index points",
+      "what": "30 large companies on the Bombay Stock Exchange, a gauge of India's fast-growing economy.",
+      "context": {
+        "value": "82,435.99",
+        "label": "BSE Sensex close, Nov 24, 2026 (Nifty 50: 25,349.65)",
+        "detail": "The Sensex fell 1.8% on Nov 24, then opened about 1.7% higher on Nov 25 as Indian IT stocks rallied and Brent slipped below $88. Analysts tie the recent swings mainly to the global AI trade.",
+        "sources": [
+          {
+            "name": "Business Today, Why market is rising today, Nov 25, 2026",
+            "url": "https://www.businesstoday.in/markets/stocks/story/why-market-is-rising-today-sensex-gains-over-1300-pts-nifty-crosses-25700-569286-2026-11-25"
+          },
+          {
+            "name": "Kotak Neo, Closing Bell 19 November 2026",
+            "url": "https://www.kotakneo.com/news/market-news/closing-bell-19-november-2026-sensex-nifty-end-higher-as-bulls-return-to-dalal-street/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kospi",
+      "name": "Korea's Kospi",
+      "group": "Stocks",
+      "sym": "^KS11",
+      "unit": "Index points",
+      "what": "Korea's main index, dominated by chipmakers such as Samsung and SK Hynix, so it swings with the AI chip cycle.",
+      "context": {
+        "value": "4,697",
+        "label": "KOSPI close, Nov 25, 2026",
+        "detail": "The KOSPI fell 6.2% on Nov 25 after jumping 6.3% the day before, driven by swings in chipmakers Samsung Electronics and SK Hynix. It hit a ten-month low on Nov 23 on AI worries and fears of tighter US chip export rules, and South Korea is among 16 partners facing new US import duties.",
+        "sources": [
+          {
+            "name": "Trading Economics, South Korea stock market news stream, Nov 23-25, 2026",
+            "url": "https://tradingeconomics.com/south-korea/stock-market/news/501560"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bitcoin",
+      "name": "Bitcoin",
+      "group": "Crypto",
+      "sym": "BTC-USD",
+      "unit": "US$",
+      "what": "A digital asset with a fixed supply and no cash flows. Its price depends on demand from traders, funds and ETFs, and it has fallen more than 70% from peaks several times.",
+      "alt": {
+        "src": "coingecko",
+        "code": "bitcoin"
+      },
+      "context": {
+        "value": "about $60,000",
+        "label": "Bitcoin, Nov 24, 2026",
+        "detail": "Bitcoin fell about 22% in the month to Nov 19, hitting its lowest level since September 2024 on Nov 20. Drivers include a $6 billion Binance hack on Oct 29, large outflows from spot bitcoin ETFs and expected Fed rate hikes.",
+        "sources": [
+          {
+            "name": "Trading Economics, Bitcoin news stream, Nov 19-24, 2026",
+            "url": "https://tradingeconomics.com/btcusd:cur/news/506121"
+          },
+          {
+            "name": "Fortune, Price of bitcoin, Nov 19, 2026",
+            "url": "https://fortune.com/article/price-of-bitcoin-11-19-2026/"
+          },
+          {
+            "name": "Capp Notes, Closing Look, Nov 24, 2026",
+            "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+          }
+        ]
+      }
+    }
+  ]
+}

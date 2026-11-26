@@ -30,7 +30,7 @@
     "risks": [
       "A few huge customers buy most of its chips",
       "Export limits to China and new license rules for Southeast Asia",
-      "Leadership change: founder resigned, interim CEO while the board searches",
+      "Governance: founder Jensen Huang was ousted on Nov 12, 2026 and reinstated on Nov 23 while an independent investigation continues",
       "Receivables and inventory roughly doubled since January",
       "Any slowdown in AI spending would hit fast"
     ],
@@ -38,7 +38,7 @@
       "Data center growth each quarter",
       "Gross margin recovering from the 71%–72% guide",
       "Receivables and inventory versus sales",
-      "Who the board names as permanent CEO"
+      "Findings of the independent directors' investigation"
     ],
     "updated": "2026-11-18",
     "sources": [
@@ -57,6 +57,10 @@
       {
         "name": "Let's Data Science, Feb 2026",
         "url": "https://letsdatascience.com/news/nvidia-posts-record-2159b-fiscal-revenue-83f1d2e8"
+      },
+      {
+        "name": "NVIDIA, NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director (Form 8-K exhibit), Nov 23, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm"
       }
     ],
     "why": "Every major tech company is racing to build AI data centers, and most AI models are trained and run on Nvidia chips. Sales more than doubled from a year earlier to $115.8 billion last quarter, and it kept about 75 cents of each revenue dollar as gross profit. Its CUDA software makes switching to another chipmaker slow and costly, and its interim CEO says demand still exceeds supply.",
@@ -75,7 +79,8 @@
       "bull": "Vera Rubin ramps smoothly, margins recover as promised, receivables are collected on schedule, and a strong permanent CEO is named.",
       "base": "Growth slows from triple digits as comparisons get tougher, but stays strong while data-center building continues and supply remains tight.",
       "bear": "Big customers pay more slowly or cut orders, inventory has to be written down, margins stay lower, and the leadership search drags on."
-    }
+    },
+    "list": "core"
   },
   {
     "ticker": "MU",
@@ -135,7 +140,8 @@
       "bull": "AI demand keeps memory scarce into 2027 and beyond, and margins stay near record highs.",
       "base": "Growth continues but slows as competitors' new capacity arrives and prices level off.",
       "bear": "Supply catches up, memory prices fall fast, and profits drop sharply, as in past memory busts."
-    }
+    },
+    "list": "core"
   },
   {
     "ticker": "MSFT",
@@ -200,13 +206,14 @@
       "bull": "AI services become a large, high-margin business on top of steady software subscriptions.",
       "base": "Steady high-teens growth, with margins pressured somewhat by data-center costs.",
       "bear": "AI demand cools after heavy spending, leaving costly unused capacity."
-    }
+    },
+    "list": "core"
   },
   {
     "ticker": "LLY",
     "name": "Eli Lilly",
     "country": "United States",
-    "sector": "Health care",
+    "sector": "Health Care",
     "theme": "Obesity drugs",
     "what": "Pharmaceutical company behind Mounjaro and Zepbound, leading diabetes and obesity medicines.",
     "past": {
@@ -265,13 +272,14 @@
       "bull": "Oral obesity pills widen the market, Medicare coverage expands, and new drugs like retatrutide add another leg of growth.",
       "base": "Strong growth continues, with prices gradually falling as competition and government pressure increase.",
       "bear": "Competitors match its results, prices drop sharply, or trials disappoint."
-    }
+    },
+    "list": "core"
   },
   {
     "ticker": "COST",
     "name": "Costco",
     "country": "United States",
-    "sector": "Consumer staples",
+    "sector": "Consumer Staples",
     "theme": "Steady compounders",
     "what": "Membership warehouse retailer that earns much of its profit from membership fees.",
     "past": {
@@ -330,7 +338,8 @@
       "bull": "International expansion and digital sales speed up growth, and members keep renewing at record rates.",
       "base": "Steady high-single-digit growth, the reliable compounding it is known for.",
       "bear": "Growth slows to normal retail levels and its high valuation shrinks."
-    }
+    },
+    "list": "core"
   },
   {
     "ticker": "GEV",
@@ -395,7 +404,8 @@
       "bull": "Power demand keeps rising faster than expected, and long order queues let it raise prices.",
       "base": "It works through its backlog with steady growth and improving margins.",
       "bear": "Data-center building slows, orders are delayed or cancelled, and the wind business keeps losing money."
-    }
+    },
+    "list": "core"
   },
   {
     "ticker": "TSM",
@@ -470,13 +480,14 @@
       "bull": "AI demand keeps outrunning supply, the 2-nanometer ramp goes smoothly and margins stay near record levels.",
       "base": "Revenue keeps growing with AI spending while heavy factory investment and new overseas plants trim margins slightly.",
       "bear": "Big customers cut AI chip orders, tension around Taiwan disrupts operations or trade, or new factories cost more than planned."
-    }
+    },
+    "list": "core"
   },
   {
     "ticker": "SONY",
     "name": "Sony Group",
     "country": "Japan",
-    "sector": "Entertainment and electronics",
+    "sector": "Consumer Discretionary",
     "theme": "Games, music and film",
     "what": "Owns PlayStation, one of the world's largest music companies, a Hollywood film and TV studio, and the leading maker of camera image sensors.",
     "past": {
@@ -545,7 +556,7 @@
     "ticker": "CFRUY",
     "name": "Richemont",
     "country": "Switzerland",
-    "sector": "Luxury goods",
+    "sector": "Consumer Discretionary",
     "theme": "Jewelry and luxury spending",
     "what": "Owns Cartier, Van Cleef & Arpels and Buccellati jewelry and watchmakers including IWC, Jaeger-LeCoultre and Vacheron Constantin.",
     "past": {
@@ -686,7 +697,8 @@
         "name": "Mint via TradingView, Oct 17, 2026",
         "url": "https://www.tradingview.com/news/moodys:64eed3e6776ec:0-hdfc-bank-q2-results-net-profit-rises-5-to-rs-19-610-crore-nii-jumps-10-in-last-quarter-under-outgoing-ceo-jagdishan/"
       }
-    ]
+    ],
+    "list": "core"
   },
   {
     "ticker": "MUFG",
@@ -838,7 +850,8 @@
         "name": "GuruFocus via Yahoo Finance, Q3 2026 earnings call highlights",
         "url": "https://finance.yahoo.com/markets/stocks/articles/rheinmetall-ag-rnmbf-q3-2026-111359466.html"
       }
-    ]
+    ],
+    "list": "core"
   },
   {
     "ticker": "BABA",
@@ -1074,7 +1087,7 @@
     "ticker": "NVMI",
     "name": "Nova",
     "country": "Israel",
-    "sector": "Semiconductor Equipment",
+    "sector": "Technology",
     "theme": "Measurement tools for advanced chips and AI memory",
     "what": "Nova makes metrology systems that measure materials, dimensions and chemistry on silicon wafers during production, so chipmakers can control their manufacturing processes.",
     "past": {
@@ -1311,7 +1324,8 @@
         "name": "247 Wall St, Can Cameco's 89x Premium Valuation Survive Another Big Miss on Oct. 30?, Oct 26, 2026",
         "url": "https://247wallst.com/investing/2026/10/26/can-camecos-89x-premium-valuation-survive-another-big-miss-on-oct-30/"
       }
-    ]
+    ],
+    "list": "core"
   },
   {
     "ticker": "DELL",
@@ -1389,6 +1403,373 @@
         "name": "Investrade (Hammerstone Markets), Morning Preview: November 25, 2026",
         "url": "https://investrade.com/morning-preview-november-25-2026/"
       }
+    ],
+    "radar": {
+      "added": "2026-11-25",
+      "why": "Revenue doubled to a record $54.9 billion in Q3 FY2027 from $27.0 billion a year earlier, and Dell booked $60.2 billion of AI orders, lifting its AI backlog to $132.3 billion."
+    }
+  },
+  {
+    "ticker": "VRT",
+    "name": "Vertiv Holdings",
+    "country": "United States",
+    "sector": "Industrials",
+    "theme": "Power and cooling equipment for AI data centers",
+    "what": "Vertiv makes the power systems, cooling equipment and services that keep data centers running, including liquid cooling for racks of AI chips.",
+    "past": {
+      "label": "Net sales, Q3 2025",
+      "value": "$2.68 B",
+      "detail": "In the quarter to September 2025, net sales were $2.68 billion, up 29% (28% organic). Organic orders rose about 60%, the book-to-bill ratio was about 1.4, and backlog rose to $9.5 billion. Operating profit was $517 million, the adjusted operating margin 22.3%, diluted EPS $1.02 and adjusted diluted EPS $1.24."
+    },
+    "current": {
+      "label": "Net sales, Q3 2026",
+      "value": "$4.31 B",
+      "growth": 61,
+      "detail": "Net sales rose 61% to $4.31 billion: 55% organic and about 6% from acquisitions. Organic orders more than doubled. The Americas grew 74.5% to $2.99 billion, Asia Pacific 49.9% to $779 million and Europe, Middle East and Africa 22.8% to $545 million. Operating profit rose 90% to $984 million, the adjusted operating margin widened 2.9 points to 25.2%, diluted EPS rose 91% to $1.95 and adjusted diluted EPS 78% to $2.21. Operating cash flow was $794 million and adjusted free cash flow $652 million. Customers had paid $4.12 billion in advance by September 30, up from $1.13 billion a year earlier."
+    },
+    "future": {
+      "label": "2026 net sales guidance",
+      "value": "$14.45–14.85 B",
+      "detail": "On October 28, 2026, Vertiv raised full-year 2026 guidance to net sales of $14.45 to $14.85 billion (37% to 39% organic growth), adjusted diluted EPS of $7.10 to $7.20 and adjusted free cash flow of $2.6 to $2.8 billion. For Q4 it guides to $4.31 to $4.51 billion of sales. Backlog was $15.0 billion at the end of 2025, mostly due to ship within 12 to 18 months; Vertiv has not given an updated figure in 2026 and said it will stop sharing order data. It is on track to double chiller production capacity by year end, and on October 27, 2026 it closed the purchase of UtilityInnovation Group, a microgrid and on-site power company, for about $1.45 billion in cash plus up to $1.15 billion more if earnings targets are met."
+    },
+    "drivers": [
+      "AI data center construction: organic orders more than doubled in Q3",
+      "The shift to liquid cooling for dense racks of AI chips",
+      "Customer prepayments of $4.12 billion, which fund inventory and cash flow",
+      "New capacity in the Americas, Slovakia and Malaysia, and a doubling of chiller output",
+      "Acquisitions in on-site power: UtilityInnovation Group, about $1.45 billion upfront, completed Oct 27, 2026"
+    ],
+    "risks": [
+      "Customers can cancel or reschedule orders, and much of the demand comes from a small group of AI data center builders",
+      "Data center projects are paced by power availability, permits, local moratoriums and skilled labor",
+      "Vertiv will stop disclosing orders, making demand harder to track from outside",
+      "Inventory more than doubled since the end of 2025 as it builds ahead of deliveries",
+      "Up to $1.15 billion of contingent payments for UtilityInnovation Group",
+      "A volatile stock: it rose about 17% to $243.72 on results day, then closed at $204.81 a week later"
+    ],
+    "watch": [
+      "Whether Vertiv gives any backlog figure with Q4 results",
+      "The customer prepayment balance each quarter",
+      "Adjusted operating margin, 25.2% in Q3",
+      "2027 guidance, which management will give with Q4 results",
+      "Any cut to AI spending plans by the largest cloud companies"
+    ],
+    "why": "AI chips need far more power and cooling per rack than ordinary servers, and Vertiv sells both. Orders more than doubled in Q3 2026 and customers have prepaid $4.12 billion, nearly four times a year earlier, so demand is running ahead of what it can ship. Higher volume also widened margins, and profit grew faster than sales.",
+    "expect": {
+      "company": [
+        "FY2026 net sales of $14.45–14.85 billion, 37–39% organic growth (Oct 28, 2026)",
+        "FY2026 adjusted diluted EPS of $7.10–7.20 and adjusted free cash flow of $2.6–2.8 billion (Oct 28, 2026)",
+        "Q4 2026 net sales of $4.31–4.51 billion and adjusted diluted EPS of $2.22–2.28 (Oct 28, 2026)",
+        "Continued significant above-market organic sales growth in 2027, with no figure yet (Q3 call, Oct 28, 2026)"
+      ],
+      "analysts": [
+        "Consensus Q3 2026 adjusted EPS was $1.82 and revenue $3.76 billion; Vertiv reported $2.21 and $4.31 billion (Earnings Whispers, Oct 28, 2026)",
+        "Consensus for Q4 2026 was adjusted EPS of $2.20 and revenue of $4.27 billion, below Vertiv's guidance (Earnings Whispers, Oct 28, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "AI data center construction keeps accelerating, new factories ramp smoothly, prepayments keep growing and margins widen further as volume rises.",
+      "base": "Demand stays strong but growth slows from 2026's pace as comparisons get tougher, with power and permitting delays pushing some projects later.",
+      "bear": "Large customers delay or cancel projects, prepayments shrink, inventory built ahead of demand weighs on cash, and the stock falls hard given how sharply it already swings."
+    },
+    "radar": {
+      "added": "2026-11-25",
+      "why": "Sales growth accelerated to 61% in Q3 2026 from 29% a year earlier, organic orders more than doubled, and Vertiv raised full-year guidance on every key metric."
+    },
+    "updated": "2026-11-25",
+    "sources": [
+      {
+        "name": "Vertiv, Q3 2026 earnings release (via last10k), Oct 28, 2026",
+        "url": "https://last10k.com/sec-filings/vrt/0001628280-26-067707.htm"
+      },
+      {
+        "name": "Vertiv, Third Quarter 2025 Results (Form 8-K exhibit 99.1), Oct 22, 2025",
+        "url": "https://www.sec.gov/Archives/edgar/data/1674101/000167410125000020/q32025exhibit991vrt10222025.htm"
+      },
+      {
+        "name": "The Motley Fool, Vertiv (VRT) Q3 2026 Earnings Call Transcript, Oct 28, 2026",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/10/28/vertiv-vrt-q3-2026-earnings-call-transcript/"
+      },
+      {
+        "name": "Stock Titan, Vertiv Earnings: AI Power Gear Maker Was Paid $4.1 Billion in Advance, Oct 28, 2026",
+        "url": "https://www.stocktitan.net/articles/vertiv-q3-2026-earnings-customers-prepaid-4-billion"
+      },
+      {
+        "name": "Vertiv, Vertiv Completes Acquisition of UtilityInnovation Group, Oct 27, 2026",
+        "url": "https://www.vertiv.com/en-us/about/news-and-events/corporate-news/2026/vertiv-completes-acquisition-of-utilityinnovation-group/"
+      },
+      {
+        "name": "Earnings Whispers, Vertiv Q3 2026 earnings details, Oct 28, 2026",
+        "url": "https://www.earningswhispers.com/epsdetails/VRT/202609"
+      },
+      {
+        "name": "247 Wall St, Vertiv Q3 2026: Organic Orders More Than Doubled, Oct 28, 2026",
+        "url": "https://247wallst.com/cards/vertiv-q3-2026-earnings-vrt-01m60zybj74azc2wscfpvp2ym4"
+      }
     ]
+  },
+  {
+    "ticker": "PLTR",
+    "name": "Palantir Technologies",
+    "country": "United States",
+    "sector": "Technology",
+    "theme": "AI software for governments and companies",
+    "what": "Palantir sells software that pulls an organization's data together and lets AI models act on it, used by militaries, government agencies and large companies.",
+    "past": {
+      "label": "Revenue, Q3 2025",
+      "value": "$1.18 B",
+      "detail": "In the quarter to September 2025, revenue was $1.181 billion, up 63%. US commercial revenue grew 121% to $397 million and US government revenue 52% to $486 million. Palantir closed a record $2.76 billion of contract value, customer count grew 45%, GAAP net income was $476 million (40% margin) and adjusted free cash flow $540 million."
+    },
+    "current": {
+      "label": "Revenue, Q3 2026",
+      "value": "$2.31 B",
+      "growth": 96,
+      "detail": "Revenue rose 96% to $2.313 billion, topping $2 billion for the first time. US commercial revenue grew 148% to $984 million and for the first time exceeded US government revenue, which grew 96% to $953 million. GAAP operating income was $1.085 billion (47% margin), the adjusted operating margin 62%, GAAP net income $1.128 billion and EPS $0.44. Adjusted free cash flow was $1.216 billion, a 53% margin. But contract value closed grew only 6% to $2.918 billion, after 151% growth a year earlier."
+    },
+    "future": {
+      "label": "US commercial remaining deal value",
+      "value": "$6.52 B",
+      "detail": "Remaining deal value in US commercial contracts, the value still to be delivered, was $6.517 billion, up 79% from a year earlier but only 4% from the prior quarter. On November 2, 2026, Palantir raised 2026 guidance to revenue of $8.530 to $8.534 billion (91% growth), US commercial revenue above $3.559 billion (at least 143% growth), adjusted operating income of $5.245 to $5.249 billion and adjusted free cash flow of $4.8 to $5.0 billion. For Q4 it guides to revenue of $2.649 to $2.653 billion. It held $10.4 billion of cash and US Treasuries."
+    },
+    "drivers": [
+      "US companies adopting its AI platform: US commercial revenue up 148%",
+      "US government and defense spending: revenue up 96%",
+      "Large deals: 64 contracts of at least $10 million closed in Q3",
+      "Shorter sales cycles, which management says have shrunk from months to days or weeks",
+      "Very high margins and cash flow: a 53% free cash flow margin"
+    ],
+    "risks": [
+      "Bookings slowed sharply: contract value closed grew 6% while revenue grew 96%",
+      "Most contracts can be terminated, and contract value includes options customers may never exercise",
+      "A very high valuation: one commentator estimated about 50 times this year's expected revenue",
+      "Dependence on US government budgets and politics",
+      "Reliance on AI model providers such as Anthropic, which also sell to the same customers"
+    ],
+    "watch": [
+      "Contract value closed and remaining deal value each quarter",
+      "Whether US commercial growth stays above 100%",
+      "Q4 revenue against the $2.65 billion guidance",
+      "Free cash flow margin",
+      "Stock-based pay, $319 million in Q3"
+    ],
+    "why": "Companies that struggled to get value from AI chatbots are using Palantir to connect AI models to their own data and workflows, and US commercial revenue more than doubled in a year to pass government revenue. Because most new revenue drops to profit, the adjusted operating margin rose to 62% from 51%. The open question is whether new bookings, which grew only 6%, keep up with revenue.",
+    "expect": {
+      "company": [
+        "FY2026 revenue of $8.530–8.534 billion, 91% growth (Nov 2, 2026)",
+        "FY2026 US commercial revenue above $3.559 billion, at least 143% growth (Nov 2, 2026)",
+        "FY2026 adjusted free cash flow of $4.8–5.0 billion (Nov 2, 2026)",
+        "Q4 2026 revenue of $2.649–2.653 billion and adjusted operating income of $1.640–1.644 billion (Nov 2, 2026)"
+      ],
+      "analysts": [
+        "Consensus Q3 2026 EPS was $0.40 and revenue $2.17 billion; Palantir reported $0.44 and $2.31 billion (Earnings Whispers, Nov 2, 2026)",
+        "Consensus Q4 2026 revenue was about $2.45 billion, below Palantir's guidance (Earnings Whispers, Nov 2, 2026)",
+        "Shares fell as much as 8% before the open on Nov 3 as analysts flagged 6% contract growth against 96% revenue growth (International Business Times, Nov 3, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "US companies keep expanding from small pilots to large contracts, bookings reaccelerate, and margins stay high while international sales start to grow.",
+      "base": "Revenue growth stays strong but slows as the quarterly comparisons get tougher and bookings grow more slowly than revenue.",
+      "bear": "Weak bookings show up in revenue, government budgets tighten or AI spending cools, and the stock's high valuation leaves little room for any slowdown."
+    },
+    "radar": {
+      "added": "2026-11-25",
+      "why": "Revenue growth accelerated to 96% in Q3 2026 from 63% a year earlier, and US commercial revenue grew 148% to overtake government revenue for the first time."
+    },
+    "updated": "2026-11-25",
+    "sources": [
+      {
+        "name": "Palantir, Q3 2026 earnings release (Form 8-K exhibit 99.1), Nov 2, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm"
+      },
+      {
+        "name": "Palantir, Q3 2026 earnings release (Business Wire via Finviz), Nov 2, 2026",
+        "url": "https://finviz.com/news/413533/palantir-reports-q3-2026-us-comm-revenue-growth-of-148-yy-and-revenue-growth-of-96-yy-raises-fy-2026-revenue-guidance-to-91-yy-growth-and-us-comm-revenue-guidance-to-143-yy-crushing-consensus-expectations"
+      },
+      {
+        "name": "Palantir, Q3 2025 earnings release (Form 8-K exhibit 99.1), Nov 3, 2025",
+        "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000130/a2025q3ex991earningsrelease.htm"
+      },
+      {
+        "name": "Securities.io, Palantir Raises Full-Year 2026 Guidance as Q3 Revenue Grows 96%, Nov 2, 2026",
+        "url": "https://www.securities.io/palantir-raises-full-year-2026-guidance-as-q3-revenue-grows-96/"
+      },
+      {
+        "name": "Constellation Research, Palantir's Q3 highlights enterprise inflection point, Nov 3, 2026",
+        "url": "https://www.constellationr.com/insights/news/palantirs-q3-highlights-enterprise-inflection-point"
+      },
+      {
+        "name": "Earnings Whispers, Palantir Q3 2026 earnings details, Nov 2, 2026",
+        "url": "https://www.earningswhispers.com/epsdetails/PLTR/202609"
+      },
+      {
+        "name": "International Business Times, Palantir Stock Falls Despite Earnings Beat as Contract Growth Raises Concerns, Nov 3, 2026",
+        "url": "https://www.ibtimes.com/palantir-revenue-growth-contracts-shares-fall-3809340"
+      }
+    ]
+  },
+  {
+    "ticker": "BWXT",
+    "name": "BWX Technologies",
+    "country": "United States",
+    "sector": "Industrials",
+    "theme": "Nuclear reactors for the US Navy and the new nuclear build-out",
+    "what": "BWX Technologies builds the nuclear reactors that power US Navy submarines and aircraft carriers, makes nuclear fuel and reactor components, and is developing small reactors for the military and remote power.",
+    "past": {
+      "label": "Revenue, Q3 2025",
+      "value": "$866.3 M",
+      "detail": "In the quarter to September 2025, revenue was $866.3 million, net income $82.2 million and adjusted EPS $1.00. Government Operations brought in $616.7 million and Commercial Operations $251.0 million. Bookings were $2.25 billion and the backlog stood at $7.39 billion."
+    },
+    "current": {
+      "label": "Revenue, Q3 2026",
+      "value": "$953.0 M",
+      "growth": 10,
+      "detail": "Revenue rose 10% to $953.0 million in the quarter to September 2026. Government Operations grew 4% to $639.1 million, as special materials and advanced nuclear work offset lower naval propulsion volume. Commercial Operations grew 25% to $314.2 million on commercial nuclear components, services and medical. Net income rose 24% to $102.0 million, adjusted EPS 26% to $1.26, adjusted EBITDA 19% to $179.7 million, and free cash flow 59% to $150.5 million. Bookings were $538.2 million, well below quarterly revenue."
+    },
+    "future": {
+      "label": "Backlog",
+      "value": "$8.56 B",
+      "detail": "BWXT ended September 2026 with an $8.56 billion backlog, up from $7.39 billion a year earlier: $6.48 billion in Government Operations and $2.07 billion in Commercial Operations. It reaffirmed 2026 revenue of about $3.8 billion, adjusted EBITDA of about $667 million, adjusted EPS of $4.72 to $4.77 and free cash flow of $350 to $360 million. Its preliminary 2027 outlook calls for high-single-digit revenue growth and high-single-digit to low-double-digit growth in adjusted EBITDA and EPS."
+    },
+    "drivers": [
+      "US Navy submarine and carrier reactors, where BWXT is the main supplier",
+      "Commercial nuclear components and services, up 25% in Q3",
+      "Small reactors: its BANR design was chosen for the US Army's Janus Program at Fort Campbell and a transportable plant project in Canada",
+      "Special materials work for the US government",
+      "Medical isotopes, a growing part of Commercial Operations",
+      "Strong cash flow: $202.7 million from operations in Q3, up 42%"
+    ],
+    "risks": [
+      "Dependence on US government budgets and Navy shipbuilding schedules; naval propulsion volume fell in Q3",
+      "Bookings are lumpy: Q3 orders of $538.2 million covered only about half of revenue, after $2.25 billion a year earlier",
+      "Q3 revenue of $953 million missed the roughly $973 million analysts expected",
+      "Small-reactor projects are early, and contracts can take years to turn into steady revenue",
+      "2026 guidance was reaffirmed and narrowed, not raised"
+    ],
+    "watch": [
+      "Q4 bookings and whether backlog keeps growing",
+      "Naval propulsion volume as Navy submarine programs ramp",
+      "Commercial Operations growth and margins",
+      "Progress on Army and Canadian small-reactor projects",
+      "The full 2027 guidance with Q4 results"
+    ],
+    "why": "BWXT is the main builder of reactors for US Navy submarines and carriers, a business with very few competitors and long contracts, and its backlog has grown to $8.56 billion. Commercial nuclear work is now growing faster than the defense side, up 25% in Q3. Management describes the company as being early in a multi-decade nuclear investment cycle.",
+    "expect": {
+      "company": [
+        "2026 revenue of about $3.8 billion, reaffirmed (Nov 2, 2026)",
+        "2026 adjusted EBITDA of about $667 million and adjusted EPS of $4.72–$4.77 (Nov 2, 2026)",
+        "2026 free cash flow of $350–$360 million (Nov 2, 2026)",
+        "Preliminary 2027: high-single-digit revenue growth; high-single-digit to low-double-digit growth in adjusted EBITDA and EPS (Nov 2, 2026)"
+      ],
+      "analysts": [
+        "Analysts expected Q3 2026 revenue of about $973.1 million and adjusted EPS of $1.19; BWXT reported $953 million and $1.26, and shares fell 3.2% to $126.32 after the report (Barchart via Webull, Nov 2, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "Navy submarine programs ramp as planned, commercial nuclear orders keep growing, and the Army and Canadian small-reactor projects lead to larger follow-on contracts.",
+      "base": "Revenue grows at the high-single-digit pace management outlines, with lumpy bookings and steady defense work.",
+      "bear": "Navy budgets or shipbuilding schedules slip, bookings stay weak, and small-reactor projects stall before reaching commercial scale."
+    },
+    "updated": "2026-11-25",
+    "sources": [
+      {
+        "name": "BWX Technologies, BWXT Reports Third Quarter 2026 Results (Form 8-K exhibit 99.1), Nov 2, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001486957/000148695726000053/bwxt_93026xerexhibit991.htm"
+      },
+      {
+        "name": "Barchart via Webull, BWX (NYSE:BWXT) misses Q3 2026 sales expectations, Nov 2, 2026",
+        "url": "https://www.webull.com/news/15856414560394240"
+      }
+    ],
+    "radar": {
+      "added": "2026-11-25",
+      "why": "In Q3 2026 its small-reactor design was chosen for the US Army's Janus Program and a Canadian transportable plant, and its backlog reached $8.56 billion, up from $7.39 billion a year earlier."
+    }
+  },
+  {
+    "ticker": "MHVYF",
+    "name": "Mitsubishi Heavy Industries",
+    "country": "Japan",
+    "sector": "Industrials",
+    "theme": "Gas turbines, nuclear plants and defense for Japan and a power-hungry world",
+    "what": "Mitsubishi Heavy Industries, listed in Tokyo as 7011 and traded in the US over the counter as MHVYF, builds gas turbine power plants, nuclear reactors, defense equipment and rockets.",
+    "past": {
+      "label": "Revenue, first half FY2025",
+      "value": "¥2.11 T",
+      "detail": "In the six months to September 2025, order intake was ¥3,314.7 billion, revenue ¥2,113.7 billion, business profit ¥171.5 billion (an 8.1% margin) and net income ¥114.9 billion. Figures are as restated in MHI's November 2026 materials."
+    },
+    "current": {
+      "label": "Revenue, first half FY2026",
+      "value": "¥2.52 T",
+      "growth": 19.4,
+      "detail": "In the six months to September 2026, revenue rose 19.4% to ¥2,523.2 billion and business profit 45.3% to ¥249.3 billion, a 9.9% margin. Net income rose 76.9% to ¥203.2 billion, and order intake rose 9.0% to ¥3,612.5 billion. Energy Systems led: revenue up 29% to ¥1,122.5 billion and business profit up 80% to ¥145.1 billion. Gas turbine power plant (GTCC) orders reached ¥1,568.7 billion and nuclear orders ¥278.4 billion. Defense and space revenue rose to ¥489.6 billion, but its orders fell to ¥153.8 billion from ¥427.6 billion after large orders a year earlier."
+    },
+    "future": {
+      "label": "Order backlog",
+      "value": "¥14.2 T",
+      "detail": "The order backlog reached ¥14,225.6 billion at the end of September 2026, up ¥988.0 billion since March. The gas turbine backlog alone is about ¥6 trillion, recognized as revenue through FY2030-31. MHI raised full-year guidance for the year to March 2027: order intake to ¥8.0 trillion (from ¥7.0 trillion), revenue to ¥6.0 trillion (from ¥5.4 trillion), business profit to ¥600 billion (from ¥540 billion) and net income to ¥440 billion (from ¥380 billion). It announced a share buyback of up to ¥300 billion."
+    },
+    "drivers": [
+      "Gas turbine orders, strong in North America and Asia; management expects global demand above 70 GW a year",
+      "A growing fleet of its J-Series turbines, which earn service and replacement-part revenue for decades",
+      "Japan's defense build-up: management expects defense revenue to rise again in FY2027",
+      "Nuclear orders up to ¥278.4 billion from ¥182.4 billion",
+      "Plans to double new gas turbine output and about ¥500 billion of turbine-related investment",
+      "Strong cash flow: ¥468.3 billion of free cash flow in the half"
+    ],
+    "risks": [
+      "Defense orders fell sharply in the half after a large year earlier, so orders can swing",
+      "A provision of about ¥70 billion for replacing components at the Nakoso and Hirono coal gasification plants, a sign that big projects can carry costly problems",
+      "Some US gas turbine demand depends on data center plans that may not all happen",
+      "Local opposition to new power plants",
+      "Plants and Infrastructure profit fell 7% in the half",
+      "Results are in yen, so currency moves change what US investors see"
+    ],
+    "watch": [
+      "Gas turbine orders and the size of the turbine backlog",
+      "Japanese defense orders after the weak first half",
+      "Energy Systems profit margin",
+      "Any further costs from the coal gasification plants",
+      "Progress on the share buyback and new capital targets"
+    ],
+    "why": "Demand for gas power plants has surged, and MHI's Energy Systems profit rose 80% in the half on gas turbine orders and deliveries. Japan's rising defense spending and new nuclear orders add a second and third engine. With a ¥14.2 trillion backlog, much of the coming years' revenue is already booked.",
+    "expect": {
+      "company": [
+        "FY2026 (to March 2027) order intake of ¥8.0 trillion, raised from ¥7.0 trillion (Nov 6, 2026)",
+        "FY2026 revenue of ¥6.0 trillion, raised from ¥5.4 trillion (Nov 6, 2026)",
+        "FY2026 business profit of ¥600 billion including a ¥20 billion risk buffer, raised from ¥540 billion (Nov 6, 2026)",
+        "FY2026 net income of ¥440 billion, raised from ¥380 billion (Nov 6, 2026)",
+        "FY2026 free cash flow of ¥800 billion, raised from ¥600 billion (Nov 6, 2026)",
+        "Dividend of ¥29 per share for FY2026, unchanged (Nov 6, 2026)"
+      ],
+      "analysts": []
+    },
+    "scenarios": {
+      "bull": "Gas turbine orders stay strong as utilities build new plants, Japan's defense orders recover, and new nuclear projects add to a growing backlog.",
+      "base": "The backlog converts steadily into revenue, defense orders stay lumpy, and margins improve slowly as production expands.",
+      "bear": "Power demand forecasts are cut, large projects run into cost problems like the coal gasification plants, or defense spending slows."
+    },
+    "updated": "2026-11-25",
+    "sources": [
+      {
+        "name": "Mitsubishi Heavy Industries, 1H FY2026 Presentation Materials with Summary, Nov 6, 2026",
+        "url": "https://www.mhi.com/finance/library/result/pdf/fy20262q/presentation_summary.pdf"
+      },
+      {
+        "name": "Mitsubishi Heavy Industries, Summary of Q&A at 1H FY2026 Presentation, Nov 2026",
+        "url": "https://www.mhi.com/finance/library/result/pdf/fy20262q/qa_20262q.pdf"
+      },
+      {
+        "name": "Mitsubishi Heavy Industries, Press Information: 1H FY2026 consolidated financial results, Nov 6, 2026",
+        "url": "https://www.mhi.com/news/26110601.html"
+      },
+      {
+        "name": "Trading-Treff, Mitsubishi Heavy Aktie: Gewinnprognose landet auf Rekordniveau, Nov 9, 2026",
+        "url": "https://trading-treff.de/wirtschaft/mitsubishi-heavy-aktie-gewinnprognose-landet-auf-rekordniveau"
+      }
+    ],
+    "radar": {
+      "added": "2026-11-25",
+      "why": "On November 6, 2026, MHI raised its full-year profit forecast and announced a buyback of up to ¥300 billion after first-half business profit rose 45.3%, driven by gas turbine orders and deliveries."
+    }
   }
 ]

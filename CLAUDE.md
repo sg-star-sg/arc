@@ -43,6 +43,18 @@ An array of lessons in the five-layer format. `layers` has exactly 5 items: What
 ### `content/companies.json`
 Company profiles shown in Invest → Companies. Each: `ticker`, `name`, `country`, `sector`, `theme`, `what` (one sentence), `past`, `current`, `future` (each `{label, value, detail}`; `current` also has numeric `growth`, the year-over-year % from the source), `drivers`, `risks`, `watch` (arrays of short strings), `why` (2–3 sentences on why it is doing well, from sourced facts), `expect` (`{company: [...], analysts: [...]}`: the company's own guidance and sourced analyst expectations, dated), `scenarios` (`{bull, base, bear}`: what would have to happen, no numbers invented), `updated` (YYYY-MM-DD), `sources`. `future` uses the company's own guidance, backlog or announced investment, never invented forecasts or price targets. When a company reports new quarterly results, update its entry rather than adding a duplicate.
 
+### Company lists in `content/companies.json`
+- `"list": "core"` marks the Core 10, the fixed set followed every quarter. Keep exactly 10; change only when asked.
+- `"radar": {"added": "YYYY-MM-DD", "why": "1-2 sourced sentences on why it is gaining traction now"}` marks an On the radar pick. The app shows the 5 most recent radar picks; older ones drop to the Library automatically. Add one new radar company per day: growing fast, orders or margins improving, or newly important to a trend, mixing well-known names with quieter ones (AI infrastructure, defense, power, robotics, space, and other countries). Never re-add a ticker already in the file; refresh it instead.
+- Optional `"yahoo"` overrides the symbol used for live prices when it differs from `ticker`.
+- `sector` uses one of: Technology, Industrials, Energy, Financials, Health Care, Consumer Discretionary, Consumer Staples, Materials, Utilities, Real Estate, Communication Services.
+
+### `content/markets.json`
+Live asset prices come from `api/quotes.js` (a Vercel function reading Yahoo Finance); never write prices into this file. Each asset has `context` `{value, label, detail, sources}`: the latest sourced figure (dated) and 1-2 sentences on what is moving it. Refresh contexts that are more than a week old or when something big moved, and update `updated`.
+
+### `content/smartmoney.json`
+`funds` (13F holdings: bought, sold, top, note), `corporate` (big company capex and investments), `flows` (ETF flows, central-bank gold, money markets), `insiders` (Form 4 open-market purchases). Each item has `sources`. Replace funds after each 13F season (mid Feb, May, Aug, Nov), corporate after earnings, and flows and insiders at least weekly.
+
 ## Rules for content
 - Every number and current fact comes from a page that was opened and read, and is cited in `sources`. Never invent figures.
 - Teach how to evaluate. Never tell the reader to buy or sell a specific investment.
