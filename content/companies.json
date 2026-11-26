@@ -1771,5 +1771,91 @@
       "added": "2026-11-25",
       "why": "On November 6, 2026, MHI raised its full-year profit forecast and announced a buyback of up to ¥300 billion after first-half business profit rose 45.3%, driven by gas turbine orders and deliveries."
     }
+  },
+  {
+    "ticker": "ASX",
+    "name": "ASE Technology Holding",
+    "country": "Taiwan",
+    "sector": "Technology",
+    "theme": "Chip packaging and testing for the AI build-out",
+    "what": "ASE, listed in Taipei as 3711 and in New York as ASX, is the world's largest outside provider of chip packaging and testing, the step that turns finished silicon wafers into working, tested chips, and it also assembles electronics for other companies.",
+    "past": {
+      "label": "Revenue, Q3 2025",
+      "value": "NT$168.6 B",
+      "detail": "In the quarter to September 2025, revenue was NT$168,569 million, gross profit NT$28,877 million (about a 17.1% margin), operating income NT$13,201 million (about 7.8%) and net income NT$10,870 million, or NT$2.50 per share."
+    },
+    "current": {
+      "label": "Revenue, Q3 2026",
+      "value": "NT$244.2 B",
+      "growth": 44.8,
+      "detail": "Revenue rose 44.8% to NT$244,161 million (about US$7.6 billion) and 27.8% from the prior quarter. Gross margin widened to 22.1% and operating margin to 13.6%, and net income rose about 148% to NT$26,996 million, or NT$6.13 per share. The packaging and testing business (ATM) grew 51.0% to NT$151,485 million with a 30.6% gross margin and 20.0% operating margin; electronics assembly (EMS) grew 35.4% to NT$93,469 million at a 3.3% operating margin."
+    },
+    "future": {
+      "label": "2026 capital spending budget",
+      "value": "US$11.5 B",
+      "detail": "On October 30, 2026, ASE raised its 2026 capex budget by US$1 billion to US$11.5 billion, with 60% of new equipment going to leading-edge advanced packaging (LEAP). It raised its 2026 LEAP sales forecast to US$4 billion from US$3.7 billion, and the CFO said LEAP revenue is expected to double in 2027. For Q4 2026 it guides to revenue up 6-8% from Q3 in NT dollars, a gross margin of 23-24% and an operating margin of 14.5-15.5%, with ATM revenue up 11-13%."
+    },
+    "drivers": [
+      "Advanced packaging for AI chips: the LEAP forecast was raised to US$4 billion for 2026",
+      "Higher volume lifting margins: ATM gross margin rose to 30.6% from 27.3% a quarter earlier",
+      "A capex budget raised to US$11.5 billion for new plants and equipment",
+      "Testing revenue of NT$26.3 billion in the quarter, a step that grows as chips get more complex",
+      "Q3 results beat the company's own forecast of 21-22% sequential growth"
+    ],
+    "risks": [
+      "Heavy spending: capex of US$2.1 billion in Q3 alone, which pays off only if AI demand holds",
+      "Customer concentration: the top 10 ATM customers were 63% of revenue and the top 5 EMS customers 70%",
+      "The EMS business earns thin margins (3.3% operating margin in Q3)",
+      "Results are in New Taiwan dollars, so currency moves change what US investors see",
+      "US trade policy and cross-strait relations, both named as risks by the company",
+      "Net debt of 0.66 times equity as it builds capacity"
+    ],
+    "watch": [
+      "LEAP revenue against the US$4 billion target for 2026",
+      "ATM gross margin, 30.6% in Q3",
+      "Whether Q4 gross margin lands in the 23-24% guided range",
+      "2027 capex plans and any update to the LEAP doubling target",
+      "Monthly revenue reports, which Taiwanese companies publish around the 10th"
+    ],
+    "why": "AI chips are now built from several pieces of silicon stacked or placed side by side, and joining and testing them is hard, high-value work. ASE's packaging and testing revenue grew 51% in Q3 2026 and its operating margin there rose to 20.0%, so profit grew far faster than sales. It raised its capex budget and its advanced packaging target in the same week, a sign that customers are committing to more volume.",
+    "expect": {
+      "company": [
+        "Q4 2026 revenue up 6-8% from Q3 in NT dollars, gross margin 23-24%, operating margin 14.5-15.5% (Oct 29-30, 2026)",
+        "2026 LEAP sales of US$4 billion, raised from US$3.7 billion, and LEAP revenue to double in 2027 (Oct 30, 2026)",
+        "2026 capex of US$11.5 billion, raised from US$10.5 billion (Oct 30, 2026)",
+        "Gross margin to rise further in 2027 (Oct 30, 2026)"
+      ],
+      "analysts": [
+        "Consensus Q3 2026 EPS was US$0.34 per ADS and revenue US$7.39 billion; ASE reported US$0.37 and US$7.635 billion (Earnings Whispers, Oct 29, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "AI chip makers keep shifting to complex multi-chip designs, LEAP revenue doubles in 2027 as planned, and new plants fill quickly so margins keep rising.",
+      "base": "Advanced packaging keeps growing fast, but the slower EMS business and heavy spending hold overall margins near the guided mid-20s gross margin.",
+      "bear": "AI chip orders slow or a big customer takes work in-house, new capacity sits underused, and depreciation from the capex surge squeezes profit."
+    },
+    "updated": "2026-11-26",
+    "radar": {
+      "added": "2026-11-26",
+      "why": "Packaging and testing revenue grew 51% in Q3 2026 and its operating margin rose to 20.0%, and on October 30 ASE raised both its 2026 capex budget, to US$11.5 billion, and its advanced packaging sales target, to US$4 billion (Focus Taiwan, Oct 30, 2026)."
+    },
+    "sources": [
+      {
+        "name": "ASE Technology Holding, Unaudited Consolidated Financial Results for the Third Quarter of 2026 (PR Newswire via Finviz), Oct 29, 2026",
+        "url": "https://finviz.com/news/411096/ase-technology-holding-co-ltd-reports-its-unaudited-consolidated-financial-results-for-the-third-quarter-of-2026"
+      },
+      {
+        "name": "Focus Taiwan (CNA), ASE raises 2026 capex and advanced packaging targets, Oct 30, 2026",
+        "url": "https://focustaiwan.tw/business/202610300006"
+      },
+      {
+        "name": "Grafa, ASE Technology Q3 2026 revenue rises 44.8 percent, Oct 29, 2026",
+        "url": "https://grafa.com/en/news/united-states/ase-technology-q3-2026-revenue-rises-44-8-percent"
+      },
+      {
+        "name": "Earnings Whispers, ASE Technology (ASX) Q3 2026 results, Oct 29, 2026",
+        "url": "https://www.earningswhispers.com/article/ASX/r699"
+      }
+    ]
   }
 ]

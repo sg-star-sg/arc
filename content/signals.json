@@ -1,5 +1,39 @@
 [
   {
+    "id": "2026-11-26-pce-inflation-3-8-percent",
+    "date": "2026-11-26",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "The Fed's preferred inflation gauge climbs to 3.8%",
+    "stat": "3.8%",
+    "statLabel": "PCE price index, October 2026 vs a year earlier (BEA, released Nov 25, 2026)",
+    "body": "Prices measured by the personal consumption expenditures (PCE) index rose 0.3% in October and 3.8% from a year earlier, up from 3.6% in September. Core PCE, which leaves out food and energy, also rose 0.3% in the month and 3.3% over the year, up from 3.1%. Incomes jumped 0.7%, helped by one-time Medicare premium rebates, but after inflation, spending was flat, and the saving rate was 4.1%. The same morning, growth in the third quarter was revised up to a 4.3% annual rate from 3.4%.",
+    "why": "PCE is the number the Fed measures its 2% goal against, and both headline and core are moving away from it. The Fed held its rate at 3.75% to 4.00% in October, and markets were already pricing a December hike; hotter inflation alongside strong growth makes that harder to avoid, which keeps borrowing costs for mortgages, cards and business loans high. If your raise is below 3.8%, your pay is shrinking in real terms, so it is worth checking what your cash earns after inflation.",
+    "lessons": [
+      "pcevscpi",
+      "cpiinside",
+      "fedfutures"
+    ],
+    "sources": [
+      {
+        "name": "US Bureau of Economic Analysis, Personal Income and Outlays, October 2026, Nov 25, 2026",
+        "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026"
+      },
+      {
+        "name": "United States Real Estate Investor, PCE Inflation Rose to 3.8% in October, Core Hit 3.3%, Nov 25, 2026",
+        "url": "https://www.unitedstatesrealestateinvestor.com/bea-pce-october-2026-inflation-3-8-percent-real-spending-fell/"
+      },
+      {
+        "name": "Trading Economics, US 10-year Treasury yield news stream, Nov 25, 2026",
+        "url": "https://tradingeconomics.com/united-states/government-bond-yield/news/598668"
+      },
+      {
+        "name": "Fox Business, Fed's preferred inflation gauge rose in September as third-quarter GDP beats expectations, Oct 29, 2026",
+        "url": "https://www.foxbusiness.com/economy/september-2026-pce-inflation.amp"
+      }
+    ]
+  },
+  {
     "id": "2026-11-25-section-301-tariffs-14-economies",
     "date": "2026-11-25",
     "kind": "Signal",

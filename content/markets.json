@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "assets": [
     {
       "id": "gold",
@@ -171,17 +171,17 @@
       "unit": "Yield, %",
       "what": "The interest rate the US government pays to borrow for ten years. It sets the tone for mortgage rates and for how much investors pay for stocks.",
       "context": {
-        "value": "4.86%",
+        "value": "4.81%",
         "label": "US 10-year Treasury yield, Nov 25, 2026",
-        "detail": "The 10-year yield topped 5.30% in early October and has drifted lower since, as falling oil eased inflation fears and investors bought Treasuries for safety during the AI stock selloff. Markets still price a near-certain Fed rate hike in December.",
+        "detail": "The yield fell nearly 12 basis points to 4.81% on Nov 25, its lowest since September, as investors bought Treasuries for safety during the AI stock selloff and digested new tariff proposals. That came even as core PCE inflation rose to 3.3% and growth was revised up, data that markets read as keeping a December Fed hike on track.",
         "sources": [
           {
-            "name": "Trading Economics, US 10-year yield news stream, Nov 16-25, 2026",
-            "url": "https://tradingeconomics.com/united-states/government-bond-yield/news/601580"
+            "name": "Trading Economics, US 10-year Treasury yield news stream, Nov 25, 2026",
+            "url": "https://tradingeconomics.com/united-states/government-bond-yield/news/598668"
           },
           {
-            "name": "AJC (AP), Average US 30-year mortgage rate falls to 7.11%, Nov 12, 2026",
-            "url": "https://www.ajc.com/news/2026/11/the-average-us-30-year-mortgage-rate-falls-to-711-this-week-its-fourth-straight-decline/"
+            "name": "US Bureau of Economic Analysis, Personal Income and Outlays, October 2026, Nov 25, 2026",
+            "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026"
           }
         ]
       }
@@ -194,17 +194,13 @@
       "unit": "Average rate, % (Freddie Mac, weekly)",
       "what": "What a typical buyer pays on a 30-year fixed loan. It follows the 10-year Treasury yield plus a spread for risk and lender costs.",
       "context": {
-        "value": "7.28%",
-        "label": "Freddie Mac 30-year fixed average (PMMS), week of Nov 19, 2026",
-        "detail": "The average 30-year rate rose from 7.11% the week before, ending four straight weekly declines, and is up from 6.26% a year earlier. Persistent inflation and expectations of a December Fed rate hike keep mortgage rates high.",
+        "value": "7.21%",
+        "label": "Freddie Mac 30-year fixed average (PMMS), week of Nov 25, 2026",
+        "detail": "The average 30-year rate eased to 7.21% from 7.28% a week earlier, and the 15-year to 6.54% from 6.66%, following the drop in Treasury yields. A year ago the 30-year averaged 6.23%.",
         "sources": [
           {
-            "name": "Freddie Mac, Primary Mortgage Market Survey, Nov 19, 2026",
-            "url": "https://www.freddiemac.com/pmms?sf232241821=1"
-          },
-          {
-            "name": "AJC (AP), Average US 30-year mortgage rate falls to 7.11%, Nov 12, 2026",
-            "url": "https://www.ajc.com/news/2026/11/the-average-us-30-year-mortgage-rate-falls-to-711-this-week-its-fourth-straight-decline/"
+            "name": "Freddie Mac, Primary Mortgage Market Survey, Nov 25, 2026",
+            "url": "https://www.freddiemac.com/pmms"
           }
         ]
       }
@@ -274,25 +270,17 @@
       "unit": "Index points",
       "what": "500 large US companies weighted by size. The benchmark most US investors measure themselves against.",
       "context": {
-        "value": "7,201.09",
-        "label": "S&P 500 close, Nov 24, 2026",
-        "detail": "The index jumped 4.7% on Nov 23 when Nvidia reinstated Jensen Huang as CEO, then slipped as the AI rally faded, its eighth loss in nine sessions. Doubts about AI spending, new US tariffs and expected Fed rate hikes pushed it down again early on Nov 25.",
+        "value": "7,182.78",
+        "label": "S&P 500 close, Nov 25, 2026",
+        "detail": "The index fell as much as 3.2% during the day on hot inflation data, new tariff proposals and another selloff in AI chip stocks, then closed down only 0.3%. It still gained 3.9% for the holiday-shortened week and is up 4.9% for the year.",
         "sources": [
           {
-            "name": "Capp Notes, Closing Look, Nov 24, 2026",
-            "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+            "name": "ABC News (AP), How major US stock indexes fared Wednesday 11/25/2026",
+            "url": "https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-wednesday-11252026-138453529"
           },
           {
-            "name": "Zacks via Yahoo Finance, Stock Market News for Nov 24, 2026",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-24-080800306.html"
-          },
-          {
-            "name": "Trading Economics, US stock market news stream, Nov 25, 2026",
-            "url": "https://tradingeconomics.com/united-states/stock-market/news/504530"
-          },
-          {
-            "name": "Investrade (Hammerstone Markets), Morning Preview: November 25, 2026",
-            "url": "https://investrade.com/morning-preview-november-25-2026/"
+            "name": "The Motley Fool, Stock Market Today, Nov. 25: Nvidia Slides 3.9% as the Market Considers Hot PCE Inflation Data and New Tariff Proposals, Nov 25, 2026",
+            "url": "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-nvidia-slides-3-9-as-the-market-considers-hot-pce-inflation-data-and-new-tariff-proposals/"
           }
         ]
       }
@@ -305,21 +293,21 @@
       "unit": "Index points",
       "what": "Heavy in technology and AI companies, so it moves more than the S&P 500.",
       "context": {
-        "value": "23,733.54",
-        "label": "Nasdaq Composite close, Nov 24, 2026",
-        "detail": "Tech-heavy Nasdaq has swung hardest on AI news: it rose 6.5% on Nov 23 after Nvidia reinstated its CEO, fell 1.5% the next day, and the Nasdaq 100 dropped up to 4% early on Nov 25. Investors are questioning whether heavy AI spending will pay off while rates rise.",
+        "value": "23,585.80",
+        "label": "Nasdaq Composite close, Nov 25, 2026",
+        "detail": "The Nasdaq fell more than 4% in the morning as chip stocks sold off, with Nvidia closing down 3.9% and Micron down 4.5%, before recovering to a 0.6% loss. It rose 4.3% for the week but is up only 1.5% this year.",
         "sources": [
           {
-            "name": "Capp Notes, Closing Look, Nov 24, 2026",
-            "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+            "name": "ABC News (AP), How major US stock indexes fared Wednesday 11/25/2026",
+            "url": "https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-wednesday-11252026-138453529"
           },
           {
-            "name": "Zacks via Yahoo Finance, Stock Market News for Nov 24, 2026",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-24-080800306.html"
+            "name": "The Motley Fool, Stock Market Today, Nov. 25: Nvidia Slides 3.9% as the Market Considers Hot PCE Inflation Data and New Tariff Proposals, Nov 25, 2026",
+            "url": "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-nvidia-slides-3-9-as-the-market-considers-hot-pce-inflation-data-and-new-tariff-proposals/"
           },
           {
-            "name": "Trading Economics, US stock market news stream, Nov 25, 2026",
-            "url": "https://tradingeconomics.com/united-states/stock-market/news/504530"
+            "name": "StockTitan, Stock Market Today, November 25, 2026: Stocks Win Back Most of Their Morning Losses After a Chip Sell-Off",
+            "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-25-2026"
           }
         ]
       }

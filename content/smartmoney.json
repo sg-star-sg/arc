@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "funds": [
     {
       "name": "Berkshire Hathaway",
@@ -381,6 +381,34 @@
     }
   ],
   "insiders": [
+    {
+      "company": "Kura Oncology",
+      "ticker": "KURA",
+      "who": "Troy Edward Wilson, President and CEO",
+      "what": "Bought 200,000 shares at $7.42-$7.63, about $1.5 million",
+      "date": "2026-11",
+      "detail": "The purchases were made on two dates in November 2026 and reported on an SEC Form 4. A single insider buy says the CEO sees value at this price; it does not say the drug programs will succeed.",
+      "sources": [
+        {
+          "name": "Investing.com, Top insider buys and sells disclosed for Monday, Nov 17, 2026",
+          "url": "https://za.investing.com/news/stock-market-news/top-insider-buys-and-sells-disclosed-for-monday-93CH-4581087"
+        }
+      ]
+    },
+    {
+      "company": "BrightSpire Capital",
+      "ticker": "BRSP",
+      "who": "Michael Mazzei, CEO",
+      "what": "Bought 309,113 shares at about $3.11-$3.28, about $1.0 million",
+      "date": "2026-11-16",
+      "detail": "He bought 80,650 shares on Nov 13 and 228,463 on Nov 16, according to an SEC Form 4. The commercial real estate lender's stock was at $3.27, near its 52-week low of $3.05 and down 38% over six months.",
+      "sources": [
+        {
+          "name": "Investing.com, Top insider buys and sells disclosed for Monday, Nov 17, 2026",
+          "url": "https://za.investing.com/news/stock-market-news/top-insider-buys-and-sells-disclosed-for-monday-93CH-4581087"
+        }
+      ]
+    },
     {
       "company": "Intel",
       "ticker": "INTC",

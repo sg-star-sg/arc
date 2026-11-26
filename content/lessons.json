@@ -1633,5 +1633,46 @@
         "url": "https://kpmg.com/us/en/taxnewsflash/news/2026/03/ustr-initiates-section-301-investigations-structural-excess-capacity-manufacturing-sectors.html"
       }
     ]
+  },
+  {
+    "id": "pcevscpi",
+    "m": "economy",
+    "mod": "Money and banks",
+    "title": "PCE vs CPI: two inflation gauges, and why the Fed watches the second",
+    "added": "2026-11-26",
+    "layers": [
+      "The US measures consumer inflation in two main ways. The Consumer Price Index (CPI), from the Bureau of Labor Statistics, is the one in the headlines each month and the one used to adjust Social Security and many wage contracts. The personal consumption expenditures (PCE) price index, from the Bureau of Economic Analysis, comes out about two weeks later as part of the personal income and spending report. Since 2000 the Federal Reserve has used PCE rather than CPI when it talks about inflation, and its 2% goal is a PCE number. The two usually move together, but they can differ by a little or, at times, a lot: in one quarter of 2006 PCE rose at a 3.0% annual rate while CPI rose 3.7%, and in the second quarter of 2022 CPI ran 3.4 percentage points above PCE, the widest gap on record.",
+      "Three things separate them. Scope: CPI tracks what households pay out of their own pockets, while PCE tracks all spending by and on behalf of households, including what employers and insurers pay. Your employer's share of health insurance shows up in PCE but not CPI. Weights: because of that, health care is a far bigger slice of PCE (about 16.8% for health care services in 2019-2020 weights, against 7.0% for medical care in CPI) and housing a far smaller one (about 15.9% in PCE against 32.9% for shelter in CPI). CPI weights come from a survey of households; PCE weights come from data collected from businesses. Formula: CPI uses a fixed basket that is only updated periodically, while PCE uses a formula that updates the basket continuously, so when beef gets expensive and people buy chicken instead, PCE captures that switch and CPI captures less of it. Over 2002-2007, CPI rose about 0.4 percentage point a year faster than PCE, and almost half of that gap came from the formula alone.",
+      "The Fed prefers PCE because it covers more of the economy, it reflects how people actually change what they buy, and its history can be revised as better data arrives, so the Fed is not steering by a number that later proves wrong. The cost is that it arrives later. In practice, the CPI report already tells forecasters much of what PCE will show, because the BEA uses CPI and producer price data as inputs; that is why economists publish PCE estimates within hours of the CPI. The gap between the two matters most when housing and health care move in different directions. When rents are rising fast, CPI looks worse than PCE; when medical prices are rising fast, PCE can catch up. In October 2026, PCE rose 3.8% from a year earlier and core PCE 3.3%, both well above the 2% goal.",
+      "Use the right gauge for the right question. For your own budget, neither index is your personal inflation rate: a renter in an expensive city feels shelter far more than either index does, while a homeowner with a fixed mortgage feels it less. For the Fed's next move, watch core PCE, and especially its monthly change: 0.3% a month compounds to about 3.7% a year, while 0.17% a month is what 2% requires. When the headlines say 'inflation cooled', check which index and which measure (headline or core, monthly or yearly) they mean before deciding what it says about rates, your savings or your mortgage.",
+      [
+        "Which costs in my life are mostly paid by someone else, like an employer or insurer, and so count in PCE but not in CPI?",
+        "Is my own spending weighted more toward housing (like CPI) or toward health care (like PCE)?",
+        "What was the latest monthly change in core PCE, and what yearly rate does it imply?",
+        "Is the gap between CPI and PCE widening or narrowing, and which categories explain it?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "US Bureau of Economic Analysis, FAQ: How does the PCE price index differ from the CPI?",
+        "url": "https://www.bea.gov/help/faq/555"
+      },
+      {
+        "name": "TD Economics, PCE vs. CPI: What's the Difference?, Oct 27, 2022",
+        "url": "https://economics.td.com/us-cpi-pce"
+      },
+      {
+        "name": "McCully, Moyer and Stewart (BEA), A Reconciliation between the Consumer Price Index and the Personal Consumption Expenditures Price Index, Sept 2007",
+        "url": "https://www.bea.gov/research/papers/2007/reconciliation-between-consumer-price-index-and-personal-consumption"
+      },
+      {
+        "name": "Noah Johnson (BLS), A Comparison of PCE and CPI: Methodological Differences in U.S. Inflation Calculation and their Implications, 2017",
+        "url": "https://www.bls.gov/osmr/research-papers/2017/st170010.htm"
+      },
+      {
+        "name": "US Bureau of Economic Analysis, Personal Income and Outlays, October 2026, Nov 25, 2026",
+        "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026"
+      }
+    ]
   }
 ]
