@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-27-copper-slides-16-percent",
+    "date": "2026-11-27",
+    "kind": "Signal",
+    "m": "world",
+    "title": "Copper slides 16% in a month as funds rush to sell",
+    "stat": "16%+",
+    "statLabel": "Fall in LME copper futures in November 2026, as of Nov 26 (Financial Express)",
+    "body": "Copper futures on the London Metal Exchange fell to an 11-month low of $11,685.92 a ton on Nov 24, down more than 16% for November, which would be the biggest monthly fall since January 2015, from a record of $14,875 on Sept 10. Much of the selling came from investors rather than users of the metal: Goldman Sachs data show speculative funds sold a net $10.8 billion of US copper futures between Sept 22 and Nov 10, seven weeks in a row, as markets priced in a December Fed rate hike, the dollar rose and AI stocks fell. Physical buyers behaved differently: producers, traders and end users bought a net $1.1 billion of futures during that selling, Shanghai exchange stocks fell 18% in a week to 27,642 tons, near a three-year low, and China's import premium rose to a record. ING called the drop largely a financial market story, and copper rebounded more than 3% on Nov 26.",
+    "why": "When a price collapses, ask who is selling. Investors with losses elsewhere sell whatever they can, so a commodity can fall even while the companies that use it are paying more to get it. Copper goes into grids, cars and data centers, so telling forced selling apart from a real drop in demand tells you whether the move is a warning about the economy or a temporary rush for the exit.",
+    "lessons": [
+      "paperphysical",
+      "leverage",
+      "futurescurve"
+    ],
+    "sources": [
+      {
+        "name": "INDIA IPO (citing Financial Express), Copper heads for worst monthly drop since 2015, Nov 26, 2026",
+        "url": "https://www.indiaipo.in/news/detail/copper-heads-for-worst-monthly-drop-since-2015-prices-slide-16-to-11-month-low"
+      },
+      {
+        "name": "BigGo Finance, Copper plunges nearly 6% in a single day to seven-month low, Nov 19, 2026",
+        "url": "https://finance.biggo.com/news/e7a16a2e-2c79-4d72-9c78-f5fb7ab35144"
+      },
+      {
+        "name": "FinScans (citing FXStreet), Copper rebounds over 3% after hitting 11-month low on LME, Nov 26, 2026",
+        "url": "https://finscans.com/news/2026/11/26/copper-rebounds-over-3-after-hitting-11-month-low-on-lme"
+      }
+    ]
+  },
+  {
     "id": "2026-11-26-pce-inflation-3-8-percent",
     "date": "2026-11-26",
     "kind": "Signal",

@@ -1857,5 +1857,92 @@
         "url": "https://www.earningswhispers.com/article/ASX/r699"
       }
     ]
+  },
+  {
+    "ticker": "SMNEY",
+    "name": "Siemens Energy",
+    "country": "Germany",
+    "sector": "Industrials",
+    "theme": "Gas turbines and grid equipment for the power build-out",
+    "what": "Siemens Energy, listed in Frankfurt and traded in the US as an ADR (SMNEY), builds gas turbines, high-voltage grid equipment and wind turbines, and services them for decades after they are installed.",
+    "past": {
+      "label": "Profit before special items, FY2025",
+      "value": "€2.36 B",
+      "detail": "In the fiscal year to September 2025, profit before special items was €2,355 million and net income €1,685 million, or €1.63 per share. Siemens Gamesa, the wind unit, lost about €1.4 billion before special items."
+    },
+    "current": {
+      "label": "Revenue, FY2026",
+      "value": "€44.2 B",
+      "growth": 15.5,
+      "detail": "In the year to September 2026, revenue rose 15.5% on a comparable basis to €44.2 billion and orders rose 18.8% to €68.1 billion, a book-to-bill of 1.54. Profit before special items more than doubled to €5,486 million, a 12.4% margin, net income rose to €4,129 million (€4.44 per share), and pre-tax free cash flow reached €8,799 million. Gas Services orders grew 45.9% to €32.8 billion with a 16.4% margin; Grid Technologies revenue grew 26.2% with an 18.9% margin; Siemens Gamesa reached breakeven at a 0.1% margin."
+    },
+    "future": {
+      "label": "Order backlog, Sept 30, 2026",
+      "value": "€164 B",
+      "detail": "The backlog is a record €164 billion, including €74 billion in Gas Services and €52 billion in Grid Technologies. For FY2027 the company guides to comparable revenue growth of 14-16%, a 14-16% margin before special items, net income of about €5 billion and pre-tax free cash flow of about €10 billion. For FY2030 it targets 12-14% yearly revenue growth from FY2026 and a 20-22% margin. It proposed a €2.30 dividend, up from €0.70, and a new buyback of up to €9 billion through FY2030."
+    },
+    "drivers": [
+      "Gas turbine demand from utilities and data centers: a record 42 GW of unit orders in FY2026",
+      "104 GW of gas turbine commitments, of which 65 GW are firm orders",
+      "Grid build-out: Grid Technologies backlog of €52 billion and a 21-23% margin target for FY2027",
+      "Service contracts that run for decades after a turbine is sold",
+      "Wind losses ending: Siemens Gamesa broke even in FY2026 after losing about €1.4 billion in FY2025"
+    ],
+    "risks": [
+      "39 GW of the 104 GW gas commitments are slot reservations, not firm orders",
+      "Order growth slowed in Q4: group orders rose 5.2% and Grid orders fell 19.3% on a comparable basis",
+      "Siemens Gamesa still guides to a 0-2% margin and shrinking revenue in FY2027",
+      "Middle East disruption hit Transformation of Industry revenue in Q4",
+      "Guidance excludes charges from future legal or regulatory matters",
+      "Results are in euros, so currency moves change what US investors see"
+    ],
+    "watch": [
+      "How many of the 39 GW of slot reservations turn into firm orders in FY2027",
+      "Gas Services margin against the 18-20% FY2027 guide",
+      "Grid Technologies order intake after a weaker Q4",
+      "Whether Siemens Gamesa stays profitable quarter after quarter",
+      "Progress on separating the Transformation of Industry business"
+    ],
+    "why": "Power demand from data centers, electrification and grid upgrades has filled Siemens Energy's order book: the backlog reached a record €164 billion and about 85% of expected FY2027 revenue is already covered by it. Profit more than doubled in FY2026 as gas and grid margins rose and the wind unit stopped losing money, and the company raised its 2030 margin target to 20-22%. Data-center backlog is about €15 billion, under 10% of the total, so the demand is broader than AI alone.",
+    "expect": {
+      "company": [
+        "FY2027 comparable revenue growth of 14-16% and a 14-16% margin before special items (Nov 11, 2026)",
+        "FY2027 net income of about €5 billion and pre-tax free cash flow of about €10 billion (Nov 11, 2026)",
+        "FY2027 Gas Services revenue growth of 24-26% at an 18-20% margin; Grid Technologies 22-24% at 21-23% (Nov 11, 2026)",
+        "FY2030 margin of 20-22% and yearly revenue growth of 12-14% from FY2026 (Nov 11, 2026)",
+        "Shareholder returns of more than €25 billion over FY2027-2030 (Nov 11, 2026)"
+      ],
+      "analysts": [
+        "Barclays has raised the possibility that orders and cash flow peak in FY2026 (Discovery Alert, Nov 18, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "Slot reservations convert into firm orders, grid orders pick up again, service revenue grows with the installed base, and margins climb toward the 2030 target ahead of plan.",
+      "base": "The backlog converts into revenue as guided, gas and grid margins keep rising, and wind stays around breakeven while the industrial unit is separated.",
+      "bear": "Power demand forecasts are cut, reservations are cancelled, wind problems return or big projects run late, and FY2026 proves to be the peak for orders and cash flow."
+    },
+    "updated": "2026-11-27",
+    "radar": {
+      "added": "2026-11-27",
+      "why": "Profit before special items more than doubled to €5.5 billion in FY2026 and the order backlog hit a record €164 billion, with a record 42 GW of gas turbine orders as utilities and data centers race to add power (Siemens Energy, Nov 11, 2026)."
+    },
+    "sources": [
+      {
+        "name": "Siemens Energy press release via EuropaWire, FY2026 results, Nov 11, 2026",
+        "url": "https://news.europawire.eu/siemens-energy-posts-record-fy-2026-revenue-and-e164bn-backlog-sets-2030-margin-goal-of-20-22/eu-press-release/2026/11/11/13/46/13/187248/"
+      },
+      {
+        "name": "Turbomachinery International, Siemens Energy closes record fiscal 2026, Nov 13, 2026",
+        "url": "https://www.turbomachinerymag.com/view/siemens-energy-fy2026-record-backlog-164-billion-gas-services-orders"
+      },
+      {
+        "name": "Investing.com, Siemens Energy FY26 slides, Nov 11, 2026",
+        "url": "https://www.investing.com/news/company-news/siemens-energy-fy26-slides-record-results-2022-margin-target-by-2030-93CH-5018478"
+      },
+      {
+        "name": "Discovery Alert, Siemens Energy's €164bn backlog is mostly not data centres, Nov 18, 2026",
+        "url": "https://discoveryalert.com/analysis/siemens-energy-backlog-data-centres-november-2026/"
+      }
+    ]
   }
 ]

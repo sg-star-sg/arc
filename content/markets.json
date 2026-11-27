@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "assets": [
     {
       "id": "gold",
@@ -13,21 +13,17 @@
         "code": "XAU"
       },
       "context": {
-        "value": "$3,548/oz",
-        "label": "Spot gold bid, Nov 25, 2026 (2:41 pm ET)",
-        "detail": "Gold fell from above $4,000 in early November to a 14-month low as a hot October inflation reading and hawkish Fed comments pushed markets to price in a December rate hike, which lifted the dollar. Higher interest rates raise the cost of holding gold, which pays no income.",
+        "value": "$3,582/oz",
+        "label": "Spot gold, Nov 26, 2026 (about 05:30 UTC)",
+        "detail": "Gold touched an intraday low of $3,427 on Nov 25, its lowest in about 15 months, then recovered to close near $3,600 as short sellers covered. Expectations of a December Fed rate hike after hot inflation data keep the dollar firm and weigh on metals that pay no income.",
         "sources": [
           {
-            "name": "Kitco, Precious metals text quotes, Nov 25, 2026",
-            "url": "https://www.kitco.com/price/precious-metals/text-quotes"
+            "name": "Centrino Capital, Market news, Nov 26, 2026",
+            "url": "https://centrinocapital.com/insights/market-news-2026-11-26"
           },
           {
-            "name": "Khaleej Times, Gold drops 3% to over one-year low, Nov 12, 2026",
-            "url": "https://www.khaleejtimes.com/business/gold-drops-3-to-over-one-year-low-as-fading-middle-east-peace-hopes-fan-inflation-fears"
-          },
-          {
-            "name": "Trading Economics, Gold news stream, Nov 16-25, 2026",
-            "url": "https://tradingeconomics.com/commodity/gold/news/601617"
+            "name": "Saxo Bank, Market Quick Take, Nov 26, 2026",
+            "url": "https://home.saxo/en-gb/content/articles/macro/market-quick-take---nasdaq-briefly-hits-bear-market-territory-before-paring-losses---26-november-2026-26112026"
           }
         ]
       }
@@ -98,17 +94,21 @@
       "unit": "US$ per pound (futures)",
       "what": "The metal of wiring, grids, motors and data centers. Its price is read as a gauge of global industrial demand, especially China's.",
       "context": {
-        "value": "about $5.30/lb",
-        "label": "US copper futures, Nov 24, 2026",
-        "detail": "Copper fell close to its lowest since December 2025 on doubts about AI data-center spending, soft Chinese demand and expected Fed rate hikes. On the London Metal Exchange, three-month copper dropped from $13,226.50 to $12,471 a tonne between Nov 17 and Nov 18 as investors cut record long positions and inventories rose.",
+        "value": "about $5.37/lb",
+        "label": "US copper futures, Nov 26, 2026",
+        "detail": "London copper hit an 11-month low of $11,685.92 a ton on Nov 24 and was down more than 16% for November, on course for the biggest monthly fall since January 2015, as funds cut positions on expected Fed rate hikes and the AI stock selloff. It rebounded more than 3% on Nov 26, and physical buyers in China were paying record import premiums.",
         "sources": [
           {
-            "name": "Trading Economics, Copper, Nov 2026",
-            "url": "https://tradingeconomics.com/commodity/copper?user=analyst43256"
+            "name": "The Commodity Merchant, Copper fell 19% in a month and the warehouses filled up, Nov 26, 2026",
+            "url": "https://commoditymerchant.substack.com/p/copper-fell-19-in-a-month-and-the"
           },
           {
-            "name": "Kalkine, Copper falls on the LME, Nov 18, 2026",
-            "url": "https://kalkine.com.au/news/mining/copper-falls-on-the-lme-freeport-and-antofagasta-exposure-in-focus"
+            "name": "INDIA IPO (citing Financial Express), Copper heads for worst monthly drop since 2015, Nov 26, 2026",
+            "url": "https://www.indiaipo.in/news/detail/copper-heads-for-worst-monthly-drop-since-2015-prices-slide-16-to-11-month-low"
+          },
+          {
+            "name": "FinScans (citing FXStreet), Copper rebounds over 3% after hitting 11-month low on LME, Nov 26, 2026",
+            "url": "https://finscans.com/news/2026/11/26/copper-rebounds-over-3-after-hitting-11-month-low-on-lme"
           }
         ]
       }
@@ -121,25 +121,17 @@
       "unit": "US$ per barrel (futures)",
       "what": "The global oil benchmark. Moves with supply decisions by OPEC+, conflict in the Gulf, and demand from China and the US.",
       "context": {
-        "value": "$91.40/bbl",
-        "label": "Brent crude close, Nov 24, 2026",
-        "detail": "Brent fell from about $108 in early November as US-Iran talks eased fears of supply disruption, Gulf exports recovered and the IEA forecast a fourth-quarter surplus of about 2 million barrels a day. Attacks on tankers near the Strait of Hormuz still cause sharp one-day jumps.",
+        "value": "above $95/bbl",
+        "label": "Brent crude, Nov 26, 2026",
+        "detail": "Brent rose more than $5 in two days after Houthi forces struck the Saudi Red Sea port of Jeddah and a drone attack on the Ras Tanura oil terminal was reportedly intercepted. US crude stocks rose for a third week, and OPEC+ meets on Nov 29.",
         "sources": [
           {
-            "name": "Capp Notes, Closing Look, Nov 24, 2026",
-            "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+            "name": "Saxo Bank, Market Quick Take, Nov 26, 2026",
+            "url": "https://home.saxo/en-gb/content/articles/macro/market-quick-take---nasdaq-briefly-hits-bear-market-territory-before-paring-losses---26-november-2026-26112026"
           },
           {
-            "name": "Trading Economics, Brent Crude Falls Sharply on Monday, Nov 2, 2026",
-            "url": "https://tradingeconomics.com/commodity/brent-crude-oil/news/597300"
-          },
-          {
-            "name": "Trading Economics, Brent Extends Decline on Improving Supply Outlook, Nov 16, 2026",
-            "url": "https://tradingeconomics.com/commodity/brent-crude-oil/news/601699"
-          },
-          {
-            "name": "Trading Economics, Brent news stream, Nov 16-25, 2026",
-            "url": "https://tradingeconomics.com/commodity/brent-crude-oil/news/601607"
+            "name": "Hyperdash, Midday Market Overview, Nov 26, 2026",
+            "url": "https://hyperdash.com/news/european-stocks-rally-as-us-markets-close-for-thanksgiving-oil-jumps-on-red-sea-strike"
           }
         ]
       }
@@ -295,19 +287,15 @@
       "context": {
         "value": "23,585.80",
         "label": "Nasdaq Composite close, Nov 25, 2026",
-        "detail": "The Nasdaq fell more than 4% in the morning as chip stocks sold off, with Nvidia closing down 3.9% and Micron down 4.5%, before recovering to a 0.6% loss. It rose 4.3% for the week but is up only 1.5% this year.",
+        "detail": "The Nasdaq 100 briefly fell 20% below its October record on Nov 25, the usual line for a bear market, before recovering to close down 0.6%. Nvidia fell 3.9% after S&P Global warned it could cut the company's credit rating over governance. US markets were closed on Nov 26 for Thanksgiving and reopen for a shortened session on Nov 27.",
         "sources": [
           {
-            "name": "ABC News (AP), How major US stock indexes fared Wednesday 11/25/2026",
-            "url": "https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-wednesday-11252026-138453529"
+            "name": "Saxo Bank, Market Quick Take, Nov 26, 2026",
+            "url": "https://home.saxo/en-gb/content/articles/macro/market-quick-take---nasdaq-briefly-hits-bear-market-territory-before-paring-losses---26-november-2026-26112026"
           },
           {
-            "name": "The Motley Fool, Stock Market Today, Nov. 25: Nvidia Slides 3.9% as the Market Considers Hot PCE Inflation Data and New Tariff Proposals, Nov 25, 2026",
-            "url": "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-nvidia-slides-3-9-as-the-market-considers-hot-pce-inflation-data-and-new-tariff-proposals/"
-          },
-          {
-            "name": "StockTitan, Stock Market Today, November 25, 2026: Stocks Win Back Most of Their Morning Losses After a Chip Sell-Off",
-            "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-25-2026"
+            "name": "Centrino Capital, Market news, Nov 26, 2026",
+            "url": "https://centrinocapital.com/insights/market-news-2026-11-26"
           }
         ]
       }
@@ -408,21 +396,17 @@
         "code": "bitcoin"
       },
       "context": {
-        "value": "about $60,000",
-        "label": "Bitcoin, Nov 24, 2026",
-        "detail": "Bitcoin fell about 22% in the month to Nov 19, hitting its lowest level since September 2024 on Nov 20. Drivers include a $6 billion Binance hack on Oct 29, large outflows from spot bitcoin ETFs and expected Fed rate hikes.",
+        "value": "about $60,700",
+        "label": "Bitcoin, Nov 26, 2026",
+        "detail": "Bitcoin hovered near $60,000, close to its lowest since September 2024. Bitcoin funds lost $453.1 million on Nov 25, a seventh straight day of outflows, mostly from BlackRock's IBIT.",
         "sources": [
           {
-            "name": "Trading Economics, Bitcoin news stream, Nov 19-24, 2026",
-            "url": "https://tradingeconomics.com/btcusd:cur/news/506121"
+            "name": "Saxo Bank, Market Quick Take, Nov 26, 2026",
+            "url": "https://home.saxo/en-gb/content/articles/macro/market-quick-take---nasdaq-briefly-hits-bear-market-territory-before-paring-losses---26-november-2026-26112026"
           },
           {
-            "name": "Fortune, Price of bitcoin, Nov 19, 2026",
-            "url": "https://fortune.com/article/price-of-bitcoin-11-19-2026/"
-          },
-          {
-            "name": "Capp Notes, Closing Look, Nov 24, 2026",
-            "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24"
+            "name": "Hyperdash, Midday Market Overview, Nov 26, 2026",
+            "url": "https://hyperdash.com/news/european-stocks-rally-as-us-markets-close-for-thanksgiving-oil-jumps-on-red-sea-strike"
           }
         ]
       }

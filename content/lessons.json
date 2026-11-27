@@ -1674,5 +1674,42 @@
         "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026"
       }
     ]
+  },
+  {
+    "id": "paperphysical",
+    "m": "world",
+    "mod": "Commodities",
+    "title": "Paper vs physical: telling forced selling from a real demand break",
+    "added": "2026-11-27",
+    "layers": [
+      "A commodity like copper has two markets trading the same metal. The physical market is miners, smelters and the factories that turn metal into wire, pipes and motors. The paper market is funds, banks and traders buying and selling futures contracts, most of whom never want to take delivery. Copper is nicknamed Dr. Copper because it goes into buildings, power grids, cars and electronics, so its price is often read as a check-up on the world economy. Usually the two markets move together. But when paper money rushes in or out, the price can drift far from what the people who actually use the metal will pay, and the check-up gives a false reading.",
+      "Four tools help you see which market is driving the price. First, positioning: regulators and banks track who holds futures. Reuters counted fund long positions in copper falling from 96,824 contracts in mid-September 2026 to 58,475 on Nov 9, and Goldman Sachs estimated funds sold a net $10.8 billion of US copper futures from Sept 22 to Nov 10, while producers, traders and end users bought a net $1.1 billion. Second, inventories: metal piling up in exchange warehouses means nobody needs it now, and metal being drawn out means users are taking it. In the same weeks Shanghai's exchange stocks fell 18% in a week to 27,642 tons, near a three-year low. Third, physical premiums: the extra a buyer pays over the exchange price to get metal delivered to a specific place. China's Yangshan premium jumped to $360 a ton on Nov 19 from under $100 in September. Fourth, the spread between cash metal and metal for delivery in three months: backwardation (cash costs more) signals metal is scarce today, contango (cash costs less) signals plenty. On the London exchange copper was in a small contango of $20 to $55 a ton on Nov 24-25. Signals can disagree, and that is information too: here Shanghai looked tight while London and the roughly 2 million tons Bloomberg estimates piled up in the US looked loose.",
+      "Forced selling happens because borrowed and crowded positions have to be cut when prices fall or other investments lose money. A strategist at Kotak Neo put it simply in November 2026: investors facing losses across their portfolios sell whatever is easy to sell, so copper can fall even when its fundamentals hold up. Rising interest rates add pressure, because a commodity pays no income and costs money to finance, and a stronger dollar makes dollar-priced metal more expensive for buyers in other countries. A clue to forced selling is that unrelated assets fall on the same day: on Nov 18 copper dropped about 6% while silver and zinc each fell more than 5% and tin about 5%. Analysts compared it with 2008 and March 2020, when liquidation drove prices far down. But the comparison cuts both ways: in March 2020 prices recovered quickly once selling stopped, while in 2008 a real recession followed. Real demand can weaken at the same time. Citi estimated global copper use grew only 0.8% from a year earlier in August, and a Mercuria researcher said demand looked closer to a recession than to growth.",
+      "A falling price is evidence, not a verdict. Before deciding what a crash means, check who is selling, whether the stuff is piling up or being drawn down, what physical buyers are paying above the screen price, and whether everything else fell the same day. Forced selling ends when the sellers run out, so it tends to be sharp and short. A true demand break shows up slowly, in stockpiles that keep rising and premiums that keep shrinking over months. The same habit works for mining stocks, for any industry tied to a commodity, and for your own reaction in any panic: a price set by people who have to sell tells you about their problems, not necessarily about the asset.",
+      [
+        "Is the selling coming from investors or from the companies that actually use this?",
+        "Are inventories rising or being drawn down, and on which exchanges?",
+        "Are physical buyers paying more or less than the exchange price than they were a month ago?",
+        "Did unrelated assets fall on the same day, a sign of forced selling?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "Discovery Alert, Copper price slump: forced selling or a real demand break?, Nov 20, 2026",
+        "url": "https://discoveryalert.com/analysis/copper-price-slump-forced-selling-demand-november-2026/"
+      },
+      {
+        "name": "BigGo Finance, Copper plunges nearly 6% in a single day to seven-month low, Nov 19, 2026",
+        "url": "https://finance.biggo.com/news/e7a16a2e-2c79-4d72-9c78-f5fb7ab35144"
+      },
+      {
+        "name": "INDIA IPO (citing Financial Express), Copper heads for worst monthly drop since 2015, Nov 26, 2026",
+        "url": "https://www.indiaipo.in/news/detail/copper-heads-for-worst-monthly-drop-since-2015-prices-slide-16-to-11-month-low"
+      },
+      {
+        "name": "The Commodity Merchant, Copper fell 19% in a month and the warehouses filled up, Nov 26, 2026",
+        "url": "https://commoditymerchant.substack.com/p/copper-fell-19-in-a-month-and-the"
+      }
+    ]
   }
 ]
