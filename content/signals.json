@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-11-28-united-fidelity-bank-fails",
+    "date": "2026-11-28",
+    "kind": "Signal",
+    "m": "economy",
+    "title": "A $5.9 billion bank fails, the largest US failure since 2024",
+    "stat": "$1.83B",
+    "statLabel": "FDIC's estimated cost to the Deposit Insurance Fund from the United Fidelity Bank failure, Nov 27, 2026",
+    "body": "On Friday, Nov 27, the Office of the Comptroller of the Currency closed United Fidelity Bank, a federal savings bank in Evansville, Indiana, and named the FDIC receiver. The bank had about $5.9 billion in assets and $5.4 billion in deposits on Sept. 30 and ran 22 branches in Indiana, Illinois, Florida, Colorado and the US Virgin Islands. First Citizens Bank & Trust of Raleigh won the FDIC's bidding and agreed to take on $4.5 billion of deposits and $3.1 billion of loans, buying the assets at a discount of about $2.6 billion and paying no premium for the deposits; certain brokered deposits were left out. The FDIC estimates the failure will cost its insurance fund $1.83 billion, about 31% of the bank's assets, making it the largest US bank failure since Republic Bank in April 2024.",
+    "why": "Customers kept using their debit cards, ATMs and checks over the weekend, and branches reopen under First Citizens, because the FDIC found a buyer before Monday. That protection has limits: insurance covers $250,000 per depositor, per bank, per ownership category, and investments sold at a bank are not deposits at all. A loss estimate near a third of assets says the loans were worth far less than the books showed, which is the kind of gap uninsured savers and shareholders end up paying for.",
+    "lessons": [
+      "bankfailure",
+      "bankprofit",
+      "custody"
+    ],
+    "sources": [
+      {
+        "name": "FOX Local (LiveNOW from FOX), FDIC takes over failed United Fidelity Bank as First Citizens assumes most deposits, Nov 28, 2026",
+        "url": "https://www.fox6now.com/money/fdic-united-fidelity-bank-first-citizens"
+      },
+      {
+        "name": "Beinsure, United Fidelity Bank failure to cost FDIC $1.83 bn as First Citizens steps in, Nov 28, 2026",
+        "url": "https://beinsure.com/news/united-fidelity-bank-collapse-marks-biggest-us-bank-failure/"
+      },
+      {
+        "name": "Dealroom, First Citizens buys failed United Fidelity, assumes $4.5B in deposits, Nov 28, 2026",
+        "url": "https://dealroom.co/news/176793-first-citizens-buys-failed-united-fidelity-assumes-4-5b-in-deposits/"
+      }
+    ]
+  },
+  {
     "id": "2026-11-27-copper-slides-16-percent",
     "date": "2026-11-27",
     "kind": "Signal",

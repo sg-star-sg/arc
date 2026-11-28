@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "assets": [
     {
       "id": "gold",
@@ -121,17 +121,13 @@
       "unit": "US$ per barrel (futures)",
       "what": "The global oil benchmark. Moves with supply decisions by OPEC+, conflict in the Gulf, and demand from China and the US.",
       "context": {
-        "value": "above $95/bbl",
-        "label": "Brent crude, Nov 26, 2026",
-        "detail": "Brent rose more than $5 in two days after Houthi forces struck the Saudi Red Sea port of Jeddah and a drone attack on the Ras Tanura oil terminal was reportedly intercepted. US crude stocks rose for a third week, and OPEC+ meets on Nov 29.",
+        "value": "$90.84/bbl",
+        "label": "Brent crude, Nov 27, 2026",
+        "detail": "Brent fell about 4% on Friday to around $91 in thin holiday trading. US commercial crude stocks rose 1.1 million barrels to 418.9 million in the week to Nov 20, and gasoline stocks rose 1.7 million barrels.",
         "sources": [
           {
-            "name": "Saxo Bank, Market Quick Take, Nov 26, 2026",
-            "url": "https://home.saxo/en-gb/content/articles/macro/market-quick-take---nasdaq-briefly-hits-bear-market-territory-before-paring-losses---26-november-2026-26112026"
-          },
-          {
-            "name": "Hyperdash, Midday Market Overview, Nov 26, 2026",
-            "url": "https://hyperdash.com/news/european-stocks-rally-as-us-markets-close-for-thanksgiving-oil-jumps-on-red-sea-strike"
+            "name": "The Rio Times, Global economy briefing, Nov 28, 2026",
+            "url": "https://www.riotimesonline.com/global-economy-briefing-november-28-2026/"
           }
         ]
       }
@@ -163,17 +159,17 @@
       "unit": "Yield, %",
       "what": "The interest rate the US government pays to borrow for ten years. It sets the tone for mortgage rates and for how much investors pay for stocks.",
       "context": {
-        "value": "4.81%",
-        "label": "US 10-year Treasury yield, Nov 25, 2026",
-        "detail": "The yield fell nearly 12 basis points to 4.81% on Nov 25, its lowest since September, as investors bought Treasuries for safety during the AI stock selloff and digested new tariff proposals. That came even as core PCE inflation rose to 3.3% and growth was revised up, data that markets read as keeping a December Fed hike on track.",
+        "value": "4.93%",
+        "label": "US 10-year Treasury yield, Nov 27, 2026",
+        "detail": "The 10-year yield rose 6 basis points to about 4.93%, the 2-year to 4.70% and the 30-year to 5.32%, as investors moved out of safe bonds and back into stocks. Traders heavily favor a Fed rate increase in December, with the jobs report due next week.",
         "sources": [
           {
-            "name": "Trading Economics, US 10-year Treasury yield news stream, Nov 25, 2026",
-            "url": "https://tradingeconomics.com/united-states/government-bond-yield/news/598668"
+            "name": "The Boston Report, Stocks surge on Black Friday, week up 5%, Nov 28, 2026",
+            "url": "https://thebostonreport.com/2026/11/28/stocks-black-friday-half-day-close-weekly-gains-november-27-2026"
           },
           {
-            "name": "US Bureau of Economic Analysis, Personal Income and Outlays, October 2026, Nov 25, 2026",
-            "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026"
+            "name": "The Rio Times, Global economy briefing, Nov 28, 2026",
+            "url": "https://www.riotimesonline.com/global-economy-briefing-november-28-2026/"
           }
         ]
       }
@@ -262,17 +258,17 @@
       "unit": "Index points",
       "what": "500 large US companies weighted by size. The benchmark most US investors measure themselves against.",
       "context": {
-        "value": "7,182.78",
-        "label": "S&P 500 close, Nov 25, 2026",
-        "detail": "The index fell as much as 3.2% during the day on hot inflation data, new tariff proposals and another selloff in AI chip stocks, then closed down only 0.3%. It still gained 3.9% for the holiday-shortened week and is up 4.9% for the year.",
+        "value": "7,297.49",
+        "label": "S&P 500 close, Nov 27, 2026",
+        "detail": "The index rose 1.6% in Friday's half-day session and 5.6% for the week, with all 11 sectors higher and consumer stocks leading. The rebound came even as Treasury yields rose and traders bet heavily on a Fed rate increase in December.",
         "sources": [
           {
-            "name": "ABC News (AP), How major US stock indexes fared Wednesday 11/25/2026",
-            "url": "https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-wednesday-11252026-138453529"
+            "name": "The Boston Report, Stocks surge on Black Friday, week up 5%, Nov 28, 2026",
+            "url": "https://thebostonreport.com/2026/11/28/stocks-black-friday-half-day-close-weekly-gains-november-27-2026"
           },
           {
-            "name": "The Motley Fool, Stock Market Today, Nov. 25: Nvidia Slides 3.9% as the Market Considers Hot PCE Inflation Data and New Tariff Proposals, Nov 25, 2026",
-            "url": "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-nvidia-slides-3-9-as-the-market-considers-hot-pce-inflation-data-and-new-tariff-proposals/"
+            "name": "The Rio Times, Global economy briefing, Nov 28, 2026",
+            "url": "https://www.riotimesonline.com/global-economy-briefing-november-28-2026/"
           }
         ]
       }
@@ -285,17 +281,17 @@
       "unit": "Index points",
       "what": "Heavy in technology and AI companies, so it moves more than the S&P 500.",
       "context": {
-        "value": "23,585.80",
-        "label": "Nasdaq Composite close, Nov 25, 2026",
-        "detail": "The Nasdaq 100 briefly fell 20% below its October record on Nov 25, the usual line for a bear market, before recovering to close down 0.6%. Nvidia fell 3.9% after S&P Global warned it could cut the company's credit rating over governance. US markets were closed on Nov 26 for Thanksgiving and reopen for a shortened session on Nov 27.",
+        "value": "24,129.50",
+        "label": "Nasdaq Composite close, Nov 27, 2026",
+        "detail": "The Nasdaq gained 2.3% on Friday and 6.7% for the week as chip stocks bounced: the Philadelphia semiconductor index rose 4.7% on the day.",
         "sources": [
           {
-            "name": "Saxo Bank, Market Quick Take, Nov 26, 2026",
-            "url": "https://home.saxo/en-gb/content/articles/macro/market-quick-take---nasdaq-briefly-hits-bear-market-territory-before-paring-losses---26-november-2026-26112026"
+            "name": "The Boston Report, Stocks surge on Black Friday, week up 5%, Nov 28, 2026",
+            "url": "https://thebostonreport.com/2026/11/28/stocks-black-friday-half-day-close-weekly-gains-november-27-2026"
           },
           {
-            "name": "Centrino Capital, Market news, Nov 26, 2026",
-            "url": "https://centrinocapital.com/insights/market-news-2026-11-26"
+            "name": "The Rio Times, Global economy briefing, Nov 28, 2026",
+            "url": "https://www.riotimesonline.com/global-economy-briefing-november-28-2026/"
           }
         ]
       }
@@ -308,17 +304,17 @@
       "unit": "Index points",
       "what": "Europe's best-known index of 40 large German companies, many of them exporters and industrial firms.",
       "context": {
-        "value": "25,012",
-        "label": "Germany's DAX close, Nov 24, 2026",
-        "detail": "The DAX fell 1.3% on Nov 24 and is down from about 26,600 in mid-November, led by chipmaker Infineon and Siemens Energy. Tech uncertainty and reports of new US tariffs on the EU and others weighed on European shares.",
+        "value": "25,441.24",
+        "label": "Germany's DAX close, Nov 27, 2026",
+        "detail": "The DAX gained about 2.6% for the week as global stocks rebounded, though it remains below the 26,745 level of Nov 13. November inflation came in below forecasts in Spain (4.1%) and France (2.9%).",
         "sources": [
           {
-            "name": "Trading Economics, DAX news stream, Nov 17-24, 2026",
-            "url": "https://tradingeconomics.com/germany/stock-market/news/601991"
+            "name": "Marketcalls, Weekly Roundup 28 November 2026",
+            "url": "https://www.marketcalls.in/futures-and-options/weekly-market-roundup-28-november-2026.html"
           },
           {
-            "name": "Finanznachrichten (RTTNews), European stocks close weak after cautious session, Nov 16, 2026",
-            "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70145948-european-stocks-close-weak-after-cautious-session-020.htm"
+            "name": "The Rio Times, Global economy briefing, Nov 28, 2026",
+            "url": "https://www.riotimesonline.com/global-economy-briefing-november-28-2026/"
           }
         ]
       }
@@ -350,17 +346,13 @@
       "unit": "Index points",
       "what": "30 large companies on the Bombay Stock Exchange, a gauge of India's fast-growing economy.",
       "context": {
-        "value": "82,435.99",
-        "label": "BSE Sensex close, Nov 24, 2026 (Nifty 50: 25,349.65)",
-        "detail": "The Sensex fell 1.8% on Nov 24, then opened about 1.7% higher on Nov 25 as Indian IT stocks rallied and Brent slipped below $88. Analysts tie the recent swings mainly to the global AI trade.",
+        "value": "83,339.26",
+        "label": "BSE Sensex close, Nov 27, 2026 (Nifty 50: 25,607.20)",
+        "detail": "The Sensex fell 0.7% in a four-day week and the Nifty 50 lost 0.75%, ending a four-week winning streak, as banks and Tata Steel fell while IT stocks such as TCS jumped on the US tech rebound. Foreign investors were net buyers, and many economists expect the Reserve Bank of India to raise rates on Dec 4 after October inflation passed 6%.",
         "sources": [
           {
-            "name": "Business Today, Why market is rising today, Nov 25, 2026",
-            "url": "https://www.businesstoday.in/markets/stocks/story/why-market-is-rising-today-sensex-gains-over-1300-pts-nifty-crosses-25700-569286-2026-11-25"
-          },
-          {
-            "name": "Kotak Neo, Closing Bell 19 November 2026",
-            "url": "https://www.kotakneo.com/news/market-news/closing-bell-19-november-2026-sensex-nifty-end-higher-as-bulls-return-to-dalal-street/"
+            "name": "Marketcalls, Weekly Roundup 28 November 2026",
+            "url": "https://www.marketcalls.in/futures-and-options/weekly-market-roundup-28-november-2026.html"
           }
         ]
       }

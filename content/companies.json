@@ -1944,5 +1944,90 @@
         "url": "https://discoveryalert.com/analysis/siemens-energy-backlog-data-centres-november-2026/"
       }
     ]
+  },
+  {
+    "ticker": "MELI",
+    "name": "MercadoLibre",
+    "country": "Uruguay",
+    "sector": "Consumer Discretionary",
+    "theme": "Latin America's online shopping, payments and lending platform",
+    "what": "MercadoLibre runs Latin America's largest online marketplace and, through Mercado Pago, a payments and lending business, with its biggest markets in Brazil, Mexico and Argentina.",
+    "past": {
+      "label": "Net income, Q3 2025",
+      "value": "$421 M",
+      "detail": "A year earlier, in the quarter to September 2025, MercadoLibre earned $421 million, or $8.32 per share, with operating income of $724 million and a 9.8% operating margin."
+    },
+    "current": {
+      "label": "Net revenue and financial income, Q3 2026",
+      "value": "$10.75 B",
+      "growth": 45.1,
+      "detail": "Revenue rose 45.1% in dollars and 41% excluding currency moves. Brazil grew 50%, Mexico 47% and Argentina 26% in dollars. Gross merchandise volume rose 38% to $23 billion and payment volume 53% to $109 billion. Net income rose to $448 million ($8.83 per share), but operating income fell to $676 million and the operating margin dropped to 6.3% from 9.8% as the company spent on free shipping, new warehouses and marketing. Adjusted free cash flow was $285 million after $503 million of capex and $2.1 billion added to the loan book."
+    },
+    "future": {
+      "label": "Credit portfolio, Sept 30, 2026",
+      "value": "~$18 B",
+      "detail": "The loan book reached almost $18 billion, up 62% in a year. The company gives no earnings guidance; it added about 20% more fulfillment capacity in the quarter ahead of the holiday peak, says more capacity is coming, and expects some of those costs to ease in Q4 as warehouses fill. Management says it is deliberately investing part of today's margin to move more commerce and finance online."
+    },
+    "drivers": [
+      "Fast growth in Brazil and Mexico, both above 45% in dollars in Q3 2026",
+      "Mercado Pago payment volume up 53% to $109 billion",
+      "About 93 million monthly active fintech users",
+      "Credit portfolio up 62% to almost $18 billion",
+      "Own logistics network: fulfillment capacity up about 20% in one quarter"
+    ],
+    "risks": [
+      "Operating margin fell to 6.3% from 9.8% a year earlier",
+      "Lending risk: 7.0% of loans were 15-90 days overdue in Q3 2026",
+      "Free shipping and a lower free-shipping threshold raise costs",
+      "Earnings per share missed analyst estimates and the stock fell about 7% after results",
+      "Currency swings in Brazil, Mexico and Argentina change dollar results"
+    ],
+    "watch": [
+      "Whether operating margin recovers as new warehouses fill in Q4",
+      "Overdue loan rates as the credit book keeps growing",
+      "Payment volume and fintech user growth",
+      "Brazil growth after the free-shipping changes",
+      "Free cash flow after loan growth and capex"
+    ],
+    "why": "MercadoLibre combines a marketplace, a delivery network and a bank-like payments and lending arm, so each new shopper can also become a payments and credit customer. Revenue grew 45% in Q3 2026 and payment volume 53%, while the loan book rose 62% to almost $18 billion. The company is choosing growth over margin for now, which is why profit per share missed estimates even as sales beat.",
+    "expect": {
+      "company": [
+        "No formal earnings guidance; investment priorities in technology and logistics unchanged (Q3 2026 call, Nov 4, 2026)",
+        "Some fulfillment capacity costs expected to ease in Q4 2026 as facilities fill, with more capacity still coming (Nov 4, 2026)",
+        "Cautious on riskier lending segments and ready to slow loan growth if needed (Nov 4, 2026)"
+      ],
+      "analysts": [
+        "Revenue beat consensus of about $10.64 billion, while EPS of $8.83 missed the $9.27 consensus (StockStory, Nov 4, 2026)",
+        "Sell-side analysts expect about 31% revenue growth over the next 12 months (StockStory, Nov 4, 2026)"
+      ]
+    },
+    "scenarios": {
+      "bull": "New warehouses fill and shipping costs per order fall, margins recover while growth stays fast, and the loan book keeps growing with overdue rates under control.",
+      "base": "Revenue keeps growing quickly, margins stay pressured by logistics and marketing spending, and credit quality holds roughly steady.",
+      "bear": "Overdue loans climb as the credit book expands, competition forces more free shipping and promotions, and currency drops in Brazil or Argentina shrink dollar profits."
+    },
+    "updated": "2026-11-28",
+    "radar": {
+      "added": "2026-11-28",
+      "why": "Revenue rose 45% to $10.75 billion in Q3 2026 and its lending book grew 62% to almost $18 billion, as Brazil and Mexico both grew faster than 45% in dollars (The Rio Times, StockStory, Nov 2026)."
+    },
+    "sources": [
+      {
+        "name": "The Rio Times, MercadoLibre earns US$448 million in Q3 2026, Nov 5, 2026",
+        "url": "https://www.riotimesonline.com/mercadolibre-earns-us448-million-q3-2026/"
+      },
+      {
+        "name": "StockStory, MercadoLibre Q3 2026 sales top estimates but stock drops, Nov 4, 2026",
+        "url": "https://stockstory.org/us/stocks/nasdaq/meli/news/earnings/mercadolibres-nasdaqmeli-q3-2026-sales-top-estimates-but-stock-drops"
+      },
+      {
+        "name": "StockStory, MELI Q3 2026 deep dive: margin pressures persist despite robust e-commerce and fintech growth, Nov 5, 2026",
+        "url": "https://stockstory.org/us/stocks/nasdaq/meli/news/earnings-call/meli-q3-2026-deep-dive-margin-pressures-persist-despite-robust-e-commerce-and-fintech-growth"
+      },
+      {
+        "name": "Quartr, MercadoLibre Q3 2026 earnings summary, Nov 17, 2026",
+        "url": "https://quartr.com/events/mercadolibre-inc-meli-q3-2026_3ePJ0Q3l"
+      }
+    ]
   }
 ]

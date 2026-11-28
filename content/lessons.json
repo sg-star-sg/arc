@@ -1711,5 +1711,42 @@
         "url": "https://commoditymerchant.substack.com/p/copper-fell-19-in-a-month-and-the"
       }
     ]
+  },
+  {
+    "id": "bankfailure",
+    "m": "economy",
+    "mod": "Money and banks",
+    "title": "When a bank fails: the Friday closing, the $250,000 rule and who loses",
+    "added": "2026-11-28",
+    "layers": [
+      "A bank fails when its regulator decides it can no longer pay what it owes or meet withdrawals. The regulator that granted its charter closes it, often on a Friday so the weekend can be used to sort things out, and names the FDIC as receiver, the party that takes control of everything the bank owned and owed. For customers, the key protection is deposit insurance: $250,000 per depositor, per insured bank, for each account ownership category, covering principal and interest earned up to the day of failure. It covers deposits only: checking, savings, money market deposit accounts, CDs, and cashier's checks or money orders issued by the bank. It does not cover stocks, bonds, mutual funds, crypto, annuities, life insurance, municipal bonds, or anything in a safe deposit box, even if you bought them through the bank. US Treasury bills, notes and bonds are not FDIC-insured either; they are backed directly by the US government. The FDIC says no depositor has lost a cent of insured funds since it began in 1934.",
+      "There are two ways a failure plays out. Most often another bank buys the failed bank's deposits and some or all of its loans in a deal called a purchase and assumption, and customers simply become customers of the buyer. United Fidelity Bank in Evansville, Indiana shows how fast that is. Regulators closed it on Friday, Nov 27, 2026. First Citizens Bank & Trust had already won the FDIC's bidding and took on $4.5 billion of deposits and $3.1 billion of loans. Debit cards, ATMs and checks kept working over the weekend, and branches reopened under the new name on Saturday or Monday. If no buyer can be found, the FDIC works out what each customer is insured for and pays them directly. Anyone above the limit becomes a creditor of the failed bank and waits for whatever the FDIC recovers by selling the assets. Three details in a failure tell you a lot. The asset discount, about $2.6 billion at United Fidelity, is how far below book value the buyer would pay for the loans and other assets. The deposit premium, zero in this case, is what the buyer would pay for the customer relationships. And the FDIC's estimated cost to its insurance fund, $1.83 billion or about 31% of assets, shows how much value had vanished. Not every balance moves to the buyer: United Fidelity's brokered deposits, money placed by brokerage firms for their clients, were excluded, so those customers deal with their broker instead.",
+      "Who loses follows an order. Shareholders are usually first: the bank's holding company is not rescued, and its stock can become close to worthless. Uninsured depositors come next when there is no buyer willing to take all deposits. The insurance fund absorbs the rest. For a saver, the practical question is whether every dollar sits inside a limit, and the limit is counted by ownership category, not by account. Several accounts in the same category at the same bank are added together. A single account in your name is covered up to $250,000. A joint account is covered up to $250,000 per co-owner, so a couple can hold $500,000 there. IRAs and certain other retirement accounts are a separate category, $250,000 per owner. Trust accounts, including simple payable-on-death accounts, are covered up to $250,000 for each eligible beneficiary, up to five, for a maximum of $1.25 million per owner, under rules that took effect in April 2024. The FDIC's own examples show the traps: one owner with one payable-on-death beneficiary is covered for $250,000, not $500,000, and $800,000 spread across trust accounts with three beneficiaries is covered for $750,000, leaving $50,000 at risk. Beneficiaries must be named in the bank's records, and if a beneficiary dies, coverage can drop immediately, while the death of an owner brings a six-month grace period. Businesses get $250,000 per company, which is why a firm holding a month of payroll can be far above the limit without noticing. Accounts at different banks each get their own limit.",
+      "For most people, bank failure risk is not about picking a perfect bank but about counting correctly. Add up what you hold at each bank in each ownership category. If any total is above $250,000, the choices are to spread it across banks, use different ownership categories properly, or hold some cash in Treasuries, which carry a government guarantee instead of FDIC insurance. Confirm that a product is a deposit before you rely on deposit insurance, and keep beneficiary names up to date with the bank. When you read about a failure, look at the loss estimate and the discount the buyer demanded: a large share of assets lost means bad loans built up for a long time, and the same questions are worth asking of any bank where you keep more than the insured amount.",
+      [
+        "At each bank I use, how much do I hold in each ownership category, and is any total above $250,000?",
+        "Is this product a deposit, or an investment sold at a bank that FDIC insurance does not cover?",
+        "If I hold CDs through a brokerage, which bank actually holds them, and do they push me over a limit there?",
+        "Are my payable-on-death or trust beneficiaries named in the bank's records, and still living?"
+      ]
+    ],
+    "sources": [
+      {
+        "name": "FDIC, Deposit Insurance At A Glance",
+        "url": "https://fdic.gov/resources/deposit-insurance/brochures/deposits-at-a-glance"
+      },
+      {
+        "name": "FDIC, Trust Accounts (12 C.F.R. 330.10), Financial Institution Employee's Guide to Deposit Insurance",
+        "url": "https://www.fdic.gov/system/files/2024-05/trust-accounts.pdf"
+      },
+      {
+        "name": "FOX Local (LiveNOW from FOX), FDIC takes over failed United Fidelity Bank as First Citizens assumes most deposits, Nov 28, 2026",
+        "url": "https://www.fox6now.com/money/fdic-united-fidelity-bank-first-citizens"
+      },
+      {
+        "name": "Beinsure, United Fidelity Bank failure to cost FDIC $1.83 bn as First Citizens steps in, Nov 28, 2026",
+        "url": "https://beinsure.com/news/united-fidelity-bank-collapse-marks-biggest-us-bank-failure/"
+      }
+    ]
   }
 ]
